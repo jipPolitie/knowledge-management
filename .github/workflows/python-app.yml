@@ -38,8 +38,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest --verbose
-    - name: debug pyenv
-      run: |
-        echo "pyenv debug"
-        echo ${{ steps.pyenv_installation.outputs.pyenv_root }}
+        pytest --verbose tests.py
+#    - name: debug pyenv
+#      run: |
+#        echo "pyenv debug"
+#        echo ${{ steps.pyenv_installation.outputs.pyenv_root }}
