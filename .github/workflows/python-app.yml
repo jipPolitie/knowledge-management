@@ -39,5 +39,5 @@ jobs:
       run: |
         pytest --verbose
     - name: debug pyenv
-        run: |
-          echo ${{ steps.pyenv_installation.outputs.pyenv_root }}
+      run: |
+        echo ${{ steps.pyenv_installation.outputs.pyenv_root }}
