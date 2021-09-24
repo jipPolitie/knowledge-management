@@ -1,0 +1,7 @@
+#streamlit
+streamlit
+
+# ci/cd
+pytest
+pytest-cov
+pytest-github-actions-annotate-failures

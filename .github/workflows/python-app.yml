@@ -5,7 +5,7 @@ name: Python application
 
 on:
   push:
-    branches: 
+    branches:
     - main
     #do tests
     - vioSpark-ci-cd-dev
@@ -37,4 +37,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest
+        pytest --verbose
+    - name: debug pyenv
+        run: |
+          echo ${{ steps.pyenv_installation.outputs.pyenv_root }}
