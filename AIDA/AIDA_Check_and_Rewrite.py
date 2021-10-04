@@ -167,7 +167,7 @@ writer.writeheader()
 # After processing, provide the path of the file where the results are stored. 
 
 sentences = []
-extracted_sentences = open('C:/Users/../Results/results_abstract.csv')
+extracted_sentences = open('example_articles/results/results_abstract.csv')
 extracted_reader = csv.DictReader(extracted_sentences, delimiter='|')
 for row in extracted_reader:
     sentences.append(row['Sentence'])

@@ -1,3 +1,8 @@
+#articles
+AIDA/example_articles/
+nltk_data/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
