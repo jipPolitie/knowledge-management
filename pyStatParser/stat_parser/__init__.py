@@ -1,3 +1,1 @@
-from parser import Parser, display_tree
-
-from parser import Par
+from pyStatParser.stat_parser.parser import Parser, display_tree
