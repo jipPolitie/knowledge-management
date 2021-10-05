@@ -1,0 +1,275 @@
+
+==== Front
+BMC Cardiovasc DisordBMC Cardiovasc DisordBMC Cardiovascular Disorders1471-2261BioMed Central London 49110.1186/s12872-017-0491-8Research ArticleMeasurement of blood pressure for the diagnosis and management of hypertension in different ethnic groups: one size fits all Gill Paramjit p.s.gill@bham.ac.uk 1Haque M. Sayeed m.s.haque@bham.ac.uk 1Martin Una u.martin@bham.ac.uk 2Mant Jonathan jm677@medschl.cam.ac.uk 3Mohammed Mohammed A. m.a.mohammed5@bradford.ac.uk4 4Heer Gurdip G.K.Heer@bham.ac.uk 1Johal Amanpreet amanpreet.johal@warwick.ac.uk 1Kaur Ramandeep rkaur1302@googlemail.com 1Schwartz Claire claire.schwartz@phc.ox.ac.uk 5Wood Sally sallywood6@doctors.org.uk 5Greenfield Sheila M. s.m.greenfield@bham.ac.uk 1McManus Richard J. richard.mcmanus@phc.ox.ac.uk 51 0000 0004 1936 7486grid.6572.6Primary Care Clinical Sciences, University of Birmingham, Edgbaston, Birmingham, B15 2TT UK 2 0000 0004 1936 7486grid.6572.6Institute of Clinical Sciences, University of Birmingham, Edgbaston, Birmingham, B15 2TT UK 3 0000000121885934grid.5335.0Primary Care Unit, University of Cambridge, Cambridge, CB2 0SR UK 4 0000 0004 0379 5283grid.6268.aSchool of Health Studies, University of Bradford, Bradford, BD7 1DP UK 5 0000 0004 1936 8948grid.4991.5Primary Care Health Sciences, NIHR School for Primary Care Research, University of Oxford, Radcliffe Observatory Quarter, Woodstock Rd, Oxford, OX1 2GG UK 8 2 2017 8 2 2017 2017 17 5528 10 2016 3 2 2017 © The Author(s). 2017
+Open AccessThis article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.Background
+Hypertension is a major risk factor for cardiovascular disease and prevalence varies by ethnic group. The diagnosis and management of blood pressure are informed by guidelines largely based on data from white populations. This study addressed whether accuracy of blood pressure measurement in terms of diagnosis of hypertension varies by ethnicity by comparing two measurement modalities (clinic blood pressure and home monitoring) with a reference standard of ambulatory BP monitoring in three ethnic groups.
+
+Methods
+Cross-sectional population study (June 2010 - December 2012) with patients (40–75 years) of white British, South Asian and African Caribbean background with and without a previous diagnosis of hypertension recruited from 28 primary care practices. The study compared the test performance of clinic BP (using various protocols) and home-monitoring (1 week) with a reference standard of mean daytime ambulatory measurements using a threshold of 140/90 mmHg for clinic and 135/85 mmHg for out of office measurement.
+
+Results
+A total of 551 participants had complete data of whom 246 were white British, 147 South Asian and 158 African Caribbean. No consistent difference in accuracy of methods of blood pressure measurement was observed between ethnic groups with or without a prior diagnosis of hypertension: for people without hypertension, clinic measurement using three different methodologies had high specificity (75–97%) but variable sensitivity (33–65%) whereas home monitoring had sensitivity of 68–88% and specificity of 64–80%. For people with hypertension, detection of a raised blood pressure using clinic measurements had sensitivities of 34–69% with specificity of 73–92% and home monitoring had sensitivity (81–88%) and specificity (55–65%).
+
+Conclusions
+For people without hypertension, ABPM remains the choice for diagnosing hypertension compared to the other modes of BP measurement regardless of ethnicity. Differences in accuracy of home monitoring and clinic monitoring (higher sensitivity of the former; higher specificity of the latter) were also not affected by ethnicity.
+
+Electronic supplementary material
+The online version of this article (doi:10.1186/s12872-017-0491-8) contains supplementary material, which is available to authorized users.
+
+Keywords
+Diagnosis of hypertensionEthnic grouphttp://dx.doi.org/10.13039/501100000272National Institute for Health ResearchPB-PG-1207-15042issue-copyright-statement© The Author(s) 2017
+==== Body
+Background
+Hypertension is the leading risk factor for cardiovascular disease (CVD), accounting for approximately 45% of global CVD morbidity and mortality [1]. The prevalence of hypertension in various regions of the world has been reported [2, 3] and there are striking differences in both blood pressure (BP) level and hypertension prevalence between ethnic groups. For example, adults of West African descent in Europe and North America, whether they come directly from Africa or indirectly from the Caribbean, generally have higher BP and a higher prevalence of hypertension than those of European descent, with this being seen at all ages in North America and only from adulthood in the UK [4, 5].
+
+The diagnosis and management of BP in the UK are informed by guidelines largely based on research from white populations [6]. These guidelines recommend diagnostic and treatment thresholds for hypertension on the basis of office BP and 24 h Ambulatory blood pressure monitoring (ABPM) or home BP monitoring. The need to adjust between clinic and “out-of-office” thresholds for diagnosis makes this particularly important and current recommendations were derived from Australian data gathered in a population that was 82% white and 15% Asian [7]. They suggest a decrease of 5/5 mmHg when converting from clinic to –out-of-office measured BP at lower levels (stage 1 threshold) and a corresponding decrease of 10/5 mmHg at higher levels (stage 2 threshold). We have shown that BP differences between ethnic groups are small [8] and currently ethnicity is not considered in the specification of these UK thresholds, treatment targets or adjustment factors. Hence this study addressed whether accuracy of diagnosis of hypertension using home monitoring and clinic BP are comparable for White British (WB), South Asians (SA) and Black African Caribbean (AC) UK ethnic groups using ABPM as a reference standard.
+
+Methods
+The design and results of the BP in different ethnic groups (BP-Eth) study has previously been published [8, 9]. This was a cross-sectional population study which took place between June 2010 - December 2012 involving people recruited from 28 general practices in Central England.
+
+Population
+The study population comprised two groups aged between 40 and 75 years: The first group were not known to be hypertensive (NHT) and the second had been previously labelled as hypertensive via a clinical code (HT). Participants were drawn from one of four ethnic groups namely WB, SA, AC and White Irish (WI). WI participants were excluded from this analysis due to insufficient numbers recruited (51). Patients that were unable to give consent to the study, belonged to a different ethnic group or whose general practitioner (GP) felt they were unable to take part were excluded.
+
+Procedures
+The study compared BP monitored in a clinic setting and from home-monitoring with ambulatory measurements. Recruitment was from those responding to a postal survey who indicated a willingness to participate in a validation study [8, 9]. Respondents were purposefully sampled from those willing to take part on the basis of ethnicity and hypertension status and invited to attend clinics run at their own practices by research nurses using standardised protocols.
+
+Following informed consent and a five minute rest, six sets of BP measurements were taken by the research nurse at each of three clinic visits (BpTru Medical Devices BPM-100) [10]. On the first occasion BP was measured simultaneously on both arms and thereafter it was measured on the non dominant arm unless the difference in systolic pressure was >20 mmHg between both arms in which case it was measured in the arm with the higher reading [6].
+
+Participants were fitted with an ambulatory monitor (Spacelabs 90217-1Q) [11] (or given a home monitor (Microlife watch BP home)) [12] on either the first or second visit. The third and final visit took place 10 days after the first to allow adequate time for both ambulatory and home BP measurements to be undertaken. The order of ambulatory and home monitoring was varied so that approximately half of the participants had each method first. All staff involved in the study underwent training by the lead research nurse in order to ensure a consistent approach.
+
+Ambulatory readings were recorded at half hourly intervals during the day (7 am to 11 pm) and hourly overnight and the mean daytime BP calculated. Home measurements were taken twice each morning and evening for 1 week, the first days readings discarded and the mean of the remaining readings calculated. For both home-monitored and day time mean ambulatory blood pressure, standard editing criteria were applied: ABPM readings were considered to be valid if there were 14 or more day-time (7 am to 11 pm) readings for a patient (threshold 135/85 mmHg) [13]. Home-monitored readings, minimum of 12 readings, were considered valid if there were 4 or more days readings using the average excepting the first day’s readings (threshold 135/85 mmHg) [14].
+
+Clinic measurement was defined in three ways: the mean of the 2nd and 3rd reading averaged over the 3 days (Clinic23: standardised clinic, threshold 140/90 mmHg) representing recommended clinic BP measurement for diagnosis; the mean of the 2nd to 6th reading averaged over three occasions (Clinic26: research clinic, threshold 135/85 mmHg) and the first reading taken on the first day (ClinicD1R1: casual clinic, threshold 140/90 mmHg), which was expected to accentuate any white coat effect.
+
+Outcome measures
+The primary outcome was the diagnostic test performance of various measures of clinic and home-monitored BP compared to the reference standard (mean daytime ambulatory BP) considering both diagnosis of hypertension in those not previously diagnosed and identification of poor control in those known to be hypertensive, using a threshold of 140/90 mmHg for clinic readings and 135/85 mmHg for out-of-office measurement [6]. The same measurement methodology and thresholds were used for hypertensive and non-hypertensive individuals.
+
+Statistical analysis
+People with and without a previous diagnosis of hypertension were analysed separately and the impact of ethnicity was assessed.
+
+The continuous response variable was systolic or diastolic BP. The study design involved clustering effects (BP readings nested within days and patients), so we used a hierarchical linear statistical model to reflect the design. A 3-level hierarchical model was developed, with level 1 as the BP readings, level 2 as the day (the readings were taken) and level 3 as the patient. All models had a pre-specified set of covariates: ethnicity, age, sex, marital status, deprivation (IMD 2007), body mass index, smoking status, alcohol consumption, cholesterol, cardiovascular disease, chronic kidney disease, diabetic status, and hypertension status. Five separate models were constructed, one for each method—ABPM, clinic23, clinic26, clinic D1R1 and home monitoring. For clinic D1R1 there was no hierarchical structure as there was a single observation per participant (a simple linear regression model was used). Participants with complete data were included in the analyses. All analyses were undertaken in Stata (release 12) [15, 16].
+
+Sensitivity, specificity, likelihood ratio of a positive test (LR + ve) and likelihood ratio of a negative test (LR –ve) for either a diagnosis of hypertension or confirmation of raised BP in those known to be hypertensive, were calculated for each ethnic group and also for all samples for Clinic23, Clinic26, ClinicD1R1 and home monitoring using mean day-time ABPM as a reference standard.
+
+Results
+Baseline data: demographics and past medical history
+A total of 551 patients had complete records in the study (246 WB, 158 AC, and 147 SA) (Table 1). More hypertensives than non-hypertensives had complete data in each group. The WB group were older than the other two and more likely to drink alcohol. The SA group had a lower prevalence of smoking but were more likely to be diabetic.Table 1 Characteristics of study population
+
+	Not known to be hypertensive	Diagnosed hypertensive	All	
+	WB	SA	AC	All	WB	SA	AC	All	
+n	98	55	58	211	148	92	100	340	551	
+Age	59.4 (9.4)	53.6 (8.9)	51.7 (8.6)	55.8 (9.7)	64.4 (7.3)	60.0 (8.5)	59.4 (9.0)	61.8 (8.5)	59.5 (9.4)	
+Male	43 (43.9)	30 (54.6)	26 (44.8)	99 (46.9)	83 (56.1)	56 (60.9)	39 (39.0)	178 (52.4)	277 (50.3)	
+Married/Cohabiting	68 (69.4)	46 (83.6)	33 (56.9)	147 (69.7)	88 (59.5)	85 (92.4)	30 (30.0)	203 (59.7)	350 (63.5)	
+Employed or F.T. Student or Housewife/husband	44 (44.9)	43 (78.2)	41 (70.7)	128 (60.7)	34 (23.0)	45 (48.9)	38 (38.0)	117 (34.4)	245 (44.5)	
+Deprivation	34.7 (15.6)	40.8 (19.6)	50.9 (13.7)	40.7 (17.5)	36.4 (17.7)	41.7 (16.5)	49.1 (15.7)	41.5 (17.6)	41.2 (17.6)	
+Smoker	15 (15.3)	2 (3.6)	4 (6.9)	21 (10.0)	28 (18.9)	4 (4.4)	17 (17.0)	49 (14.4)	70 (12.7)	
+Alcohol										
+ Non-drinker	32 (32.7)	40 (72.7)	34 (58.6)	107 (50.2)	55 (37.2)	68 (73.9)	59 (59.0)	182 (53.5)	288 (52.3)	
+ Mild/Moderate drinker	44 (44.9)	14 (25.5)	20 (34.5)	78 (37.0)	66 (44.6)	19 (20.7)	37 (37.0)	122 (35.9)	200 (36.3)	
+ Heavy drinker	22 (22.5)	1 (1.8)	4 (6.9)	27 (12.8)	27 (18.2)	5 (5.4)	4 (4.0)	36 (10.6)	63 (11.4)	
+BMI	27.8 (4.3)	27.0 (3.1)	29.7 (6.2)	28.1 (4.7)	30.1 (4.8)	28.9 (3.8)	30.5 (5.3)	29.9 (4.7)	29.2 (4.8)	
+ Normal (19–25)	26 (26.5)	12 (21.8)	8 (13.8)	46 (21.8)	20 (13.5)	14 (15.2)	18 (18.0)	52 (15.3)	98 (17.8)	
+ Overweight	46 (46.9)	36 (65.5)	28 (48.3)	110 (52.1)	58 (39.2)	45 (48.9)	28 (28.0)	131 (38.5)	241 (43.7)	
+ Very overweight	26 (26.5)	7 (12.7)	22 (37.9)	55 (26.1)	70 (47.3)	33 (35.9)	54 (54.0)	157 (46.2)	212 (38.5)	
+High Cholesterol	14 (14.3)	19 (34.6)	9 (15.5)	42 (19.9)	72 (48.7)	45 (48.9)	28 (28.0)	145 (42.7)	187 (33.9)	
+Cardiovascular Disease	9 (9.2)	6 (10.9)	3 (5.2)	18 (8.5)	42 (28.4)	16 (17.4)	13 (13.0)	71 (20.9)	89 (16.2)	
+Diabetes	3 (3.1)	7 (12.7)	2 (3.5)	12 (5.7)	22 (14.9)	34 (37.0)	22 (22.0)	78 (22.9)	90 (16.3)	
+Chronic Kidney Disease	4 (4.1)	1 (1.8)	6 (10.3)	11 (5.2)	12 (8.1)	4 (4.4)	13 (13.0)	29 (8.5)	40 (7.3)	
+Numbers are Mean (SD) for continuous variables and Number (Percentage) for categorical variables, Index of Multiple Deprivation 2007 score
+
+
+WB White British, SA South Asian, AC African Caribbean
+
+
+
+
+The differences seen between ethnic groups overall were largely mirrored within those with and without hypertension, although hypertensives were older, had more co-morbidities and were less likely to be working (Table 1).
+
+As there was no difference between raw and modelled data, modelled data are provided (see Additional file 1 of diagnostic output of raw data at different BP thresholds).
+
+Diagnostic test performance for raised BP without a diagnosis of hypertension
+The results for diagnostic test performance compared to an ambulatory BP above 135/85 mmHg in people not known to be hypertensive – i.e. for a diagnosis of hypertension - were similar for each ethnic group within each alternative method of measurement evaluated. Considering the individual measurement methods for all patients combined, there was low sensitivity for clinic23 with high specificity (Fig. 1; Table 2). For clinic26 measurement, the sensitivities were better than those of Clinic23 with relatively lower specificity. For ClinicD1R1 sensitivity was much lower particularly amongst SAs but there were high specificities. For home-monitoring, sensitivity was higher and specificity was lower than clinic measurements.Fig. 1 Sensitivity and specificity non-hypertensive
+
+
+Table 2 Non-Hypertensive: diagnostic performance for hypertension defined by mean daytime ABPM
+
+Ethnicity	Sensitivity (95% CI)	Specificity (95% CI)	LR + ve (95% CI)	LR -ve (95% CI)	
+a) ABPM v Clinic23 on three occasions (thresholds: ABPM 135/85 mmHg, Clinic23 140/90 mmHg)	
+ All sample (n = 211)	39.5% (29.2–50.7%)	90.4% (83.8–94.9%)	4.12 (2.26–7.49)	0.67 (0.56–0.80)	
+ WB (n = 98)	45.0% (29.3–61.5%)	86.2% (74.6–93.9%)	3.26 (1.57–6.76)	0.64 (0.47–0.86)	
+ SA (n = 55)	37.5% (15.2–64.6%)	97.4% (86.5–99.9%)	14.63 (1.91–111.97)	0.64 (0.44–0.94)	
+ AC (n = 58)	33.3% (17.3–52.8%)	89.3% (71.8–97.7%)	3.11 (0.95–10.15)	0.75 (0.56–0.99)	
+b) ABPM v Clinic26 on three occasions (thresholds: ABPM 135/85 mmHg, Clinic26 135/85 mmHg)	
+ All sample (n = 211)	58.1% (47.0–68.7%)	84.0% (76.4–89.9%)	3.63 (2.34–5.64)	0.50 (0.38–0.65)	
+ WB (n = 98)	65.0% (48.3–79.4%)	81.0% (68.6–90.1%)	3.43 (1.92–6.11)	0.43 (0.28–0.67)	
+ SA (n = 55)	56.3% (29.9–80.2%)	94.9% (82.7–99.4%)	10.97 (2.66–45.26)	0.46 (0.26–0.81)	
+ AC (n = 58)	50.0% (31.3–68.7%)	75.0% (55.1–89.3%)	2.00 (0.96–4.17)	0.67 (0.44–1.01)	
+c) ABPM v ClinicD1R1 (thresholds: ABPM 135/85 mmHg, ClinicD1R1 140/90 mmHg)	
+ All sample (n = 211)	26.7% (17.8–37.4%)	90.4% (83.8–94.9%)	2.79 (1.47–5.29)	0.81 (0.70–0.93)	
+ WB (n = 98)	35.0% (20.6–51.7%)	81.0% (68.6–90.1%)	1.85 (0.94–3.64)	0.80 (0.62–1.04)	
+ SA (n = 55)	12.5% (1.6–38.3%)	97.4% (86.5–99.9%)	4.88 (0.47–50.05)	0.90 (0.74–1.09)	
+ AC (n = 58)	23.3% (9.9–42.3%)	100% (87.7–100%)	. (. - .)	0.77 (0.63–0.93)	
+d) ABPM v Home-monitoring for 1 week (thresholds: ABPM 135/85 mmHg, Home 135/85 mmHg)	
+ All sample (n = 211)	72.1% (61.4–81.2%)	76.0% (67.5–83.2%)	3.00 (2.14–4.21)	0.37 (0.26–0.52)	
+ WB (n = 98)	67.5% (50.9–81.4%)	79.3% (66.6–88.8%)	3.26 (1.89–5.64)	0.41 (0.26–0.65)	
+ SA (n = 55)	87.5% (61.7–98.4%)	79.5% (63.5–90.7%)	4.27 (2.24–8.13)	0.16 (0.04–0.58)	
+ AC (n = 58)	70.0% (50.6–85.3%)	64.3% (44.1–81.4%)	1.96 (1.13–3.40)	0.47 (0.25–0.86)	
+
+
+
+Diagnostic test performance for controlled BP in people with a diagnosis of hypertension
+The results for diagnostic test performance compared to an ambulatory BP above 135/85 mmHg in people known to be hypertensive –i.e. for a confirmation of poor control - were also similar for each ethnic group within each alternative method of measurement evaluated. As with those not known to be hypertensive, overall clinic23 measurement had low sensitivity with high specificity. Clinic26 measurement had moderate sensitivity and lower specificities whereas ClinicD1R1 measurement had similarly low sensitivities and specificities. Home-monitoring had high sensitivities but lower specificities (Fig. 2; Table 3).Fig. 2 Sensitivity and specificity hypertensive
+
+
+Table 3 Hypertensive
+
+Ethnicity	Sensitivity (95% CI)	Specificity (95% CI)	LR + ve (95% CI)	LR -ve (95% CI)	
+a) ABPM v Clinic23 on three occasions (thresholds: ABPM 135/85 mmHg, Clinic23 140/90 mmHg)	
+ All sample (n = 340)	41.4% (33.7–49.4%)	89.3% (83.8–93.4%)	3.87 (2.44–6.16)	0.66 (0.57–0.75)	
+ WB (n = 148)	39.7% (28.5–51.9%)	89.3% (80.1–95.3%)	3.72 (1.82–7.60)	0.67 (0.55–0.83)	
+ SA (n = 92)	34.1% (20.1–50.6%)	86.3% (73.7–94.3%)	2.49 (1.11–5.59)	0.76 (0.60–0.98)	
+ AC (n = 100)	50.0% (35.2–64.8%)	92.3% (81.5–97.9%)	6.50 (2.43–17.37)	0.54 (0.40–0.73)	
+b) ABPM v Clinic26 on three occasions (thresholds: ABPM 135/85 mmHg, Clinic26 135/85 mmHg)	
+ All sample (n = 340)	61.1% (53.1–68.7%)	78.7% (71.9–84.4%)	2.86 (2.1–3.89)	0.49 (0.40–0.61)	
+ WB (n = 148)	57.5% (45.4–69.0%)	73.3% (61.9–82.9%)	2.16 (1.41–3.30)	0.58 (0.43–0.78)	
+ SA (n = 92)	58.5% (42.1–73.7%)	78.4% (64.7–88.7%)	2.71 (1.51–4.86)	0.53 (0.36–0.78)	
+ AC (n = 100)	68.8% (53.7–81.3%)	86.5% (74.2–94.4%)	5.11 (2.50–10.44)	0.36 (0.23–0.56)	
+c) ABPM v ClinicD1R1 (thresholds: ABPM 135/85 mmHg, ClinicD1R1 140/90 mmHg)	
+ All sample (n = 340)	44.4% (36.6–52.4%)	59.0% (51.4–66.3%)	1.08 (0.85–1.39)	0.94 (0.78–1.13)	
+ WB (n = 148)	46.6% (34.8–58.6%)	60.0% (48.0–71.1%)	1.16 (0.80–1.69)	0.89 (0.67–1.18)	
+ SA (n = 92)	29.3% (16.1–45.5%)	60.8% (46.1–74.2%)	0.75 (0.42–1.34)	1.16 (0.87–1.56)	
+ AC (n = 100)	54.2% (39.2–68.6%)	55.8% (41.3–69.5%)	1.22 (0.82–1.83)	0.82 (0.56–1.22)	
+d) ABPM v Home-monitoring for 1 week (thresholds: ABPM 135/85 mmHg, Home 135/85 mmHg)	
+ All sample (n = 340)	84.0% (77.4–89.2%)	62.4% (54.8–69.5%)	2.23 (1.82 –2.73)	0.26 (0.18–0.37)	
+ WB (n = 148)	80.8% (69.9–89.1%)	65.3% (53.5–76.0%)	2.33 (1.68 –3.24)	0.29 (0.18–0.48)	
+ SA (n = 92)	85.4% (70.8–94.4%)	54.9% (40.3–68.9%)	1.89 (1.36–2.63)	0.27 (0.12–0.58)	
+ AC (n = 100)	87.5% (74.8–95.3%)	65.4% (50.9–78.0%)	2.53 (1.71–3.73)	0.19 (0.09–0.41)	
+
+
+
+Discussion
+The key finding from this work is that using ABPM as a reference standard, the accuracy of clinic and home measured BP in terms of both diagnostic test performance or ability to confirm controlled BP, does not vary by ethnic group. Standard clinic measurement on three occasions was specific but not sensitive and this did not change materially with different combinations of clinic measurement. Home readings were more sensitive with a modest reduction in specificity but were not good enough for a life-long diagnosis. For people with established hypertension, only home monitoring had reasonable sensitivity with standard (mean clinic23) specific enough – just short of 90% - for daily practice.
+
+This leads us to conclude that for people without hypertension, ABPM remains the choice for diagnosing hypertension compared to the other modes of BP measurement because no other method has sufficient combined sensitivity and specificity on which to base lifelong treatment. Given that systematically measured repeated clinic BP had high specificity, it may be reasonable to treat people with raised mean clinic BP on multiple occasions, but clinic BP could not adequately rule out hypertension and casually measured BP performed poorly. Home-monitored BP was reasonably sensitive and specific but probably not enough so to provide an adequate replacement for ABPM. Sensitivity analyses using BP thresholds of 135/85 mmHg and 140/90 mmHg were undertaken and showed no difference between the ethnic groups.
+
+For people with established hypertension, a sensitivity of 84% from home monitoring is high enough to accept evidence of good control but specificity was low enough to reduce confidence about reacting to high readings.
+
+Strengths and limitations
+This is the first and largest study reporting four modes of BP measurement compared to ambulatory BP monitoring in three different ethnic groups. Participants were both hypertensive and not known to be hypertensive and importantly were not recruited on the basis of previously raised BP which has confounded much of the work on out of office measurement in the past. The attempt to recruit a White Irish group – known to have increased cardiovascular risk – failed due to a lack of numbers of people self-defining as White Irish, despite choosing areas previously identified by census ethnicity responses. This may reflect changes in population since 2001 (the study recruited before 2011 data were available). In light of the results in the groups considered, it seems unlikely that WI would be markedly different. Similarly, people with hypertension responded in greater numbers to our invitations to take part resulting in fewer without a previous diagnosis participating. The key results presented – namely a lack of difference between ethnic groups - were low in heterogeneity between the groups and largely consistent across methods and with or without a diagnosis so appear robust.
+
+The measurement of BP in this study was undertaken in a consistent manner by trained research nurses and facilitators and probably reflects better practice than common outside of specialist centres. Whilst this was a prerequisite for the study, it arguably did not represent usual practice and hence the results might not be generalizable to daily practice. The use of a single reading taken at the first research clinic was designed to both accentuate any white coat effects and also to represent the potential practice of BP measurement in busy clinical settings and proved suboptimal for both diagnosis and ongoing management.
+
+Patients included were chosen to be aged within the range used in NHS Health Checks (40–74) as this is the key age group for whom primary prevention is particularly relevant and for which decisions are commonly made in terms of diagnosis and treatment [17]. Inclusion of older people might have provided information on the diagnosis of hypertension in a group for which evidence for the benefit of treatment is accumulating but would have required different diagnostic thresholds to be applied [18].
+
+The overall performance of clinic (sensitivity 41%/specificity 90%) and home monitoring (73%/76%) for the diagnosis of hypertension are consistent with the receiver operating curves in our previous systematic review which found respectively sensitivities and specificities of clinic (75%/75% (86%/46% for patients around the threshold for diagnosis)) and home (86%/66%) [19].
+
+Since that review, Nasothimiou [20] has found sensitivity and specificity of around 90% for home monitoring in over 600 Greek people referred to a hypertension clinic in comparison to our findings. This may reflect differences in inclusion criteria of that study compared to the community based, diverse population group in the current sample which was not recruited due to their initial BP being raised.
+
+No comparative studies amongst different ethnic groups for the diagnosis of hypertension were apparent from a review of the literature although some studies have grouped together whites with people of Hispanic and/or African origin [21, 22]. The current study therefore represents novel data on which diagnostic decisions taken in a multicultural setting can be based. Given the similarities between the results for those of African Caribbean and South Asian ethnicity with White British it seems unlikely that other ethnicities will have significant differences either, although this would need to be tested.
+
+With greater numbers of individuals in primary care now undergoing out of office BP measurement prior to a diagnosis of hypertension, then this work is reassuring in that it appears appropriate to extend thresholds developed in white populations to South Asian and African Caribbean populations at least.
+
+When making a diagnosis of hypertension in an unselected primary care population, the low sensitivity of clinic measurement means that it cannot reliably be used to rule out hypertension but with high specificity, those found to have high BP on multiple occasions in clinic can be reliably identified and treatment commenced.
+
+In terms of ongoing management of hypertension, the mode of measurement appears more important than the population being measured in terms of variation. In any case, home monitoring would appear to be a reasonable method of ruling out raised BP and in combination with careful clinic measurement provides high specificity in addition. Such a result resonates with the ever growing evidence of improved BP control with the use of home-monitoring, with or without other interventions [23].
+
+In the future, alternative methods of measurement of BP such as central arterial pressure may have increased clinical utility as data accumulate [24]. The feasibility of central pressure measurement in routine clinical practice and its evidence base is increasing.
+
+Conclusion
+Overall the findings confirm those of our previous review [19] that in comparison to ABPM, neither clinic nor home measurement of BP has sufficient clinical value for the diagnosis of hypertension and adds that this is unchanged in South Asian and African Caribbean populations. For ongoing management, combining home and careful clinic measurement appears optimal. Overall, this large study in three different UK ethnic groups has shown that in both the diagnosis and management of hypertension, the method chosen need not be influenced, in terms of test performance at least, in terms of the ethnicity of the individual being tested.
+
+Additional file
+
+Additional file 1: Diagnostic output of raw data at different BP thresholds. (DOCX 19 kb)
+
+
+
+
+Abbreviations
+ABPMAmbulatory blood pressure monitoring
+
+ACBlack African Caribbean
+
+BPblood pressure
+
+Clinic23Standardised clinic, threshold 140/90 mmHg
+
+Clinic26Research clinic, threshold 135/85 mmHg
+
+ClinicD1R1Casual clinic, threshold 140/90 mmHg
+
+CVDCardiovascular disease
+
+GPGeneral practitioner/family medicine
+
+HTHypertensive via a clinical code
+
+IMDIndex of multiple deprivation
+
+LR –veNegative likelihood ratio
+
+LR + vePositive likelihood ratio
+
+NHTNot known to be hypertensive
+
+SASouth Asians and UK
+
+WBWhite British S
+
+WIWhite Irish
+
+Acknowledgements
+All the patients and general practices. Mr Roger Holder, previously Head of Statistics at Primary Care Clinical Sciences, University of Birmingham and Jamie Coleman, Consultant Clinical Pharmacologist at University Hospital Birmingham were original co-applicants who assisted in the design of this study before moving on to other projects. Hardeep Sandhar (database developer) and Kirandeep Jheeta (data manager) gave important support and developed the data strategy. Sabina Yasin helped with initial research clinics. Mr David Yeomans served as PPI representative on the steering group and has given helpful advice throughout. The authors would like to acknowledge their contribution to this work.
+
+We would like to acknowledge the input of participating patients, practices, and the Primary Care Research network without whom this research would not be possible. PCRN Research team:
+
+Elaine Butcher, Tracey Adcock, Jenny Stevens, Rebecca Foskett, Shirley Caldwell, Indra Forsyth, Sian Jones, Karen Cooke, Kathryn Dwyer and Karen Townshend. Participating Practices: Ridgacre Medical Centers, Dr Saunders; Bartley Green Medical Centre, Dr M.K. Alam and Partner, Dr Alam; Church Road Surgery, Dr S. Sawar; City Road Medical Centre, Dr Abrol; Cavendish House Medical Practice, Dr Madhaven; Eden Court Medical Practice, Dr Beighton; Five Ways Health Centre, Dr Surdhar; Grange Hill Medical Surgery, Dr Patel; Greenridge Surgery, Dr Lumley; Handsworth Wood Medical Centre, Dr Bramble; Hawkesley Medical Practice, Dr Shipman; Laurie Pike Health Centre; Newtown Health Centre, Dr Mukherjee; The Omnia Practice, Dr Sabir; River Brook Medical Centre, Dr Chauhan; Rotton Park Medical Centre, Dr Marok; Shanklin House Surgery; Soho Road Primary Care Centre, Dr Bathla; The Wand Medical Centre, Dr Goodwin; Alfred Squire Road Health Centre; Lea Road Medical Practice; Tudor Medical Centre; Whitmore Reans Health Centre; Forum Health Centre, Dr Chohan; Edgwick Medical Centre, Dr Mishra; Engleton House Surgery, Prof. Dale.
+
+This article presents independent research funded by the National Institute for Health Research (NIHR) under the Research for Patient Benefit Programme. The views expressed in this publication are those of the authors and not necessarily those of the NHS, the NIHR or the Department of Health.
+
+Funding
+NIHR Research for Patient Benefit (Grant reference PB-PG-1207-15042); Service support costs via Birmingham and the Black Country Comprehensive Local Research Network, recruitment supported by the Central England Primary Care Research Network (PCRN-CE). RJM was supported by an NIHR Career Development Fellowship and is now supported by an NIHR Professorship.
+
+The funders and sponsor of the study had no role in the study design, and were not involved in data collection, data analysis, data interpretation, writing of the report, or in the decision to submit the results for publication. Both Primary Care Clinical Sciences, University of Birmingham and Primary Care Health Sciences, University of Oxford, are members of the NIHR School for Primary Care Research.
+
+Availability of data and materials
+The datasets generated and/or analysed during the current study are available, with permission, from Professor Richard McManus (richard.mcmanus@phc.ox.ac.uk).
+
+Authors’ contributions
+RJM and UM had the original idea for this work and gained funding in collaboration with PG, JM, SG, JC and MM. GH, AJ, CS and SW collected the data in collaboration with colleagues in the PCRN-CE. SH and MM did the analyses. PG, RJM, UM, SH wrote the first draft of this paper and all authors subsequently assisted in redrafting and have approved the final version. All authors read and approved the final manuscript.
+
+Competing interests
+The authors declare that they have no competing interests.
+
+Consent for publication
+Not applicable.
+
+Ethics approval and consent to participate
+Ethical approval was gained from the Black Country Research Ethics Committee: Ref 09/H1202/114. All participants provided written consent to participate in the study.
+==== Refs
+References
+1. A global brief on Hypertension: Silent killer, global public health crisis. WHO: Geneva;2013.
+2. Chow CK  Teo KK  Rangarajan S    Prevalence, awareness, treatment, and control of hypertension in rural and urban communities in high-, middle-, and low-income countries JAMA 2013 310 9 959 68 10.1001/jama.2013.184182 24002282 
+3. Danaei G  Finucane MM  Lin JK    National, regional, and global trends in systolic blood pressure since 1980: systematic analysis of health examination surveys and epidemiological studies with 786 country-years and 5 · 4 million participants Lancet 2011 377 568 77 10.1016/S0140-6736(10)62036-3 21295844 
+4. Agyemang C  Bhopal R   Is the blood pressure of people from African origin adults in the UK higher or lower than that in European origin white people? A review of cross-sectional data J Hum Hypertens 2003 17 523 34 10.1038/sj.jhh.1001586 12874609 
+5. Agyemang C  Humphry RW  Bhopal R   Divergence with age in blood pressure in African-Caribbean and white populations in England: implications for screening for hypertension Am J Hypertens 2012 25 89 96 10.1038/ajh.2011.160 21881618 
+6. Hypertension in Adults: Diagnosis and Management. NICE Clinical Guideline CG127. https://www.nice.org.uk/Guidance/CG127. Accessed 28 Oct 2016
+7. Head GA  Mihailidou AS  Duggan KA  Beilin LJ  Berry N  Brown MA    Definition of ambulatory blood pressure targets for diagnosis and treatment of hypertension in relation to clinic blood pressure: prospective cohort study BMJ 2010 340 c1104 10.1136/bmj.c1104 20392760 
+8. Martin U  Haque MS  Wood S  Greenfield SM  Gill PS  Mant J  Mohammed MA  Heer G  Johal A  Kaur R  Schwartz C  McManus RJ   Ethnicity and differences between clinic and ambulatory blood pressure measurements Am J Hypertens 2015 28 6 729 38 10.1093/ajh/hpu211 25398890 
+9. Wood S, Martin U, Gill P, et al. Blood pressure in different ethnic groups (BP-Eth): a mixed methods study. BMJ Open. 2012;2(6). doi: 10.1136/bmjopen-2012-001598.
+10. Mattu GS  Perry TL Jr  Wright JM   Comparison of the oscillometric blood pressure monitor (BPM‐100 Beta) with the auscultatory mercury sphygmomanometer Blood Press Monit 2001 6 153 9 10.1097/00126097-200106000-00007 11518839 
+11. Baumgart P  Kamp J   Accuracy of the SpaceLabs Medical 90217 ambulatory blood pressure monitor Blood Press Monit 1998 3 303 7 10212370 
+12. Stergiou GS  Giovas PP  Gkinos CP  Patouras JD   Validation of the Microlife WatchBP Home device for home home blood pressure measurement according to the International Protocol Blood Press Monit 2007 12 185 8 10.1097/MBP.0b013e3280b083ce 17496469 
+13. Staessen JA  Bieniaszewski L  O’Brien ET  Imai Y  Fagard R   An epidemiological approach to ambulatory blood pressure monitoring: the Belgian Population Study Blood Press Monit 1996 1 1 13 26 10226197 
+14. Staessen JA  Birkenhäger W  Bulpitt CJ  Fagard R  Fletcher AE  Lijnen P  Lutgarde T  Antoon A   The relationship between blood pressure and sodium and potassium excretion during the day and at night J Hypertens 1993 11 4 443 7 10.1097/00004872-199304000-00016 8390513 
+15. StataCorp  Stata statistical software: release 12 2011 College Station StataCorp LP 
+16. R Core Team  R: a language and environment for statistical computing 2013 Vienna R Foundation for Statistical Computing 
+17. http://www.healthcheck.nhs.uk. Accessed 28 Oct 2016.
+18. Beckett NS  Peters R  Fletcher AE  Staessen JA  Liu L  Dumitrascu D    Treatment of hypertension in patients 80 years of age or older N Engl J Med 2008 358 1887 98 10.1056/NEJMoa0801369 18378519 
+19. Hodgkinson J  Mant J  Martin U  Guo B  Hobbs FD  Deeks JJ  Heneghan C  Roberts N  McManus RJ   Relative effectiveness of clinic and home blood pressure monitoring compared with ambulatory blood pressure monitoring in diagnosis of hypertension: systematic review BMJ 2011 342 d3621 10.1136/bmj.d3621 21705406 
+20. Nasothimiou EG  Tzamouranis D  Rarra V  Roussias LG  Stergiou GS   Diagnostic accuracy of home vs. ambulatory blood pressure monitoring in untreated and treated hypertension Hypertens Res 2012 35 750 5 10.1038/hr.2012.19 22357523 
+21. Ogedegbe G  Pickering TG  Clemow L  Chaplin W  Spruill TM  Albanese GM    The misdiagnosis of hypertension Arch Intern Med 2008 168 2459 65 10.1001/archinte.168.22.2459 19064830 
+22. Shimbo D  Kuruvilla S  Haas D  Pickering TG  Schwartz JE  Gerin W   Preventing misdiagnosis of ambulatory hypertension: algorithm using office and home blood pressures J Hypertens 2009 27 9 1775 83 10.1097/HJH.0b013e32832db8b9 19491703 
+23. Uhlig K  Patel K  Ip S  Kitsios GD  BalK EA   Self-measured blood pressure monitoring in the management of hypertension: a systematic review and meta-analysis Ann Intern Med 2013 159 3 185 94 10.7326/0003-4819-159-3-201308060-00008 23922064 
+24. McEniery CM  Cockcroft JR  Roman MJ  Franklin SS  Wilkinson IB   Central blood pressure: current evidence and clinical importance Eur Heart J 2014 35 26 1719 25 10.1093/eurheartj/eht565 24459197
