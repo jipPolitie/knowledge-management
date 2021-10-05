@@ -1,0 +1,249 @@
+
+==== Front
+J Math NeurosciJ Math NeurosciJournal of Mathematical Neuroscience2190-8567Springer Berlin Heidelberg Berlin/Heidelberg 3110.1186/s13408-015-0031-8Short ReportClarification and Complement to “Mean-Field Description and Propagation of Chaos in Networks of Hodgkin–Huxley and FitzHugh–Nagumo Neurons” Bossy Mireille Faugeras Olivier olivier.faugeras@inria.fr Talay Denis  TOSCA Laboratory, INRIA Sophia Antipolis – Méditerranée, Route des lucioles, Sophia Antipolis, France  NeuroMathComp Laboratory, INRIA Sophia Antipolis – Méditerranée, Route des lucioles, Sophia Antipolis, France 1 9 2015 1 9 2015 2015 5 196 1 2015 24 8 2015 © Bossy et al. 2015
+Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.In this note, we clarify the well-posedness of the limit equations to the mean-field N-neuron models proposed in (Baladron et al. in J. Math. Neurosci. 2:10, 2012) and we prove the associated propagation of chaos property. We also complete the modeling issue in (Baladron et al. in J. Math. Neurosci. 2:10, 2012) by discussing the well-posedness of the stochastic differential equations which govern the behavior of the ion channels and the amount of available neurotransmitters.
+
+Keywords
+Mean-field limitsPropagation of chaosStochastic differential equationsNeural networksNeural assembliesHodgkin–Huxley neuronsFitzHugh–Nagumo neuronsissue-copyright-statement© The Author(s) 2015
+==== Body
+Introduction
+The paper of Baladron et al. [1] studies quite general networks of neurons and aims to prove that these networks propagate chaos in the sense originally developed by Sznitman [2] after the seminal work of Kac on mean-field limits and McKean’s work [3] on diffusion processes propagating chaos. As observed by the authors, the membrane potentials of the neurons in the networks they consider are described by interacting stochastic particle dynamics. The coefficients of these McKean–Vlasov systems are not globally Lipschitz. Therefore the classical results of the propagation of chaos theory do not directly apply and a specific analysis needs to be performed. The main theorems (existence and uniqueness of the limit system when the number of particles tends to infinity, propagation of chaos property) are stated under a fairly general hypothesis on the coefficients. Unfortunately the proof in [1], pp. 24–25, involves an erroneous management of hitting times in combination with a truncation technique, and the limit system may not be well defined under the too general hypothesis used by the authors. Indeed, the following equation, where ϕ is a bounded and locally Lipschitz function and Z0 is a random variable, satisfies the hypothesis made in [1], pp. 15–16:  Zt=Z0+∫0tEϕ(Zs)ds.  However, Scheutzow exhibited examples of a function ϕ and initial condition Z0 for which many solutions do exist: see Counterexample 2 in [4] and the remark which follows it.1
+
+This note restricts the neuron model to the much used variants of the FitzHugh–Nagumo and Hodgkin–Huxley models. Our objective is two-fold: first, we discuss a modeling issue on the diffusion coefficients of the equations describing the proportions of open and closed channels that guarantees that these variables do not escape from the interval [0,1]. This was not completely achieved in [1] and can be seen as a complement to this paper.
+
+Second, we give a rigorous proof of the propagation of the chaos property.
+
+The Models
+In this section we present and discuss the stochastic models considered by Baladron et al. [1] for the electrical activity of p̅ populations of neurons. Each population has a label α and Nα elements. We denote by P the set of the p̅ population labels and by N:=∑α∈PNα the total number of neurons.
+
+Given the neuron i in a population α, the stochastic time evolution of the membrane potential is denoted by (Vti). In the case of the Hodgkin–Huxley model, the sodium and potassium activation variables, which represent proportions of open gates along the neuron i are, respectively, denoted by (nti), (mti). The sodium inactivation variable, which is also a proportion of open gates, is denoted by (hti). In the case of the FitzHugh–Nagumo model, the recovery variable is denoted by (wti). Both models feature synaptic variables (yti) which represent the proportion of available neurotransmitters at the synapses of neuron i.
+
+The synaptic connections between neurons are assumed to be chemical in [1]. We make the same assumption here. This implies that the synaptic current Iijsyn from the presynaptic neuron j in population γ to the postsynaptic neuron i in population α can be written  Iijsyn(t)=−gij(t)(Vti−V‾αγ),  where V‾αγ is the synaptic reversal potential of the j→i synapse, assumed to be approximately constant across populations, and gij(t) the electric conductance of that synapse. Hence the postsynaptic neuron i belongs to population α and the presynaptic neuron j to population γ. This conductance is the product of the maximal conductance, noted Jtij, of the synapse by the proportion ytj of neurotransmitters available at neuron j. Conductances are positive quantities.
+
+The processes (Vti,nti,mti,hti,wti,yti) are defined by means of the stochastic differential systems (1) or (4) in the N-neuron model section below. The mean-field limit processes are defined in (9) and (5). Well-posedness of those systems is postponed to Sect. 4.
+
+The N-Neuron Model
+The variants of the FitzHugh–Nagumo and Hodgkin–Huxley dynamics proposed in Baladron et al. [1] to model neuron networks are all of the two types below; the only differences concern the algebraic expressions of the function Fα and the fact that the FitzHugh–Nagumo model does not depend on the variables (nti,mti,hti) but on the recovery variable (wti) only. Conversely, the Hodgkin–Huxley model does not depend on wti. In what follows we denote by q the vector (n,m,h) of R3 in the case of the Hodgkin–Huxley model, and the real (w) in the case of the FitzHugh–Nagumo model. We also note (Wti)=(Wti,V,Wti,y,Wti,n,Wti,m,Wti,h), independent Brownian motions (1≤i≤N).
+
+Given a neuron i, the number p(i)=α denotes the type of the population it belongs to.
+
+Equations (1) and (4) below are those studied in [1]. They correspond to two different models for the maximum conductances. The first one does not respect the positivity constraint while the second one guarantees that these quantities stay positive. In these equations, all quantities which are not time indexed are constant parameters.
+
+Simple Maximum Conductance Variation
+For i and j such that p(i)=α and p(j)=γ, the model assumes that Jtij fluctuates around a mean J‾αγ according to a white noise with standard deviation σαγJ:  Jtij=J‾αγ+σαγJdBtiγdt.  For (Btiγ) a family of independent Brownian motions, independent of the Brownian family (Wti), the equations describing the dynamics of the state vector of neuron i in population α are  1 {for i such that p(i)=α, for q=(w) or (n,m,h),dVti=Fα(t,Vti,qti)dt−∑γ∈P(Vti−V‾αγ)J‾αγNγ(∑j=1N1{p(j)=γ}ytj)dtdVti=−∑γ∈P(Vti−V‾αγ)σαγJNγ(∑j=1N1{p(j)=γ}ytj)dBtγ,i+σαdWti,V,dyti=(arαSα(Vti)(1−yti)−adαyti)dtdyti=+|arαSα(Vti)(1−yti)+adαyti|χ(yti)dWti,y,  coupled with  2 dwti=cα(Vti+aα−bαwti)dt  or  3 dxti=(ρx(Vti)(1−xti)−ζx(Vti)xti)dt+|ρx(Vti)(1−xti)+ζx(Vti)xti|χ(xti)dWti,x for x=n,m,h.  The reader may wonder about the reason for the square root term and the function χ in the diffusion coefficient of the SDE for the processes xi and yi. The square root arises from the fact that this SDE is a Langevin approximation to a stochastic hybrid, or piecewise deterministic, model of the ion channels. There is a finite (albeit large) number of such ion channels and each of them can be modeled as jump Markov processes coupled to the membrane potential. Altogether ion channels and membrane potentials are described by a piecewise deterministic Markov process which, as shown for example in [6], can be approximated by the solution to the SDE shown in (1) and (4). Hypothesis 2.1(i) below on the function χ implies that the processes xi and yi are valued in [0,1]: see Sect. 4.
+
+Sign-Preserving Maximum Conductance Variation
+ 4 {For i such that p(i)=α, for q=(w) or (n,m,h),dVti=Fα(t,Vti,qti)dtdVti=−∑γ∈P(Vti−V‾αγ)JtiγNγ(∑j=1N1{p(j)=γ}ytj)dt+σαdWti,V,dJtiγ=θαγ(J‾αγ−Jtiγ)dt+σαγJJtiγdBtiγfor all γ∈P,dyti=(arαSα(Vti)(1−yti)−adαyti)dtdyti=+|arαSα(Vti)(1−yti)+adαyti|χ(yti)dWti,y,  coupled with (2) or (3).
+
+The Mean-Field Limit Models
+When making the Nαs tend to infinity, the linear structure of the above N-neuron models w.r.t. the (yti), the linear structure of the dynamics of the (yti), and the mutual independence of the Brownian motions (Bti,γ), (Wtj,y), lead one to mean-field dynamics. The limit processes (Vtα,ytα,ntα,mtα,htα,wtα,α∈P) are solutions to the SDEs (5) and (9) where (Btαγ,Wtα,V,Wtα,n,Wtα,m,Wtα,h,α∈P) denote independent Brownian motions.
+
+Simple Maximum Conductance Variation
+For all α in P,  5 {dVtα=Fα(t,Vtα,qtα)dt−∑γ∈P(Vtα−V‾αγ)J‾αγE[ytγ]dtdVtα=−∑γ∈P(Vtα−V‾αγ)σαγJE[ytγ]dBtαγ+σαdWtα,V,dytα=(arαSα(Vtα)(1−ytα)−adαytα)dtdytα=+|arαSα(Vtα)(1−ytα)+adαytα|χ(ytα)dWtα,y,  coupled with  6 dwtα=cα(Vtα+aα−bαwtα)dt  or  7 dxtα=(ρx(Vtα)(1−xtα)−ζx(Vtα)xtα)dt+|ρx(Vtα)(1−xtα)+ζx(Vtα)xtα|χ(xtα)dWtα,xfor x=n,m,h,  where again qtα stands for (wtα) in the FitzHugh–Nagumo model and for (ntα,mtα,htα) in the Hodgkin–Huxley model.
+
+Notice that the diffusion coefficients of the (ytα) play no role in the above mean-field dynamics since one readily sees that  8 E[ytα]=E[y0α]exp{−adαt−arα∫0tE[Sα(Vθα)]dθ}+∫0tarαE[Sα(Vsα)]×exp{−adα(t−s)−arα∫stE[Sα(Vθα)]dθ}dsfor α∈P. 
+
+Sign-Preserving Maximum Conductance Variation
+With the same notation, for all α in P,  9 {dVtα=Fα(t,Vtα,qtα)dt−∑γ∈P(Vtα−V‾αγ)JtαγE[ytγ]dt+σαdWtα,V,dJtαγ=θαγ(J‾αγ−Jtαγ)dt+σαγJJtαγdBtαγfor all γ∈P,dytα=(arαSα(Vtα)(1−ytα)−adαytα)dtdytα=+|arαSα(Vtα)(1−ytα)+adαytα|χ(ytα)dWtα,y,  coupled with (6) or (7).
+
+As in the simple maximum conductance variation case, the diffusion coefficients of the (ytα) play no role in the above mean-field dynamics and E[ytα] is given by (8).
+
+Hypotheses
+Our hypotheses on the coefficients of the neuron models are the following.
+
+Hypothesis 2.1
+(i) On the ion channel models. The function χ is bounded Lipschitz continuous with compact support included in the interval (0,1).
+
+The functions ρx, ζx are strictly positive, Lipschitz, and bounded.
+
+(ii) On the chemical synapse model. The functions Sα are of the sigmoid type, that is, Sα(v)=C/(1+exp(−λ(v−δ))) with suitable positive parameters C, λ, δ depending on α. The parameters arα, adα are also positive.
+
+(iii) On the membrane model. The drift terms Fα are continuous, one-sided Lipschitz w.r.t. v and Lipschitz w.r.t. q. More precisely, there exist a positive real number L and a positive map M(v,v′) such that for all t∈[0,T], for all q, q′ in R3 or R, v, v′ in R,  10 (Fα(t,v,q)−Fα(t,v′,q))(v−v′)≤L(v−v′)2−M(v,v′)(v−v′)2,|Fα(t,v,q)−Fα(t,v,q′)|≤L∥q−q′∥. 
+
+(iv) The initial conditions. V0i, J0iγ, y0i, w0i, n0i, m0i, h0i are i.i.d. random variables with the same law as V0α, J0αγ, y0α, w0α, n0α, m0α, h0α, when p(i)=α. We also assume that V0α and J0αγ admit moments of any order.
+
+Moreover, the support of the law of y0α belongs to [0,1], as well as the support of the laws of n0α, m0α, h0α, for all α in P. The support of the law of J0αγ belongs to (0,+∞).
+
+
+
+Remark 2.2
+For each neuron population α, the function Sα represents the concentrations of the transmitter released into the synaptic cleft by a presynaptic spike.
+
+Our hypothesis on the support of the function χ is essential to force the proportion processes (yti), (nti), (mti), (hti) to live in the interval (0,1).
+
+In the case of the FitzHugh–Nagumo model, for all α we have Fα(v,q)=−13v3+v−w, so that we may choose L=1 and M(v,v′)=13(|v|−|v′|)2.
+
+Finally, the i.i.d. hypothesis in part (iv) is only used in Sect. 4 where it allows simplifications, but it can be relaxed to initial chaos by classical arguments in the propagation of chaos literature.
+
+Remark 2.3
+We notice that a one-sided Lipschitz condition also appears in the work by Luçon and Stannat [7] for stochastic particle systems in random environments in which they model one-population networks of FitzHugh–Nagumo neurons. However, their model does not include synaptic interactions as ours does. This has led us in particular to consider square root diffusion coefficients in the dynamics of the synaptic variables which, as shown below, requires specific arguments to prove that the particle systems are well posed and propagate chaos.
+
+Remark 2.4
+The boundedness of the functions ρx and ζx is a technical hypothesis which simplifies the analysis but can be relaxed, provided that the above models have solutions which do not explode in finite time. However, this comfortable hypothesis is quite reasonable for neuron models since the membrane potentials take values between −100 mV and 100 mV. It is therefore implicitly understood that Lipschitz functions which reasonably fit data within the interval [−100,100] are extended to bounded Lipschitz functions on the entire real line.
+
+SDEs in Rectangular Cylinders
+In the above N-neuron and limit models one requires that, for all i, α and x=n,m,h, the concentration processes (xti), (xtα), (yti) and (ytα) are well defined and take values in the interval [0,1]. Each one of these processes is one-dimensional but not Markov since the coefficients of their dynamics depend on (Vt) and thus on all the components of the systems (4) and (1). In this context, classical arguments for one-dimensional Markov diffusion processes such as Feller’s tests or comparison theorems cannot be used to show that the processes do not exit from [0,1]. We thus need to develop an ad hoc technique. Instead of focusing on the above neuron models, we rather introduce a more general setting.
+
+Consider the stochastic differential equation  11 {dXt(1)=b1(Xt,Ut)dt+A1(Xt,Ut)dWt(1),…dXt(k)=bk(Xt,Ut)dt+Ak(Xt,Ut)dWt(k),dUt=β(Xt,Ut)dt+Γ(Xt,Ut)dWt∗,  where (Xt):=(Xt(1),…,Xt(k)) is Rk-valued, (Ut) is Rd-valued, (Wt)=(Wt(1),…,Wt(k)) is a Rk-valued (Ft)-Brownian motion, and (Wt∗) is a Rr-valued Brownian motion.
+
+We aim to exhibit conditions on the coefficients of (11) which imply that the process (Xt,Ut) takes values in the infinite rectangular cylinder [0,1]k×Rd.
+
+Remark 3.1
+Many stochastic models of the type (11) which arise in physics need to satisfy the constraint that the process (Xt) is valued in the hypercube, say, [0,1]k. The algebraic expressions of the coefficients derived from physical laws may be ‘naturally’ defined only for x in [0,1]k. However, one typically can construct continuous extensions of these coefficients on the whole Euclidean space. These extensions may be arbitrarily chosen, provided that they satisfy Hypothesis 3.2 and that Eq. (11) has a weak solution which does not explode in finite time. In Sect. 4 we develop this argument to show that all systems in Sect. 2 are well posed and that the concentration processes are all valued in [0,1].
+
+Assume the following.
+
+Hypothesis 3.2
+The locally Lipschitz continuous functions bi, Ai, β and Γ are such that, on some filtered probability space (Ω,F,P,(Ft,t≥0)), there exists a weak solution to (11) which does not explode in finite time. In addition: (i) The functions Ai, i=1,…,k, satisfy, for all u in Rd,  ∀xi∈R∖(0,1),Ai(x1,…,xi−1,xi,xi+1,…,xk,u)=0. 
+
+(ii) The functions bi, i=1,…,k, satisfy, for all u in Rd and x1,…,xi−1,xi+1,…,xk in Rk−1,  {bi(x,u)≥0on {xi≤0},bi(x,u)≤0on {xi≥1}. 
+
+
+
+The following argument implies that we may limit ourselves to the case k=1. Set U♯:=(X(2),…,X(k),U). Then, for obviously defined new coefficients β1♯, A♯, etc., and a Rr+k−1-valued Brownian motion W∗♯ one has  {dXt(1)=b1♯(Xt(1),Ut♯)dt+A1♯(Xt(1),Ut♯)dWt(1),dUt♯=β1♯(Xt(1),Ut♯)dt+Γ1♯(Xt(1),Ut♯)dWt∗♯.  If we can prove that X(1) takes values in [0,1], then the same arguments would show that all the other components enjoy the same property. We therefore consider the system (11) with k=1.
+
+Proposition 3.3
+Suppose that0≤X0(1)≤1a.s. Under Hypothesis3.2 P(∀t≥0,0≤Xt(1)≤1)=1. 
+
+Proof
+We limit ourselves to the proof that 0≤Xt(1) for all t≥0 a.s. We can use very similar arguments to get the other inequality.
+
+Let Ψϵ be a positive decreasing function of class C2(R) with Ψϵ(x)=1 on (−∞,−ϵ] and Ψϵ(x)=0 on [0,+∞). Let τn be the first time the process (Xt(1)) exits from the interval (−n,n). As Ψϵ(x)=0 on R+, Ψϵ(X0(1))=0 and Itô’s formula leads to  Ψϵ(Xt∧τn(1))=∫0t∧τn1{Xs(1)≤0}b1♯(Xs(1),Us♯)Ψϵ′(Xs(1))ds+12∫0t∧τn1{Xs(1)≤0}(A1♯(Xs(1),Ut♯))2Ψϵ″(Xs(1))ds+∫0t∧τn1{Xs(1)≤0}A1♯(Xs(1),Us♯)Ψϵ′(Xs(1))dWs∗♯=:I1+I2+I3.  As Ψϵ is decreasing, Hypothesis 3.2(ii) and the definition of b1♯ imply that I1≤0. As 1{x≤0}A1♯(x,u)=0 for all (x,u), one has I2=0. Finally, I3 is a martingale. Therefore  ∀t>0,EΨϵ(Xt∧τn(1))=0.  Fatou’s lemma implies  ∀t>0,EΨϵ(Xt(1))=0.  Now consider a family of functions Ψϵ which pointwise converge to 1(−∞,0) and satisfy supϵ|Ψϵ|∞=1. Lebesgue’s dominated convergence theorem implies  ∀t>0,E[1(−∞,0)(Xt(1))]=0.  In other words, the process ((Xt(1))−,t≥0) is a modification of the null process. As they both are continuous processes, they are indistinguishable (see, e.g., Karatzas and Shreve [8], Chap. 1, Pb. 1.5). □
+
+The Models Are Well-Posed Diffusions in Rectangular Cylinders and Propagate Chaos
+In this section, we check that the particle systems and the mean-field limit systems are well posed, and that the components of the processes (yti), (xti), (ytα), (xtα) take values in [0,1]. Then we prove that the particle systems propagate chaos toward the law of the limit systems (5) and (9).
+
+Our situation differs from the above mentioned Scheutzow’s counterexamples [4] in the fact that the interaction kernel is globally Lipschitz and the functions Fα are one-sided Lipschitz (they are not only locally Lipschitz). These features of the neuronal models under consideration protect one from non-uniqueness of the solutions.
+
+Well-Posedness of the N-Neuron Models
+Proposition 4.1
+Under Hypothesis2.1the systems (1) and (4) have unique pathwise solutions on all time interval0≤t≤T. In addition, the components of the processes(yti), (nti), (mti), (hti)take values in[0,1].
+
+Proof
+Observe that the coefficients of (1) and (4) are locally Lipschitz. This is obvious for the drift coefficients. In view of the assumption on the function χ, the diffusion coefficients obviously are locally Lipschitz at all point (v,x) (respectively, (v,y)) with x or y in R∖[0,1]; this also holds true at all the other points since, for all λ1>0 and λ2>0, the value of z such that λ1(1−z)+λ2z=0 never belongs to [0,1], so that the arguments of the square roots in the diffusion coefficients are strictly positive when x (respectively, y) belongs to [0,1].
+
+It results from the preceding observation that solutions to (1) and (4) exist and are pathwise unique up to their respective explosion times: see, e.g., Protter [9], Chap. V, Sect. 7, Theorem 38. Set  ξti:=(Vti,yti,qti)or(Vti,Jtiγ,yti,qti),γ∈P. 
+
+Using the one-sided Lipschitz condition (10) and Itô’s formula, it is an easy exercise to see that E|ξTi|2 is finite for all T>0, from which it readily follows that Esup0≤t≤T|ξti|2 is finite for all T>0. Therefore the explosion times of (1) and (4) are infinite a.s.
+
+Let us now check that the coordinates of (yti,nti,mti,hti) take values in [0,1]. Their dynamics is of the type  12 dxt=(ρx(Vt)(1−xt)−ζx(Vt)xt)dt+|ρx(Vt)(1−xt)+ζx(Vt)xt|χ(xt)dWtx  for x=n,m,h, and  13 dytα=(arαSα(Vt)(1−ytα)−adαytα)dt+|arαSα(Vt)(1−ytα)+adαytα|χ(ytα)dWtα,y,  where Vt is some real-valued continuous process. Hypothesis 3.2(ii) is satisfied by the drift coefficients of (12) and (13):  (x,v)↦bx(x,v):=ρx(v)(1−x)−ζx(v)xand(y,v)↦by(y,v):=arαSα(v)(1−y)−adαy.  The desired result follows, by applying Proposition 3.3. □
+
+Remark 4.2
+The preceding discussion shows that one can get rid of the absolute values in the diffusion coefficients of all the models in Sect. 2.
+
+Well-Posedness of the Mean-Field Limit Models
+For the next proposition we slightly reinforce the hypotheses on the functions ρx and ζx. The boundedness from below by a strictly positive constant is justified from a biological point of view (see the discussion in [1], Sect. 2.1, p. 5).
+
+Proposition 4.3
+Under Hypothesis2.1and the coercivity condition 14 ∃ν>0,∀v∈R,ρx(v)∧ζx(v)≥ν>0, the systems (5) and (9), complemented with (6) or (7), have unique pathwise solutions on all time interval[0,T]. In addition, all the components of the process(ytα,ntα,mtα,htα)take values in[0,1].
+
+Proof
+Existence and pathwise uniqueness are obtained by slightly extending the fixed point method developed by Sznitman [2] for particle systems with bounded Lipschitz coefficients. We essentially combine arguments already available in the literature (e.g. see [7] and references therein) and therefore only emphasize the additional minor arguments required by the above neuron models. As exactly the same arguments can be used to treat Eqs. (5) and (9), we limit ourselves to consider the second one.
+
+We start with the following observation. Given the Brownian motions (Bαγ,α,γ∈P) and the constant J‾αγ, the processes (Jtαγ,α,γ∈P) are unique pathwise solutions according to the Yamada and Watanabe theorem (see, e.g., Karatzas and Shreve [8], Chap. 5, Theorem 2.13). Let φ(t) be an arbitrary continuous function. Consider the system obtained by substituting φ(t) for E[ytγ] into (9). Similar arguments as in the proof of Proposition 4.1 show that this new system has a unique pathwise solution.
+
+Now, we denote by ℓ=p‾2+6p‾ the dimension of the state space of the process  (Vtα,Jtαγ,ytα,wtα,(ntα,mtα,htα);α,γ∈P). 
+
+Remark 4.4
+Notice that we have lumped together the two models we are focusing on, i.e. FitzHugh–Nagumo and Hodgkin–Huxley, since the mathematical tools for handling them are similar: Hypothesis 2.1(iii) does not hold for the classic Hodgkin–Huxley model. However, well-posedness and propagation of chaos can be obtained in this case by adding standard localisation arguments to our proofs.
+
+Let  (rt):=(vtα,jtαγ,ψtα,wtα,ztα;α,γ∈P)  be the canonical process of C(0,T;Rℓ). Let CT be the subspace of C(0,T;Rℓ) consisting of the paths of the canonical process such that (ψtα,ztα) takes values in [0,1]4 for all t, α∈P.
+
+Equip the space MT of probability measures on CT with the standard Wasserstein (2) metric:  WT(π1,π2):={minμ∈Λ(π1,π2)∫CTsup0≤s≤T(|rs1−rs2|2)μ(dr1,dr2)}1/2,  where Λ(π1,π2) denotes the set of all coupling measures of π1 and π2.
+
+Given π in MT, set  y‾t(π),γ:=Eπ[y0γ]exp{−adγt−arγ∫0tEπ[Sγ(vθγ)]dθ}+∫0tarγEπ[Sγ(vsγ)]×exp{−adγ(t−s)−arγ∫stEπ[Sγ(vθγ)]dθ}dsfor all γ∈P. 
+
+Let us construct a contraction map Φ on MT as follows. For all π in MT, Φ(π) is the probability law of the process  (Rt(π)):=(Vt(π),α,Jtαγ,yt(π),α,wt(π),α,xt(π),α;α,γ∈P;x=n,m,h)  solution to  dVt(π),α=Fα(t,Vt(π),α,qt(π),α)dt−∑γ∈P(Vt(π),α−V‾αγ)Jtαγy‾t(π),γdt+σαdWαt,V,dJtαγ=θαγ(J‾αγ−Jtαγ)dt+σαγJJtαγdBtαγ,dyt(π),α=(arαSα(Vt(π),α)(1−yt(π),α)−adαyt(π),α)dt+|arαSα(Vt(π),α)(1−yt(π),α)+adαyt(π),α|χ(yt(π),α)dWtα,y,dwt(π),α=cα(Vt(π),α+aα−bαwt(π),α)dt,dxt(π),α=(ρx(Vt(π),α)(1−xt(π),α)−ζx(Vt(π),α)xt(π),α)dt+|ρx(Vt(π),α)(1−xt(π),α)+ζx(Vt(π),α)xt(π),α|χ(xt(π),α)dWtα,x  with x=n,m,h, q=(w) or q=(x). Notice that the probability law of the process (Rt(π)) is supported in CT.
+
+Set ΔRt:=Rt(π1)−Rt(π2), and apply Itô’s formula to (ΔRt)2. In order to deduce that there exists a positive constant KT uniform w.r.t. π1 and π2 such that  15 ∀0≤t≤T,E|ΔRt|2≤KT(∫0tE|ΔRs|2ds+∫0tWs(π1,π2)ds),  it suffices to use classical arguments, plus the following ingredients: The one-sided Lipschitz condition (10);
+
+the fact that y‾t(π),α is uniformly bounded w.r.t. π in MT and t in [0,T];
+
+the additional coercivity condition (14) implies  ∀x∈[0,1],∀v∈R,ρx(v)(1−x)+ζx(v)x≥ν>0.  As (xt(π1),α) and (xt(π2),α) take values in [0,1], all the terms of the type  16 ∫0t(|ρx(Vs(π1),α)(1−xs(π1),α)+ζx(Vs(π1),α)xs(π1),α|χ(xs(π1),α)−|ρx(Vs(π2),α)(1−xs(π2),α)+ζx(Vs(π2),α)xs(π2),α|χ(xs(π2),α))2ds  are bounded from above by  KT∫0t|xs(π1),α−xs(π2),α|2ds+KT∫0t|Vs(π1),α−Vs(π2),α|2ds  (the same remarks apply to the diffusion coefficients of (yt(π1),α) and (yt(π2),α));
+
+the existence of a positive KT uniform w.r.t. π1 and π2 such that, for all α∈P,  sup0≤t≤T|y‾t(π1),α−y‾t(π2),α|2≤KT∫0TWs2(π1,π2)ds. 
+
+ Classical arguments allow one to deduce from (15) that, for some possibly new positive constant KT,  WT2(Φ(π1),Φ(π2))≤KT∫0TWs2(π1,π2)ds.  One then finds that Φ is a contraction map (see Sznitman [2]), from which the desired existence and pathwise uniqueness result follows for (9).
+
+It remains to again use Proposition 3.3 to get the last part in the statement.  □
+
+Convergence
+In this part, we analyze the convergence of the N-neurons system given in (4) to the mean-field limit described in (9). The convergence of the model (1) to the solution of (5) results from a straightforward adaptation of the following proposition and of its proof. Moreover, as in the proof of Proposition 4.3 we use again Remark 4.4 to shorten the presentation.
+
+Let (Rt)=(Rtα,α∈P)=(Vtα,(Jtαγ,γ∈P),ytα,wtα,ntα,mtα,htα;α∈P) denote the solution of (9), with law P on CT. Let (Rti,N,i=1,…,N)=(Vti,(Jtiγ,γ∈P),yti,wti,nti,mti,hti;i=1,…,N), the solution of the N-neuron system (4). Considering the family of Brownian motions in (4), and the set of i.i.d. initial random variables (V0i,(J0iγ,γ∈P),y0i,w0i,n0i,m0i,h0i;i=1,…,N), we introduce a coupling between the (Rti,N,i=1,…,N) and a set of N processes (R˜ti,i=1,…,N) such that for all α∈P, all Nα indices i such that p(i)=α are such that (R˜ti) are independent copies of (Rtα). More precisely, for each i=1,…,N, such that p(i)=α, (R˜ti)=(V˜ti,(J˜tiγ,γ∈P),y˜ti,w˜ti,n˜ti,m˜ti,h˜ti) is the solution of  {for q˜=(w˜) or (n˜,m˜,h˜),dV˜ti=Fα(t,V˜ti,q˜ti)dt−∑γ∈P(V˜ti−V‾αγ)J˜tiγE[ytγ]dt+σαdWti,V,(J˜tiγ,t≥0)=(Jtiγ,t≥0)for all γ∈P,dy˜ti=(arαSα(V˜ti)(1−y˜ti)−adαy˜ti)dtdy˜ti=+|arαSα(V˜ti)(1−y˜ti)+adαy˜ti|χ(y˜ti)dWti,y,  coupled with  dw˜ti=cα(V˜ti+aα−bαw˜ti)dt  or  dx˜ti=(ρx(V˜ti)(1−x˜ti)−ζx(V˜ti)x˜ti)dt+|ρx(V˜ti)(1−x˜ti)+ζx(V˜ti)x˜ti|χ(x˜ti)dWti,x  for x˜=n˜,m˜,h˜, and starting at (V0i,(J0iγ,γ∈P),y0i,w0i,n0i,m0i,h0i).
+
+Under the hypotheses of Proposition 4.3 we have the following result as regards the propagation of chaos.
+
+Proposition 4.5
+Assume that for allγ∈P, the proportionNγ/Nof neurons in populationγis a nonzero constant independent ofNand denoted:  17 cγ=NγN. Then there exists a constantC>0such that, for allN=∑γ∈PNγsatisfying the assumption (17), for all set ofp̅indices(iα,α∈P)among{1,…,N}withp(iα)=α, the vector process(Riα,N−R˜iα), with one component in each population, satisfies 18 NE[sup0≤t≤T∑α∈P|Rtiα,N−R˜tiα|2]≤C. 
+
+The above L2(Ω)-estimate obviously implies that the law of any subsystem of size k ((Rt1α,N,α∈P),…,(Rtkα,N,α∈P)),  with p(iα)=α, converges to the law P⊗k when the Nα tend to ∞. In other words, the reordered system  ((Rtiα,N,α∈P),p(iα)=α,iα∈{1,…,N})  is P-chaotic.
+
+Proof of Proposition 4.5
+A short discussion of our methodology. We only present the main ideas of the proof which follows and adapts Sznitman [2] or Méléard [10]. To help the reader follow the lengthy calculations, we start with an explanation of the main differences between our problem where some of the coefficients of our stochastic differential equations are not globally Lipschitz continuous and the classical Lipschitz coefficients framework. In a nutshell, we are dealing with a particle system of the generic form  dXti=f(Xti,1N∑j=1Nϕ(Xtj))dt+σ(Xti)dWti,  where the Brownian motions Wi are independent, and the functions ϕ, f, and σ are such that one gets existence and strong uniqueness of a solution with finite moments, as well as the existence and strong uniqueness of the mean-field limit  dXt=f(Xt,Eϕ(Xt))dt+σ(Xt)dWt1.  Now, let (X˜ti) be independent copies of (Xt) driven by the Brownian motions Wi. Under strong enough Lipschitz hypotheses on ϕ, f and σ, one typically obtains, for some C>0 and all 0≤t≤T,  E|Xti−X˜ti|2≤C∫0tE|Xθi−X˜θi|2dθ+C∫0tE|Eϕ(X˜θ1)−1N∑j=1Nϕ(X˜θj)|2dθ.  Using independence arguments one readily gets  E|Eϕ(X˜θ1)−1N∑j=1Nϕ(X˜θj)|2≤CN.  Using Gronwall’s lemma, one deduces that  E|Xti−X˜ti|2≤CN.  This method fails when one of f, σ or ϕ is not globally Lipschitz.
+
+In our case the drift f is not globally Lipschitz, but of the form (see Eqs. (20), (21), (22))  f(t,v,q,j,1N∑i=1Nyi)=Fα(t,v,q)−j(v−V‾αγ)(1N∑i=1Nyi).  The fact that the first part Fα of the drift is only one-sided Lipschitz is easy to overcome. To handle the second part −j(v−V‾αγ)(1N∑i=1Nyi) we make use of the following three properties: the processes Jtαγ are positive,
+
+the processes yti belong to [0,1],
+
+in the dynamics of Vt, the term −j(v−V‾αγ)(1N∑i=1Nyi) acts as a mean reverting term, stabilizing the moments of Vt.
+
+ Notice that because in our case the function f is not globally Lipschitz, the convergence rate for E[sup0≤t≤T∑α∈P|Rtiα,N−R˜tiα|2] is of the order of 1/N, as indicated by the inequality (18), instead of 1/N in the Lipschitz case.
+
+Details of our proof. We now turn to the proof of inequality (18).
+
+By the symmetry of the coupled systems, we can fix the index set (1α,α∈P) and rewrite the SDEs (4) and (9) in the following condensed form: for all α∈P,  19 Rt1α,N−R˜t1α=∫0t(σ(Rs1α,N)−σ(R˜s1α))dWs1α+∫0t(B[s,Rs1α,N;μsN]−B[s,R˜s1α;Ps])ds,  where we have introduced the empirical measure μ⋅N=1N∑j=1NδR⋅j, the Brownian motion (Wt1α)=(Wt1α,V,(Bt1αγ,γ∈P),Wt1α,y,Wt1α,x), and the time-marginal law Ps=P∘(R˜s1α,α∈P)−1.
+
+We denote by r the canonical variable on Rℓ, that we decompose in the following set of p̅ coordinates on Rp‾+6:  r:=(rα,α∈P)=(vα,(jαγ;γ∈P),yα,wα,xα;α∈P).  According to Remark 4.4, the diffusion coefficient is defined as  σ(rα)=σ(vα,(jαγ,γ∈P),yα,wα,xα)=(σα(σαγJjαγ,γ∈P)|arαSα(vα)(1−yα)+adαyα|χ(yα)0|ρx(vα)(1−xα)+ζx(vα)xα|χ(xα))  and is Lipschitz on the state subspace of the process (Vtα,ytα,wtα,xtα). The drift coefficient is defined as  20 B[t,rα;μ]:=b(t,rα)+k[rα;μ],  where  21 b(t,rα)=b(vα,(jαγ,γ∈P),yα,wα,xα)=(Fα(t,vα,qα)(θαγ(J‾αγ−jαγ),γ∈P)(arαSα(vα)(1−yα)−adαyα)cα(vα+aα−bαwα)(ρx(vα)(1−xα)−ζx(vα)xα))  is one-sided Lipschitz in the sense of (10) in Hypothesis 2.1(iii), and k is defined as follows. For any probability measure μ on Rl,  22 k[rα;μ]=(−∫Rℓ∑γ∈P(vα−V‾αγ)jαγ1cγ1{η=γ}yημ(d(rη;η∈P))0000). 
+
+Remark 4.6
+Notice that the characteristic function 1{η=γ} is unnecessary in the above definition but, combined with the hypothesis (17), which fixes the constants {cγ;γ∈P}, it has the advantage of matching the notations in Eqs. (1) and (4), which helps identifying the interaction kernel in the limit equations. The measure μ(d(rη;η∈P)) is on Rℓ whose state coordinates are here labeled in P.
+
+In all the sequel C is a positive constant which may change from line to line and is independent of N and 0≤t≤T, but it may depend on T.
+
+Step 1. We prove that the processesVtihave bounded moments of any positive order. We start with reminding the reader that the CIR processes (Jiγ) have bounded moments of any positive order when their initial conditions enjoy the same property (see e.g. Lemma 2.1 in Alfonsi [11]). In view of the Hypotheses 2.1(i) and (iv), one can show that the same is true for the processes (Vi) and (V˜i) by using the following argument. Apply the Itô formula to (Vi)2q, q≥1, till time τn=inf{t≥0;|Vti|≥n}, and take expectations to get  E[(Vt∧τni)2q]=E[(V0i)2q]+2q∫0tE[1{s≤τn}(Vsi)2q−1Fα(t,Vsi,qsi)]ds−2q∫0tE[1{s≤τn}∑γ∈P(Vsi)2q−1(Vsi−V‾αγ)JsiγNγ×(∑j=1N1{p(j)=γ}ysj)]ds+q(2q−1)∫0tE[1{s≤τn}(Vsi)2q−2(σα)2]ds.  We then observe that  −2q∫0tE[1{s≤τn}∑γ∈P(Vsi)2qJsiγNγ(∑j=1N1{p(j)=γ}ysj)]ds  is negative and can be ignored. It then remains to use Hypothesis 2.1 and classical arguments to deduce that E[(Vti)n] is finite for all n≥1.
+
+Step 2. A first bound for the random variables|Rt1α,N−R˜t1α|2and(1N×∑i=1N(yti−y˜ti))2. Because of the polynomial form of the non-Lipschitz part of the drift, it is not a good idea to introduce the expectation too early in the calculation of the bound for |Rt1α,N−R˜t1α|2 or (1N∑i=1N(yti−y˜ti))2, since calculations with expectation lead to terms of the type E[(Rt1α,N−R˜t1α)2H], where H is an unbounded random variable correlated with Rt1α,N. We therefore postpone taking expectations to Step 3.
+
+Apply Itô’s formula to |Rt1α,N−R˜t1α|2. We obtain  |Rt1α,N−R˜t1α|2=2∫0t(B[s,Rs1α,N;μsN]−B[s,R˜s1α;Ps])(Rs1α,N−R˜s1α)ds+∫0t|σ(Rs1α,N)−σ(R˜s1α)|2ds+Mt1α,N,  where  Mt1α,N=2∫0t(Rs1α,N−R˜s1α)(σ(Rs1α,N)−σ(R˜s1α))dWs1α  is a martingale. By Itô isometry and the result in Step 1 above, sup0≤t≤TE|Mt1α,N|2≤C. Applying the Lipschitz and one-sided-Lipschitz properties for σ and b, we obtain  23 |Rt1α,N−R˜t1α|2≤2∫0t(k[s,Rs1α,N;μsN]−k[s,R˜s1α;Ps])(Rs1α,N−R˜s1α)ds+C∫0t|Rs1α,N−R˜s1α|2ds+Mt1α,N.  Now, we are interested in (k[s,Rs1α,N;μsN]−k[s,R˜s1α;Ps])(Rs1α,N−R˜s1α). We introduce the empirical measure of the coupling system μ˜⋅N=1N∑i=1NδR˜⋅i and write  24 (k[Rs1α,N;μsN]−k[R˜s1α;Ps])=(k[Rs1α,N;μsN]−k[R˜s1α;μ˜sN])+(k[R˜s1α;μ˜sN]−k[R˜s1α;Ps]).  We consider in turn the two terms in the right-hand side of (24).
+
+First, from the definition of k in (22) we get  (k[Rs1α,N;μsN]−k[R˜s1α;μ˜sN])(Rs1α,N−R˜s1α)=(1N∑j=1N∑γ∈P[−(Vs1α−V‾αγ)Js1αγ1cγ1{p(j)=γ}ysj+(V˜s1α−V‾αγ)Js1αγ1cγ1{p(j)=γ}y˜sj])(Vs1α−V˜s1α)=−(Vs1α−V˜s1α)2(∑γ∈PJs1αγ1N∑j=1N1cγ1{p(j)=γ}ysj)+(Vs1α−V˜s1α)(∑γ∈PJs1αγ(V˜s1α−V‾αγ)1N∑j=1N1cγ1{p(j)=γ}(y˜sj−ysj)).  Since the (Jt1αγ) and the (yti,i=1,…,N) are positive, the first term in the right-hand side is negative. We bound the second term by using Young’s inequality:  25 (k[Rs1α,N;μsN]−k[R˜s1α;μ˜sN])(Rs1α,N−R˜s1α)≤12(Vs1α−V˜s1α)2+12(∑γ∈PJs1αγ(V˜s1α−V‾αγ)1N∑j=1N1cγ1{p(j)=γ}(y˜sj−ysj))2. 
+
+Next we consider the second contribution coming from the right-hand side of (24). By Young’s inequality  26 (k[R˜s1α;μ˜sN]−k[R˜s1α;Ps])(Rs1α,N−R˜s1α)≤12|Rs1α,N−R˜s1α|2+12(ζs1α)2,  where  ζs1α:=k[R˜s1α;μ˜sN]−k[R˜s1α;Ps]  is such that sup0≤t≤TE|ζs1α|2≤CN. Indeed, as the (R˜i) are i.i.d. with law P, k[R˜s1α;Ps] is the conditional expectation  k[R˜s1α;Ps]=E[k(R˜s1α,R˜sj)/σ(R˜u1α;u≤s)]  for any j≠1α, where we have set k(rα,rη)=∑γ∈P(vα−V‾αγ)jαγ1cγ1{η=γ}yη, and the symbol σ stands for sigma algebra (which must not be confused with the above diffusion coefficient). Thus  E|ζs1α|2=E|1N∑j=1Nk(R˜s1α,R˜sj)−E[k(R˜s1α,R˜sj)/σ(R˜u1α;u≤s)]|2≤2E|1N∑j≠1αk(R˜s1α,R˜sj)−E[k(R˜s1α,R˜sj)/σ(R˜u1α;u≤s)]|2+2NE|k(R˜s1α,R˜s1α)−E[k(rα,R˜s1α)]|{rα=R˜s1α}|2≤CN. 
+
+Combining (23) with the last inequalities (25), (24), and (26),  |Rt1α,N−R˜t1α|2≤C∫0t|Rs1α,N−R˜s1α|2ds+C∫0t∑γ∈P(Js1αγ)2(V˜s1α−V‾αγ)2(1N∑j=1N(y˜sj−ysj))2ds+Mt1α,N+12(ζt1α)2.  By Gronwall’s lemma and integration by parts, we have  27 |Rt1α,N−R˜t1α|2≤C∫0t∑γ∈P(Js1αγ)2(V˜s1α−V‾αγ)2(1N∑j=1N(y˜sj−ysj))2ds+Zt1α,  where for all t∈[0,T], since (Mt1α,N) is a martingale,  E[Zt1α]=E[Mt1α,N+12(ζt1α)2+∫0tCexp(C(t−s))(Ms1α,N+12(ζs1α)2)ds]≤Csup0≤t≤TE|ζs1α|2≤CN. 
+
+We now set  δy‾t=1N∑i=1N(yti−y˜ti).  Defining the drift and diffusion for processes yi by  byα(y,v)=arαSα(v)(1−y)−adαy,σyα(y,v)=|arαSα(v)(1−y)+adαy|χ(y),  we have  (δy‾t)2=(∫0t1N∑i=1N(byα(ysi,Vsi)−byα(y˜si,V˜si))ds+∫0t1N∑i=1N(σyα(ysi,Vsi)−σyα(y˜si,V˜si))dWsi)2≤2(∫0t1N∑i=1N(byα(ysi,Vsi)−byα(y˜si,V˜si))ds)2+2(∫0t1N∑i=1N(σyα(ysi,Vsi)−σyα(y˜si,V˜si))dWsi)2.  Notice that the processes (Z‾t), defined by  Z‾t:=2(∫0t1N∑i=1N(σyα(ysi,Vsi)−σyα(y˜si,V˜si))dWsi)2  is such that sup0≤t≤TE(Z‾t)2≤CN. Since byα and σyα are Lipschitz on [0,1]×R, we get  (δy‾t)2≤∫0tC(δy‾s)2ds+∫0tC(1N∑i=1N|Vsi−V˜si|)2ds+Z‾t≤∫0tC(δy‾s)2ds+∫0tCN∑i=1N|Rsi,N−R˜si|2ds+Z‾t.  Combining again Gronwall’s lemma and integration by parts we obtain  28 δy‾t2≤∫0tCN∑i=1N|Rsi,N−R˜si|2ds+∫0tCeC(t−s)(∫0sCN∑i=1N|Rθi,N−R˜θi|2dθ)ds+Z‾t+∫0tCeC(t−s)Z‾sds≤C∫0t1N∑i=1N|Rsi,N−R˜si|2ds+Z‾t+∫0tCeC(t−s)Z‾sds. Step 3. The bound forE[sup0≤t≤T∑α∈P|Rtiα,N−R˜tiα|2]. Combining the last inequality (28) with (27), we have  δy‾t2≤C∫0t∫0s(CN∑i=1N∑γ∈P(Jθiγ)2(V˜θi−V‾αγ)2)(δy‾θ)2dθds+∫0tCN∑i=1NZsids+Z‾t+∫0tCeC(t−s)Z‾sds=C∫0t(t−s)(CN∑i=1N∑γ∈P(Jsiγ)2(V˜si−V‾αγ)2)(δy‾s)2ds+∫0tCN∑i=1NZsids+Z‾t+∫0tCeC(t−s)Z‾sds=C∫0t(t−s)E[∑γ∈P(Js1γ)2(V˜s1−V‾αγ)2](δy‾s)2ds+γt+∫0tCN∑i=1NZsids+Z‾t+∫0tCeC(t−s)Z‾sds,  where  γt:=C∫0t(t−s){(CN∑i=1N∑γ∈P(Jsiγ)2(V˜si−V‾αγ)2)−E[∑γ∈P(Js1γ)2(V˜s1−V‾αγ)2]}(δy‾s)2ds  is such that sup0≤t≤TE(γt)2≤CN, since (δy‾s)2≤1 a.s. Taking the expectation of the last inequality, we get  E[δy‾t2]≤C∫0t(t−s)E[∑γ∈P(Js1γ)2(V˜s1−V‾αγ)2]E[δy‾s]2ds+CN≤CN  by applying again Gronwall’s lemma in the case of a non-decreasing remainder. Coming back to (27), we get  E[1N∑i=1N|Rti,N−R˜ti|2]≤C∫0tE[∑γ∈P(Js1γ)2(V˜s1−V‾αγ)2]E[(δy‾s)2]ds+1N∑i=1NE[Zti]+E[βt],  where again  βt:=C∫0t{(1N∑i=1N∑γ∈P(Jsiγ)2(V˜si−V‾αγ)2)−E[∑γ∈P(Js1γ)2(V˜s1−V‾αγ)2]}(δy‾s)2ds,  is such that sup0≤t≤TE(βt)2≤CN. Using (17), this ends the proof of the proposition.  □
+
+Conclusion
+In this note we have set the work published in [1] on a totally rigorous footing. In doing so we also have shed some new light on the way to incorporate noise in the ion channels equations for the Hodgkin–Huxley model and in the amount of neurotransmitters at the synapses in both the Hodgkin–Huxley and the FitzHugh–Nagumo models.
+
+The techniques in this paper could be extended to a more generic form of interaction kernel k[r;μ] in (22). Notice also that the Hypothesis 2.1(iii) should allow one to prove the convergence in time to equilibrium of the mean-field limits.
+
+1 Similarly, Counterexample 1 in [4] contradicts the results on neuronal models claimed at the end of Sect. 1 and in Appendix B of [5].
+
+Competing Interests
+
+The authors declare that they have no competing interests.
+
+Authors’ Contributions
+
+All authors contributed equally to the writing of this paper. All authors read and approved the final manuscript.
+
+Acknowledgements
+This work was partially supported by the European Union Seventh Framework Programme (FP7/2007-2013) under grant agreement no. 269921 (BrainScaleS), no. 318723 (Mathemacs), and by the ERC advanced grant NerVi no. 227747.
+==== Refs
+References
+1. Baladron J  Fasoli D  Faugeras O  Touboul J   Mean field description and propagation of chaos in networks of Hodgkin–Huxley and FitzHugh–Nagumo neurons J Math Neurosci 2012 2 10.1186/2190-8567-2-10 
+2. Sznitman AS   Hennequin PL   Topics in propagation of chaos Ecole d’eté de probabilités de Saint Flour XIX 1989 Berlin Springer 
+3. McKean HP   Propagation of chaos for a class of non-linear parabolic equations 1967 stochastic differential equations (Lecture series in differential equations, session 7, Catholic Univ.) 1967 Arlington Air Force Office Sci. Res. 41 57 
+4. Scheutzow M   Uniqueness and nonuniqueness of solutions of Vlasov–McKean equations J Aust Math Soc A 1987 43 2 246 256 10.1017/S1446788700029384 
+5. Touboul J   The propagation of chaos in neural fields Ann Appl Probab 2014 24 3 1298 1328 10.1214/13-AAP950 
+6. 
+Wainrib G. Randomness in neurons: a multiscale probabilistic analysis [dissertation]. Paris (France): École Polytechnique; 2010.
+
+7. Luçon E  Stannat W   Mean field limit for disordered diffusions with singular interactions Ann Appl Probab 2014 24 5 1946 1993 10.1214/13-AAP968 
+8. Karatzas I  Shreve SE   Brownian motion and stochastic calculus 1988 Berlin Springer 
+9. Protter PE   Stochastic integration and differential equations 2005 Berlin Springer 
+10. Méléard S   Asymptotic behaviour of some interacting particle systems; McKean–Vlasov and Boltzmann models Probabilistic models for nonlinear partial differential equations 1996 Berlin Springer 
+11. Alfonsi A   On the discretization schemes for the CIR (and Bessel squared) processes Monte Carlo Methods Appl 2005 11 4 355 384 10.1515/156939605777438569

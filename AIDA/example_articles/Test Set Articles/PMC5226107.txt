@@ -1,0 +1,164 @@
+
+==== Front
+HereditasHereditasHereditas0018-06611601-5223BioMed Central London 2010.1186/s41065-016-0020-2Brief ReportNegative frequency dependent selection on sympatric mtDNA haplotypes in Drosophila subobscura http://orcid.org/0000-0002-3501-3376Arnqvist Göran Goran.Arnqvist@ebc.uu.se 1Novičić Zorana Kurbalija Zorana.Novicic@ebc.uu.se 12Castro José A. Jose.Castro@uib.es 3Sayadi Ahmed Ahmed.Sayadi@ebc.uu.se 11 Department of Ecology and Genetics, Animal Ecology, University of Uppsala, Norbyv 18D, SE75236 Uppsala, Sweden 2 Institute for Biological Research “Siniša Stanković”, University of Belgrade, Despot Stefan Blvd 142, 11000 Belgrade, Serbia 3 Laboratori de Genètica, Departament de Biologia, Facultat de Ciencies, Edifici Guillem Colom, Universitat de les Illes Balears, Campus de la UIB, Palma de Mallorca, Balears 07122 Spain 24 11 2016 24 11 2016 2016 153 1516 9 2016 11 11 2016 © The Author(s) 2016
+Open AccessThis article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.Background
+Recent experimental evidence for selection on mitochondrial DNA (mtDNA) has prompted the question as to what processes act to maintain within-population variation in mtDNA. Balancing selection though negative frequency dependent selection (NFDS) among sympatric haplotypes is a possibility, but direct empirical evidence for this is very scarce.
+
+Findings
+We extend the previous findings of a multi-generation replicated cage experiment in Drosophila subobscura, where mtDNA polymorphism was maintained in a laboratory setting. First, we use a set of Monte Carlo simulations to show that the haplotype frequency dynamics observed are inconsistent with genetic drift alone and most closely match those expected under NFDS. Second, we show that haplotype frequency changes over time were significantly different from those expected under either genetic drift or positive selection but were consistent with those expected under NFSD.
+
+Conclusions
+Collectively, our analyses provide novel support for NFDS on mtDNA haplotypes, suggesting that mtDNA polymorphism may at least in part be maintained by balancing selection also in natural populations. We very briefly discuss the possible mechanisms that might be involved.
+
+Electronic supplementary material
+The online version of this article (doi:10.1186/s41065-016-0020-2) contains supplementary material, which is available to authorized users.
+
+Keywords
+Balancing selectionmtDNALife history evolutionPolymorphismNegative frequency dependent selectionSimuPophttp://dx.doi.org/10.13039/501100000781European Research CouncilAdG-294333Arnqvist Göran http://dx.doi.org/10.13039/501100004359Vetenskapsrådet621-2014-4523Arnqvist Göran issue-copyright-statement© The Author(s) 2016
+==== Body
+Findings
+A number of recent experimental studies have shown that alternative naturally occurring mitochondrial DNA (mtDNA) haplotypes encode for alternative phenotypes: mtDNA variation has been shown to be associated with, for example, differences in mitochondrial bioenergetics [1, 2], metabolic rate [3], behavior [4], growth rate [5], life span [6] and fitness [7–9] and these effects are often expressed as epistatic interactions with the nuclear genome [10, 11]. Apart from casting doubt on the dated assumption that mtDNA variation is neutral [12, 13], these findings also raises the important question of what balancing processes act to maintain within-population variation in this haploid, maternally inherited and non-recombining genome in the face of selection where overdominance cannot occur [14]. Theory suggests that mitonuclear epistasis may often contribute to the maintenance of sympatric mtDNA variation, but the conditions under which this is true seem somewhat restricted [15–19]. Gregorius and Ross [20] raised the possibility that negative frequency dependent selection (NFDS) on mtDNA haplotypes, where the relative fitness of a haplotype decreases as its frequency in the population increases, may be responsible for the maintenance of mtDNA polymorphism. Direct experimental evidence for such an effect was lacking until Kazancıoğlu and Arnqvist [21] recently demonstrated that NFDS consistently acts to maintain mtDNA polymorphism in laboratory populations of a seed beetle.
+
+
+Drosophila subobscura is a classic and very interesting model system for the study of mtDNA variation. In this species, variation is ubiquitous and strikingly geographically homogenous, with two dominant mtDNA haplotypes (termed I and II) typically co- occurring within populations at stable frequencies of approximately 50:50, across both the new and the old world [9, 22–28]. Moreover, experimental studies have shown that the two mtDNA haplotypes are not functionally equivalent: flies that harbor these haplotypes differ in major life history traits such as metabolic rate [29], fertility [30], viability, longevity and desiccation resistance [8, 31] and two earlier studies of laboratory cage populations were able to reject genetic drift as the sole mediator of mtDNA haplotype changes [9, 32]. These observations prompted a large experimental effort by Oliver et al. [33], where replicated cage populations of D. subobscura were founded by flies carrying either of the two haplotypes (at 50:50) and haplotype frequencies were then monitored for 33 generations. Although genetic drift was rejected in a few of the populations, their analyses were inconclusive because haplotype frequencies remained stable over the course of the experiment and no consistent positive selection favoring either haplotype was detected. Here, we revisit the experiments of Oliver et al. [33], re-analyze their data and significantly extend their findings by showing that they are in fact entirely consistent with NFDS on these sympatric mtDNA haplotypes.
+
+For a full account of the experiments, we refer to Oliver et al. [33]. Briefly, four replicate cage populations (A–D) were each founded by exactly 500 flies carrying the type I mtDNA haplotype and 500 carrying type II. These populations were then propagated for 33 subsequent generations, at an average female population size of N = 1591 (SD = 679) (Shapiro-Wilk’s test of normality: P = 0.229). To track haplotype frequency dynamics, samples of on average 101.7 (SD = 6.2) flies were taken from each population at 10 different points in time (generation 1, 3, 6, 9, 12, 15, 18, 21, 23, 28 and 33) and flies were individually haplotyped. The observed frequency dynamics are illustrated in Fig. 1. PCR screens for cytoplasmic bacteria in these populations were all negative.Fig. 1 Observed frequency of mtDNA haplotype II in the four replicate cage populations (a
+black; b
+red; c
+blue; d
+green) over time. Error bars denote empirical 95% CI [46]. Shown are also predicted values from the best fitting polynomial regression models of haplotype frequencies in the four replicates. Data from [33]
+
+
+
+
+To enable quantitative inferences concerning selection on mtDNA haplotypes, we conducted a series of Monte-Carlo (MC) simulations of the populations in Oliver et al. [33]. We used forward-time individual-based simulations in the Python based simulation package simuPOP (version 1.1.1) [34] that mimicked the demography and population dynamics in the population cages (see Additional file 1). Because we were interested in mtDNA dynamics, we modelled a haploid population with strict maternal inheritance of mtDNA haplotypes. Each individual simulation involved four independently evolving populations, representing the four replicate populations, which were evolving under a stable but variable population size. The number of founding females in each population was 500 and the starting frequency of haplotypes was 0.5 for each of the two haplotypes. Population size was thereafter drawn at random from a standard normal distribution (average = 1591, SD = 679) each generation. Selection was applied among adults, such that parents for each offspring were chosen with probabilities that were proportional to their fitness. The relative fitness of each parental individual was a function of its mtDNA haplotypes and contained a fixed additive and a dynamic negative frequency dependent component, as WI=1+sI–tIfI 
+ WII=1+sII–tIIfII where W
+I is the fitness of haplotype I and W
+II that of haplotype II, s is the additive selection coefficient, t a negative frequency dependent selection coefficient and f is the prevailing haplotype frequency in any given generation. We then recorded haplotype frequencies in all populations in each of the 10 different points in time where empirical samples were taken. Using the binomial probability distribution with haplotype-specific sampling probabilities set by the observed haplotype frequencies at each time point in each of the simulated populations, we generated 4 × 10 (i.e., 4 populations times the 10 points in time) samples of flies using the actual empirical sample size (average N = 101.7 flies per sample) for each simulation. Simulations thus fully incorporated variation within populations over time, across populations and binomial sampling error. These simulated samples were then compared with the observed samples.
+
+We first asked what form of selection maximizes the likelihood of observing the results seen by Oliver et al. [33]. This was achieved in a large number (4 × 105) of MC simulations in which all four selection coefficients (s
+I, t
+I, s
+II and t
+II) were independently drawn at random from a standard uniform distribution with a range of 0−2. We assessed model misfit in each MC run as the χ
+2 -value over all 40 samples, treating the empirical samples as the expected and the MC data as the observed haplotype counts. To find the combination of parameter values for the four selection parameters that minimized misfit between the empirical and the MC data, we relied on a full RSM model [35] of log χ
+2 across all MC runs as implemented in SYSTAT® (v. 13.1).
+
+We then tested for NFDS favouring equal haplotype frequencies of the two haplotypes, by asking if the observed haplotype frequencies at the end of the experiment (i.e., generation 33) deviated less from a frequency of 50:50 than would be expected under genetic drift alone. Here, we ran 105 MC simulations in which all four selection coefficients were set to zero and then calculated the χ
+2 -value at generation 33 for the four replicate populations, where the expected counts were based on a 50:50 frequency and the MC data represented the observed haplotype counts. We then asked in what proportion of MC simulations this χ
+2 -value was smaller than or equal to the corresponding empirically observed χ
+2 -value.
+
+Finally, we performed a trend analysis of the empirical data (Fig. 1). The basis of this test is that, under NFDS, positive changes in haplotype frequency over time should tend to be followed by negative changes and vice versa. This is due to the inverse relationship between haplotype frequency and relative fitness under NFDS. Under genetic drift, positive changes should be equally likely to be followed by a negative as a positive change (i.e., a random walk). In contrast, positive selection favouring haplotype II predicts that a positive change in frequency of this haplotype should tend to be followed by another positive change, and vice versa if selection is favouring haplotype I. Thus, transitions where the haplotype frequency change between time t-1 to t and that between time t to t + 1 for one of the two haplotypes are of opposite sign, signΔft‐1‐t≠signΔft‐t+1 should occur with a probability of P = 0.5 under genetic drift, P > 0.5 under NFDS and P < 0.5 under consistently positive/negative selection. The data of Oliver et al. [33] estimates in total 36 (i.e., 4 × 9) such haplotype frequency transitions and we ask if the distribution of these provides evidence of non-random allele frequency dynamics.
+
+The full RSM model was highly significant (P < 0.001) and explained a very large proportion of the variation in misfit between the empirical data and our MC simulations (R
+2 = 0.69). A canonical analysis of the RSM model showed that the stationary point, where selection coefficient parameter values minimize the misfit between MC simulations and empirical data, was a saddle surface. Ridge Analysis [35] of this four-dimensional surface showed that the combination of selection coefficient parameter values minimizing misfit, thus best mimicking the haplotype frequency dynamics seen, was one in which there was no additive selection on either haplotype (s
+I, = s
+II = 0) but equally strong NFDS on both haplotypes (t
+I ≈ t
+II > 0) (see Fig. 2).Fig. 2 Ridge Analysis of the four-dimensional saddle surface representing the stationary point of a RSM model where the four selection coefficient parameter values minimize the misfit between Monte Carlo simulations and the data observed by Oliver et al. [33]. Here, the X-axis represents negative frequency dependent selection (T’s), the Y-axis represents additive selection (S’s) and Z-axis represents misfit for haplotype I (left) and haplotype II (right). The illustrated Ridge Analysis starts off with an arbitrary value of 0.75 for all four selection coefficients, and shows that the best fit with data occurs where there is no additive selection on mtDNA (S
+I, = S
+II = 0) but where negative frequency dependent selection is equally strong on both haplotypes (T
+I ≈ T
+II > 0)
+
+
+
+
+Our MC simulations also showed that the probability that the haplotype frequencies would deviate as little or less from 50:50 as observed at the end of the experiment, under genetic drift alone, was P = 0.039. The corresponding probabilities for the four independent replicate populations were 0.109, 0.399, 0.316 and 0.122 yielding a combined probability of P = 0.012 (Stouffer's combined P). We thus reject the overall null hypothesis that genetic drift alone is affecting the haplotype frequency dynamics, leaving us with the alternate hypothesis that balancing selection contributes to the stabilization of haplotype frequencies.
+
+Haplotype frequency transitions were of opposite sign 26 out 36 cases (Fig. 1). The binomial probability of observing 26 or more transitions of opposite sign under genetic drift is P = 0.006. The corresponding probabilities for the four independent replicate populations were 0.089, 0.089, 0.253 and 0.253 yielding a combined probability of P = 0.005 (Stouffer's combined P). Hence, we conclude that haplotype frequency transitions of opposite sign were significantly overrepresented in the data, providing more direct support for NFDS. An additional trend analysis, using polynomial regressions forced through a haplotype frequency of 0.5 at time 0, showed that the polynomial model that minimized AIC was of the 6th, 5th, 6th and 3rd order for replicate A, B, C and D, respectively. This modelling effort, thus, further supported a cyclic dynamic and the inflections points of the fitted functions suggest that the relative fitness of haplotype II becomes notably depressed when reaching a frequency of about f = 0.7 and that of haplotype I at about f = 0.6 (see Fig. 1).
+
+Our analyses show that the haplotype frequency dynamics observed by Oliver et al. [33] closely match those expected under equally strong NFDS on mtDNA haplotype I and II. Moreover, haplotype frequencies remained significantly more stable than expected under genetic drift and the observed frequency transitions provide evidence for balancing selection through NFSD. Although a few earlier experimental observations are consistent with NFDS on mtDNA in insects [36, 37], our analyses show that the experiments of Oliver et al. [33] are apparently one of very few empirical examples of NFDS on mtDNA haplotypes. Although the experiments of Oliver et al. [33] did not involve starting populations at different haplotype frequencies, as did those of Kazancıoğlu and Arnqvist [21], the analyses presented above collectively provide support for NFDS. We here note that linkage disequilibrium between mtDNA haplotypes and the nuclear genome, e.g. chromosomal inversions, is very low at most in D. subobscura [33, 38, 39], which is expected given the fact the two genomes do not cosegregate in males [17, 18].
+
+The study of García-Martínez et al. [32], which also studied the dynamics of the same two mtDNA haplotypes in cage cultures of D. subobscura, did not observe the long term maintenance of the two haplotypes seen in the experiments of Oliver et al. [33]. Although the low degree of replication in García-Martínez et al. [32] precludes firm conclusions, it would appear that the two studies differ. One possibility is that differences in experimental design or environmental conditions might have affected the relative fitness of the two haplotypes. Another, perhaps more likely, possibility is that the nuclear genetic background differed between the two studies. The nuclear background is known to, through mitonuclear epistasis, affect the relative fitness of the two haplotypes [29, 31] as well as their evolutionary dynamics [9].
+
+It is currently not possible to assess how widespread NFDS on sympatric mtDNA haplotypes may be or precisely what biological mechanisms may be causing NFDS. With regards to the latter, Lewontin [40] proposed that NFDS within populations may be pervasive because whenever “a genotype is its own worst enemy, its fitness will decrease as it becomes more common” in a manner analogous to similar negative-frequency-dependent processes thought to maintain diversity at a range of ecological and evolutionary scales [41–43]. The necessary and sufficient conditions for this to occur are environmental heterogeneity, genotype-by-environment interactions for fitness and competition for resources within patches. Because mtDNA products contribute to a fundamentally important metabolic cascade, the ATP-producing OXPHOS pathway of the inner mitochondrial membrane, mtDNA haplotype polymorphism should lie at the root of life history trait variation [3, 12, 13]. Individuals carrying alternate sympatric mtDNA haplotypes, essentially representing a non-recombining life history “supergene”, may then show distinct states along multivariate axes of phenotypic variation in life history traits [4]. We suggest that NFDS may be an emergent property of differences in, for example, resource utilization across genotypes related to such life history trait states [43]. Such NFDS may involve selection on mitonuclear genotypes, to the extent that selection can build linkage disequilibrium between mitochondrial and nuclear genes [17, 18]. We note that NFDS on allelic variation in a gene with major life history effects in D. melanogaster [44] is apparently generated by differences between genotypes related to juvenile resource utilization under competitive conditions [45]. We suggest that future work should be dedicated to determining the prevalence of NFDS on mtDNA and to unravelling the precise mechanisms though which it occurs.
+
+Additional file
+
+Additional file 1: SimuPop script. (PDF 23 kb)
+
+
+
+
+Abbreviations
+AICAkaike information criterion
+
+CIConfidence interval
+
+mtDNAmitochondrial DNA
+
+NFDSNegative frequency dependent selection
+
+PCRPolymerase chain reaction
+
+RSMResponse surface method
+
+The authors would like to thank the GENCON lab group for comments on an earlier version of this contribution.
+
+Funding
+This contribution was supported by the European Research Council (GENCON AdG-294333) and the Swedish Research Council (621-2014-4523).
+
+Availability of data and materials
+Not applicable.
+
+Authors’ contributions
+GA conceived of this study and performed the statistical analyses. AS and GA performed the Monte Carlo simulations. All authors participated during the discussion and writing of the manuscript and approved of its final version.
+
+Competing interests
+The authors declare that they have no competing interests.
+
+Consent for publication
+Not applicable.
+
+Ethics approval and consent to participate
+Not applicable.
+==== Refs
+References
+1. Ballard JWO  Melvin RG  Katewa SD  Maas K   Mitochondrial DNA variation is associated with measurable differences in life-history traits and mitochondrial metabolism in drosophila simulans  Evolution 2007 61 1733 1747 10.1111/j.1558-5646.2007.00133.x 
+2. Wolff JN  Pichaud N  Camus MF  Côté G  Blier PU  Dowling DK   Evolutionary implications of mitochondrial genetic variation: mitochondrial genetic effects on OXPHOS respiration and mitochondrial quantity change with age and sex in fruit flies J Evol Biol 2016 29 736 747 10.1111/jeb.12822 26728607 
+3. Arnqvist G  Dowling DK  Eady P  Gay L  Tregenza T  Tuda M    The genetic architecture of metabolic rate: environment specific epistasis between mitochondrial and nuclear genes in an insect Evolution 2010 64 3354 3363 10.1111/j.1558-5646.2010.01135.x 20874734 
+4. Løvlie H  Immonen E  Gustavsson E  Kazancioğlu E  Arnqvist G   The influence of mitonuclear genetic variation on personality in seed beetles Proc r soc b 2014 281 20141039 10.1098/rspb.2014.1039 25320161 
+5. Dowling DK  Abiega KC  Arnqvist G   Temperature-specific outcomes of cytoplasmic-nuclear interactions on egg-to-adult development time in seed beetles Evolution 2007 61 194 201 10.1111/j.1558-5646.2007.00016.x 17300438 
+6. Maklakov AA  Friberg U  Dowling DK  Arnqvist G   Within-population variation in cytoplasmic genes affects female life span and aging in drosophila melanogaster  Evolution 2006 60 10 2081 2086 10.1111/j.0014-3820.2006.tb01845.x 17133864 
+7. Dowling DK  Friberg U  Hailer F  Arnqvist G   Intergenomic epistasis for fitness: within-population interactions between cytoplasmic and nuclear genes in drosophila melanogaster Genetics 2007 175 235 244 10.1534/genetics.105.052050 17151264 
+8. Christie JS  Castro JA  Oliver P  Picornell A  Ramon MM  Moya A   Fitness and life-history traits of the two major mitochondrial DNA haplotypes of drosophila subobscura  Heredity 2004 93 371 378 10.1038/sj.hdy.6800513 15241444 
+9. Fos M  Dominguez MA  Latorre A  Moya A   Mitochondrial DNA evolution in experimental populations of drosophila subobscura  Proc natl acad sci 1990 87 4198 4201 10.1073/pnas.87.11.4198 2349229 
+10. Wolff JN  Ladoukakis ED  Enríquez JA  Dowling DK   Mitonuclear interactions: evolutionary consequences over multiple biological scales Philos trans r soc lond b biol sci 2014 369 1646 20130443 10.1098/rstb.2013.0443 24864313 
+11. Dobler R  Rogell B  Budar F  Dowling DK   A meta‐analysis of the strength and nature of cytoplasmic genetic effects J evol biol 2014 27 10 2021 2034 10.1111/jeb.12468 25196503 
+12. Ballard JWO  Whitlock MC   The incomplete natural history of mitochondria Mol ecol 2004 13 4 729 744 10.1046/j.1365-294X.2003.02063.x 15012752 
+13. Ballard JWO  Rand DM   The population biology of mitochondrial DNA and its phylogenetic implications Annu rev ecol evol syst 2005 36 621 642 10.1146/annurev.ecolsys.36.091704.175513 
+14. Rand DM  Kann LM   Excess amino acid polymorphism in mitochondrial DNA: contrasts among genes from drosophila, mice, and humans Mol biol evol 1996 13 6 735 748 10.1093/oxfordjournals.molbev.a025634 8754210 
+15. Clark AG   Natural selection with nuclear and cytoplasmic transmission. I. A deterministic model Genetics 1984 107 4 679 701 6745642 
+16. Clark AG   Natural selection with nuclear and cytoplasmic transmission. II. Tests with drosophila from diverse populations Genetics 1985 111 1 97 112 3928435 
+17. Babcock CS  Asmussen MA   Effects of differential selection in the sexes on cytonuclear polymorphism and disequilibria Genetics 1996 144 2 839 853 8889544 
+18. Babcock CS  Asmussen MA   Effects of differential selection in the sexes on cytonuclear dynamics. Life stages with sex differences Genetics 1998 149 4 2063 2077 9691058 
+19. Rand DM  Clark AG  Kann LM   Sexually antagonistic cytonuclear fitness interactions in drosophila melanogaster  Genetics 2001 159 1 173 187 11560895 
+20. Gregorius HR  Ross MD   Selection with gene-cytoplasm interactions. I. Maintenance of cytoplasm polymorphisms Genetics 1984 107 1 165 178 17246213 
+21. Kazancıoğlu E  Arnqvist G   The maintenance of mitochondrial genetic variation by negative frequency-dependent selection Ecol lett 2014 17 22 27 10.1111/ele.12195 24134428 
+22. Latorre A  Moya A  Ayala FJ   Evolution of mitochondrial DNA in drosophila subobscura  Proc natl acad sci U S A 1986 83 8649 8653 10.1073/pnas.83.22.8649 16578796 
+23. Latorre A  Hernández C  Martínez D  Castro JA  Ramón M    Population structure and mitochondrial DNA gene flow in Old world populations of drosophila subobscura  Heredity 1992 68 15 24 10.1038/hdy.1992.2 1346531 
+24. Afonso JM  Volz A  Hernández M  Ruttkay H  González AM    Mitochondrial DNA variation and genetic structure in Old-world populations of drosophila subobscura  Mol biol evol 1990 7 123 142 1969605 
+25. Rozas JM  Hernández M  Cabrera VM  Prevosti A   Colonization of America by drosophila subobscura : effect of the founder event on the mitochondrial DNA polymorphism Mol biol evol 1990 7 103 109 2299979 
+26. Moya A  Barrio E  Martínez D  Latorre A  González-Candelas F    Molecular characterization and cytonuclear disequilibria of two drosophila subobscura  mitochondrial haplotypes Genome 1993 36 890 898 10.1139/g93-117 8270202 
+27. González A  Carrió R  Fernández-Pedrosa V  Moya A   Lack of seasonal changes in mitochondrial DNA of a drosophila subobscura  population J evol biol 1994 7 29 38 10.1046/j.1420-9101.1994.7010029.x 
+28. Jelic M  Castro JA  Kurbalija Novicic Z  Kenig B  Dimitrijevic D  Savic Veselinovic M    Absence of linkage disequilibria between chromosomal arrangements and mtDNA haplotypes in natural populations of drosophila subobscura  from the Balkan Peninsula Genome 2012 55 3 214 221 10.1139/g2012-004 22376001 
+29. Kurbalija Novicic Z  Immonen E  Jelic M  Andjelkovic M  Stamenkovic-Radak M  Arnqvist G   Within-population genetic effects of mtDNA on metabolic rate in drosophila subobscura  J evol biol 2015 28 2 338 346 10.1111/jeb.12565 25454557 
+30. Castro JA  Oliver P  Christie JS  Picornell A  Ramon M  Moya A   Assortative mating and fertility in two drosophila subobscura  strains with different mitochondrial DNA haplotypes Genetica 2003 119 295 301 10.1023/B:GENE.0000003656.19330.ba 14686608 
+31. Jelić M  Arnqvist G  Kurbalija Novičić Z  Kenig B  Tanasković M  Anđelković M    Sex-specific effects of sympatric mitonuclear variation on fitness in drosophila subobscura BMC evol biol 2015 15 135 10.1186/s12862-015-0421-2 26156582 
+32. García-Martínez J  Castro JA  Ramón M  Latorre A  Moya A   Mitochondrial DNA haplotype frequencies in natural and experimental populations of drosophila subobscura  Genetics 1998 149 3 1377 1382 9649527 
+33. Oliver P  Balanyà J  Ramon MM  Picornell A  Serra L  Moya A    Population dynamics of the 2 major mitochondrial DNA haplotypes in experimental populations of drosophila subobscura  Genome 2005 48 6 1010 1018 10.1139/g05-077 16391670 
+34. Peng B  Kimmel M  Amos CI   Forward-time population genetics simulations: methods, implementation and applications 2012 New York Wiley 
+35. Myers RH  Montgomery DC   Response surface methodology 2002 USA Wiley 
+36. Macrae AF  Anderson WW   Evidence for non-neutrality of mitochondrial DNA haplotypes in drosophila pseudoobscura  Genetics 1988 120 485 494 3197957 
+37. Jenkins TM  Babcock CS  Geiser DM  Anderson WW   Cytoplasmic incompatibility and mating preference in Colombian drosophila pseudoobscura  Genetics 1996 142 189 194 8770596 
+38. Oliver P  Castro JA  Picornell A  Ramon MM  Solé E  Balanyà J    Linkage disequilibria between mtDNA haplotypes and chromosomal arrangements in a natural population of drosophila subobscura  Heredity 2002 89 133 138 10.1038/sj.hdy.6800116 12136416 
+39. Jelić M  Castro JA  Kurbalija Novičić Z  Kenig B  Dimitrijević D  Savić Veselinović M    Absence of linkage disequilibria between chromosomal arrangements and mtDNA haplotypes in natural populations of drosophila subobscura from the Balkan Peninsula Genome 2012 55 214 221 10.1139/g2012-004 22376001 
+40. Lewontin RC   The genetic basis of evolutionary change 1974 New York Columbia University Press 
+41. Chesson P   Mechanisms of maintenance of species diversity Ann rev ecol syst 2000 31 343 366 10.1146/annurev.ecolsys.31.1.343 
+42. Kassen R   The experimental evolution of specialists, generalists, and the maintenance of diversity J evol biol 2002 15 173 190 10.1046/j.1420-9101.2002.00377.x 
+43. Wolf M  Mcnamara JM   On the evolution of personalities via frequency-dependent selection Am nat 2012 179 6 679 692 10.1086/665656 22617258 
+44. Kent CF  Daskalchuk T  Cook L  Sokolowski MB  Greenspan RJ   The drosophila foraging gene mediates adult plasticity and gene—environment interactions in behaviour, metabolites, and gene expression in response to food deprivation Plos genet 2009 5 8 e1000609 10.1371/journal.pgen.1000609 19696884 
+45. Fitzpatrick MJ  Feder E  Rowe L  Sokolowski MB   Maintaining a behavior polymorphism by frequency-dependent selection on a single gene Nature 2007 447 210 212 10.1038/nature05764 17495926 
+46. Agresti A  Coull BA   Approximate is better than “exact” for interval estimation of binomial proportions Amer statist 1998 52 119 126

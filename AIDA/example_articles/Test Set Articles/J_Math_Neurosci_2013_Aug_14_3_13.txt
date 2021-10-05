@@ -1,0 +1,492 @@
+
+==== Front
+J Math NeurosciJ Math NeurosciJournal of Mathematical Neuroscience2190-8567Springer 2190-8567-3-132394529510.1186/2190-8567-3-13ResearchPhase-Amplitude Response Functions for Transient-State Stimuli Castejón Oriol 1oriol.castejon@upc.eduGuillamon Antoni 2antoni.guillamon@upc.eduHuguet Gemma 13huguet@cims.nyu.edu1 Dept. de Matemàtica Aplicada I, Universitat Politècnica de Catalunya, Avda. Diagonal 647 (ETSEIB), E-08028, Barcelona, Spain2 Dept. de Matemàtica Aplicada I, Universitat Politècnica de Catalunya, Dr. Marañón 44-50 (EPSEB), E-08028, Barcelona, Spain3 Courant Institute of Mathematical Sciences, New York University, 251 Mercer St., New York, NY, 10012-1185, USA2013 14 8 2013 3 13 13 22 12 2012 18 3 2013 Copyright © 2013 O. Castejón et al.; licensee Springer2013O. Castejón et al.; licensee SpringerThis is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.Abstract
+The phase response curve (PRC) is a powerful tool to study the effect of a perturbation on the phase of an oscillator, assuming that all the dynamics can be explained by the phase variable. However, factors like the rate of convergence to the oscillator, strong forcing or high stimulation frequency may invalidate the above assumption and raise the question of how is the phase variation away from an attractor. The concept of isochrons turns out to be crucial to answer this question; from it, we have built up Phase Response Functions (PRF) and, in the present paper, we complete the extension of advancement functions to the transient states by defining the Amplitude Response Function (ARF) to control changes in the transversal variables. Based on the knowledge of both the PRF and the ARF, we study the case of a pulse-train stimulus, and compare the predictions given by the PRC-approach (a 1D map) to those given by the PRF-ARF-approach (a 2D map); we observe differences up to two orders of magnitude in favor of the 2D predictions, especially when the stimulation frequency is high or the strength of the stimulus is large. We also explore the role of hyperbolicity of the limit cycle as well as geometric aspects of the isochrons. Summing up, we aim at enlightening the contribution of transient effects in predicting the phase response and showing the limits of the phase reduction approach to prevent from falling into wrong predictions in synchronization problems.
+
+List of Abbreviations
+PRC phase response curve, phase resetting curve.
+
+PRF phase response function.
+
+ARF amplitude response function.
+==== Body
+1 Introduction
+The phase response (or resetting) curve (PRC) is frequently used in neuroscience to study the effect of a perturbation on the phase of a neuron with oscillatory dynamics (see surveys in [1-3]). For it to be applied, several conditions are required (weak perturbations, long time between stimuli, strong convergence to the limit cycle, etc.) so that the system relaxes back to the limit cycle before the next perturbation/kick is received. In this case, one can reduce the study to the phase dynamics on the oscillatory solution (namely, a limit cycle). However, in realistic situations, we may not be able to determine whether the system is on an attractor (limit cycle); moreover, the system may not show regular spiking, especially because of noise; see for instance [4,5]. In addition, even in the absence of noise, strong forcing may send the dynamics away from the asymptotic state, eventually close to other nearby invariant manifolds [6]; thus, both the rate of convergence to the attractor and the stimulation frequency (which can be relatively high; take for instance the case of bursting-like stimuli) play an important role in controlling the time spent in the transient state (away from the limit cycle). All these factors may prevent the trajectories from relaxing back to the limit cycle before the next stimulus arrives and raise the question of the nature of the phase variation away from an attractor (that is, in transient states) and how much can we rely on the phase reduction (PRC). 
+
+Recently, tools to study the phase variation away from a limit cycle attractor have been developed. They rely on the concept of isochrons (manifolds transversal to the limit cycle and invariant under time maps given by the flow), introduced by Winfree (see [7]) in biological problems, from which one can extend the definition of phase in a neighborhood of the limit cycle. In a previous paper [8,9], we showed how to compute a parameterization of the isochrons (see also [10-12] for other computational methods) as well as the change in phase due to the kicks received when the system is approaching the limit cycle but not yet on it. This approach allowed us to control the phase advancement away from the limit cycle (that is, in the transient states) and build up the Phase Response Functions (PRF), a generalization of the PRCs. In [8], examples of neuron oscillators were shown in which the phase advancement was clearly different for states sharing the same phase. A review of these tools is presented in Sect. 2.
+
+In Sect. 3, we complete the extension of advancement functions to the transient states by defining the Amplitude Response Function (ARF), and we provide methods to compute it by controlling the changes induced by perturbations in a transversal variable, which represents some distance to the limit cycle. One of the methods presented here to compute the ARFs is an extension of the well-known adjoint method for the computation of PRCs; see, for instance, [13,14] or Chap. 10 in [1]. 
+
+Indeed, the knowledge of both the PRF and the ARF allows us to consider special problems in which these functions can forecast the asymptotic phase of an oscillator under pulsatile repetitive stimuli. In the case of a pulse-train stimulus, the variations of the extended phase and the amplitude can be controlled by means of a 2D map; this 2D map extends the classical 1D map used when the dynamics is restricted to the limit cycle or phase-reduction is assumed; see, for instance Chap. 10 in [1]. Another successful strategy to deal with kicks that send the dynamics away from the limit cycle is the so-called second-order PRC (see [15-17]), which measures the effects of the kick on the next cycle period, taking into account that synaptic input can span two cycles. 
+
+As an illustration of the method, in Sect. 4, we then consider a canonical model for which we compute the PRFs and ARFs thanks to the exact knowledge of the isochrons. In this “canonical” example, we apply a two parametric periodic forcing (varying the stimulus strength and frequency) and make predictions both with our 2D map and the classical 1D map; we use rotation numbers to illustrate the differences between the two predictions and we observe differences up to two orders of magnitude in favor of the 2D predictions, especially when the stimulation frequency is high or the strength of the stimulus is large. We also use this example to shed light on the role of hyperbolicity of the limit cycle as well as geometric aspects of the isochrons (see also [18] for a related study of the effect of isochrons’ shear). Finally, we also present the comparison of the two approaches in a conductance-based neuron model, where we do not know the isochrons analytically. 
+
+Summing up, we aim at enlightening the contribution of transient effects in predicting the phase response, focusing on the importance of the “degree” of hyperbolicity of the limit cycle, but also on the relative positions of the isochrons with respect to the limit cycle. Since PRCs are used for predicting synchronization properties, see [19], Chap. 10 in [1] or Chap. 8 in [2], our final goal is to show the limits of the phase reduction approach to prevent wrong predictions in synchronization problems. 
+
+2 Set-up of the Problem: Isochrons and Phase Response Functions (PRF)
+In this section, we set up the problem and we review some of the results in [8] that serve as a starting point of the study that we present in this paper. 
+
+Consider an autonomous system of ODEs in the plane 
+
+ (1) x˙=X(x),x∈U⊆R2, 
+
+ and denote by ϕt the flow associated to (1). Assume that X is an analytic vector field and that (1) has a hyperbolic limit cycle Γ of period T, parameterized by θ=t/T as 
+
+ (2) γ:T→R2θ↦γ(θ), 
+
+ where T=R/Z, so that γ(θ)=γ(θ+1).
+
+Under these conditions, by the stable manifold theorem (see [20]), there exists a unique scalar function defined in a neighborhood Ω of the limit cycle Γ, 
+
+ (3) Θ:Ω⊂R2→Tx↦Θ(x) 
+
+ such that 
+
+ (4) limt→+∞|ϕt(x)−γ(t/T+Θ(x))|=0, 
+
+ if the limit cycle is attracting. If the limit cycle is repelling, the same is true with t→−∞.
+
+The value Θ(x) is the asymptotic phase of x and the isochrons are defined as the sets with constant asymptotic phase, that is, the level sets of the function Θ. The same construction can be extended to limit cycles in higher dimensional spaces, but since the applications in this paper will be restricted to planar systems, we give the definitions in R2.
+
+Moreover, we know from [21] that there exists an analytic local diffeomorphism 
+
+ (5) K:T×[σ−,σ+]→R2(θ,σ)↦K(θ,σ), 
+
+ satisfying the invariance equation 
+
+ (6) (1T∂θ+λσT∂σ)K(θ,σ)=X(K(θ,σ)), 
+
+ where T is the period and λ is the characteristic exponent of the periodic orbit.
+
+We can describe (6) as saying that if we perform the change of variables given by K, the dynamics of the system (1) in the coordinates (θ,σ) consist of a rigid rotation with constant velocity 1/T for θ and a contraction (if λ<0) with exponential rate λ/T for σ. That is, 
+
+ (7) θ˙=1/T,σ˙=λσ/T, 
+
+ and ϕt(K(θ,σ))=K(θ+t/T,σe(λ/T)t), where ϕt is the flow associated to (1). See Fig. 1 for an illustration of the evolution of the variables (θ,σ) along an orbit of the system. 
+
+Fig. 1 The new coordinate system. Representation of a limit cycle (red) and an isochron (blue) corresponding to the phase level sets θ=θ0. The black dashed curve is a piece of the trajectory of the vector field X starting at a generic point K(θ0,σ0)
+
+Remark 2.1 In [8], we presented a computational method to compute the parameterization K defined in (6) numerically.
+
+Given an analytic local diffeomorphism K satisfying (6), we know from Theorem 3.1 in [8] that the isochrons are the orbits of a vector field Y satisfying the Lie symmetry [Y,X]=μY with μ=λ/T. That is, 
+
+ (8) Y∘K(θ,σ)=∂σK(θ,σ). 
+
+Let us assume that a pulse of small modulus ϵ instantaneously displaces the trajectory in a direction given by the unit vector w. Mathematically, we consider 
+
+ (9) x˙=X(x)+ϵwδ(t−ts), 
+
+ where ϵ≪1 and δ(t) is the Dirac delta function. Then we define the phase response function (PRF) as the infinitesimal rate of change of the phase in the direction w of the perturbation, that is, 
+
+ PRF(x)=DwΘ(x)=〈w,∇Θ(x)〉, 
+
+ where Θ is the phase function defined in (3) and 〈⋅,⋅〉 denotes the dot product. In [8], we showed that 
+
+ (10) ∇Θ(K(θ,σ))=(∂σK)⊥T〈(∂σK)⊥,∂θK〉, 
+
+ where (∂σK)⊥=J(∂σK) and the matrix J is given by 
+
+ (11) J=(0−110). 
+
+ We will use this notation for the rest of the paper.
+
+In neuron models, the usual situation is x=(V,…) and w=(1,0,…,0); thus, the phase response function (PRF) is defined as 
+
+ (12) PRF(x)=∂VΘ(x), 
+
+ where ∂V denotes partial derivative with respect to the variable V.
+
+3 The Amplitude Response Function (ARF)
+A pulse stimulation displaces the trajectory away from the limit cycle, producing a change both in the phase θ and the transversal variable σ, that we will refer to as the amplitude variable. In our notation, the amplitude variable is a distance measure defined by the time from the limit cycle along the orbits of the auxiliary vector field Y, transversal to X, defined in (8). In fact, the orbits of the vector field Y are the isochrons; see, for instance, the blue curve in Fig. 1. The phase-reduction approach assumes that the amplitude decreases to zero before the next pulse arrives and, therefore, the amplitude is always zero at the stimulation time. However, if one wants to consider pulses that arrive before the trajectory relaxes back to the limit cycle, one needs to compute also the amplitude displacement in order to predict the coordinates of the point at the next stimulation time.
+
+In this section, we introduce the amplitude function and Amplitude Response Function (ARF), the analogues of the phase function (3) and the PRF (12) for the variable σ. Finally, we provide a formula to compute them given the diffeomorphism K introduced in (5).
+
+3.1 Definitions
+Given an analytic local diffeomorphism K as in (5) satisfying (6), it follows that there exists a unique function Σ, defined in a neighborhood Ω of the limit cycle Γ, 
+
+ (13) Σ:Ω⊂R2→Rx↦Σ(x) 
+
+ such that 
+
+ Σ(ϕt(x))=Σ(x)eλt/T, 
+
+ where ϕt is the flow associated to the vector field X. The level curves of Σ are closed curves that we will call amplitude level curves or, in short, A-curves.
+
+Analogous to the phase isochrons, it can be seen that given an analytic local diffeomorphism K, as in (5), satisfying (6), the A-curves are the orbits of a vector field Z, satisfying [X,Z]=[Z,X]=0; see the Appendix for a proof of this result. More specifically, 
+
+ (14) Z(K(θ,σ))=∂θK(θ,σ). 
+
+Expressed in the variables (θ,σ) introduced in (5), the motion generated by Z is given by {θ˙=1,σ˙=0}.
+
+A pulsatile kick in the direction given by the unit vector w (see (9)) causes a change in the amplitude variable. Analogous to the PRF introduced in (10), we define the Amplitude Response Function (ARF) as the infinitesimal rate of change of the phase in the direction w of the perturbation, that is, 
+
+ ARF(x)=DwΣ(x)=〈w,∇Σ(x)〉. 
+
+ In neuron models, the ARF typically measures the change in amplitude under the action of a pulsatile kick in the direction of the voltage V, that is, 
+
+ ARF(x)=∂VΣ(x), 
+
+ where ∂V denotes partial derivative with respect to the variable V.
+
+3.2 Computation of the PRFs and the ARFs
+In this section, we provide a formula to compute the functions ∇Θ and ∇Σ given the diffeomorphism K introduced in (5).
+
+Using the parameterization K introduced in (5) and writing K(x,y)=K(Θ(x,y),Σ(x,y))=(Kx,Ky), where Θ and Σ are the functions introduced in (3) and (13), respectively, we have that 
+
+ (∂θKx∂σKx∂θKy∂σKy)(∂xΘ∂yΘ∂xΣ∂yΣ)=(1001), 
+
+ and, therefore, ∇Θ=(∂xΘ,∂yΘ) and ∇Σ=(∂xΣ,∂yΣ) are given by 
+
+ (∇Θ∇Σ)=(∂θKx∂σKx∂θKy∂σKy)−1=1〈∂σK⊥,∂θK〉(∂σKy−∂σKx−∂θKy∂θKx)=1〈∂σK⊥,∂θK〉(∂σK⊥∂θK⊥). 
+
+ Hence, 
+
+ (15) ∇Θ(K(θ,σ))=∂σK⊥(θ,σ)〈∂σK⊥(θ,σ),∂θK(θ,σ)〉,and∇Σ(K(θ,σ))=∂θK⊥(θ,σ)〈∂σK⊥(θ,σ),∂θK(θ,σ)〉. 
+
+Using the vector field description given in (8) and (14), we can rewrite the expression above, using the relations ∂σK=Y∘K and ∂θK=Z∘K, as 
+
+ ∇Θ(K(θ,σ))=Y⊥〈Y⊥,Z〉|K(θ,σ),and∇Σ(K(θ,σ))=Z⊥〈Z⊥,Y〉|K(θ,σ). 
+
+ By the invariance equation (6), we know that X=1TZ+λTσY and, therefore, 
+
+ (16) ∇Θ(K(θ,σ))=Y⊥T〈Y⊥,X〉|K(θ,σ),and∇Σ(K(θ,σ))=λσTZ⊥〈Z⊥,X〉|K(θ,σ). 
+
+Remark 3.1 Notice that expression for ∇Σ in (16) might suggest that it has a singularity at σ=0. Nevertheless, the vanishing terms in the numerator and denominator cancel out at σ=0, and using that Z(K(θ,0))=∂θK(θ,0)=X(K(θ,0)), the value at σ=0 is given by 
+
+ ∇Σ(γ(θ))=X⊥(γ(θ))〈X⊥(γ(θ)),K1(θ)〉, 
+
+ where K1(θ)=∂σK(θ,0)=Y(K(θ,0)).
+
+3.3 The Adjoint Method for the ARF
+The most common method to compute the PRC, the so-called adjoint method, uses that the function ∇Θ evaluated on the limit cycle Γ is a periodic solution of some adjoint equation (see, for instance, [1]). In the generalization introduced in [8], it was shown that the adjoint method can be extended to compute ∇Θ for points in a neighborhood of the limit cycle, for which the periodicity condition is not satisfied. Indeed, Q=∇Θ satisfies the equation 
+
+ (17) dQdt=−DXT(ϕt(p))Q, 
+
+ where DXT is the transpose of the real matrix DX. In this case, the method just requires an initial condition, so that it can be solved uniquely. The initial condition is provided by formula (15).
+
+The same result can be extended to compute the change in the transversal variable σ due to a pulse stimulation. In the following proposition, we provide the differential equation satisfied by ∇Σ(p) where p=K(θ,σ) is a point in a neighborhood Ω of the limit cycle γ evolving under the flow of X.
+
+Proposition 3.2LetΓbe a hyperbolicT-periodic orbit of a planar analytic vector fieldXparameterized byθaccording to (2). Assume that there exists a change of coordinatesKin a neighborhoodΩsatisfying (6). Then the function ∇Σalong the orbits of the vector fieldXsatisfies the adjoint equation
+
+ (18) dQdt=(λT−DXT(ϕt(p)))Q, 
+
+whereϕtis the flow of the vector fieldXandλis the characteristic multiplier of the periodic orbit, with the initial condition
+
+ (19) Q(0)=λΣ(p)TZ⊥(p)〈Z⊥(p),X(p)〉, 
+
+whereZ⊥(K(θ,σ))=J∂θK(θ,σ).
+
+Proof We will show that the function ∇Σ evaluated along the orbits ϕt(p) of X satisfies the adjoint equation (18). From expression (16), we have that 
+
+ (20) ∇Σ(ϕt(p))=λΣ(ϕt(p))TZ⊥(ϕt(p))〈Z⊥(ϕt(p)),X(ϕt(p))〉. 
+
+We now compute the derivative of ∇Σ(ϕt(p)) with respect to time. In order to simplify notation, we set x:=ϕt(p). We will also use that Z⊥=JZ where J is the matrix (11). Using that ddtZ(x)=DZ(x)X(x), we have from (20) 
+
+ ddt∇Σ(x)=λ(dΣ/dt)(x)JZ(x)+λΣ(x)JDZ(x)X(x)T〈Z⊥(x),X(x)〉−λΣ(x)JZ(x)(〈JDZ(x)X(x),X(x)〉+〈JZ(x),DX(x)X(x)〉)T〈Z⊥(x),X(x)〉2. 
+
+ Using that DXZ=DZX, expression (20) and dot product properties (namely, 〈JZ(x),DX(x)X(x)〉=〈DX(x)TJZ(x),X(x)〉), we obtain 
+
+ ddt∇Σ(x)=(λ/T)λΣ(x)JZ(x)+λΣ(x)JDX(x)Z(x)Tg(x)−∇Σ(x)〈JDX(x)Z(x)+DX(x)TJZ(x),X(x)〉〈Z⊥(x),X(x)〉. 
+
+ Using JDX(x)+DX(x)TJ=trace(DX)(x)J, and denoting τ(x):=trace(DX)(x), we are led to 
+
+ ddt∇Σ(x)=(λ/T−DX(x)T+τ(x))λΣ(x)JZ(x)T〈Z⊥(x),X(x)〉−∇Σ(x)(〈τ(x)JZ(x),X(x)〉)〈Z⊥(x),X(x)〉. 
+
+ Finally, using again (20), we have 
+
+ ddt∇Σ(x)=(λ/T−DX(x)T+τ(x))∇Σ(x)−∇Σ(x)τ(x)=(λ/T−DX(x)T)∇Σ(x), 
+
+ as we wanted to prove. □
+
+4 Periodic Pulse-Train Stimuli
+The purpose of this section is to show the convenience of using the response functions away from the limit cycle to obtain accurate predictions of the ultimate phase advancement. To this end, we force a system with pulse-trains of period Ts≪T0 for trajectories near a limit cycle Γ of period T0 and characteristic exponent λ.
+
+Given an oscillator, assume that it is perturbed with an external instantaneous stimulus of amplitude ϵ in the voltage direction every Ts time units, that is, 
+
+ (21) x˙=X(x)+ϵw∑j=0Nδ(t−jTs), 
+
+ where w=(1,0), ϵ≪1 and δ is the Dirac delta function. This system can represent, for example, a neuron which receives an idealized synaptic input from other neurons.
+
+Remark 4.1 In the sequel, we will also use ωs=1/Ts, the frequency of the stimulus, and ω0=1/T0, the frequency of the limit cycle Γ. Then the quotient ωs/ω0 indicates how many inputs the oscillator receives in one period.
+
+In order to know the evolution of the perturbed oscillator after each time period Ts, it is enough to know how the variables θ and σ change. We recall that the variation of the variable θ produced by an external stimulus is given, to first order in the stimulus strength ϵ, by the PRF. Similarly, the variation of the variable σ is given to first order by the ARF. Hence, we can consider the following map, which approximates the position of the oscillator at the moment of the next kick: 
+
+ (22) θn+1=θn+ϵPRF(θn,σn)+TsT0(mod1),σn+1=(σn+ϵARF(θn,σn))eλTs/T0. 
+
+ Moreover, we can compare it with the map obtained by considering the classical PRC (see, for instance, Chap. 10 in [1]), which is 
+
+ (23) θn+1=θn+ϵPRC(θn)+TsT0(mod1). 
+
+ In the latter case, we are assuming that the perturbation happens always on the limit cycle and, therefore, σn=0 for all n. The possibility that this might not be a realistic assumption (for example, if the stimulus period Ts is too small, the limit cycle is weakly hyperbolic or the strength of the stimulus ϵ is too large) has been already pointed out in the literature; see, for instance, [22] or Chap. 10 in [1]. However, other factors could play a role, for example, the geometry of the isochrons (curvature, transversality to the limit cycle, etc.). Our aim is to consider some examples and see in which cases the 1D map (23) gives a correct prediction or, on the contrary, one requires the 2D map (22) to correctly assess the true dynamics of the phase variable.
+
+To quantify the long-term agreement or disagreement between the 1D and the 2D predictions, we compute an approximation of the rotation numbers after N iterations for both maps. More precisely, given an initial condition (θ0,σ0), we compute 
+
+ (24) ρ¯=limN→+∞1N∑j=1N(θ˜j−θ˜j−1), 
+
+ where θ˜ denotes the lift of θ to ℝ. Then, for the 2-dimensional map (22) and assuming N large enough, the rotation number can be approximated by 
+
+ (25) ρ2D:=TsT0+1Nϵ∑j=0N−1PRF(θj,σj), 
+
+ and by 
+
+ (26) ρ1D:=TsT0+1Nϵ∑j=0N−1PRC(θj), 
+
+ for the 1-dimensional map (23).
+
+These approximate rotation numbers will be our main indicator to compare the dynamics predicted by the 1D map with that of the 2D map. In order to dissect the causes that create the eventual differences between the two maps and highlight the shortcomings of the phase-reduction approach, we have first considered a “canonical” example in which the isochrons can be computed analytically. Next, we consider a conductance-based model, in which the isochrons have to be computed numerically and we obtain similar comparative results.
+
+4.1 Examples
+4.1.1 A Simple Canonical Model
+We consider a simple model having a limit cycle with two parameters, α and a, that control the hyperbolicity of the limit cycle and the angle between the isochrons and the limit cycle, respectively. The system has the following expression in polar coordinates: 
+
+ (27) r˙=αr(1−r2),φ˙=1+αar2, 
+
+ for a,α∈R, and the following one in Cartesian coordinates: 
+
+ (28) x˙=αx(1−(x2+y2))−y(1+αa(x2+y2)),y˙=αy(1−(x2+y2))+x(1+αa(x2+y2)). 
+
+The limit cycle corresponds to r=1 and the dynamics on it are given by φ˙=1+αa; therefore, φ(t)=φ0+(1+αa)tmod2π. The period of the limit cycle Γ is T0=2π/(1+αa). A parameterization of the limit cycle in terms of the phase θ=t/T0, for θ∈[0,1) is γ(θ)=(cos(2πθ),sin(2πθ)).
+
+Now, consider the vector field Y, given in the polar and Cartesian coordinates by 
+
+ r˙=αr3,andx˙=α(x2+y2)(x+ay),φ˙=−αar2;y˙=α(x2+y2)(y−ax). 
+
+ It is easy to check that Y satisfies [X,Y]=−2αY. Then, using (8), we find that μ=−2α and 
+
+ (29) K(θ,σ)=(11−2ασcos(2πθ+12aln(1−2ασ)),11−2ασsin(2πθ+12aln(1−2ασ))), 
+
+ with θ∈[0,1) and σ>1/(2α).
+
+Notice that the function K can be easily inverted using that r2=x2+y2=(1−2ασ)−1 and arctan(yx)=2πθ+12aln(1−2ασ). Then K−1(x,y)=(Θ(x,y),Σ(x,y)), where 
+
+ Θ(x,y)=12π(arctan(yx)−12aln(1r2)),Σ(x,y)=12α(1−1r2). 
+
+ Thus, the dynamics for (θ,σ) are given by 
+
+ (30) θ˙=1/T0,σ˙=−2ασ. 
+
+The vector field Z, defined in (14), has the following expression in Cartesian coordinates and polar coordinates, respectively: 
+
+ x˙=−2πy,andr˙=0,y˙=2πx;φ˙=2π. 
+
+Therefore, we find that ∇Θ(p)=12πr2(−y+ax,x+ay), and, by the parameterization γ of the limit cycle, ∇Θ(γ(θ))=12π(−sin(2πθ)+acos(2πθ),cos(2πθ)+asin(2πθ)). Similarly, ∇Σ(p)=(xαr4,yαr4), and ∇Σ(γ(θ))=(cos(2πθ),sin(2πθ)).
+
+From the last equations, we can then obtain 
+
+ (31) PRF(K(θ,σ))=−1−2ασ2π(sin(2πθ+12aln(1−2ασ))−acos(2πθ+12aln(1−2ασ))) 
+
+ and 
+
+ ARF(K(θ,σ))=(1−2ασ)3/2αcos(2πθ+12aln(1−2ασ)). 
+
+ In Fig. 2, we show the PRF and the ARF for a specific isochron for representative values of the parameters, a=10 and α=0.1. An important remark is that the PRF is far from being constant along isochrons, whereas the ARF is clearly nonzero near the limit cycle (σ=0). These features will have a significant effect when comparing the predictions provided by the 1D map and the 2D map. 
+
+Fig. 2 Phase and amplitude response functions along isochrons. Phase response function (PRF) and amplitude response function (ARF) for system (28) with a=10 and α=0.1, computed from (31)
+
+We want to stress the role of the parameters α and a. On one hand, the parameter α determines the hyperbolicity of the limit cycle, since its characteristic exponent is 
+
+ λ=−2αT0. 
+
+ Hence, for small values of α the contraction to the limit cycle will be weak, while as α goes to infinity λ tends to −4π/a. On the other hand, the parameter a determines the transversality of the isochrons to the limit cycle. Indeed, denoting by β the angle between the isochron {p∈R2:Θ(p)=θ} and the limit cycle at the point γ(θ), we have 
+
+ cosβ=〈γ′(θ),∇Θ⊥(γ(θ))〉∥γ′(θ)∥∥∇Θ⊥(γ(θ))∥. 
+
+ Computing explicitly the right-hand side of the equality, it is straightforward to verify that 
+
+ cosβ=2πa1+a2. 
+
+ In particular, note that β is independent of the variable θ. Moreover, for a=0 the isochrons are orthogonal to the limit cycle and, as a tends to infinity, they become to it (see Fig. 3). 
+
+Fig. 3 Limit cycle and isochrons. The limit cycle (red) of system (28) and some isochrons (blue) for different values of the parameter a. In both cases, α=10
+
+4.1.2 Numerical Simulations
+In this section, we use the analytic expressions obtained in the previous subsection for the PRF, ARF, and PRC to compute and compare the maps defined in (22) and (23). Moreover, as we also have an explicit formula for the parameterization K and its inverse K−1, we can integrate numerically system (28), perturb it periodically, and obtain a sequence (xn,yn). Then we can compute analytically 
+
+ (32) (θn,σn)=K−1(xn,yn), 
+
+ and compare it with the iterations obtained using the maps (22) and (23). In the following, we will call the approximation of the rotation number obtained by this method simply ρ, to distinguish it from ρ2D and ρ1D defined previously in (25) and (26), respectively. The following lemma gives a description of the dynamics expected in the 1-dimensional map.
+
+Lemma 4.2Fork∈Z, let us denote
+
+ Ck=2πϵ(TsT0−k). 
+
+Then, the fixed points of the 1-dimensional map (23) can be computed analytically and: 
+
+• If1+a2+Ck2<0for allk∈Z, the map (23) has no fixed points.
+
+• If there existsk∈Zsuch that1+a2+Ck2<0and
+
+ |−aCk+1+a2−Ck21+a2|≤1, 
+
+the map (23) has the fixed point
+
+ θ+∗=12πarccos(−aCk+1+a2−Ck21+a2). 
+
+Moreover, ifa≤Ckand
+
+ |−aCk−1+a2−Ck21+a2|≤1, 
+
+there exists also another fixed point
+
+ θ−∗=12πarccos(−aCk−1+a2−Ck21+a2). 
+
+Proof The fixed points θ∗ of map (23) must satisfy 
+
+ ϵPRC(θ∗)+TsT0=k 
+
+ for some k∈Z, or equivalently 
+
+ PRC(θ∗)+Ck2π=0. 
+
+ Substituting PRC(θ∗) in the above equation by expression (31) with σ=0 and rearranging terms we have 
+
+ (33) sin(2πθ∗)=acos(2πθ∗)+Ck. 
+
+ Taking squares of both sides of the equality and using trigonometric properties, we obtain 
+
+ (1+a2)cos2(2πθ∗)+2aCkcos(2πθ∗)+Ck2−1=0, 
+
+ which is an equation of degree 2 in cos(2πθ∗). Solving it, after some simplifications, we obtain 
+
+ (34) cos(2πθ∗)=−aCk±1+a2−Ck21+a2. 
+
+ It is clear that for Eq. (34) to have real solutions, the right-hand side must have modulus at most 1 and 1+a2−Ck≥0. In this case, the solutions of (34) are 
+
+ θ±∗=12πarccos(−aCk±1+a2−Ck21+a2). 
+
+ However, as we have taken squares in Eq. (33), we still have to check whether θ+∗ and θ−∗ are solutions of (33). It is easy to check that θ+∗ always solves (33), while θ− is a solution only when a≤Ck. □
+
+Remark 4.3 A natural question is whether the 2-dimensional map (22) and the sequence (32) have the same qualitative behavior. As an example, let us take ϵ=0.03, α=0.1 and a=10. In this case, there exists just the fixed point θ+∗ for the 1-dimensional map (23). So, let us take the initial condition (θ0,σ0)=(θ+∗,0) and compute its iterates by the three different maps (22), (23), and (32). In Fig. 4, we plot the sequences K(θn,σn) (for clarity, we have just plotted those with n>200). As one can see, map (23) fails to predict correctly the qualitative behavior of the solution, since (32) seems to be attracted to a quasi-periodic orbit and not a fixed point. On the contrary, map (22) correctly predicts this qualitative behavior. 
+
+Fig. 4 Comparison of iterative maps for periodic pulse-train stimuli. Sequences K(θn,σn), for n>200, computed using maps (22), (23) and (32) respectively
+
+From now on, we will take the initial condition to be (θ0,σ0)=(0.8,0), that is, (x0,y0)≈(0.30901,−0.95106). In order to explore the effect of both the hyperbolicity and the transversality of the isochrons to the limit cycle, we will plot the different approximations of the rotation numbers ρ, ρ2D, and ρ1D for different values of the parameters a and α.
+
+First of all, we will take α=0.1 and a=10. This corresponds to considering a weakly hyperbolic limit cycle with isochrons that are almost tangent to it. In Fig. 5, we show the rotation numbers obtained for different amplitudes and for two different stimulus periods Ts. In this case, in order to make the rotation number ρ1D stabilize, we have taken N=1000. 
+
+Fig. 5 Rotation numbers as a function of the stimulus strength. Rotation numbers as a function of the stimulus strength for parameter values α=0.1 and a=10. Stimulation periods are aTs=0.0628319≈T0/50, bTs=0.1570800≈T0/20
+
+Observe also the agreement with the result in Lemma 4.2, which predicts the appearance of the fixed point of the 1D map when 1+a2−Ck2=0, that is, when Ck2=101 or, equivalently after substituting Ts=T0/m, ϵ=2π/(101m). The fixed point appears at ϵ≈0.0125 for m=50 (panel (a) in Fig. 5) and ϵ≈0.0312 for m=20 (panel (b) in Fig. 5); both values coincide with the downstroke of the corresponding values of ρ1D.
+
+One can see that the rotation number obtained with the 1-dimensional map diverges from the analytical computation, while the one obtained with the 2-dimensional map does not. This wrong prediction by the 1-dimensional approach is consistent for all intermediate values of Ts (not shown here). We point out that, although the difference between the 1-dimensional approach and the other two seems rather small (it ranges from 10−3 to 10−2), we can identify a wrong prediction of the qualitative behavior of the system by the 1-dimensional map. Indeed, in the cases where ρ1D≈0 but ρ2D,ρ≠0, the 1-dimensional map (23) has a fixed point, while the other two do not (see Remark 4.3). For example, in Fig. 6, we plot in the phase space the first 100 iterates of the sequences K(θn,σn), where (θn,σn) are obtained, respectively, using the 2-dimensional map (22), the 1-dimensional map (23), and expression (32). While for the 1D map a fixed point is reached, for the 2D and the analytic approaches it seems that the dynamics are not so simple. Observe that this different qualitative behavior is obtained in spite of the initial condition being on the limit cycle. 
+
+Fig. 6 Iterates for a weakly hyperbolic limit cycle. First 100 iterates of sequences K(θn,σn) computed using the three different methods. Parameter values are taken to be α=0.1, a=10, ϵ=0.022 and Ts=0.0628319≈T0/50
+
+Another visualization of the agreement or disagreement between the different approximations of the rotation numbers is provided in Figs. 7, 8, and 9. We show the differences between them depending on both ϵ (that is, the strength of the stimulus) and ωrel:=ωs/ω0=T0/Ts (the ratio between the frequency of the stimulus and the frequency of the limit cycle). In Fig. 7, we plot the absolute difference between the rotation number obtained with the 2-dimensional approach and the analytic one, namely |ρ2D−ρ|, whereas in Fig. 8, we plot the error when using the phase-reduction hypothesis, namely |ρ1D−ρ|. Both errors are compared in Fig. 9, where the ratio |ρ2D−ρ|/|ρ1D−ρ| is displayed. As expected, one can see in Figs. 7 and 8 that, fixing the stimulus period Ts, the worst approximations of ρ given respectively by ρ2D and ρ1D are obtained for high values of ϵ. However, fixing the strength of the stimulus ϵ, the results for both cases are different: while for the 2-dimensional map the worst results are for high frequency ratios ωrel, for the 1D approach the worst results are obtained, in general, for low ωrel. Finally, as we also expected, in Fig. 9 we can appreciate that the 2D approach is always better than the 1D. Moreover, the difference between ρ2D and ρ is, in the worst case, two orders of magnitude smaller than the difference between ρ1D and ρ. 
+
+Fig. 7 Differences among the 2D prediction and the analytic rotation numbers. Absolute difference between the rotation number obtained with the 2-dimensional approach and the analytic one, that is |ρ2D−ρ|, in the two-parametric space (ωrel,ϵ)
+
+Fig. 8 Differences among the 1D prediction and the analytic rotation numbers. Absolute difference between the rotation number obtained with the 1-dimensional approach (phase-reduction hypothesis) and the analytic one, that is |ρ1D−ρ|, in the two-parametric space (ωrel,ϵ)
+
+Fig. 9 Ratio between errors given by the 2D prediction and by the 1D prediction. Ratio of the absolute difference between the 2-dimensional approach and the analytic one (numerator, see Fig. 7) over the absolute difference between the 1-dimensional approach and the analytic one (denominator, see Fig. 8), that is, |ρ2D−ρ|/|ρ1D−ρ|
+
+As we mentioned above, we use this example to help us understanding the effect of the hyperbolicity of the limit cycle and the transversality of the isochrons to it in the validity of the PRC approach. In Figs. 10, 11, and 12, we plot the different approximations of the rotation numbers varying the parameters α (α=0 meaning loss of hyperbolicity) and a (a=0 meaning isochrons normal to the limit cycle). On one hand, when the limit cycle is strongly hyperbolic (for instance, α=10 as in Figs. 11 and 12), all approximations give a very similar result. Hence, in these two cases (even when the isochrons are almost tangent to the limit cycle, which corresponds to Fig. 11), the use of PRFs and ARFs instead of PRCs seems not necessary. In fact, that is what one can expect intuitively: if the attraction to the limit cycle is very strong, the system relaxes back to the asymptotic state very quickly, so that at each kick we can assume that the state variables are on the limit cycle. Of course, this will depend also on the frequency of stimulation ωs. 
+
+Fig. 10 Effect of weak hyperbolicity and normal isochrons in the phase prediction. Rotation numbers for different stimulus strengths in case of weak hyperbolicity and normal isochrons (α=0.1 and a=0). Stimulation periods are aTs=0.0628319≈T0/50, bTs=0.1570800≈T0/20
+
+Fig. 11 Effect of strong hyperbolicity and almost tangent isochrons in the phase prediction. Rotation numbers for different stimulus strengths in case of strong hyperbolicity and almost tangent isochrons (α=10 and a=10). Stimulation periods are aTs=0.0628319≈T0/50, bTs=0.1570800≈T0/20
+
+Fig. 12 Effect of strong hyperbolicity and normal isochrons in the phase prediction. Rotation numbers for different stimulus strengths in case of strong hyperbolicity and normal isochrons (α=10 and a=0). Stimulation periods are aTs=0.0628319≈T0/50, bTs=0.1570800≈T0/20
+
+On the other hand, in Fig. 10, where the contraction to the limit cycle is slow but the isochrons are almost orthogonal to the limit cycle, one can see that the 1D approach diverges from the 2D approach and the analytic one. However, for the range of ϵ and the two different stimulation periods Ts (panels (a) and (b)) considered in Fig. 10, the 1D prediction still gives a fairly good approximation. Moreover, unlike the case where α=0.1 and a=10 (see Fig. 5), the 1D approach predicts a similar qualitative behavior as the other two approaches. The results for ϵ=0.04 in Fig. 10(a) raise another interesting question since the analytic rotation number ρ suddenly diverges from the 1D and the 2D rotation numbers. This is due to the fact that the iterates of the analytic map suddenly fail to encircle the critical point of the continuous system (located inside the limit cycle) while the iterates of the 1D and the 2D maps still do it. Thus, the rotation number for the analytic case may not give accurate information.
+
+In conclusion, it seems that for the 2D map to represent a qualitative improvement with respect to the 1D it is necessary to have the combination of weak hyperbolicity of the limit cycle and “weak transversality” of isochrons to it. However, the role of hyperbolicity seems to be much more important, since in the presence of strong hyperbolicity the use of the 2D approach seems completely unnecessary, but for weak hyperbolicity the differences between the 1D and the 2D maps are present also when the isochrons are orthogonal to the limit cycle.
+
+Remark 4.4 Of course, considering a stimulus strength ϵ large enough, both maps (22) and (23) will not give correct predictions, since they are based on first-order approximations. In this case, one should consider PRFs of second (or higher) order to obtain a correct result; see, for instance, [23,24] for higher-order PRCs. One has to distinguish between these higher order response functions in terms of the stimulus strength from the second-order PRCs above mentioned (see [15] for instance) that relate to the second cycle after the stimulus. 
+
+In the next example, we apply the same methodology to a more biologically inspired case: a conductance-based model for a point-neuron with two types of ionic channels.
+
+4.1.3 A Conductance-Based Model
+We consider a reduced Hodgkin–Huxley-like system, with sodium and potassium currents, and only one gating variable: 
+
+ (35) V˙=−1Cm(gNam∞(V)(V−VNa)+gKn(V−VK)+gL(V−VL)−Iapp),n˙=n∞(V)−n, 
+
+ where V represents the membrane potential, in mV, n is a nondimensional gating variable and the open-state probability functions are 
+
+ m∞(V)=11+exp(−(V−Vmax,m)/km),n∞(V)=11+exp(−(V−Vmax,n)/kn). 
+
+The parameters of the system are Cm=1μF/cm2, gNa=20 mS/cm2, VNa=60 mV, gK=10 mS/cm2, VK=−90 mV, gL=8 mS/cm2, vL=−80 mV, Vmax,m=−20 mV, km=15, Vmax,n=−25 mV, kn=5.
+
+Here, we will take Iapp=190μA/cm2. In this case, the system has a limit cycle with period T0≈1.3055442, and its characteristic exponent is λ≈−0.6055956. That is, the limit cycle is weakly hyperbolic, and hence we expect that the 2-dimensional approach will give qualitatively different results with respect to the 1-dimensional approach. Figure 13 shows the limit cycle and its isochrons. 
+
+Fig. 13 The limit cycle of the conductance-based model and its isochrons. The limit cycle (red) and equally spaced in phase isochrons (blue) for system (35) and Iapp=190
+
+In Fig. 14, we show the PRF and the ARF on the limit cycle (σ=0), panels (a) and (b), and for a specific isochron (θ=0), panels (c) and (d). 
+
+Fig. 14 Phase and amplitude response functions along isochrons and σ-level sets. Phase response function (PRF) and amplitude response function (ARF) for system (35) and Iapp=190 on the limit cycle (σ=0), panels a and b, and for a specific isochron (θ=0), panels c and d
+
+Remark 4.5 We have chosen a value of the parameter Iapp=190 for which the system presents weak attraction to the limit cycle. However, for this value of Iapp, system (35) is not a model of a spiking neuron, but one with high voltage oscillations. Thus, this example is not intended to deal with a realistic setting of spike synchronization, but to illustrate how to deal with the tools introduced in this paper in the case where one does not explicitly have the parameterization K.
+
+Remark 4.6 In order to compute the parameterization K and the PRFs we have used the methods proposed in [8]. The same ideas can be applied to compute the ARFs. Briefly, the method consists of two steps. First, to compute the value of a given ARF near the limit cycle, where the numeric approximation of the parameterization K is valid, expression (16) is used. Second, to compute the value of some ARF far from the limit cycle, we just integrate the adjoint system (18) backwards in time using an initial condition for ARF close to the limit cycle.
+
+Again, we have computed the rotation numbers as defined in (25) and (26) varying the strength of the stimulus ϵ with fixed stimulation periods. We have taken N=100 and initial conditions θ0=0.089 and σ0=0. The results, for two different stimuli periods Ts, are shown in Fig. 15. Again, note that although the dynamics begin on the limit cycle (since σ0=0), the behavior of the 1-dimensional approach and the 2-dimensional approach are quite different. Moreover, for ϵ>0.4 we find that ρ1D≈0, while ρ2D≈0.02. This can be interpreted, similarly to the previous example, as an indicator that the 1D map (23) has a fixed point, while the 2D map does not. Furthermore, this indicates that after 100 iterations of the 2D map (22), the state variables have turned approximately twice around the fixed point, as one can see from the plots of the sequences K(θn,σn) computed using both maps (see Fig. 16). 
+
+Fig. 15 Rotation numbers for different stimulus strengths in the conductance-based model. Rotation numbers for different stimulus strengths and fixed stimulus periods for system (35)
+
+Fig. 16 Iterates for a weakly hyperbolic limit cycle of the conductance-based model. Sequences K(θn,σn) computed using the 2-dimensional map (22) and the 1-dimensional map (23), respectively, for system (35). The strength of the stimulus is ϵ=0.574604, while the stimulation period is Ts=0.026111≈T0/50
+
+5 Discussion
+We have introduced general tools (the PRF and the ARF) to study the advance of both the phase and the amplitude variables for dynamical systems having a limit cycle attractor. These tools allow us to study variations of these variables under general perturbation hypotheses and extend the concept of infinitesimal PRCs which assumes the validity of the phase-reduction and is only true under strong hyperbolicity of the limit cycle or under weak perturbations. In fact, the PRFs and ARFs are first-order approximations of the actual variation of the phase and the amplitude, respectively, and so they are supposed to work mainly for weak perturbations; however, being an extension away from the limit cycle makes them more accurate than the PRCs even under strong perturbations. We thus claim that the phase-reduction has to be used with caution since assuming it by default may lead to completely wrong predictions in synchronization problems. We are not dismissing phase-reduction but trying to show the limits beyond which an extended scenario is required.
+
+We have presented a computational analysis to understand the contribution of transient effects in first-order predictions of the phase response, focusing on the importance of the hyperbolicity of the limit cycle, but also on the relative positions of the isochrons with respect to the limit cycle.
+
+In the examples studied, subject to pulse-train stimuli, we have compared the predictions obtained both with the new 2D map defined from the PRF and ARF and the 1D map defined from the classical PRC. Using rotation numbers, we have shown differences up to two orders of magnitude in favor of the 2D predictions, especially when the stimulation frequency is high or the stimulus is too strong. These results confirm previous numerical experiments with specific oscillators; see [22]. On the other hand, we have found that both weak hyperbolicity of the limit cycle and “weak transversality” of isochrons to it are important factors, although the role of hyperbolicity seems to be more crucial. In this paper, these achievements have been tested in a canonical model allowing comparisons with the exact solutions, and other numerical tests have been applied in a conductance-based model. The technique can be applied to other neuron models, and not necessarily for planar systems; n-dimensional systems would only require an additional computational difficulty in computing the associated (n−1) ARFs.
+
+We would like to emphasize the importance of having good methods to compute isochrons (see [8-12]) since they are the cornerstone to study these transient phenomena that we have observed. They can be useful, not only for the problem illustrated here, but for other purposes like testing how far the experimentally recorded phase variations are from the theoretically predicted ones. In fact, they are the key concept to be able to predict the exact phase variation since, theoretically, if we know the parameterization K that gives the isochrons, the problem reduces to solving, at each step, (x,y)=K(θ,σ) and (x′,y′)=K(θ′,σ′), where (x,y) is the point in the phase space where the pulse perturbation, ϵw, is applied and (x′,y′)=(x,y)+ϵw. Indeed, the PRFs and ARFs can be computed knowing only the first order in K; in principle, then they are valid only for weak perturbations, but easier to compute. Other refinements could be obtained by computing second order PRFs and ARFs by using the second-order approximations of the isochrons. Further extensions include also the possibility of computing response curves for long (in time) stimulus rather than pulsatile stimuli.
+
+Appendix:  The Vector Field for the A-Curves
+We prove here that given an analytic local diffeomorphism K, as in (5), satisfying (6), the A-curves are the orbits of a vector field Z, satisfying [X,Z]=[Z,X]=0.
+
+This is equivalent to proving that DXZ=DZX.
+
+Taking derivatives with respect to θ in Eq. (6), we get 
+
+ (1T∂θ+λTσ∂σ)∂θK=(DX∘K)∂θK, 
+
+ and using (14), we get 
+
+ (1T∂θ+λTσ∂σ)(Z∘K)=(DX∘K)(Z∘K). 
+
+ By the chain rule, 
+
+ (DZ∘K)(1T∂θ+λTσ∂σ)K=(DX∘K)(Z∘K), 
+
+ and again, by the invariance equation (6), we obtain 
+
+ (36) (DX∘K)(Z∘K)=(DZ∘K)(X∘K). 
+
+ as we wanted to prove.
+
+Competing Interests
+The authors declare that they have no competing interests.
+
+Authors’ Contributions
+The three authors have equally contributed.
+
+Acknowledgements
+Partially supported by the MCyT/FEDER grant MTM2009-06973 (DACOBIAN), MTM2012-31714 (DACOBIANO), and Generalitat de Catalunya grant number 2009SGR-859. GH has been also supported by the i-Math contrato flechado and the Swartz Foundation. OC has been also supported by the grant FI-DGR 2011, cofunded by the Secretaria d’Universitats i Recerca (SUR) of the ECO of the Autonomous Government of Catalonia and the European Social Fund (ESF). AG and GH would like to thank the facilities of the Centre de Recerca Matemàtica. Part of this work was done while GH was holding a post-doctoral grant at the Centre de Recerca Matemàtica and AG was visiting it.
+==== Refs
+Izhikevich EM Dynamical Systems in Neuroscience: The Geometry of Excitability and Bursting Computational Neuroscience 2007 MIT Press, Cambridge 
+Ermentrout B Terman D Mathematical Foundations of Neuroscience 2010 Springer, New York 
+Schultheiss NW Prinz AA Butera RJ Phase Response Curves in Neuroscience Theory, Experiment, and Analysis Springer Series in Computational Neuroscience 6 2012 Springer, Berlin 
+Gutkin BS Ermentrout GB Reyes AD Phase-response curves give the responses of neurons to transient inputs J Neurophysiol 2005 3 2 1623 1635 10.1152/jn.00359.2004 15829595 
+Ermentrout GB Beverlin B Troyer T Netoff TI The variance of phase-resetting curves J Comput Neurosci 2011 3 2 185 197 10.1007/s10827-010-0305-9 21207126 
+Oh M Matveev V Non-weak inhibition and phase resetting at negative values of phase in cells with fast-slow dynamics at hyperpolarized potentials J Comput Neurosci 2011 3 31 42 10.1007/s10827-010-0292-x 21132359 
+Winfree AT Patterns of phase compromise in biological cycles J Math Biol 1974/1975 3 73 95 10.1007/BF02339491 
+Guillamon A Huguet G A computational and geometric approach to phase resetting curves and surfaces SIAM J Appl Dyn Syst 2009 3 3 1005 1042 10.1137/080737666 
+Huguet G, de la Llave R: Computation of limit cycles and their isochrons: fast algorithms and their convergence. SIAM J Appl Dyn Syst 2013, in press. 
+Osinga HM Moehlis J Continuation-based computation of global isochrons SIAM J Appl Dyn Syst 2010 3 4 1201 1228 [With online multimedia enhancements.] 10.1137/090777244 
+Sherwood WE Guckenheimer J Dissecting the phase response of a model bursting neuron SIAM J Appl Dyn Syst 2010 3 3 659 703 10.1137/090773519 
+Mauroy A Mezić I On the use of Fourier averages to compute the global isochrons of (quasi)periodic dynamics Chaos 2012 3 Article ID 033112 
+Ermentrout GB Kopell N Multiple pulse interactions and averaging in systems of coupled neural oscillators J Math Biol 1991 3 3 195 217 10.1007/BF00160535 
+Brown E Holmes P Moehlis J On the phase reduction and response dynamics of neural oscillator populations Neural Comput 2004 3 673 715 10.1162/089976604322860668 15025826 
+Oprisan SA Canavier C Stability analysis of rings of pulse-coupled oscillators: the effect of phase resetting in the second cycle after the pulse is important at synchrony and for long pulses Differ Equ Dyn Syst 2001 3 243 258 
+Oprisan SA Prinz AA Canavier CC Phase resetting and phase locking in hybrid circuits of one model and one biological neuron Biophys J 2004 3 4 2283 2298 10.1529/biophysj.104.046193 15454430 
+Maran S Canavier C Using phase resetting to predict 1:1 and 2:2 locking in two neuron networks in which firing order is not always preserved J Comput Neurosci 2008 3 37 55 10.1007/s10827-007-0040-z 17577651 
+Lin KK Wedgwood KCA Coombes S Young LS Limitations of perturbative techniques in the analysis of rhythms and oscillations J Math Biol 2013 3 1–2 139 161 10.1007/s00285-012-0506-0 22290314 
+Ermentrout GB Type I membranes, phase resetting curves, and synchrony Neural Comput 1996 3 979 1001 10.1162/neco.1996.8.5.979 8697231 
+Guckenheimer J Isochrons and phaseless sets J Math Biol 1974/1975 3 3 259 273 
+Cabré X Fontich E de la Llave R The parameterization method for invariant manifolds. III. Overview and applications J Differ Equ 2005 3 2 444 515 10.1016/j.jde.2004.12.003 
+Rabinovitch A Friedman M Fixed points of two-dimensional maps obtained under rapid stimulations Phys Lett A 2006 3 4–5 319 325 10.1016/j.physleta.2006.02.059 
+Takeshita D Feres R Higher order approximation of isochrons Nonlinearity 2010 3 6 1303 1323 10.1088/0951-7715/23/6/004 
+Suvak O Demir A Quadratic approximations for the isochrons of oscillators: a general theory, advanced numerical methods and accurate phase computations IEEE Trans Comput-Aided Des Integr Circuits Syst 2010 3 1215 1228

@@ -2,6 +2,8 @@
 # Import the required libraries
 
 import nltk, re, csv, os
+nltk.data.path.append(r"/mnt/c/Users/lukac/PycharmProjects/knowledge-management/NLTK_data")
+
 from nltk.corpus import stopwords
 from collections import Counter
 import json
@@ -35,10 +37,11 @@ def determine_lines_and_frequent_words(abstract, path):
             started = True
         if started:
             body_text += line
-    body_text = body_text.decode('utf-8')
+    # body_text = body_text.decode('utf-8')
     
     base_words = nltk.tokenize.casual.casual_tokenize(body_text.lower())
-    words = [word for word in base_words if word not in stopwords.words()]
+    english_stopwords = stopwords.words('english')
+    words = [word for word in base_words if word not in english_stopwords]
     counts = Counter(words)
 
     frequent_words = []
@@ -90,10 +93,10 @@ def go_over_sentences(sentences):
     highest_score = max(scores)
     core_sentence_counter = 0
     candidate_sentences = []
-    for sentence, score in sentences.iteritems():
+    for sentence, score in sentences.items():
         if score == highest_score:
             core_sentence_counter += 1
-    for sentence, score in sentences.iteritems():
+    for sentence, score in sentences.items():
         if score == highest_score and core_sentence_counter == 1:
             core_sentence = sentence
         if score == highest_score and core_sentence_counter > 1:
@@ -103,15 +106,15 @@ def go_over_sentences(sentences):
         sentences = perform_extra_check(candidate_sentences, less_frequent_words)
         scores = sentences.values()
         highest_score = max(scores)
-        for sentence, score in sentences.iteritems():
+        for sentence, score in sentences.items():
             if score == highest_score:
                 core_sentence = sentence
     return core_sentence
 
 # Provide the directory here with all the articles that should be processed
 
-directory='C:/Users/..'
-csvfile = open('Results/results_abstract.csv', 'wb')
+directory=r'example_articles/Test Set Articles/'
+csvfile = open('example_articles/results/results_abstract.csv', 'w')
 fieldnames = ['File', 'Sentence']
 writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter='|')
 writer.writeheader()
@@ -135,7 +138,7 @@ for file in os.listdir(directory):
         if front in line:
             started = True
     
-    abstract = abstract.decode('utf-8')
+    #abstract = abstract.decode('utf-8')
     lines, frequent_words = determine_lines_and_frequent_words(abstract, path)
     sentences = assign_sentences_score(lines, frequent_words)
     core_sentence = go_over_sentences(sentences)

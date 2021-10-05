@@ -1,5 +1,7 @@
-#streamlit
-streamlit
+
+# commented out to not to waste CI/CD resources...
+# streamlit
+# nltk
 
 # ci/cd
 pytest

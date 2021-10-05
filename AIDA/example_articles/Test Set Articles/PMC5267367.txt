@@ -1,0 +1,190 @@
+
+==== Front
+Behav Brain FunctBehav Brain FunctBehavioral and Brain Functions : BBF1744-9081BioMed Central London 11910.1186/s12993-017-0119-2Short PaperDrug-induced Parkinson’s disease modulates protein kinase A and Olfactory Marker Protein in the mouse olfactory bulb http://orcid.org/0000-0001-5307-0414Mucignat Carla carla.mucignat@unipd.it 12Caretta Antonio +39 049 827 5304antonio.caretta@unipr.it 231 0000 0004 1757 3470grid.5608.bDepartment of Molecular Medicine, University of Padova, Via Marzolo, 3, 35131 Padua, Italy 2 INBB, National Insitute of Biostructures and Biosystems, Rome, Italy 3 0000 0004 1758 0937grid.10383.39Department of Pharmacy, University of Parma, Parma, Italy 26 1 2017 26 1 2017 2017 13 16 9 2016 19 1 2017 © The Author(s) 2017
+Open AccessThis article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.Background
+Olfaction is often affected in parkinsonian patients, but dopaminergic cells in the olfactory bulb are not affected by some Parkinson-inducing drugs. We investigated whether the drug MPTP produces the olfactory deficits typical of Parkinson and affects the olfactory bulb in mice.
+
+Findings
+Lesioned and control mice were tested for olfactory search, for motor and exploratory behavior. Brains and olfactory mucosa were investigated via immunohistochemistry for thyrosine hydroxylase, Olfactory Marker Protein and cyclic AMP-dependent protein kinase as an intracellular pathway involved in dopaminergic neurotransmission. MPTP induced motor impairment, but no deficit in olfactory search. Thyrosine hydroxylase did not differ in olfactory bulb, while a strong decrease was detected in substantia nigra and tegmentum of MPTP mice. Olfactory Marker Protein decreased in the olfactory bulb of MPTP mice, while a cyclic AMP-dependent protein kinase increased in the inner granular layer of MPTP mice.
+
+Conclusions
+MPTP mice do not present behavioural deficits in olfactory search, yet immunoreactivity reveals modifications in the olfactory bulb, and suggests changes in intracellular signal processing, possibly linked to neuron survival after MPTP.
+
+Keywords
+Parkinson’s diseaseAnimal modelsOlfactory bulbProtein kinase Ahttp://dx.doi.org/10.13039/501100003500Università degli Studi di PadovaEx-60%Mucignat Carla http://dx.doi.org/10.13039/501100003407Ministero dell’Istruzione, dell’Università e della Ricerca2010599KBRMucignat Carla issue-copyright-statement© The Author(s) 2017
+==== Body
+Background
+In human Parkinson’s disease (PD) patients, an impairment in the sense of smell and in olfactory structures is often reported [1, 2]. Neurons of the olfactory system are affected by degenerative changes, like the presence of Lewy bodies [3, 4] at an early stage, when motor deficits are not yet apparent: hence, modifications of the olfactory system can be used for early PD diagnosis [5].
+
+Olfactory processing is linked to dopaminergic signaling, which has a prominent role in the olfactory bulb (OB) circuitry: dopamine D2 receptors in terminals of olfactory neurons and in dendrites of mitral/tufted cells modulate glutamate release, and in terminals of GABAergic/dopaminergic cells they modulate GABA and dopamine release [6, 7]. Moreover, in olfactory neurons dopamine inhibits adenylyl cyclase [8] and in OB granule cells activation of D1 receptors modulates GABA A receptors through the cAMP/protein kinase A (PKA) activation [9].
+
+Dopamine and cAMP signalling pathway mutually interact also in brain nuclei involved in PD. PKA stimulates dopamine uptake [10], and activates tyrosine hydroxylase (TH) [11]. On striatal GABAergic neurons, D1 receptor activates PKA, that phosphorylates glutamate NMDA receptors [12]. PKA regulates dopamine physiology and modulates the activity of proteins involved in PD, including LRRK2, alpha-synuclein, tau and TH [13–16].
+
+The OB is one of the main dopaminergic nuclei in the brain [17]. It receives axons from new receptors that continuously differentiate in the olfactory neuroepithelium, and new cells from the subventricular zone, that become periglomerular and granular cells. Dopamine is a paracrine signal for differentiation of subventricular stem cells [18], therefore a deficit in dopaminergic cells acts also on neuron turnover in the OB [19]. Moreover, cAMP regulates differentiation and survival of new neurons in the OB [20].
+
+To better understand whether mesencephalic and OB dopaminergic neurons respond differentially to chemical insults, we investigated the changes in TH and PKA in the OB of the murine PD MPTP (1-methyl-4-phenyl,1,2,3,6-tetrahydropyridine) model.
+
+Methods
+Animals and treatment
+Experiments were authorized according to the directive 86/609/EEC. Twelve C57BL/6j male mice 4 months old were used (Charles River, Lecco, Italy). MPTP hydrochloride (Sigma, Milan, Italy; 15 mg/kg in 0.9% NaCl, n = 6) or saline solution (0.9% NaCl, n = 6) was i.p. injected, four times every 2 h.
+
+Behavioral tests
+Mice were weighted, evaluated for neurologic deficits and tested 5 days before and five after injections. On the day of injections, tests started 1 h after the last injection.
+
+The open field test measures locomotion and exploration. The mouse was introduced in a cage (55 × 33 × 20 cm) for 10 min and videotaped. A software (Smart 2.5, 2B Biological Instruments, Varese, Italy) calculated distance, resting time, and number of rearings on the walls [21]. Thigmotaxis was quantified by measuring the permanence time and the time spent resting in proximity of the walls, excluding a central area (35 × 16 cm).
+
+The pole test detects bradykinesia [22]: the mouse was placed on the top of a pole (1.5 cm diameter, 50 cm height). The time until it reached the floor was recorded (maximum 3 min).
+
+The grip test [22] consisted in placing forepaws on the middle of a wire, 2 mm × 90 cm, 15 cm above the floor: the time to fall down or to reach the lateral platforms was recorded (maximum 3 min).
+
+The cookie-finding test evaluates olfactory function [21]. On the second day pre-injection and after injection, mice were overnight deprived of food then put in a cage (42 × 25 × 15 cm) with a food pellet buried under the sawdust: the latency to discover it was recorded within 5 min. The test was repeated after 1 h with a pellet in a visible position to control for motivation to eat. The test was not repeated every day in order to avoid unnecessary stress due to overnight food restriction.
+
+The tests were repeated on all mice up to day 3 post-injection, then half of the mice were sacrificed, on day 4 and 5 three mice were tested in each group. The data collected before treatment were compared to those collected after injection: data were analyzed with mixed design analysis of variance (ANOVA, factors Group: control/MPTP; Day: pre- vs. post-treatment) and post hoc Newman–Keuls, using Statistica 5 software (www.statsoft.com). The significant level was p < 0.05. Data from behavioral tests are presented as mean ± SEM.
+
+Immunohistochemistry
+Three or 5 days after injection, mice were euthanized (Tanax 20 mg/kg, i.p.). After preincubation of paraffin-embedded sections for 1 h with 2% bovine serum albumin, nose and brain sections were incubated overnight with Olfactory Marker Protein (OMP) antibody (Wako, Neuss, Germany, 1:600); brains were also incubated with TH (Santa Cruz Biotechnology, Heidelberg, Germany, 1:100), or synaptophysin antibodies (Sigma, Milan, Italy, 1:100). Frozen sections were washed for 30 min in 2% Triton-X100, fixed for 1 min in formalin at 37 °C and incubated overnight with anti- murine PKA RIIalpha (Santa Cruz Biotechnology, Heidelberg, Germany, 1:200); adjacent sections were incubated with 100 nM 8-thioacetamido-fluorescein-cAMP (SAF-cAMP) to visualize PKA RI [23]. Secondary antibodies (Sigma, Milan, Italy; or Molecular Probes, Milan, Italy) 1:400 were incubated 1 h at 37 °C. Slides were evaluated independently with a Leica microscope (objectives: 20×, 40×, 100×) by two observers on a semiquantitative 5-step scale. Unaltered images obtained using the same conditions were mounted with Corel Draw 12 (Corel Corporation, Ottawa, Canada).
+
+Results
+Behavioral tests
+Mice did not differ in body weight, before and after the treatment: before treatment, 25.1 ± 1.1 versus 24.9 ± 1.1 g for controls and MPTP-treated, respectively; after treatment: 24.2 ± 1.1 versus 24.4 ± 1.2 g for controls and MPTP-treated, respectively.
+
+All mice during the first and second repetition of the tests improved their performance, to reach a steady-state performance before the treatment (Fig. 1). After the treatment, MPTP-treated mice displayed some deficits, in comparison to controls and to their pre-treatment scores.Fig. 1 Time course of behavioral performance in different tests. Control mice (times symbol) and MPTP mice (filled triangle) mean ± SEM were compared between groups on day 5 (last day before treatment) and day 6 (after treatment). The vertical line indicates the time of injections, asterisk indicates that both groups were different from the pre-treatment, hash symbol indicates that MPTP mice differ from controls after treatment. a Cookie-finding test, with the food pellet hidden. b Cookie-finding test with the food pellet in a visible position. c Open field test, distance travelled. d Number of rearings on the walls during the open field test. e Cumulative time spent resting in the open field test. f Time to reach the ground in the pole test. g Grip test, time to reach effectively the extremity. h Grip test, time to fall down
+
+
+
+
+The Cookie-finding test did not differ between controls and MPTP mice when food was hidden. Only the factor Day was significant, F(1,10) = 6.995, p < 0.05: both groups after treatment were slower in retrieving hidden food, possibly as a consequence of the stress imposed by injections. MPTP mice did not display any obvious deficit with visible food. All mice were able to retrieve the food in both invisible and visible conditions.
+
+A reduction in motor activity after MPTP was apparent in the open field, with a decrease in the distance travelled [Group: F(1,10) = 20.094, p < 0.005 controls: 3136.9 ± 214.8 cm, MPTP: 1776.4 ± 214.3 cm] and in the number of rearings; the significant interaction Group × Day, F(1,10) = 7.817 p < 0.05, showed that only MPTP mice performed less rearings after the treatment, 28.6 ± 5.4 and 36.8 ± 6.4 rearings for controls (p = 0.25), and 21.8 ± 5.6 versus 3.0 ± 1.8 rearings in MPTP mice (p < 0.005). The resting time differed between groups, F(1,10) = 22.834, p < 0.001, with MPTP mice resting for a longer time compared to controls, 550.0 ± 7.6 versus 497.2 ± 7.9 s.
+
+By analysing only to the zone adjacent to the walls, the factor Day was different, F(1,10) = 71.838, p < 0.00001: both control and MPTP mice spent a longer time (including walking and resting) along the walls after the treatment, compared to the day before treatment (p < 0.005). This may be due to the stress of injections. Considering only the time spent resting in the proximity of the walls, both the factors and the interaction were significant. The interaction Group × Day, F(1,10) = 9.952 p < 0.02, showed that while controls did not vary (360.2 ± 16.3 vs. 387.8 ± 17.5 s, respectively), MPTP mice spent a longer time resting along the border after the treatment (386.6 ± 16.9 vs. 522.5 ± 29.6 s before and after the treatment respectively, p < 0.001).
+
+In the pole test, the factor Day was significant, F(1,10) = 13.673, p < 0.005, and the interaction tended to significance, F(1,10) = 4.749, p = 0.054: only MPTP mice were slower in reaching the ground after the treatment (7.3 ± 2.7 vs. 62.1 ± 12.2 s), while controls did not vary significantly (11.8 ± 7.0 vs. 26.0 ± 9.0 s).
+
+In the grip test, the time to reach one end was different: the significant interaction, F(1,10) = 12.597 p < 0.01, showed that only MPTP mice took longer to reach the extremity after the treatment (24.1 ± 6.7 vs. 156.6 ± 23.3 s in MPTP mice, p < 0.001, and in controls: 25.5 ± 5.7 vs. 49.8 ± 20.5 s). Only mice treated with MPTP fell down (5 out of 6 mice), as shown by the interaction Group × Day, F(1,10) = 24.217, p < 0.001.
+
+Immunohistochemistry
+Data on immunohistochemistry are summarized in Table 1 and representative sections are shown in Fig. 2. As expected, TH was reduced in substantia nigra after MPTP (Fig. 2a, b), but did not change in the OB (Fig. 2c, d).Table 1 OMP and TH immunostaining
+
+	Control	Day 3	Day 5	
+OMP	
+ Olfactory nerve	+++	+	+	
+ Olfactory glomeruli	+++	+	+	
+TH	
+ Olfactory bulb	++	++	++	
+ Substantia nigra	+++	±	±	
+No labeling (−); faint labeling (±); moderate labeling (+); intense labeling (++); very intense labeling (+++)
+
+
+Fig. 2 Immunohistochemistry on horizontal brain sections. Bar 200 μm for a, b, e, f; 50 μm for c, d, g, h. a–d TH immunolabelling. a Substantia nigra/ventral tegmental area appear labelled in a control mouse; caudal on the right. ip interpeduncular nucleus, sn substantia nigra, sum supramammillary nucleus, vta ventral tegmental area. b The same area is almost unlabelled in a MPTP mouse, 3 days after injections; rostral on the right. c, d Periglomerular cells are similarly labelled in a control mouse (c) and in a MPTP-treated mouse (d), 3 days after injections; caudal on top right. e, f OMP immunoreactivity in the olfactory bulb of a control (e) and a MPTP mouse (f), 3 days after injections. In the control mouse, the olfactory nerve and glomerular layer are labelled; also the accessory olfactory bulb glomerular layer is labelled. Caudal on the lower right. g, h RII immunoreactivity in the main olfactory bulb of a control (g) and a MPTP-treated mouse, 3 days after injections. Caudal on the top, lateral on the left. m mitral cell layer, ig inner granular layer
+
+
+
+
+In the nose of both groups, OMP labelling was prominent in olfactory neurons, olfactory fila, and vomeronasal neurons. However, the olfactory nerve and glomeruli in the main OB were consistently fainter in MPTP mice (Fig. 2e, f). This difference was not present in the accessory OB. Synaptophysin did not change in both control and MPTP mice.
+
+No obvious modification was apparent in PKA RI, yet 3 days after MPTP PKA RII was brighter in the inner granular layer of the main OB and in the granule cells of the accessory OB, compared to controls (Fig. 2g, h, see also [23]). Five days after MPTP, this difference was less apparent, the most intense granule cells were confined immediately below the mitral cell layer, while the inner granular layer was very faint.
+
+Discussion
+Multiple factors contribute to the onset and progress of PD, that initially targets few susceptible neuron types in motor nuclei of glossopharyngeal and vagus nerves, and in the anterior olfactory nucleus [2, 3, 24]. Many animal models are available for mimicking PD landmarks, however none can reproduce in full the human pathology. The picture is even more complicated by the presence of both motor and non-motor symptoms, whose assessment in animal models may be difficult and need careful overall interpretation (for a review, see [25]). We choose the MPTP model because we were interested in olfactory dysfunctions, which are a hallmark of early PD stages. MPTP administered acutely in mice can reproduce early stages of PD [26], however, it is not sufficient for fully exploring PD, since MPTP-injected mice recover spontaneously, which precludes the study of pharmacological interventions. Moreover, various strains of mice show different sensitivity to MPTP.
+
+PD implies a complex imbalance of the dopaminergic system. However, not all dopaminergic neurons in the brain are equally affected by degeneration.
+
+Here, in MPTP mice olfactory search behavioural performance is normal, yet some modifications can be detected via immunoreactivity in the OB.
+
+MPTP in mice induces both behavioral and neurochemical changes that mimic human PD: altering free radicals quenching and reducing TH and dopamine transporter in the substantia nigra and striatum [27] result in motor impairments, bradykinesia and catalepsy [22]. However, MPTP does not worsen olfaction in both humans and mice [28, 29]. In our experiment, mice were impaired in motor performance, as shown by short travelled distance and less rearings on the walls—an increase in the rearings is used as an index of anxiety. However, MPTP mice performed similarly to controls in olfactory retrieving, which also included motor performance. This may be due to differential involvement of the motivational system, which is conceivably more activated in discovering and reaching food items. PD patients are impaired in the motor but also in cognitive/integrative levels of motor control [30], and often show apathy and indecisiveness [31]: similarly, our mice move under a sufficiently strong drive. However, their good performance in the cookie-finding test does not imply a normal olfactory function. This test involves exposure to above-threshold stimuli: it is possible that MPTP mice show subtler olfactory deficits. Noteworthy in a genetic PD model, mice were able to detect and habituate to odors, but showed deficits in more stringent olfactory tests [32].
+
+MPTP modifies the expression of several proteins: in the striatum it reduces dopamine, TH, dopamine transporter, vesicle monoamine transporter and alpha-synuclein, while monoaminooxidase A and B and catechol-O-methyl-transferase remain unchanged [33]. Reduced TH levels were apparent in our MPTP mice in the brainstem dopaminergic nuclei.
+
+The dopaminergic pathway is linked to cAMP intracellular signalling in both brainstem and olfactory system: TH is induced by the cAMP-mediated signalling pathway [34]. In PD substantia nigra, both D1 receptors and DARPP32 appear downregulated [35]. Dopaminergic neurons are protected against MPTP toxicity after the inhibition of monoaminooxydase-B, which acts via PKA [36]. Moreover, substantia nigra is protected from MPTP by phosphodiesterase inhibitors, that enhance cAMP and subsequently PKA [37]. Here, the transient increase in OB PKA after MPTP may be linked to a protective response in these neurons, opening a new challenge for neuroprotection in other brain areas.
+
+PKA participates also in reaction to MPTP, so that in lesioned mice activation of PKA with forskolin induces an exaggerated increase in TH [38]. Moreover, glutamatergic corticostriatal pathway is overactive after nigrostriatal denervation, and subsequently striatal PKA-dependent NMDA phosphorylation increases [39].
+
+Striatal deafferentation increases neurogenesis in the olfactory bulb, mostly for new dopaminergic cells [40, 41]. In our MPTP mice, the PKA transient increase in OB inner granular layer, which hosts also the developing new neurons coming from the subventricular zone, suggests an upregulation of the cAMP-mediated signalling in response to MPTP, which should be studied in greater detail.
+
+The differential effects of MPTP in OB neurons were related to the lack of the dopamine transporter, which uptakes the toxic MPTP metabolite, making OB neurons MPTP-resistant [42]. While further studies, including other animal PD models like 6-OHDA, are needed, the present data confirm that TH immunoreactivity is not affected in the OB after MPTP injection. However, we challenge the idea that the olfactory system is not affected by MPTP at all, since a decrease in OMP and a transient increase in PKA RII were consistently observed, suggesting a specific response to MPTP in OB neurons, that is not apparent in the nigra, and could be exploited for therapeutic purposes.
+
+Abbreviations
+ANOVAanalysis of variance
+
+GABAgamma-aminobutirric acid
+
+MPTP1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine
+
+OBolfactory bulb
+
+OMPOlfactory Marker Protein
+
+PBSphosphate buffered saline
+
+PDParkinson’s disease
+
+PKAcAMP-dependent protein kinase
+
+Rregulatory subunit of PKA
+
+SAF-cAMP8-thioacetamido-fluorescein-cAMP
+
+THtyrosine hydroxylase
+
+Authors’ contributions
+Conceived project, designed and performed experiments: CM and AC. Wrote manuscript: CM. Both authors read and approved the final manuscript.
+
+Acknowledgements
+We thank Michela Bondì for data collection and Marco Redaelli for video analysis.
+
+Competing interests
+The authors declare that they have no competing interests.
+
+Availability of data and materials
+All data generated or analysed during this study are included in this manuscript.
+
+Ethics approval and consent to participate
+The experiments were authorized according to the directive 86/609/EEC and approved by the Italian Ministry of Health and by the University of Padova ethical committee.
+
+Funding
+This work was supported by the University of Padova and the Italian Ministry of Research (PRIN Project 2010599KBR).
+==== Refs
+References
+1. Hawkes CH  Shephard BC  Daniel SE   Olfactory dysfunction in Parkinson’s disease J Neurol Neurosurg Psychiatry 1997 62 436 446 10.1136/jnnp.62.5.436 9153598 
+2. Braak H  Ghebremedhin E  Rub U  Bratzke H  Del Tredici K   Stages in the development of Parkinson’s disease-related pathology Cell Tissue Res 2004 318 121 134 10.1007/s00441-004-0956-9 15338272 
+3. Del Tredici K  Rub U  De Vos RA  Bohl JR  Braak H   Where does Parkinson disease pathology begin in the brain? J Neuropathol Exp Neurol 2002 61 413 426 10.1093/jnen/61.5.413 12030260 
+4. Pearce RK  Hawkes CH  Daniel SE   The anterior olfactory nucleus in Parkinson’s disease Mov Disord 1995 10 283 287 10.1002/mds.870100309 7651444 
+5. Daniel SE  Hawkes CH   Preliminary diagnosis of Parkinson’s disease by olfactory bulb pathology Lancet 1992 340 186 10.1016/0140-6736(92)93275-R 1352606 
+6. Koster NL  Norman AB  Richtand NM  Nickell WT  Puche AC  Pixley SK  Shipley MT   Olfactory receptor neurons express D2 dopamine receptors J Comp Neurol 1999 411 666 673 10.1002/(SICI)1096-9861(19990906)411:4<666::AID-CNE10>3.0.CO;2-S 10421875 
+7. Gutierrez-Mecinas M  Crespo C  Blasco-Ibanez JM  Gracia-Llanes FJ  Marques-Mari AI  Nacher J  Varea E  Martinez-Guijarro FJ   Distribution of D2 dopamine receptor in the olfactory glomeruli of the rat olfactory bulb Eur J Neurosci 2005 22 1357 1367 10.1111/j.1460-9568.2005.04328.x 16190891 
+8. Mania-Farnell BL  Farbman AI  Bruch RC   Bromocriptine, a dopamine D2 receptor agonist, inhibits adenylyl cyclase activity in rat olfactory epithelium Neuroscience 1993 57 173 180 10.1016/0306-4522(93)90119-Z 7904056 
+9. Bruenig I  Sommer M  Hatt H  Borkmann J   Dopamine receptor subtypes modulate olfactory bulb gamma-aminobutyric acid type A receptors Proc Natl Acad Sci USA 1999 96 2456 2460 10.1073/pnas.96.5.2456 10051664 
+10. Liu Z  Zhang J  Fei J  Guo L   A novel mechanism of dopamine neurotoxicity involving the peripheral extracellular and the plasma membrane dopamine transporter NeuroReport 2001 29 3293 3297 10.1097/00001756-200110290-00029 
+11. Riederer F  Luborzewski A  God R  Bringmann G  Scholz J  Feineis D  Moser A   Modification of tyrosine hydroxylase activity by chloral derived β-carbolines in vitro J Neurochem 2002 81 814 819 10.1046/j.1471-4159.2002.00875.x 12065640 
+12. Oh JD  Del Dotto P  Chase TN   Protein kinase A inhibitor attenuates levodopa-induced motor response alterations in the hemi-parkinsonian rat Neurosci Lett 1997 228 5 8 10.1016/S0304-3940(97)00355-8 9197274 
+13. Fieblinger T  Sebastianutto I  Alcacer C  Fieblinger T  Sebastianutto I  Alcacer C  Bimpisidis Z  Maslava N  Sandberg S  Engblom D  Cenci MA    Mechanisms of dopamine D1 receptor-mediated ERK1/2 activation in the parkinsonian striatum and their modulation by metabotropic glutamate receptor type 5 J Neurosci 2014 34 4728 4740 10.1523/JNEUROSCI.2702-13.2014 24672017 
+14. Kawahata I  Ohtaku S  Tomioka Y  Ichinose H  Yamakuni T   Dopamine or biopterin deficiency potentiates phosphorylation at (40)Ser and ubiquitination of tyrosine hydroxylase to be degraded by the ubiquitin proteasome system Biochem Biophys Res Commun 2015 465 53 58 10.1016/j.bbrc.2015.07.125 26225746 
+15. Muda K  Bertinetti D  Gesellchen F  Hermann JS  von Zweydorf F  Geerlof A  Jacob A  Ueffing M  Gloeckner CJ  Herberg FW   Parkinson-related LRRK2 mutation R1441C/G/H impairs PKA phosphorylation of LRRK2 and disrupts its interaction with 14-3-3 Proc Natl Acad Sci USA 2014 111 E34 E43 10.1073/pnas.1312701111 24351927 
+16. Qureshi HY  Paudel HK   Parkinsonian neurotoxin 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) and alpha-synuclein mutations promote Tau protein phosphorylation at Ser262 and destabilize microtubule cytoskeleton in vitro J Biol Chem 2011 286 5055 5068 10.1074/jbc.M110.178905 21127069 
+17. Cave JW  Baker H   Dopamine systems in the forebrain Adv Exp Med Biol 2009 651 15 35 10.1007/978-1-4419-0322-8_2 19731547 
+18. Curtis MA  Faull RL  Eriksson PS   The effect of neurodegenerative diseases on the subventricular zone Nat Rev Neurosci 2007 8 712 723 10.1038/nrn2216 17704813 
+19. Hoeglinger GU  Rizk P  Muriel MP  Duyckaerts C  Oertel WH  Caille I  Hirsch EC   Dopamine depletion impairs precursor cell proliferation in Parkinson disease Nat Neurosci 2004 7 726 735 10.1038/nn1265 15195095 
+20. Giachino C  De Marchis S  Giampietro C  Parlato R  Perroteau I  Schuetz G  Fasolo A  Peretto P   cAMP response element-binding protein regulates differentiation and survival of newborn neurons in the olfactory bulb J Neurosci 2005 25 10105 10118 10.1523/JNEUROSCI.3512-05.2005 16267218 
+21. Mucignat-Caretta C  Bondi’ M  Caretta A   Animal models of depression: olfactory lesions affect amygdala, subventricular zone, and aggression Neurobiol Dis 2004 16 386 395 10.1016/j.nbd.2004.03.007 15193295 
+22. Sedelis M  Schwarting RKW  Huston JP   Behavioral phenotyping of the MPTP mouse model of Parkinson’s disease Behav Brain Res 2001 125 109 122 10.1016/S0166-4328(01)00309-6 11682102 
+23. Mucignat-Caretta C  Caretta A   Regional variations in the localization of insoluble kinase A regulatory isoforms during rodent brain development J Chem Neuroanat 2004 27 201 212 10.1016/j.jchemneu.2004.03.006 15183205 
+24. Braak H  Del Tredici K  Rüb U  de Vos RA  Jansen Steur EN  Braak E   Staging of brain pathology related to sporadic Parkinson’s disease Neurobiol Aging 2003 24 197 211 10.1016/S0197-4580(02)00065-9 12498954 
+25. Asakawa T  Fang H  Sugiyama K  Nozaki T  Hong Z  Yang Y  Hua F  Ding G  Chao D  Fenoy AJ  Villarreal SJ  Onoe H  Suzuki K  Mori N  Namba H  Xia Y   Animal behavioral assessments in current research of Parkinson’s disease Neurosci Biobehav Rev 2016 65 63 94 10.1016/j.neubiorev.2016.03.016 27026638 
+26. Antony PMA  Diederich NJ  Balling R   Parkinson’s disease mouse models in translational research Mamm Genome 2011 22 401 419 10.1007/s00335-011-9330-x 21559878 
+27. Kurosaki R  Muramatsu Y  Kato H  Araki T   Biochemical, behavioral and immunohistochemical alterations in MPTP-treated mouse model of Parkinson’s disease Pharmacol Biochem Behav 2004 78 143 153 10.1016/j.pbb.2004.03.006 15159144 
+28. Doty RL  Singh A  Tetrud J  Langston JW   Lack of major olfactory dysfunction in MPTP-induced parkinsonism Ann Neurol 1992 32 97 100 10.1002/ana.410320116 1642478 
+29. Kurtenbach S  Wewering S  Hatt H  Neuhaus EM  Lübbert H   Olfaction in three genetic and two MPTP-induced Parkinson’s disease mouse models PLoS ONE 2013 8 10 e77509 10.1371/journal.pone.0077509 24204848 
+30. Brown RG  Jahanshahi M   Cognitive-motor dysfunction in Parkinson’s disease Eur Neurol 1996 36 24 31 10.1159/000118880 8791018 
+31. Poewe W   Non-motor symptoms in Parkinson’s disease Eur J Neurol 2008 15 14 20 10.1111/j.1468-1331.2008.02056.x 18353132 
+32. Fleming SM  Tetreault NA  Mulligan CK  Hutson CB  Masliah E  Chesselet MF   Olfactory deficits in mice overexpressing human wildtype α-synuclein Eur J Neurosci 2008 28 247 256 10.1111/j.1460-9568.2008.06346.x 18702696 
+33. Xu Z  Cawthon D  McCastlain KA  Slikker W Jr  Ali SF   Selective alterations of gene expression in mice induced by MPTP Synapse 2005 55 45 51 10.1002/syn.20089 15499605 
+34. Tinti C  Conti B  Cubells JF  Kim KS  Baker H  Joh TH   Inducible cAMP Early Repressor can modulate tyrosine hydroxylase gene expression after stimulation of cAMP synthesis J Biol Chem 1996 271 25375 25381 10.1074/jbc.271.41.25375 8810303 
+35. Cash R  Raisman R  Ploska A  Agid Y   Dopamine D-1 receptor and cyclic AMP-dependent phosphorylation in Parkinson’s disease J Neurochem 1987 49 1075 1083 10.1111/j.1471-4159.1987.tb09996.x 2887632 
+36. Andoh T  Chock PB  Murphy DL  Chiueh CC   Role of the redox protein thioredoxin in cytoprotective mechanism evoked by (–)-deprenyl Mol Pharmacol 2005 68 1408 1414 10.1124/mol.105.012302 16099847 
+37. Hulley P  Hartikka J  Abdel’Al S  Engels P  Buerki HR  Wiederhold KH  Muller T  Kelly P  Lowe D  Lubbert H   Inhibitors of type IV phosphodiesterases reduce the toxicity of MPTP in substantia nigra neurons in vivo Eur J Neurosci 1995 7 2431 2440 10.1111/j.1460-9568.1995.tb01041.x 8845948 
+38. Young EA  Duchemin AM  Neff NH  Hadjiconstantinou M   Parallel modulation of striatal dopamine synthetic enzymes by second messenger pathways Eur J Pharmacol 1998 357 15 23 10.1016/S0014-2999(98)00497-X 9788769 
+39. Betarbet R  Poisik O  Sherer TB  Greenamyre JT   Differential expression and Ser 897 phosphorylation of striatal N -methyl-d -aspartate receptor subunit NR1 in animal models of Parkinson’s disease Exp Neurol 2004 187 76 85 10.1016/j.expneurol.2003.12.012 15081590 
+40. Yamada M  Onodera M  Mizuno Y  Mochizuki H   Neurogenesis in olfactory bulb identified by retroviral labeling in normal and 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine-treated adult mice Neuroscience 2004 124 173 181 10.1016/j.neuroscience.2003.10.040 14960349 
+41. Winner B  Geyer M  Couillard-Despres S  Aigner R  Bogdahn U  Aigner L  Kuhn G  Winkler J   Striatal deafferentiation increases dopaminergic neurogenesis in the adult olfactory bulb Exp Neurol 2006 197 113 121 10.1016/j.expneurol.2005.08.028 16246330 
+42. Mitsumoto Y  Mori A  Ohashi S  Nakai M  Moriizumi T   Differential effects of 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine in the olfactory bulb and the striatum in mice Neurosci Res 2005 51 111 115 10.1016/j.neures.2004.09.012 15596247

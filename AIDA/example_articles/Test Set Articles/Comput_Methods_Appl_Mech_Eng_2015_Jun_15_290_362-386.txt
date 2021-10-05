@@ -1,0 +1,460 @@
+
+==== Front
+Comput Methods Appl Mech EngComput Methods Appl Mech EngComputer Methods in Applied Mechanics and Engineering0045-78251879-2138North-Holland Pub. Co S0045-7825(15)00123-110.1016/j.cma.2015.03.013ArticleReliable and efficient a posteriori error estimation for adaptive IGA boundary element methods for weakly-singular integral equations Feischl Michael Michael.Feischl@tuwien.ac.atGantner Gregor Gregor.Gantner@tuwien.ac.at⁎Praetorius Dirk Dirk.Praetorius@tuwien.ac.atVienna University of Technology, Institute for Analysis and Scientific Computing, Wiedner Hauptstraße 8-10, A-1040 Wien, Austria⁎ Corresponding author. Gregor.Gantner@tuwien.ac.at15 6 2015 15 6 2015 290 362 386 14 8 2014 17 3 2015 22 3 2015 © 2015 The Authors2015This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).We consider the Galerkin boundary element method (BEM) for weakly-singular integral equations of the first-kind in 2D. We analyze some residual-type a posteriori error estimator which provides a lower as well as an upper bound for the unknown Galerkin BEM error. The required assumptions are weak and allow for piecewise smooth parametrizations of the boundary, local mesh-refinement, and related standard piecewise polynomials as well as NURBS. In particular, our analysis gives a first contribution to adaptive BEM in the frame of isogeometric analysis (IGABEM), for which we formulate an adaptive algorithm which steers the local mesh-refinement and the multiplicity of the knots. Numerical experiments underline the theoretical findings and show that the proposed adaptive strategy leads to optimal convergence.
+
+Keywords
+Isogeometric analysisBoundary element methodA posteriori error estimateAdaptive mesh-refinement
+==== Body
+1 Introduction
+Isogeometric analysis. The central idea of isogeometric analysis is to use the same ansatz functions for the discretization of the partial differential equation at hand, as are used for the representation of the problem geometry. Usually, the problem geometry Ω is represented in computer aided design (CAD) by means of NURBS or T-splines. This concept, originally invented in  [1] for finite element methods (IGAFEM) has proved very fruitful in applications  [1,2]; see also the monograph  [3]. Since CAD directly provides a parametrization of the boundary ∂Ω, this makes the boundary element method (BEM) the most attractive numerical scheme, if applicable (i.e., provided that the fundamental solution of the differential operator is explicitly known). Isogeometric BEM (IGABEM) has first been considered for 2D BEM in  [4] and for 3D BEM in  [5]. Unlike standard BEM with piecewise polynomials which is well-studied in the literature, cf. the monographs  [6,7] and the references therein, the numerical analysis of IGABEM is essentially open. We only refer to  [2,8–10] for numerical experiments and to  [11] for some quadrature analysis. In particular, a posteriori error estimation has been well-studied for standard BEM, e.g.,  [12–18] as well as the recent overview article  [19], but has not been treated for IGABEM so far. The purpose of the present work is to shed some first light on a posteriori error analysis for IGABEM which provides some mathematical foundation of a corresponding adaptive algorithm.
+
+Main result. Let Ω⊂R2 be a Lipschitz domain and Γ⊆∂Ω be a compact, piecewise smooth part of the boundary with finitely many connected components (see Sections  2.2 and 2.3). Given a right-hand side f, we consider boundary integral equations in the abstract form  (1.1) Vϕ(x)=f(x)for allx∈Γ,  where V:H˜−1/2(Γ)→H1/2(Γ) is an elliptic isomorphism. Here H1/2(Γ) is a fractional-order Sobolev space, and H˜−1/2(Γ) is its dual (see Section  2). Given f∈H1/2(Γ), the Lax–Milgram lemma provides existence and uniqueness of the solution ϕ∈H˜−1/2(Γ) of the variational formulation of  (1.1) (1.2) ∫ΓVϕ(x)ψ(x)dx=∫Γf(x)ψ(x)dxfor allψ∈H˜−1/2(Γ).  In the Galerkin boundary element method (BEM), the test space H˜−1/2(Γ) is replaced by some discrete subspace Xh⊆L2(Γ)⊆H˜−1/2(Γ). Again, the Lax–Milgram lemma guarantees existence and uniqueness of the solution ϕh∈Xh of the discrete variational formulation  (1.3) ∫ΓVϕh(x)ψh(x)dx=∫Γf(x)ψh(x)dxfor allψh∈Xh,  and ϕh can in fact be computed by solving a linear system of equations.
+
+We assume that Xh is linked with a partition Th of Γ into a set of connected segments. For each vertex z∈Nh of Th, let ωh(z)≔⋃{T∈Th:z∈T} denote the node patch. If Xh is sufficiently rich (e.g.,  Xh contains certain splines or NURBS; see Section  4), we prove that  (1.4) Crel−1‖ϕ−ϕh‖H˜−1/2(Γ)≤ηh≔(∑z∈Nh|rh|H1/2(ωh(z))2)1/2≤Ceff‖ϕ−ϕh‖H˜−1/2(Γ)  with some Xh-independent constants Ceff,Crel>0, i.e., the unknown BEM error is controlled by some computable a posteriori error estimator ηh. Here, rh≔f−Vϕh∈H1/2(Γ) denotes the residual and  (1.5) |rh|H1/2(ωh(z))≔∫ωh(z)∫ωh(z)|rh(x)−rh(y)|2|x−y|2dydx  is the Sobolev–Slobodeckij seminorm.
+
+Estimate  (1.4) has first been proved by Faermann  [17] for closed Γ=∂Ω and standard spline spaces Xh based on the arclength parametrization γ:[0,L]→Γ. In isogeometric analysis, γ is not the arclength parametrization. In our contribution, we generalize and refine the original analysis of Faermann  [17]: Our analysis allows, first, closed as well as open parts of the boundary, second, general piecewise smooth parametrizations γ and, third, covers standard piecewise polynomials as well as NURBS spaces Xh.
+
+Outline. Section  2 recalls the functional analytic framework, provides the assumptions on Γ and its parametrization γ, and fixes the necessary notation. The proof of  (1.4) is given in Section  3 for sufficiently rich spaces Xh (Theorem 3.1). In Section  4, we recall the NURBS spaces for IGABEM and prove that these spaces Xh satisfy the assumptions (Assumptions (A1)–(A2) in Section  3.1) of the a posteriori error estimate  (1.4). Based on knot insertion, we formulate an adaptive algorithm which is capable to control and adapt the multiplicity of the nodes as well as the local mesh-size (Algorithm 4.5). Section  5 gives some brief comments on the stable implementation of adaptive IGABEM for Symm’s integral equation and provides the numerical evidence for the superiority of the proposed adaptive IGABEM over IGABEM with uniform mesh-refinement. In the final Section  6, some conclusions are drawn and some comments on future work and open questions are reported.
+
+2 Preliminaries
+The purpose of this section is to collect the main assumptions on the boundary and its discretization as well as to fix the notation. For more details on Sobolev spaces and the functional analytic setting of weakly-singular integral equations, we refer to the literature, e.g., the monographs  [20,21,6] and the references therein.
+
+Throughout, |⋅| denotes the absolute value of scalars, the Euclidean norm of vectors in R2, the measure of a set in R, e.g. the length of an interval, or the arclength of a curve in R2. The respective meaning will be clear from the context.
+
+2.1 Sobolev spaces
+For any measurable subset ω⊆Γ, let L2(ω) denote the Lebesgue space of all square integrable functions which is associated with the norm ‖u‖L2(ω)2≔∫ω|u(x)|2dx. We define the Hilbert space  (2.1) H1/2(ω)≔{u∈L2(ω):‖u‖H1/2(ω)<∞},  associated with the Sobolev–Slobodeckij norm  (2.2) ‖u‖H1/2(ω)2≔‖u‖L2(ω)2+|u|H1/2(ω)2with|u|H1/2(ω)2≔∫ω∫ω|u(x)−u(y)|2|x−y|2dydx.  For finite intervals I⊆R we use analogous definitions. By H˜−1/2(ω), we denote the dual space of H1/2(ω), where duality is understood with respect to the L2(ω)-scalar product, i.e.,   (2.3) 〈u;ϕ〉=∫ωu(x)ϕ(x)dxfor allu∈H1/2(ω)andϕ∈L2(ω).  We note that H1/2(Γ)⊆L2(Γ)⊆H˜−1/2(Γ) form a Gelfand triple and all inclusions are dense and compact. Amongst other equivalent definitions of H1/2(ω) are the characterization as trace space of functions in H1(Ω) as well as equivalent interpolation techniques. All these definitions provide the same space of functions but different norms, where norm equivalence constants depend only on ω; see, e.g., the monograph  [21] and references therein. Throughout, we shall use the Sobolev–Slobodeckij norm (2.2), since it is numerically computable.
+
+2.2 Connectedness of Γ
+Let the part of the boundary Γ=⋃iΓi be decomposed into its finitely many connected components Γi. The Γi are compact and piecewise smooth as well. Note that this yields existence of some constant c>0 such that |x−y|≥c>0 for all x∈Γi, y∈Γj, and i≠j. Together with |u(x)−u(y)|2≤2|u(x)|2+2|u(y)|2, this provides the estimate  ∑i,ji≠j∫Γi∫Γj|u(x)−u(y)|2|x−y|2dydx≲∑i‖u‖L2(Γi)2+∑j‖u‖L2(Γj)2≃‖u‖L2(Γ)2  and results in norm equivalence  ‖u‖H1/2(Γ)2=∑i‖u‖H1/2(Γi)2+∑i,ji≠j∫Γi∫Γj|u(x)−u(y)|2|x−y|2dydx≃∑i‖u‖H1/2(Γi)2.  The usual piecewise polynomial and NURBS basis functions have connected support and are hence supported by some single
+Γi each. Without loss of generality and for the ease of presentation, we may therefore from now on assume that Γ is connected. All results of this work remain valid for non-connected Γ.
+
+2.3 Boundary parametrization
+We assume that either Γ=∂Ω is parametrized by a closed continuous and piecewise two times continuously differentiable path γ:[a,b]→Γ such that the restriction γ|[a,b) is even bijective, or that Γ⫋∂Ω is parametrized by a bijective continuous and piecewise two times continuously differentiable path γ:[a,b]→Γ. In the first case, we speak of closed
+Γ=∂Ω, whereas the second case is referred to as open
+Γ⫋∂Ω. For closed Γ, we denote the (b−a)-periodic extension to R also by γ. For the left and right derivative of γ, we assume that γ′ℓ(t)≠0 for t∈(a,b] and γ′r(t)≠0 for t∈[a,b). Moreover we assume that γ′ℓ(t)+cγ′r(t)≠0 for all c>0 and t∈[a,b] resp. t∈(a,b). Finally, let γL:[0,L]→Γ denote the arclength parametrization, i.e.,  |γL′ℓ(t)|=1=|γL′r(t)|, and its periodic extension. Then, elementary differential geometry yields bi-Lipschitz continuity  (2.4) CΓ−1≤|γL(s)−γL(t)||s−t|≤CΓfors,t∈R,with{|s−t|≤34L,  for closed  Γ,s≠t∈[0,L],  for open  Γ.  A proof is given in  [22, Lemma 2.1] for closed Γ. For open Γ, the proof is even simpler. If Γ is closed and |I|≤34L resp. if Γ is open and I⊆[a,b], we see from (2.4) that  (2.5) CΓ−1|u∘γL|H1/2(I)≤|u|H1/2(γL(I))≤CΓ|u∘γL|H1/2(I). 
+
+2.4 Boundary discretization
+The part of the boundary Γ is split into a set Th={T1,…,Tn} of compact and connected segments Tj. The endpoints of the elements of Th form the set of nodes Nh≔{zj:j=1,…,n} for closed Γ and Nh={zj:j=0,…,n} for open Γ. The arclength of each element T∈Th is denoted by hT, where h≔maxT∈ThhT. Moreover, we define the shape regularity constant κ(Th)≔max({hT/hT′:T,T′∈Th,T∩T′≠0̸}).  For closed Γ, we extend the nodes, elements and their length periodically. We suppose  (2.6) h≤|Γ|/4,  if Γ is closed.
+
+2.5 Parameter domain discretization
+Given the parametrization γ:[a,b]→Γ, the discretization Th induces a discretization Tˇh={Tˇ1,…,Tˇn} on the parameter domain [a,b]. Let a=zˇ0<zˇ1<⋯<zˇn be the endpoints of the elements of Tˇh. We assume Tˇj=[zˇj−1,zˇj], γ(Tjˇ)=Tj and γ(zˇj)=xj. We define Nˇh≔{zˇj:j=1,…,n} for closed Γ=∂Ω, and Nˇh≔{zˇj:j=0,…,n} for open Γ⫋∂Ω. The length of each element Tˇ∈Tˇh is denoted by hTˇ. Moreover, we define the shape regularity constant on [a,b] as  κ(Thˇ)≔max({hTˇ/hTˇ′:Tˇ,Tˇ′∈Thˇ,γ(Tˇ)∩γ(Tˇ′)≠0̸}). 
+
+3 A posteriori error estimate
+3.1 Main theorem
+For T∈Th, we inductively define the patch ωhm(T)⊆Γ of order m∈N0 by  (3.1) ωh0(T)≔T,ωhm+1(T)≔⋃{T′∈Th:T′∩ωhm(T)≠0̸}.  The main result of Theorem 3.1 requires the following two assumptions on Th and Xh for some fixed integer m∈N0: (A1) For each T∈Th, there exists some fixed function ψT∈Xh with connected support supp(ψT) such that  (3.2) T⊆supp(ψT)⊆ωhm(T). 
+
+(A2) There exists some constant q∈(0,1] such that  (3.3) ‖1−ψT‖L2(supp(ψT))2≤(1−q)|supp(ψT)|for allT∈Th. 
+
+ With these assumptions, we can formulate the following theorem which states validity of  (1.4). For standard BEM and piecewise polynomials based on the arclength parametrization γL of some closed boundary Γ=∂Ω, the analogous result is first proved in  [17, Theorem 3.1]Theorem 3.1 The residual
+rh=f−Vϕh
+satisfies the efficiency estimate (3.4) ηh≔(∑z∈Nh|rh|H1/2(ωh(z))2)1/2≤Ceff‖ϕ−ϕh‖H˜−1/2(Γ). If the mesh
+Th
+and the discrete space
+Xh
+satisfy assumptions  (A1)–(A2)  , also the reliability estimate (3.5) ‖ϕ−ϕh‖H˜−1/2(Γ)≤Crelηh holds. The constant
+Ceff>0
+depends only on
+V, while
+Crel>0
+depends additionally on
+Γ,
+m,
+κ(Th), and
+q.
+
+
+
+Remark 3.2 The proof reveals that the efficiency estimate  (3.4) is valid for any approximation ϕh of ϕ, while the upper reliability estimate  (3.5) requires some Galerkin orthogonality.
+
+Sketch of the proof of Theorem 3.1 Since V is an isomorphism, the residual rh≔f−Vϕh=V(ϕ−ϕh) satisfies ‖rh‖H1/2(Γ)≃‖ϕ−ϕh‖H˜−1/2(Γ), where the hidden constant depends only on V. Therefore, it suffices to prove (3.4)–(3.5) with ‖ϕ−ϕh‖H˜−1/2(Γ) replaced by ‖rh‖H1/2(Γ). For u=rh, Proposition 3.3 proves ∑z∈Nh|rh|H1/2(ωh(z))2≤2‖rh‖H1/2(Γ)2, and hence results in (3.4). For u=rh, Lemma 3.4 shows that it suffices to verify ∑T∈ThhT−1‖u‖L2(T)2≲∑z∈Nh|u|H1/2(ωh(z))2 to conclude reliability (3.5). This is done via a generalized Poincaré inequality, which involves the abstract assumptions (A1)–(A2) and requires that the residual u=rh is L2-orthogonal to the functions ψT; see Lemma 3.6 which is proved by induction on m. Combining Lemmas 3.4 and 3.6, Proposition 3.7 concludes that ‖rh‖H1/2(Γ)2≲∑z∈Nh|rh|H1/2(ωh(z))2 and hence results in reliability (3.5).  □
+
+
+
+3.2 Proof of efficiency estimate  (3.4)
+The elementary proof of the following proposition is already found in  [17, page 208], but we include the proof for closed Γ=∂Ω to stress the explicit constant. For open Γ⫋∂Ω, the proof works analogously.
+
+Proposition 3.3 For arbitrary
+u∈H1/2(Γ), it holds (3.6) ∑z∈Nh|u|H1/2(ωh(z))2≤2‖u‖H1/2(Γ)2. 
+
+Proof for closed Γ=∂Ω For x,y∈Γ we abbreviate U(x,y)≔|u(x)−u(y)|2/|x−y|2. For Tj=T∈Th with some j∈{1,…,n}, we set T+≔Tj+1. There holds  ∑z∈Nh|u|ωh(z)2=∑T∈Th|u|H1/2(T∪T+)2=∑T∈Th(∫T∫TU(x,y)dxdy+∫T∫T+U(x,y)dxdy)+∑T∈Th(∫T+∫T+U(x,y)dxdy+∫T∫T+U(x,y)dxdy)≤2∑T∈Th∫T∫ΓU(x,y)dxdy.  The last term is just 2‖u‖H1/2(Γ)2, which concludes the proof.  □
+
+
+
+Proof of Theorem 3.1, eq. (3.4) Recall that ‖rh‖H1/2(Γ)≃‖ϕ−ϕh‖H˜−1/2(Γ), where the hidden constants depend only on V. Together with  (3.6), this proves  (3.4).  □
+
+
+
+3.3 Proof of reliability estimate  (3.5)
+We start with the following lemma. For the elementary (but long) proof, we refer to  [17, Lemma 2.3]. A detailed proof is also found in  [22, Proposition 2.13].
+
+Lemma 3.4 There exists a constant
+C1>0
+such that for all
+u∈H1/2(Γ) ‖u‖H1/2(Γ)2≤∑z∈Nh|u|H1/2(ωh(z))2+C1∑T∈ThhT−1‖u‖L2(T)2, The constant depends only on
+Γ
+and
+κ(Th).
+
+
+
+Our next goal is to bound ∑T∈ThhT−1‖u‖L2(T)2. To this end, we need the following Poincaré-type inequality from  [17, Lemma 2.5].
+
+Lemma 3.5 Let
+I⊂R
+be a finite interval with length
+|I|>0
+. Then, there holds ‖u‖L2(I)2≤|I|2|u|H1/2(I)2+1|I||∫Iu(t)dt|2for allu∈H1/2(I). 
+
+
+
+Lemma 3.6 Suppose the assumptions   (A1)–(A2)  . Let
+u∈H1/2(Γ)
+satisfy (3.7) ∫Γu(x)ψT(x)dx=0for allT∈Th. Then, there exists a constant
+C2>0
+which depends only on
+Γ,
+m,
+κ(Th), and
+q
+such that for all
+T∈Th ‖u‖L2(T)2≤C2hT|u|H1/2(T)2if   m=0,  (3.8) ‖u‖L2(supp(ψT))2≤C2|supp(ψT)|∑z∈ωhm−1(T)∩Nh|u|H1/2(ωh(z))2if   m>0. 
+
+
+
+Proof of Lemma 3.6 for closed Γ=∂Ω The assertion is formulated on the boundary itself. Without loss of generality, we may therefore assume that γ=γL. Since supp(ψT) is connected, there is an interval I of length |I|≤L with γ(I)=supp(ψT). We use Lemma 3.5 and get  ‖u∘γ‖L2(I)2≤|I|2|u∘γ|H1/2(I)2+1|I||∫Iu∘γ(t)dt|2.  With the orthogonality (3.7) and Assumption (A2), we see  |∫Iu∘γ(t)dt|2=|∫supp(ψT)u(y)(1−ψT(y))dy|2=|∫I(u∘γ(t))(1−ψT∘γ(t))dt|2≤‖1−(ψT∘γ)‖L2(I)2‖u∘γ‖L2(I)2≤(1−q)|I|‖u∘γ‖L2(I)2.  Using the last two inequalities, we therefore get  ‖u∘γ‖L2(I)2≤|I|2|u∘γ|H1/2(I)2+(1−q)‖u∘γ‖L2(I)2.  Together with |I|=|γ(I)|=|supp(ψT)|, this implies  (3.9) ‖u‖L2(supp(ψT))2≤|supp(ψT)|2q|u∘γ|H1/2(I)2.  For m=0, (A1) with |supp(ψT)|=hT, (2.5) (applicable because of (2.6)), and (3.9) conclude the proof with C2=CΓ2/2q. To estimate |u∘γ|H1/2(I)2 for m>0, we use induction on ℓ to prove the following assertion for all ℓ∈N:  (3.10) ∀j∈Z|u∘γ|H1/2([zˇj−1,zˇj+ℓ])2≤(1+2κ(Th))ℓ−1∑k=jj+ℓ−1|u∘γ|H1/2(Tˇk∪Tˇk+1)2.  For ℓ=1, (3.10) even holds with equality. The induction hypothesis for ℓ−1≥1 is  (3.11) ∀j∈Z|u∘γ|H1/2([zˇj−1,zˇj+ℓ−1])2≤(1+2κ(Th))ℓ−2∑k=jj+ℓ−2|u∘γ|H1/2(Tˇk∪Tˇk+1)2.  For r,s∈R, let  Uˇ(r,s)≔|u(γ(r))−u(γ(s))|2|r−s|2.  For j∈Z, the definition of the Sobolev–Slobodeckij seminorm (2.2) shows  (3.12) |u∘γ|H1/2([zˇj−1,zˇj+ℓ])2=∫[zˇj−1,zˇj+ℓ−1]∫[zˇj−1,zˇj+ℓ−1]Uˇ(r,s)drds+∫[zˇj+ℓ−1,zˇj+ℓ]∫[zˇj+ℓ−1,zˇj+ℓ]Uˇ(r,s)drds+2∫[zˇj+ℓ−1,zˇj+ℓ]∫[zˇj−1,zˇj+ℓ−1]Uˇ(r,s)drds=|u∘γ|H1/2([zˇj−1,zˇj+ℓ−1])2+|u∘γ|H1/2([zˇj+ℓ−1,zˇj+ℓ])2+2∫[zˇj+ℓ−1,zˇj+ℓ]∫[zˇj+ℓ−2,zˇj+ℓ−1]Uˇ(r,s)drds+∫[zˇj+ℓ−1,zˇj+ℓ]∫[zˇj−1,zˇj+ℓ−2]Uˇ(r,s)drds≤|u∘γ|H1/2([zˇj−1,zˇj+ℓ−1])2+|u∘γ|H1/2([zˇj+ℓ−2,zˇj+ℓ])2+2∫[zˇj+ℓ−1,zˇj+ℓ]∫[zˇj−1,zˇj+ℓ−2]Uˇ(r,s)drds.  For r<t<s∈R, we have  Uˇ(r,s)≤2|u(γ(r))−u(γ(t))|2|r−s|2+2|u(γ(t))−u(γ(s))|2|r−s|2≤2Uˇ(r,t)+2Uˇ(t,s).  With the abbreviate notation hk≔hTˇk, it hence follows  ∫[zˇj+ℓ−1,zˇj+ℓ]∫[zˇj−1,zˇj+ℓ−2]Uˇ(r,s)drds=1hj+ℓ−1∫[zˇj+ℓ−2,zˇj+ℓ−1]∫[zˇj+ℓ−1,zˇj+ℓ]∫[zˇj−1,zˇj+ℓ−2]Uˇ(r,s)drdsdt≤2hj+ℓ−1∫[zˇj+ℓ−2,zˇj+ℓ−1]∫[zˇj−1,zˇj+ℓ−2]Uˇ(r,t)∫[zˇj+ℓ−1,zˇj+ℓ]1dsdrdt+2hj+ℓ−1∫[zˇj+ℓ−2,zˇj+ℓ−1]∫[zˇj+ℓ−1,zˇj+ℓ]Uˇ(t,s)∫[zˇj−1,zˇj+ℓ−2]1drdsdt≤hj+ℓhj+ℓ−1|u∘γ|H1/2([zˇj−1,zˇj+ℓ−1])2+zˇj+ℓ−2−zˇj−1hj+ℓ−1|u∘γ|H1/2(Tˇj+ℓ−1∪Tˇj+ℓ)2.  There holds  zˇj+ℓ−2−zˇj−1hj+ℓ−1=∑k=jj+ℓ−2hkhj+ℓ−1≤∑k=jj+ℓ−2κ(Th)j+ℓ−1−k=∑k=1ℓ−1κ(Th)k.  This implies  ∫[zˇj+ℓ−1,zˇj+ℓ]∫[zˇj−1,zˇj+ℓ−2]Uˇ(r,s)drds≤κ(Th)|u∘γ|H1/2([zˇj−1,zˇj+ℓ−1])2+|u∘γ|H1/2(Tˇj+ℓ−1∪Tˇj+ℓ)2∑k=1ℓ−1κ(Th)k.  Inserting this into (3.12) and using  1+2∑k=1ℓ−1κ(Th)k≤(1+2κ(Th))ℓ−1  as well as the induction hypothesis (3.11), we obtain  |u∘γ|H1/2([zˇj−1,zˇj+ℓ])2≤(1+2κ(Th))|u∘γ|H1/2([zˇj−1,zˇj+ℓ−1])2+(1+2κ(Th))ℓ−1|u∘γ|H1/2(Tˇj+ℓ−1∪Tˇj+ℓ)2≤(1+2κ(Th))ℓ−1∑k=jj+ℓ−2|u∘γ|H1/2(Tˇk∪Tˇk+1)2+(1+2κ(Th))ℓ−1|u∘γ|H1/2(Tˇj+ℓ−1∪Tˇj+ℓ)2=(1+2κ(Th))ℓ−1∑k=jj+ℓ−1|u∘γ|H1/2(Tˇk∪Tˇk+1)2.  This concludes the induction step and thus proves (3.10). Since Γ=∂Ω is closed, the patch ωhm(T) consists either of 2m+1 elements or coincides with Γ, wherefore there is an index j∈Z with  (3.13) γ([zˇj−1,zˇmin{j+2m,j−1+n}])=ωhm(T).  Because of Assumption (A1), one can choose I such that I⊆[zˇj−1,zˇmin{j+2m,j−1+n}]. We use (3.9) and (3.10) for ℓ=min{2m,n−1} to see  ‖u‖L2(supp(ψT))2≤|supp(ψT)|2q(1+2κ(Th))min{2m,n−1}−1∑k=jmin{j+2m,j−1+n}−1|u∘γ|H1/2(Tˇk∪Tˇk+1)2≤|supp(ψT)|2q(1+2κ(Th))2m−1∑k=jmin{j+2m,j−1+n}−1|u∘γ|H1/2(Tˇk∪Tˇk+1)2.  Finally, we use (2.5) and  {zk:k=j,…,min{j+2m,j−1+n}−1}⊆ωhm−1(T)∩Nh,  which follows immediately from (3.13), to get  ∑k=jmin{j+2m,j−1+n}−1|u∘γ|H1/2(Tˇk∪Tˇk+1)2≤CΓ2∑k=jmin{j+2m,j−1+n}−1|u|H1/2(ωh(zk))2≤CΓ2∑z∈ωhm−1(T)∩Nh|u|H1/2(ωh(z))2,  which concludes the proof.  □
+
+
+
+Proof of Lemma 3.6 for open Γ⫋∂Ω The proof works essentially as before, where (3.10) now becomes  ∀j∈N(j+ℓ≤n⟹|u∘γ|H1/2([zˇj−1,zˇj+ℓ])2≤(1+2κ(Th))ℓ−1∑k=jj+ℓ−1|u∘γ|H1/2(Tˇk∪Tˇk+1)2).  Details are found in  [22, Lemma 2.15].  □
+
+
+
+Proposition 3.7 Suppose the assumptions  (A1)–(A2)  and let
+u∈H1/2(Γ)
+satisfy   (3.7). Then, there exists a constant
+C3>0
+which depends only on
+Γ,
+m,
+κ(Th), and
+q
+such that (3.14) ‖u‖H1/2(Γ)2≤C3∑z∈Nh|u|H1/2(ωh(z))2. 
+
+
+
+Proof of Proposition 3.7 for closed Γ=∂Ω Without loss of generality, we may assume that γ=γL. Due to Lemma 3.4, it remains to estimate the term ∑T∈ThhT−1‖u‖L2(T)2. For m=0, we see  C2−1∑T∈ThhT−1‖u‖L2(T)2≤∑T∈Th|u|H1/2(T)2≤∑z∈Nh|u|H1/2(ωh(z))2.  For m>0, Assumption (A1) and Lemma 3.6 give  (3.15) ‖u‖L2(T)2≤‖u‖L2(supp(ψT))2≤C2|ωhm(T)|∑z∈ωhm−1(T)∩Nh|u|H1/2(ωh(z))2.  Let j∈{1,…,n} with T=Tj. We extend the mesh data periodically. With the abbreviate notation hℓ≔hTˇℓ, we see  (3.16) |ωhm(T)|hT≤zˇj+m−zˇj−1−mhj=∑ℓ=−m+1m+1hj−1+ℓhj≤∑ℓ=−m+1m+1κ(Th)|ℓ−1|.  Combining (3.15) and (3.16), we obtain with C3≔C2∑ℓ=−m+1m+1κ(Th)|ℓ−1| (3.17) ∑T∈ThhT−1‖u‖L2(T)2≤C3∑T∈Th∑z∈ωhm−1(T)∩Nh|u|H1/2(ωh(z))2=C3∑T∈Th∑z∈Nhz∈ωhm−1(T)|u|H1/2(ωh(z))2=C3∑z∈Nh∑T∈Thz∈ωhm−1(T)|u|H1/2(ωh(z))2=2C3m∑z∈Nh|u|H1/2(ωh(z))2.  This concludes the proof.  □
+
+
+
+Proof of Proposition 3.7 for open Γ⫋∂Ω The proof works essentially as for Γ=∂Ω. For details we refer to  [22, Proposition 2.16].  □
+
+
+
+Proof of Theorem 3.1, eq. (3.5) Galerkin BEM ensures the Galerkin orthogonality  ∫Γrh(x)uh(x)dx=∫Γ(V(ϕ−ϕh))(x)uh(x)dx=0for alluh∈Xh  and hence guarantees  (3.7) for the residual rh=f−Vϕh=V(ϕ−ϕh). Since V is an isomorphism, ‖rh‖H1/2(Γ)≃‖ϕ−ϕh‖H˜−1/2(Γ) together with  (3.14) proves  (3.5).  □
+
+
+
+4 Adaptive IGABEM
+4.1 B-splines and NURBS
+Throughout this subsection, we consider knots
+Kˇ≔(ti)i∈Z on R with ti−1≤ti for i∈Z and limi→±∞ti=±∞. For the multiplicity of any knot ti, we write #ti. We denote the corresponding set of nodes
+Nˇ≔{ti:i∈Z}={zˇj:j∈Z} with zˇj−1<zˇj for j∈Z. For i∈Z, the ith B-Spline of degree p is defined inductively by  (4.1) Bi,0≔χ[ti−1,ti),Bi,p≔βi−1,pBi,p−1+(1−βi,p)Bi+1,p−1forp∈N,  where, for t∈R,  βi,p(t)≔{t−titi+p−tiifti≠ti+p,0ifti=ti+p.  We also use the notations Bi,pKˇ≔Bi,p and βi,pKˇ≔βi,p to stress the dependence on the knots  Kˇ. The proof of the following theorem is found in  [23, Theorem 6].
+
+Theorem 4.1 Let
+I=[a,b)
+be a finite interval and
+p∈N0
+. Then (4.2) {Bi,p|I:i∈Z,Bi,p|I≠0} is a basis for the space of all right-continuous
+Nˇ−
+piecewise polynomials of degree lower or equal
+p
+on
+I
+and which are, at each knot
+ti,
+p−#ti
+times continuously differentiable if
+p−#ti≥0.
+
+
+
+In addition to the knots Kˇ=(ti)i∈Z, we consider positive weights W≔(wi)i∈Z with wi>0. For i∈Z and p∈N0, we define the ith non-uniform rational B-Spline of degree p or shortly NURBS as  (4.3) Ri,p≔wiBi,p∑ℓ∈ZwℓBℓ,p.  We also use the notation Ri,pKˇ,W≔Ri,p. Note that the denominator is locally finite and never zero as shown in the following lemma.
+
+Lemma 4.2 For
+p∈N0
+and
+i,ℓ∈Z, the following assertions hold:(i) Ri,p|[tℓ−1,tℓ)
+is a rational function with nonzero denominator, which can be extended continuously at
+tℓ.
+
+(ii) Ri,p
+vanishes outside the interval
+[ti−1,ti+p)
+. It is positive on the open interval
+(ti−1,ti+p).
+
+(iii) It holds
+ti−1=ti+p
+if and only if
+Ri,p=0.
+
+(iv) Bi,p
+is completely determined by the
+p+2
+knots
+ti−1,…,ti+p.
+Ri,p
+is completely determined by the
+3p+2
+knots
+ti−p−1,…,ti+2p
+and the
+2p+1
+weights
+wi−p,…,wi+p
+. Therefore, we will also use the notation (4.4) R(⋅|ti−p−1,…,ti+2p,wi−p,…,wi+p)≔Ri,p. 
+
+(v) The NURBS functions of degree
+p
+form a partition of unity, i.e. (4.5) ∑i∈ZRi,p=1onR. 
+
+(vi) If all weights are equal, then
+Ri,p=Bi,p
+. Hence, B-splines are just special NURBS functions.
+
+(vii) Each NURBS function
+Ri,p
+is at least
+p−#tℓ
+times continuously differentiable at
+tℓ
+if
+p−#tℓ≥0.
+
+(viii) For
+s,t∈R
+and
+c>0, we have (4.6) ∀t∈R:Ri,ps+Kˇ,W(t)=Ri,pKˇ,W(t−s) as well as (4.7) ∀t∈R:Ri,pcKˇ,W(t)=Ri,pKˇ,W(t/c). 
+
+(ix) Let
+Kˇℓ=(ti,ℓ)i∈Z
+be a sequence of knots such that
+#ti,ℓ=#ti
+for all
+i∈Z
+and,
+Wℓ=(wi,ℓ)i∈Z
+a sequence of positive weights. If
+(Kˇℓ)ℓ∈N
+converges pointwise to
+Kˇ
+and
+(Wℓ)ℓ∈N
+converges pointwise to
+W, then
+(Ri,pKˇℓ,Wℓ)ℓ∈N
+converges almost everywhere to
+Ri,pKˇ,W
+for all
+i∈N.
+
+
+
+
+
+Proof The proof for (i)–(v) can be found in  [23, Section 2, page 9–10] for B-splines. The generalization to NURBS is trivial. (vi) is an immediate consequence of (v). (vii) follows from Theorem 4.1. To prove (viii), we note that for all ℓ∈Z and t∈R it holds  χ[s+tℓ−1,s+tℓ)(t)=χ[tℓ−1,tℓ)(t−s)andχ[ctℓ−1,ctℓ+s)(t)=χ[tℓ−1,tℓ)(t/c)  as well as  t−(s+tℓ)(s+tℓ+p)−(s+tℓ)=(t−s)−tℓtℓ+p−tℓandt−ctℓctℓ+p−ctℓ=t/c−tℓtℓ+p−tℓ.  Hence, the assertion is an immediate consequence of the definition of B-splines. For B-splines, (ix) is proved by induction, noting that for all p′∈N and i∈Z, we have  βi,p′Kˇℓ⟶a.e.βi,p′KˇandBi,0Kˇℓ⟶a.e.Bi,0Kˇ.  This easily implies the convergence of Ri,pKˇℓ.  □
+
+
+
+For any p∈N0, we define the vector spaces  (4.8) Sp(Kˇ)≔{∑i∈ZaiBi,p:ai∈R}  as well as  (4.9) Np(Kˇ,W)≔{∑i∈ZaiRi,p:ai∈R}=Sp(Kˇ)∑i∈ZwiBi,pKˇ.  Note that the sums are locally finite.
+
+An analogous version of the following result is already found in  [17] for the special case of B-splines of degrees p=0,1,2 and knot multiplicity #ti=1 for all i∈Z and weight function φ=1. The following generalization to arbitrary NURBS, however, requires a completely new idea.
+
+Lemma 4.3 Let
+I
+be a compact interval with nonempty interior,
+κmax≥1,
+0<wmin≤wmax
+real numbers,
+p∈N0, and
+φ:I→R+
+a piecewise continuously differentiable function with positive infimum. Then there exists a constant q=q(κmax,wmin,wmax,p,φ)∈(0,1] such that for arbitrary knots
+t0≤⋯≤t3p+1∈I
+and corresponding nodes
+zˇ0,…,zˇm
+with (4.10) κ(t0,…,t3p+1)≔max{max{zˇj+1−zˇjzˇj−zˇj−1,zˇj−zˇj−1zˇj+1−zˇj}:j=1,…,m−1}≤κmax, weights
+wmin≤w1,…,w2p+1≤wmax
+and all
+ℓ∈{p+1,…,2p+1}, (4.11) ‖(1−R(⋅|t0,…,t3p+1,w1,…,w2p+1))⋅φ‖L1([tℓ−1,tℓ])≤(1−q)‖φ‖L1([tℓ−1,tℓ]). Note that there holds supp(R(⋅|t0,…,t3p+1,w1,…,w2p+1))=[tp,t2p+1]. 
+
+
+
+Proof We prove the lemma in five steps.
+
+Step 1: We give an abstract formulation of the problem. For 1≤ν≤3p+1, we define the bounded set  Mν≔{(zˇ0,…,zˇν,w1,…,w2p+1)∈Iν×[wmin,wmax]2p+1:zˇ0<zˇ1,∀m∈{2,…,ν}:1κmax(zˇm−1−zˇm−2)≤zˇm−zˇm−1≤κmax(zˇm−1−zˇm−2)}.  Note that (zˇ,w)∈Mν already implies zˇ0<⋯<zˇν. For a vector of multiplicities k∈Nν+1 with ∑m=0νkm=3p+2 we introduce the function  gk,ν:Rν→R3p+2:(zˇ0,…,zˇν)↦(zˇ0,…,zˇ0︸k0-times,…,zˇν,…,zˇν︸kν-times).  Moreover, we define for ℓ∈{p+1,…,2p+1} the function  Φk,ℓ,ν:Mν→R:(zˇ,w)↦‖(1−R(⋅|gk,ν(zˇ),w))⋅φ‖L1([gk,ν(zˇ)ℓ−1,gk,ν(zˇ)ℓ])‖φ‖L1([gk,ν(zˇ)ℓ−1,gk,ν(zˇ)ℓ]),  where 00≔0. Our aim is to show that for arbitrary k,ℓ,ν there holds sup(Φk,ℓ,ν(Mν))<1. Then, we define the constant (1−q) as the maximum of all these suprema. Note that the maximum is taken over a finite set, since ∑m=0νkm=3p+2, ℓ∈{p+1,…,2p+1} and 1≤ν≤3p+1. Before we proceed, we show that (1−q) really has the desired properties. Without loss of generality, we can assume that not all considered knots t0,…,t3p+1 are equal. The corresponding nodes zˇ0,…,zˇν and weights w1,…,w2p+1 are in Mν. If k is the corresponding multiplicity vector, (4.11) can indeed be equivalently written as  Φk,ℓ,ν(zˇ,w)≤(1−q). Step 2: We fix k,ℓ,ν. Without loss of generality, we assume that there exists 0≤ν˜≤ν such that ℓ−1=∑m=0ν˜km. This just means that the appearing integrals have nonempty integration domains [gk,ν(zˇ)ℓ−1,gk,ν(zˇ)ℓ], since in this case Φk,ℓ,ν(zˇ,w)=0 is already bounded. Using Lemma 4.2 (ii) and (v), we see that for (zˇ,w)∈Mν, the function R(⋅|gk,ν(zˇ),w) attains only values in [0,1] and is positive on the interval (gk,ν(zˇ)ℓ−1,gk,ν(zˇ)ℓ). This implies  (4.12) Φk,ℓ,ν(Mν)⊆[0,1).  Because of Lemma 4.2 (ix), we can apply Lebesgue’s dominated convergence theorem to see that Φk,ℓ,ν is continuous. If Mν was compact, we would be done. Unfortunately it is not.
+
+Step 3: Now, we prove the lemma for φ=1. In the definition of Mν we replace the interval I by R to define a superset of Mν Mν,R≔{(zˇ,w)∈Rν×[wmin,wmax]2p+1:zˇ0<zˇ1,∀m∈{2,…,ν}:1κmax(zˇm−1−zˇm−2)≤zˇm−zˇm−1≤κmax(zˇm−1−zˇm−2)}.  We extend the function Φk,ℓ,ν to  Φ˜k,ℓ,ν:Mν,R→R:(zˇ,w)↦‖1−R(⋅|gk,ν(zˇ),w)‖L1([gk,ν(zˇ)ℓ−1,gk,ν(zˇ)ℓ])gk,ν(zˇ)ℓ−gk,ν(zˇ)ℓ−1.  We define a closed and bounded and hence compact subset of Mν Mν,R0,1≔{(zˇ,w)∈Mν,R:zˇ0=0,zˇ1=1}.  If (zˇ,w)∈Mν,R, then (zˇ−zˇ0zˇ1−zˇ0,w)∈Mν,R0,1 and due to the substitution rule and Lemma 4.2 (viii), there holds with the notation ⨏cd(⋅)(t)dt=∫cd(⋅)(t)dt/(d−c) Φ˜k,ℓ,ν(zˇ,w)=⨏gk,ν(zˇ)ℓ−1gk,ν(zˇ)ℓ(1−R(t|gk,ν(zˇ),w))dt=⨏gk,ν(zˇ)ℓ−1−zˇ0zˇ1−zˇ0gk,ν(zˇ)ℓ−zˇ0zˇ1−zˇ0(1−R(t(zˇ1−zˇ0)+zˇ0|gk,ν(zˇ),w))dt=Φ˜k,ℓ,ν(zˇ−zˇ0zˇ1−zˇ0,w).  Hence we have  Φ˜k,ℓ,ν(Mν,R)=Φ˜k,ℓ,ν(Mν,R0,1).  As in Step 2 one sees that Φ˜k,ℓ,ν only attains values in [0,1) and is continuous. Since Mν,R0,1 is compact we get  sup(Φk,ℓ,ν(Mν))≤sup(Φ˜k,ℓ,ν(Mν,R))<1.  This proves the lemma for φ=1.
+
+Step 4: We prove the lemma for φ=c1χ(−∞,T)|I+c2χ[T,∞)|I with c1,c2>0 and T∈I. Again, we extend the function Φk,ℓ,ν to Mν,R Φ˜k,ℓ,ν:Mν,R→R:(zˇ,w)↦‖(1−R(⋅|gk,ν(zˇ),w))(c1χ(−∞,T)+c2χ[T,∞))‖L1([gk,ν(zˇ)ℓ−1,gk,ν(zˇ)ℓ])‖c1χ(−∞,T)+c2χ[T,∞)‖L1([gk,ν(zˇ)ℓ−1,gk,ν(zˇ)ℓ]).  For the proof of the lemma, it is sufficient to show sup(Φ˜k,ℓ,ν(Mν,R))<1. Due to the substitution rule and Lemma 4.2 (viii), we can assume without loss of generality that T=0. Because of Step 3 it only remains to show that  sup(Φ˜k,ℓ,ν{(zˇ,w)∈Mν,R:zˇ0≤0≤zˇν})<1.  As in Step 2, one verifies that Φ˜k,ℓ,ν only attains values in [0,1) and is continuous. Moreover, due to the substitution rule and Lemma 4.2 (viii), we have for any element of {(zˇ,w)∈Mν,R:zˇ0≤0≤zˇν} Φ˜k,ℓ,ν(zˇ,w)=Φ˜k,ℓ,ν(zˇzˇ1−zˇ0,w)  and hence  Φ˜k,ℓ,ν({(zˇ,w)∈Mν,R:zˇ0≤0≤zˇν})=Φ˜k,ℓ,ν({(zˇ,w)∈Mν,R:zˇ1−zˇ0=1,zˇ0≤0≤zˇν}).  The second set is compact, since it is the image of a closed and bounded set under a continuous mapping. Therefore it attains a maximum smaller than one. This concludes the proof for φ=c1χ(−∞,T)|I+c2χ[T,∞)|I.
+
+Step 5: Finally, we are in the position to prove the assertion of the lemma for arbitrary functions φ with the desired properties. Let ((zˇm,wm))m∈N be a sequence in Mν such that the Φk,ℓ,ν-values converge to sup(Φk,ℓ,ν(Mν)). Because of the boundedness of Mν, we can assume convergence of the sequence, where the limit (zˇ∞,w∞) is in Mν¯, i.e.  (zˇ∞,w∞)∈Mν or (zˇ∞,w∞)∈Iν×[wmin,wmax]2p+1 with zˇ0∞=⋯=zˇν∞. In the first case, we are done because of (4.12) and the continuity of Φk,ℓ,ν. For the second case, we define  an≔gk,ν(zˇn,wn)ℓ−1,bn≔gk,ν(zˇn,wn)ℓandRn≔R(⋅|zˇn,wn).  Note that an<bn, and that the sequences (an)n∈N and (bn)n∈N converge to the limit  Z≔zˇ0∞=⋯=zˇν∞∈I.  We consider two cases.
+
+Case 1: If φ is continuous at the limit Z, it is absolutely continuous on the interval [an,bn] for sufficiently large n∈N. Hence we have for sufficiently large n∈N Φk,ℓ,ν(zˇn,wn)=∫anbn(1−Rn(t))φ(t)dt∫anbnφ(t)dt=∫anbn(1−Rn(t))(φ(an)+∫antφ′(τ)dτ)dt∫anbn(φ(an)+∫antφ′(τ)dτ)dt≤∫anbn(1−Rn(t))φ(an)dt+(bn−an)2‖φ′‖L∞(I)(bn−an)φ(an)−(bn−an)2‖φ′‖L∞(I).  The second summand converges to zero. We consider the first one. For any C∈(0,1), there holds for sufficiently large n∈N ∫anbn(1−Rn(t))φ(an)dt(bn−an)φ(an)−(bn−an)2‖φ′‖L∞(I)≤∫anbn(1−Rn(t))φ(an)dt(bn−an)φ(an)⋅C≤1C(1−q(κmax,wmin,wmax,p,1)).  Since C was arbitrary, this implies  sup(Φk,ℓ,ν(Mν))≤(1−q(κmax,wmin,wmax,p,1))<1. 
+
+Case 2: If φ is not continuous at the limit Z we proceed as follows. For sufficiently large n∈N, φ is absolutely continuous on [an,Z] and on [Z,bn]. By considering suitable subsequences, we can assume that an<bn≤Z, Z≤an<bn or an≤Z≤bn, each for all n∈N. In the first two cases, we can proceed as in Case 1. In the third case, we argue similarly as in Case 1 to see, with the left-handed limit φℓ(Z) and the right-handed limit φr(Z) for n∈N large enough  Φk,ℓ,ν(zˇn,wn)=∫anbn(1−Rn(t))φ(t)dt∫anbnφ(t)dt=∫anZ(1−Rn(t))(φℓ(Z)−∫tZφ′(τ)dτ)dt∫anbnφ(t)dt+∫Zbn(1−Rn(t))(φr(Z)+∫Ztφ′(τ)dτ)dt∫anbnφ(t)dt≤∫anbn(1−Rn(t))(φℓ(Z)χ(−∞,Z)(t)+φr(Z)χ[Z,∞)(t))dt∫anbnφℓ(Z)χ(−∞,Z)(t)+φr(Z)χ[Z,∞)(t)dt−2(bn−an)2‖φ′‖L∞(I)+2(bn−an)2‖φ′‖L∞(I)∫anbnφℓ(Z)χ(−∞,Z)(t)+φr(Z)χ[Z,∞)(t)dt−2(bn−an)2‖φ′‖L∞(I).  Again, the second summand converges to zero, wherefore it remains to consider the first one. For any C∈(0,1), there holds for sufficiently large n∈N ∫anbn(1−Rn(t))(φℓ(Z)χ(−∞,Z)(t)+φr(Z)χ[Z,∞)(t))dt∫anbnφℓ(Z)χ(−∞,Z)(t)+φr(Z)χ[Z,∞)(t)dt−2(bn−an)2‖φ′‖L∞(I)≤∫anbn(1−Rn(t))(φℓ(Z)χ(−∞,Z)(t)+φr(Z)χ[Z,∞)(t))dt∫anbnφℓ(Z)χ(−∞,Z)(t)+φr(Z)χ[Z,∞)(t)dt⋅C≤1C(1−q(κmax,wmin,wmax,p,φℓ(Z)χ(−∞,Z)|I+φr(Z)χ[Z,∞)|I)).  Since C was arbitrary, this implies  sup(Φk,ℓ,ν(Mν))≤(1−q(κmax,wmin,wmax,p,φℓ(Z)χ(−∞,Z)|I+φr(Z)χ[Z,∞)|I))<1,  which concludes the proof.  □
+
+
+
+We return to our problem (1.1). If Γ=∂Ω is closed, each node zˇ∈Nˇh may be assigned with a multiplicity #zˇ≤p+1. This induces a sequence of non decreasing knots Kˇh=(ti)i=1N on (a,b]. Let Wh=(wi)i=1N be a sequence of weights on these knots. We extend the knot sequence (b−a)-periodically to (ti)i∈Z and the weight sequence to (wi)i∈Z by wN+i≔wi for i∈Z. For the extended sequences we also write Kˇh and Wh. We set  (4.13) Nˆp(Kˇh,Wh)≔Np(Kˇh,Wh)|[a,b)∘γ|[a,b)−1.  If Γ≠∂Ω is open, we assign to each node zˇ∈Nˇh a corresponding multiplicity #zˇ≤p+1 such that #zˇ0=#zˇn=p+1. This induces a sequence of non decreasing knots Kˇh=(ti)i=0N on [a,b]. Let Wh=(wi)i=1N−p be a sequence of weights. To keep the notation simple, we extend the sequences arbitrarily to Kˇh=(ti)i∈Z with ti≤ti+1 for i∈Z, a>ti→−∞ for i<0 and b<ti→∞ for i>N, and Wh=(wi)i∈Z with wi>0. This allows to define  (4.14) Nˆp(Kˇh,Wh)≔Np(Kˇh,Wh)|[a,b]∘γ−1.  Due to Lemma 4.2 (ii) and (iv), this definition does not depend on how the sequences are extended.
+
+With the following theorem, we conclude that Theorem 3.1 holds for the span of transformed NURBS functions.
+
+Theorem 4.4 Let
+p∈N0
+and
+m≔⌈p/2⌉
+. Then, the space
+Xh≔Nˆp(Kˇh,Wh)
+is a subspace of
+L2(Γ)
+which satisfies the assumptions  (A1)–(A2)  from Section   3.1   with the constant of   Lemma  4.3 q=q(κ(Tˇh),min(Wh),max(Wh),p,φ), where
+φ=|γ′|I|
+with
+I=[a−(b−a)(m+p),b+(b−a)(2p−m)]
+resp.
+I=[a,b].
+
+
+
+Proof of Theorem 4.4 for closed Γ=∂Ω Lemma 4.2 (i) and (ii), implies Np(Kˇh,Wh)⊂L2(R). This shows Nˆp(Kˇh,Wh)⊂L2(Γ).
+
+Let T be an element of the mesh Th, j∈{1,…,n} with T=Tj, and i∈{1,…,N} with zˇj−1=ti−1 and zˇj=ti. We define ψˇT(t)≔Ri−m,p(t) for t∈[a,b) and extend it continuously at b. We set ψT≔ψˇT|[a,b)∘γ|[a,b)−1. Because of Lemma 4.2 (ii), there holds  (4.15) Tˇj⊆[ti−m−1,ti−m+p]∩[a,b]=supp(ψˇT)⊆[zˇj−m−1,zˇj−m+p]⊆[zˇj−m−1,zˇj+m].  Since γ|[a,a+(b−a)/2] and γ|[a+(b−a)/2,b] are homeomorphisms, there holds  (4.16) γ(supp(ψˇT))=γ({t∈[a,b):ψˇT(t)≠0}¯)=supp(ψT),  wherefore supp(ψT) is connected. With (4.15), this shows  T⊆supp(ψT)⊆ωhm(T),  and hence implies Assumption (A1).
+
+To verify Assumption (A2), we apply Lemma 4.3. Note that Ri−m,p is completely determined by the knots in I and their weights. This is due to I⊇[ti−m−p−1,ti+2p−m] and Lemma 4.2 (iv). The regularity constant of these knots from (4.10) is obviously smaller or equal than κ(Kˇh). Since γ is piecewise two times continuously differentiable and its left and right derivative vanishes nowhere, |γ′| is piecewise continuously differentiable and is bounded from above by some positive constant. With Lemma 4.3 and (4.16), we hence get  ‖1−ψT‖L2(supp(ψT))2=∫supp(ψˇT)(1−ψˇT)2|γ′(t)|dt≤∫supp(ψˇT)(1−ψˇT)|γ′(t)|dt=‖(1−ψˇT)|γ′|‖L1([ti−m−1,ti−m+p]∩[a,b])≤(1−q)‖|γ′|‖L1([ti−m−1,ti−m+p]∩[a,b])=(1−q)∫supp(ψˇT)|γ′(t)|dt=(1−q)|supp(ψT)|.  Consequently, Assumption (A2) is also fulfilled. This concludes the proof.  □
+
+
+
+Proof of Theorem 4.4 for open Γ⫋∂Ω The proof works analogously as before. Details are found in  [22, Theorem 4.14].  □
+
+
+
+4.2 Knot insertion
+Before we formulate an adaptive algorithm based on NURBS, we recall refinement by knot-insertion, see e.g.  [23, Section 11]. For general knots Kˇ=(ti)i∈Z as in the previous subsection, a polynomial degree p∈N0, and a refined sequence Kˇ′=(ti′)i∈Z (i.e.,  Kˇ is a subsequence of Kˇ) Theorem 4.1 implies nestedness  (4.17) Sp(Kˇ)⊆Sp(Kˇ′).  We assume that the multiplicities of the knots in Kˇ′ are lower or equal p+1. Because of Lemma 4.2 (ii), and Theorem 4.1 each element ∑i∈ZaiBi,pKˇ∈S(Kˇ) admits some unique coefficient vector (ai′)i∈Z with  (4.18) ∑i∈ZaiBi,pKˇ=∑i∈Zai′Bi,pKˇ′.  If Kˇ′ contains only one additional knot t′ (possibly already contained in Kˇ), the coefficients can be calculated explicitly. We assume ti=ti′ for all i with ti<t′. Then,  [23, Algorithm 11] shows  (4.19) ai′={aiif  ti+p≤t′,(1−βi−1,pKˇ(t′))ai−1+βi−1,pKˇ(t′)aiif  ti<t′<ti+p,ai−1if  t′≤ti. 
+
+For closed Γ=∂Ω, we consider again knots Kˇh=(ti)i=1N and weights Wh=(wi)i=1N as in the previous subsection. We additionally assume p+1≤N. Now we insert an additional knot t′∈(a,b] to the knots Kˇh such that the multiplicities of the new knots Kˇh′ are still smaller or equal than p+1. The new knots are extended (b−a)-periodically. We want to find the unique weights (wi′)i∈Z which fulfill  (4.20) ∑i∈ZwiBi,pKˇh=∑i∈Zwi′Bi,pKˇh′.  With (4.9) and (4.17), this already implies nestedness  (4.21) Nˆp(Kˇh,Wh)⊆Nˆp(Kˇh′,Wh′).  The sought weights (wi′)i∈Z are obviously (N+1)-periodic. We cannot immediately apply (4.19), since infinitely many knots {t′+k(b−a):k∈Z} are added to Kˇh. First, we add {t′+k(b−a):k∈Z∖{−1,0,1}} to Kˇh and obtain Kˇ+=(ti+)i∈Z with t0=t0+ and t1=t1+. There exist unique weights (wi+)i∈Z with  ∑i∈ZwiBi,pKˇh=∑i∈Zwi+Bi,pKˇ+.  With I≔[t−1,tN+1), Lemma 4.2 (ii) and (iv), and our assumption p+1≤N imply  ∑i=−pN+1wiBi,pKˇh|I=∑i=−pN+1wi+Bi,pKˇ+|I=∑i=−pN+1wi+Bi,pKˇh|I.  With tN<tN+1, it is easy to check that Bi,pKˇh|I≠0 for i=0,…,N. Hence, Theorem 4.1 implies wi=wi+ for i=0,…,N. It just remains to add the knots t′−(b−a), t′ and t′+(b−a). To this end, we can repetitively apply (4.19) to obtain the weights (wi′)i=1N+1. Note that this only involves the weights (wi+)i=0N are needed. Moreover, the new weights (wi′)i=1N+1 are just convex combinations of the old ones (wi)i=1N.
+
+For open Γ⫋∂Ω, a knot t′∈(a,b] can analogously be inserted to the knots Kˇh=(ti)i=0N.
+
+4.3 Adaptive algorithm
+In this section, we introduce an adaptive algorithm, which uses the local contributions of ηh to steer the h-refinement of the mesh Th as well as the increase of the multiplicity of the nodes Nh. To respect the iterative character of this procedure, all discrete quantities (as, e.g.,  Th, ϕh, etc.) are indexed by the level ℓ∈N0 of the adaptive process instead of the mesh-size h. Let 0<θ<1 be an adaptivity parameter and p∈N0 a polynomial degree. We start with some nodes Nˇ0. Each node has a multiplicity lower or equal p+1, where for open Γ⫋∂Ω we assume #a=#b=p+1. This induces knots Kˇ0. Let W0 be some initial positive weights. We assume p+1≤N0 and for closed Γ=∂Ω, |T|≤|Γ|/4 for all T∈T0. As the initial trial space, we consider  (4.22) X0≔Nˆp(Kˇ0,W0)⊂L2(Γ)⊂H−1/2(Γ).  The adaptive algorithm with Dörfler marking reads as follows:
+
+Algorithm 4.5 Input: Adaptivity parameter 0<θ<1, polynomial order p∈N0, initial mesh T0 with knots Kˇ0, initial weights W0.
+
+Adaptive loop: Iterate the following steps, until ηℓ is sufficiently small: (i) Compute discrete solution ϕℓ∈Xℓ.
+
+(ii) Compute indicators ηℓ(z) for all nodes z∈Nℓ.
+
+(iii) Determine a minimal set of nodes Mℓ⊆Nℓ such that  (4.23) θηℓ2≤∑z∈Mℓηℓ(z)2. 
+
+(iv) If both nodes of an element T∈Tℓ belong to Mℓ, T will be marked.
+
+(v) For all other nodes in Mℓ, the multiplicity will be increased if it is smaller than p+1, otherwise the elements which contain one of these nodes z∈Mℓ, will be marked.
+
+(vi) Refine all marked elements T∈Tℓ by bisection of the corresponding Tˇ∈Tˇℓ. Use further bisections to guarantee that the new mesh Tℓ+1 satisfies  (4.24) κ(Tˇℓ+1)≤2κ(Tˇ0).  Update counter ℓ↦ℓ+1.
+
+Output: Approximate solutions ϕℓ and error estimators ηℓ for all ℓ∈N0.
+
+
+
+An optimal 1D bisection algorithm which ensures (4.24), is discussed and analyzed in  [24]. Note that boundedness of κ(Tˇℓ) implies as well boundedness of κ(Tℓ). Moreover, there holds  (4.25) min(W0)≤min(Wℓ)≤max(Wℓ)≤max(W0),  since the new weights are convex combinations of the old weights. Hence, Theorems 3.1 and 4.4 apply and show efficiency and reliability of the estimator  (4.26) Crel−1‖ϕ−ϕℓ‖H˜−1/2(Γ)≤ηℓ≤Ceff‖ϕ−ϕℓ‖H˜−1/2(Γ). 
+
+5 Numerical experiments
+In this section, we empirically investigate the performance of Algorithm 4.5 in three typical situations: In Sections  5.2 and 5.3, we consider a closed boundary Γ=∂Ω, where the solution is smooth resp. exhibits a generic (i.e., geometry induced) singularity. In Section  5.4, we consider a slit problem. In either example, the exact solution is known and allows us to compute the Galerkin error to underline reliability and efficiency of the proposed estimator.
+
+In each example, the parametrization γ of the part Γ of the boundary is a NURBS curve and thus has the special form  (5.1) γ(t)=∑i∈ZCiRi,pKˇ0,W0(t)  for all t∈[a,b]. Here, p∈N is the polynomial degree, Kˇ0 and W0 are knots and weights as in Section  4.3 and (Ci)i∈Z are control points in R2 which are periodic for closed Γ=∂Ω.
+
+We choose the same polynomial degree p for our approximation spaces Xℓ. Since for the refinement strategy only knot insertion is used, we can apply (4.17) and (4.20) to see for the first and second component of γ (5.2) γ1,γ2∈Np(Kˇℓ,Wℓ)|[a,b].  Hence, this approach reflects the main idea of isogeometric analysis, where the same space is used for the geometry and for the approximation. We compare uniform refinement, where Mℓ=Nℓ and hence all elements are refined, and adaptive refinement with θ=0.75.
+
+5.1 Stable implementation of adaptive IGABEM
+To compute the approximation ϕh of one step of the adaptive algorithm, we first note that Theorem 4.1 implies that  (5.3) {Ri,p|[a,b):i=(1−p),…,N−#b+1}∘γ|[a,b)−1  resp.  (5.4) {Ri,p|[a,b]:i=1,…,N}∘γ−1  forms a basis of Nˆ(Kˇh,Wh). We abbreviate the elements of this basis with Rˆi and its index set with I. Then, there holds the unique basis representation ϕh=∑i∈Ich,iRˆi. The coefficient vector ch is the unique solution of  (5.5) Vhch=fh  with the symmetric positive definite matrix  (5.6) Vh≔(〈VRˆj;Rˆi〉L2(Γ))i,j∈I  and the right-hand side vector  (5.7) fh≔(〈f;Rˆi〉L2(Γ))i∈I.  The energy norm then reads  (5.8) |||ϕh|||2=〈Vϕh;ϕh〉=chTVhch.  To calculate Vh, fh and the H1/2-seminorms of the residual rh=f−Vϕh, singular integrals and double integrals have to be evaluated. Since this is hardly possible analytically, we approximate the appearing integrals. To this end, we first write them as sum of integrals over the elements of the mesh Tˇ. In the spirit of  [6, Section 5.3], the local integrals which contain singularities, are transformed by Duffy transformations such that either the singularity vanishes or a pure logarithmic singularity of the form log(t) on [0,1] remains. Finally, the integrals are evaluated over the domain [0,1] or [0,1]2 using tensor-Gauss quadrature with weight function 1 resp. log(t). Since the integrands are smooth up to logarithmic terms, this yields exponential convergence of adapted Gauss quadrature and hence provides accurate approximations. For closed Γ=∂Ω and arbitrary parametrization γ as in Section  2.3, all details are elaborated in  [22, Section 5].
+
+5.2 Adaptive IGABEM for problem with smooth solution
+Let Ω be the circle with midpoint (0,0) and radius 1/10. We consider the Laplace–Dirichlet problem on Ω (5.9) −Δu=0inΩ  and  u=gonΓ  for given Dirichlet data g∈H1/2(Γ) and closed boundary Γ=∂Ω. The problem is equivalent to Symm’s integral equation (1.1) with the single-layer integral operator (5.10) V:H˜−1/2(Γ)→H1/2(Γ),Vϕ(x)≔−12π∫Γlog(|x−y|)ϕ(y)dy  and the right-hand side f=(K+1/2)g, where  (5.11) K:H1/2(Γ)→H1/2(Γ),Kg(x)≔−12π∫Γ(∂ν(y)log(|x−y|))g(y)dy  denotes the double-layer integral operator. The unique solution of (1.1) is the normal derivative ϕ=∂u/∂ν of the weak solution u∈H1(Ω) of (5.9).
+
+We prescribe the exact solution u(x,y)=x2+10xy−y2 and solve Symm’s integral equation  (1.1) on the closed boundary Γ=∂Ω. The normal derivative ϕ=∂u/∂ν reads  ϕ(x,y)=20(x2+10xy−y2).  The geometry is parametrized on [0,1] by the NURBS curve induced by  p=2,  Kˇ0=(14,14,24,24,34,34,1,1,1),  W0=(1,12,1,12,1,12,1,1,12),  (Ci)i=1N0=110⋅((01),(−11),(−10),(−1−1),(0−1),(1−1),(10),(10),(11)).  Note that this parametrization does not coincide with the natural parametrization t↦(cos(t),sin(t)). Fig. 5.1 visualizes the geometry and the γ-values of the initial nodes. Fig. 5.2 shows error and error estimator for the uniform and the adaptive approach. All values are plotted in a log–log scale such that the experimental convergence rates are visible as the slope of the corresponding curves. The Galerkin orthogonality allows to compute the energy error by (5.12) |||ϕ−ϕℓ|||2=|||ϕ|||2−|||ϕℓ|||2=13π/5000−|||ϕℓ|||2.  With respect to the number of knots N, both approaches lead to the rate O(N−7/2). If discontinuous piecewise polynomials of order 2 were used as ansatz space, this is the optimal convergence rate. In each case, the curves for the error and the corresponding estimator are parallel. This empirically confirms the proven efficiency and reliability of the Faermann estimator ηh.
+
+5.3 Adaptive IGABEM for problem with generic singularity
+As second example, we consider the Laplace–Dirichlet problem (5.9) on the pacman geometry  Ω≔{r(cos(α),sin(α)):0≤r<110,α∈(−π2τ,π2τ)},  with τ=4/7; see Fig. 5.1. We prescribe the exact solution  u(x,y)=rτcos(τα)in polar coordinates(x,y)=r(cosα,sinα).  The normal derivative of u reads  ϕ(x,y)=(cos(α)cos(τα)+sin(α)sin(τα)sin(α)cos(τα)−cos(α)sin(τα))⋅ν(x,y)⋅τ⋅rτ−1  and has a generic singularity at the origin. With w=cos(π/τ), the geometry is parametrized on [0,1] by the NURBS curve induced by  p=2,  Kˇ0=(16,16,26,26,36,36,46,46,56,56,1,1,1),  W0=(1,w,1,1,1,1,1,w,1,w,1,1,w),  (Ci)i=1N0=110⋅((cos(π/τ⋅2/8)sin(π/τ⋅2/8)),1w(cos(π/τ⋅3/8)sin(π/τ⋅3/8)),(cos(π/τ⋅4/8)sin(π/τ⋅4/8)),12(cos(π/τ⋅4/8)sin(π/τ⋅4/8)),(00),12(cos(π/τ⋅(−4)/8)sin(π/τ⋅(−4)/8)),(cos(π/τ⋅(−4)/8)sin(π/τ⋅(−4)/8)),1w(cos(π/τ⋅(−3)/8)sin(π/τ⋅(−3)/8)),(cos(π/τ⋅(−2)/8)sin(π/τ⋅(−2)/8)),1w(cos(π/τ⋅(−1)/8)sin(π/τ⋅(−1)/8)),(cos(π/τ⋅0/8)sin(π/τ⋅0/8)),(cos(π/τ⋅0/8)sin(π/τ⋅0/8)),1w(cos(π/τ⋅1/8)sin(π/τ⋅1/8))). 
+
+In Fig. 5.3, the solution ϕ is plotted over the parameter domain. We can see that ϕ has a singularity at t=1/2 as well as two jumps at t=1/3 resp. t=2/3.
+
+In Fig. 5.4, error and error estimator are plotted. As the respective curves are parallel, we empirically confirm efficiency and reliability of the Faermann estimator. For the calculation of the error, we used |||ϕ|||2=0.083525924784082 in (5.12) which is obtained by Aitken’s Δ2-extrapolation. Since the solution lacks regularity, uniform refinement leads to the suboptimal rate O(N−4/7), whereas adaptive refinement leads to the optimal rate  O(N−7/2).
+
+For adaptive refinement, Fig. 5.5 provides a histogram of the knots in [a,b] of the last refinement step. We see that the algorithm mainly refines the mesh around the singularity at t=1/2. Moreover, the multiplicity at the jump points t=1/3 and t=2/3 appears to be maximal so that the discrete solution ϕℓ also mimics the discontinuities of the exact solution ϕ. Hence the functions of the considered ansatz space do not need to be continuous there, see Theorem 4.1.
+
+5.4 Adaptive IGABEM for slit problem
+As last example, we consider a crack problem on the slit Γ=[−1,1]×{0}. For f(x,0)≔−x/2 and the single-layer operator V from (5.10), the exact solution of (1.1) reads  ϕ(x,0)=−x1−x2.  Note that ϕ∈H˜−ε(Γ)∖L2(Γ) for all ε>0 and that ϕ has singularities at the tips x=±1. We parametrize Γ by the NURBS curve induced by  p=1,  Kˇ0=(0,0,15,25,35,45,1,1),  W0=(1,1,1,1,1,1),  (Ci)i=1N0−p=((−10),(−3/50),(−1/50),(1/50),(3/50),(10)). 
+
+In Fig. 5.6, error and error estimator for the uniform and for the adaptive approach are plotted. The error is obtained via (5.12), where |||ϕ|||2=π/4 is computed analytically. Since the solution lacks regularity, uniform refinement leads to the suboptimal rate O(N−1/2), whereas adaptive refinement leads to the optimal rate O(N−5/2).
+
+For adaptive refinement, we plot in Fig. 5.7 a histogram of the knots in [a,b]=[0,1] of the last refinement step. As expected, the algorithm mainly refines the mesh at the tips t=0 and t=1.
+
+6 Conclusion
+In this paper, we studied the residual-based a posteriori error estimator proposed by Faermann  [17] for the Galerkin boundary element method (BEM) in 2D. We proved reliability as well as efficiency of this estimator, where reliability requires that the ansatz space is sufficiently rich. This property is in particular satisfied for NURBS (see Theorem 4.4), and thus our result provides a first a posteriori error estimator for isogeometric BEM (IGABEM). Based on this error estimator, we formulated an adaptive algorithm for IGABEM, which uses h-refinement as well as multiplicity increase of the knots for refinement.
+
+6.1 Analytical results
+The numerical analysis of the pioneering work  [17] is restricted to the case of transformed spline ansatz spaces, where the arclength parametrization is used to define polynomial ansatz spaces on the boundary. It is our contribution, first, to work out the essential properties of the BEM spaces, which are needed to prove reliability and efficiency (see (A1)–(A2)), and, second, to show their validity in the case of IGABEM. Additionally, we propose a mesh-refining adaptive algorithm, which, in contrast to the one proposed in  [17] and the state-of-the-art concepts  [25], also steers the continuity properties of the discrete solution at the knots.
+
+6.2 Numerical results
+We considered the weakly-singular integral equation associated to the 2D Laplace problem. The conclusions of the three examples in Sections 5.2–5.4 are analogous and can be described as follows: Compared to uniform refinement, we always observed a superior convergence rate (or at least an equal one in the case of a smooth solution) of our proposed adaptive strategy. Indeed, the convergence rates of adaptive refinement are optimal with respect to the number of knots. Our algorithm is capable to detect the singularities of the (in general unknown) solution and to mainly perform refinement at these points. Moreover, jumps of the solution are automatically detected and the discontinuity is adaptively included in the ansatz spaces.
+
+6.3 Open questions and future work
+As already mentioned, all considered numerical experiments show optimal convergence of the estimator and the error. Thus, it is a goal of our future research to understand this observation mathematically in the spirit of  [25]. However, it is questionable if an analogous version of the reduction property on refined element domains  [25, (A2)], can be proved for the Faermann estimator ηh. Indeed, this is yet an open problem even for standard BEM with piecewise polynomials; see  [26], where at least convergence of an h-adaptive algorithm is analyzed. For the weighted-residual error estimator μh≔‖h1/2(f−VΦh)′‖L2(Γ) proposed in  [16], the axioms of  [25] are satisfied for standard BEM with piecewise polynomials, see  [25, Section 5.4]. In  [22, Section 3.2], we show that the Faermann estimator can always be bounded from above by μh, i.e.,  ηh≤Cμh, where C>0 depends only on Γ. This especially implies reliability of μh for Galerkin IGABEM. Therefore, a natural goal is to prove optimal convergence of our adaptive algorithm for the estimator μh.
+
+Finally, the ultimate goal is of course to apply the estimators ηh and μh in 3D Galerkin IGABEM. One then has to consider, e.g., T-splines  [5] or hierarchical B-splines  [27], since, in contrast to multivariate NURBS, they naturally allow for local mesh refinement. For standard BEM with piecewise polynomials,  [18] shows reliability and efficiency for ηh, whereas  [16] proves reliability. [25, Section 5.4] proves optimal convergence of adaptive h-refinement for μh, while the estimate ηh≲μh as well as plain convergence for ηh-based adaptivity is analyzed in  [26]. The transfer of the mentioned results from standard BEM to adaptive IGABEM leaves interesting and challenging questions for future research.
+
+Acknowledgments
+The authors acknowledge support through the Austrian Science Fund (FWF) under grant P21732Adaptive Boundary Element Method as well as P27005 Optimal adaptivity for BEM and FEM–BEM coupling. In addition, DP and MF are supported through the FWF doctoral school Nonlinear PDEs funded under grant W1245, and GG through FWF under grant P26252Infinite elements for exterior Maxwell problems.
+
+Fig. 5.1 Geometries and initial nodes for the experiments from Sections 5.2–5.4.
+
+Fig. 5.2 Experiment with smooth solution on circle geometry from Section  5.2. Error and estimator are plotted versus the number of knots  N.
+
+Fig. 5.3 Experiment with singular solution on pacman geometry from Section  5.3. The singular solution ϕ∘γ is plotted on the parameter interval, where 0.5 corresponds to the origin, where ϕ is singular.
+
+Fig. 5.4 Experiment with singular solution on pacman geometry from Section  5.3. Error and estimator are plotted versus the number of knots  N.
+
+Fig. 5.5 Experiment with singular solution on pacman geometry from Section  5.3. Histogram of number of knots over the parameter domain. Knots with maximal multiplicity p+1=3 are marked.
+
+Fig. 5.6 Experiment with singular solution on slit from Section  5.4. Error and estimator are plotted versus the number of knots  N.
+
+Fig. 5.7 Experiment with singular solution on slit from Section  5.4. Histogram of number of knots over the parameter domain.
+==== Refs
+References
+1 Hughes Thomas J.~R.  Cottrell J.~Austin  Bazilevs Yuri   Isogeometric analysis: CAD, finite elements, NURBS, exact geometry and mesh refinement Comput. Methods Appl. Mech. Engrg. 194 39–41 2005 4135 4195 
+2 Simpson Robert~N.  Bordas Stéphane P.~A.  Trevelyan Jon  Rabczuk Timon   A two-dimensional isogeometric boundary element method for elastostatic analysis Comput. Methods Appl. Mech. Engrg. 209/212 2012 87 100 
+3 Cottrell J.~Austin  Hughes Thomas~J.R.  Bazilevs Yuri   Isogeometric Analysis: Toward Integration of CAD and FEA 2009 John Wiley & Sons 
+4 Politis Costas  Ginnis Alexandros~I  Kaklis Panagiotis~D  Belibassakis Kostas  Feurer Christian   An isogeometric BEM for exterior potential-flow problems in the plane 2009 SIAM/ACM Joint Conference on Geometric and Physical Modeling 2009 ACM 349 354 
+5 Scott M.A.  Simpson Robert~Napier  Evans J.A.  Lipton S.  Pierre~Alain Bordas Stephane  Hughes T.J.R.  Sederberg T.W.   Isogeometric boundary element analysis using unstructured T-splines Comput. Methods Appl. Mech. Engrg. 254 2013 197 221 
+6 Sauter Stefan~A.  Schwab Christoph   Boundary element methods Springer Series in Computational Mathematics vol. 39 2011 Springer-Verlag Berlin 
+7 Steinbach Olaf   Numerical Approximation Methods for Elliptic Boundary Value Problems 2008 Springer New York 
+8 Takahashi Toru  Matsumoto Toshiro   An application of fast multipole method to isogeometric boundary element method for Laplace equation in two dimensions Eng. Anal. Bound. Elem. 36 12 2012 1766 1775 
+9 Peake Michael~J.  Trevelyan Jon  Coates Graham   Extended isogeometric boundary element method (XIBEM) for two-dimensional Helmholtz problems Comput. Methods Appl. Mech. Engrg. 259 2013 93 102 
+10 Simpson Robert N.  Scott Michael A.  Taus Matthias  Thomas Derek C.  Lian Haojie   Acoustic isogeometric boundary element analysis Comput. Methods Appl. Mech. Engrg. 269 2014 265 290 
+11 Heltai Luca  Arroyo Marino  DeSimone Antonio   Nonsingular isogeometric boundary element method for Stokes flows in 3D Comput. Methods Appl. Mech. Engrg. 268 2014 514 539 
+12 Carstensen Carsten  Stephan Ernst~P.   A posteriori error estimates for boundary element methods Math. Comp. 64 210 1995 483 500 
+13 Carstensen Carsten  Stephan Ernst~P.   Adaptive boundary element methods for some first kind integral equations SIAM J. Numer. Anal. 33 6 1996 2166 2183 
+14 Carstensen Carsten   An a posteriori error estimate for a first-kind integral equation Math. Comp. 66 217 1997 139 155 
+15 Carstensen Carsten  Maischak Matthias  Praetorius Dirk  Stephan Ernst~P.   Residual-based a posteriori error estimate for hypersingular equation on surfaces Numer. Math. 97 3 2004 397 425 
+16 Carstensen Carsten  Maischak Matthias  Stephan Ernst~P.   A posteriori error estimate and h   -adaptive algorithm on surfaces for Symm’s integral equation Numer. Math. 90 2 2001 197 213 
+17 Faermann Birgit   Localization of the Aronszajn-Slobodeckij norm and application to adaptive boundary element methods. I. The two-dimensional case IMA J. Numer. Anal. 20 2 2000 203 234 
+18 Faermann Birgit   Localization of the Aronszajn-Slobodeckij norm and application to adaptive boundary element methods. II. The three-dimensional case Numer. Math. 92 3 2002 467 499 
+19 Feischl Michael  Führer Thomas  Heuer Norbert  Karkulik Michael  Praetorius Dirk   Adaptive boundary element methods: A posteriori error estimators, adaptivity, convergence, and implementation Arch. Comput. Methods Eng. 2014 in print 
+20 Hsiao George~C.  Wendland Wolfgang~L.   Boundary Integral Equations 2008 Springer Berlin 
+21 McLean William   Strongly Elliptic Systems and Boundary Integral Equations 2000 Cambridge University Press Cambridge 
+22 Gantner Gregor   Isogeometric Adaptive BEM (Master’s thesis) 2014 Vienna University of Technology 
+23 de~Boor Carl   B (asic)-Spline Basics 1986 Mathematics Research Center, University of Wisconsin-Madison 
+24 Aurada Markus  Feischl Michael  Führer Thomas  Karkulik Michael  Praetorius Dirk   Efficiency and optimality of some weighted-residual error estimator for adaptive 2D boundary element methods Comput. Methods Appl. Math. 13 3 2013 305 332 
+25 Carstensen Carsten  Feischl Michael  Page Marcus  Praetorius Dirk   Axioms of adaptivity Comput. Math. Appl. 67 6 2014 1195 1253 25983390 
+26 Feischl Michael  Führer Thomas  Mitscha-Eibl Gregor  Praetorius Dirk  Stephan Ernst~P.   Convergence of adaptive BEM and adaptive FEM-BEM coupling for estimators without h   -weighting factor Comput. Methods Appl. Math. 14 4 2014 485 508 
+27 Annalisa Buffa, Carlotta Giannelli, Adaptive isogeometric methods with hierarchical splines: error estimator and convergence, 2015 ArXiv preprint arXiv:1502.00565.

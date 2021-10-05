@@ -1,6 +1,7 @@
 # knowledge-management
 
 credits:
-https://github.com/TomJansen25/Extracting-Core-Claims
+https://github.com/TomJansen25/Extracting-Core-Claims licensing: UNKNOWN
+https://github.com/emilmont/pyStatParser licensing:Apache
 
-licensing status: UNKNOWN
+(There are some hidden licenses I haven't gathered here yet)
