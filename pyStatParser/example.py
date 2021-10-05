@@ -1,4 +1,4 @@
-from pyStatParser.stat_parser import Parser, display_tree
+from stat_parser import Parser, display_tree
 
 
 parser = Parser()

@@ -3,7 +3,7 @@
 
 import nltk, re, csv
 
-from pyStatParser.stat_parser import Parser, display_tree
+from pyStatParser import Parser, display_tree
 parser = Parser()
 from nltk.tree import Tree
 from nltk.stem.wordnet import WordNetLemmatizer
