@@ -6,8 +6,8 @@ nltk.data.path.append(r"/mnt/c/Users/lukac/PycharmProjects/knowledge-management/
 
 from nltk.corpus import stopwords
 from collections import Counter
-import json
-import numpy as np
+# import json
+# import numpy as np
 from difflib import SequenceMatcher
 
 def check_similarity(a, b):
