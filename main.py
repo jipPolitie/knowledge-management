@@ -4,5 +4,5 @@ nltk.data.path.append(r"C:\Users\lukac\PycharmProjects\knowledge-management\NLTK
 
 from AIDA.Extract_Sentence_abstract import extract_sentences
 
-extract_sentences()
+extract_sentences(directory='AIDA/Conclusions', output_path='AIDA/results/results_conclusion.csv', threshold=50)
 
