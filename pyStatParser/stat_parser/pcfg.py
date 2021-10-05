@@ -2,7 +2,7 @@ from __future__ import division
 from collections import Counter, defaultdict
 from json import loads, dumps
 
-from pyStatParser.stat_parser import word_class
+from pyStatParser.stat_parser.word_classes import word_class
 
 
 class PCFG(object):

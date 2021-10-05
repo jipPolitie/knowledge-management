@@ -57,7 +57,11 @@ class PennTreebankTokenizer(object):
         
         #punctuation
         text = re.sub(r'([:,])([^\d])', r' \1 \2', text)
-        text = re.sub(r'', r' ... ', text)
+
+        #Spark patched this line
+        #text = re.sub(r'', r' ... ', text)
+        text= re.sub(r'\.\.\.', r'', text)
+
         text = re.sub(r'[;@#$%&]', r' \g<0> ', text)
         text = re.sub(r'([^\.])(\.)([\]\)}>"\']*)\s*$', r'\1 \2\3 ', text)
         text = re.sub(r'[?!]', r' \g<0> ', text)

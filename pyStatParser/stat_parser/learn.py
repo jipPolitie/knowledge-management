@@ -5,15 +5,15 @@ from os import makedirs
 from json import loads
 from time import time
 
-from pyStatParser.stat_parser import normalize_questionbank
-from pyStatParser.stat_parser import gen_norm
-from pyStatParser.stat_parser import get_sentence
-from pyStatParser.stat_parser import PCFG
+from pyStatParser.stat_parser.treebanks.parse import normalize_questionbank
+from pyStatParser.stat_parser.treebanks.normalize import gen_norm
+from pyStatParser.stat_parser.treebanks.extract import get_sentence
+from pyStatParser.stat_parser.pcfg import PCFG
 
-from pyStatParser.stat_parser import QUESTIONBANK_NORM, QUESTIONBANK_DATA, QUESTIONBANK_PENN_DATA
-from pyStatParser.stat_parser import PENNTREEBANK_NORM, PENNTREEBANK_GLOB
-from pyStatParser.stat_parser import TEMP_DIR, MODEL_TREEBANK, MODEL
-from pyStatParser.stat_parser import TEST_DAT, TEST_KEY
+from pyStatParser.stat_parser.paths import QUESTIONBANK_NORM, QUESTIONBANK_DATA, QUESTIONBANK_PENN_DATA
+from pyStatParser.stat_parser.paths import PENNTREEBANK_NORM, PENNTREEBANK_GLOB
+from pyStatParser.stat_parser.paths import TEMP_DIR, MODEL_TREEBANK, MODEL
+from pyStatParser.stat_parser.paths import TEST_DAT, TEST_KEY
 
 
 def build_model():

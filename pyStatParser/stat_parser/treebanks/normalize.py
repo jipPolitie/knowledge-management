@@ -4,8 +4,8 @@ from six.moves import filter, range
 from six import text_type as str
 string_types = str
 
-from pyStatParser.stat_parser import parse_treebank
-from pyStatParser.stat_parser import is_cap_word
+from pyStatParser.stat_parser.treebanks.parse import parse_treebank
+from pyStatParser.stat_parser.word_classes import is_cap_word
 
 
 def chomsky_normal_form(tree):

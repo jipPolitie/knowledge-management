@@ -113,7 +113,7 @@ def go_over_sentences(sentences):
 
 # Provide the directory here with all the articles that should be processed
 
-directory=r'example_articles/Training Set Articles/'
+directory=r'example_articles/Test Set Articles/'
 csvfile = open('example_articles/results/results_abstract.csv', 'w')
 fieldnames = ['File', 'Sentence']
 writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter='|')

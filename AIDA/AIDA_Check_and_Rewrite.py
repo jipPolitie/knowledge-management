@@ -2,8 +2,10 @@
 # Import required libraries
 
 import nltk, re, csv
+nltk.data.path.append(r"/mnt/c/Users/lukac/PycharmProjects/knowledge-management/NLTK_data")
 
-from pyStatParser import Parser, display_tree
+
+from pyStatParser.stat_parser import Parser, display_tree
 parser = Parser()
 from nltk.tree import Tree
 from nltk.stem.wordnet import WordNetLemmatizer
@@ -13,7 +15,8 @@ from nltk.stem.wordnet import WordNetLemmatizer
 not_atomic_list = ["and that", "and also", "but ", "so that", "while ", "however ", "whereas ", "on the other hand", "in addition to", "respectively", "as well as", "thereby", "though ",  "thus ", " hence ", "therefore", "yet ", " including ", "in contrast", "contrary to", " beside", "aside from", "other than", "explaining", "which explains"]
 not_independent_list = ["this study ", "our study", "the results ", "results ", "the findings ", "the present study ", "these findings ", "these results ", "this research ", "this data ", "the data ", "these data", "our data", "these observations", "this experiment ", "this publication ", "this analysis", "these analyses", "evidence", "this paper ", "the paper ", "this report ", "the report ", "this effect ", "we ", "compared with", "and other", "previous ", "previously", "the bacterium "]
 not_declarative_list = ["?", "!"]
-not_absolute_list = ["probabl", "perhaps", "potentially", "putative", "maybe", "plausible", "possible", "likely", "feasible", "hypothetical", "may", "could ", " seem ", "appears to", "appear to", " appear ", " might ", " suggest ", "minimally sufficient", "is predicted", "is foreseen", "is envisioned", "revealed that", "reveals that", "significant", "significantly", "to reveal", " estimated ", " estimate"]
+#not_absolute_list = ["probabl", "perhaps", "potentially", "putative", "maybe", "plausible", "possible", "likely", "feasible", "hypothetical", "may", "could ", " seem ", "appears to", "appear to", " appear ", " might ", " suggest ", "minimally sufficient", "is predicted", "is foreseen", "is envisioned", "revealed that", "reveals that", "significant", "significantly", "to reveal", " estimated ", " estimate"]
+not_absolute_list = ["probably", "perhaps", "potentially", "putative", "maybe", "plausible", "possible", "likely", "feasible", "hypothetical", "may", "could ", " seem ", "appears to", "appear to", " appear ", " might ", " suggest ", "minimally sufficient", "is predicted", "is foreseen", "is envisioned", "revealed that", "reveals that", "significant", "significantly", "to reveal", " estimated ", " estimate"]
 
 # From here on, all the functions are defined that check whether the sentence fulfills the AIDA rules,
 # and if they do not, the sentence is rewritten with individual functions per requirement
@@ -91,7 +94,7 @@ def check_if_absolute(sentence, sentence_lower, tags):
         return True
 
 def make_absolute(sentence, tokenized, tagged):
-    sentence = sentence.decode('utf-8')
+    # sentence = sentence.decode('utf-8')
     predictions = ["is predicted to", "is foreseen to", "is envisioned to"]
     searchObj = re.search( r'(overall|in sum|therefore|thus|together|in conclusion|taken together|collectively|altogether|taken collectively|to conclude|conclusively|all together|all things considered|everything considered|as a result|consequently|conclusion)*.*(the|these|this|the present)*(study|results|findings|research|report|data|observation|experiment|publication|analysis|data set|dataset|we|it is)+.*(hypothesis|highlight|constitute|suggest|indicate|demonstrate|show|reveal|provide|illustrate|describe|conclude|support|establish|propose|advocate|determine|confirm|argue|impl|display|offer|underline|allow|provide increased support for|found)+((.){0,10}(that))+', sentence, re.I)
     if searchObj != None:
@@ -160,21 +163,21 @@ def final_check(sentence):
             sentence = sentence[0].upper() + sentence[1:]
     return sentence
 
-csvfile = open('Results/results_AIDA_check_1.csv', 'wb')
+csv_file = open('example_articles/results/AIDA_checked.csv', 'w')
 fieldnames = ['Sentence', 'Atomic', 'Independent', 'Declarative', 'Absolute', 'AIDA', 'Rewritten_Sentence']
-writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter='|')
+writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter='|')
 writer.writeheader()
 
 # After processing, provide the path of the file where the results are stored. 
 
 sentences = []
-extracted_sentences = open('example_articles/results/results_abstract.csv')
+extracted_sentences = open('example_articles/results/results_abstract_small.csv')
 extracted_reader = csv.DictReader(extracted_sentences, delimiter='|')
 for row in extracted_reader:
     sentences.append(row['Sentence'])
 
 for sentence in sentences:
-    sentence = sentence.decode('utf-8')
+    #sentence = sentence.decode('utf-8')
     sentence_lower = sentence.lower()
     tokenized = nltk.word_tokenize(sentence)
     tagged = nltk.pos_tag(tokenized)

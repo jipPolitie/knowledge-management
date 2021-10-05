@@ -17,10 +17,10 @@ try:
 except ImportError:
     nltk_is_available = False
 
-from pyStatParser.stat_parser import build_model
+from pyStatParser.stat_parser.learn import build_model
 from pyStatParser.stat_parser.tokenizer import PennTreebankTokenizer
-from pyStatParser.stat_parser import un_chomsky_normal_form
-from pyStatParser.stat_parser import is_cap_word
+from pyStatParser.stat_parser.treebanks.normalize import un_chomsky_normal_form
+from pyStatParser.stat_parser.word_classes import is_cap_word
 
 
 def argmax(lst):
