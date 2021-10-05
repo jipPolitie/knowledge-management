@@ -5,6 +5,7 @@ import nltk, re, csv, os
 
 nltk.data.path.append(r"/mnt/c/Users/lukac/PycharmProjects/knowledge-management/NLTK_data")
 
+
 from nltk.corpus import stopwords
 from collections import Counter
 # import json
@@ -39,19 +40,22 @@ non_core_words = ["sought", "addition", "well-replicated", "replicated", "sample
 
 def determine_lines_and_frequent_words(abstract, path):
     lines = sent_detector.tokenize(abstract)
-    text = open(path)
-    body = "==== Body"
-    refs = "==== Refs"
-    started = False
+    text = open(path,encoding="utf8")
+    # body = "==== Body"
+    # refs = "==== Refs"
+    #started = False
     body_text = ''
     for line in text:
-        if refs in line:
-            started = False
-        if body in line:
-            started = True
-        if started:
-            body_text += line
+
+        # if refs in line:
+        #     started = False
+        # if body in line:
+        #     started = True
+        # if started:
+        body_text += line
     # body_text = body_text.decode('utf-8')
+
+
 
     base_words = nltk.tokenize.casual.casual_tokenize(body_text.lower())
     english_stopwords = stopwords.words('english')
@@ -133,37 +137,41 @@ def go_over_sentences(sentences):
 
 def extract_sentences():
     # Provide the directory here with all the articles that should be processed
-    directory = r'example_articles/Test Set Articles/'
-    csvfile = open('example_articles/results/results_abstract.csv', 'w')
+    directory = r'Conclusions'
+    csvfile = open('example_articles/results/results_conclusion.csv', 'w')
     fieldnames = ['File', 'Sentence']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter='|')
     writer.writeheader()
     for file in os.listdir(directory):
-        path = directory + file
+        path = os.path.join(directory, file)
 
-        text = open(path)
-
-        front = "==== Front"
-        body = "==== Body"
-        graphical_abstract = "Graphical Abstract"
-        started = False
-        abstract = ''
-
-        for line in text:
-            if body in line or graphical_abstract in line:
-                started = False
-            if started:
-                abstract += line
-            if front in line:
-                started = True
-
-        # abstract = abstract.decode('utf-8')
-        lines, frequent_words = determine_lines_and_frequent_words(abstract, path)
-        sentences = assign_sentences_score(lines, frequent_words)
-        core_sentence = go_over_sentences(sentences)
-        core_sentence = core_sentence.replace('\n', ' ').replace(';', ',')
-        core_sentence = core_sentence.encode('utf-8')
-
-        writer.writerow({'File': file, 'Sentence': core_sentence})
+        text = open(path, encoding="utf8")
 
 
+    # front = "==== Front"
+    # body = "==== Body"
+    # graphical_abstract = "Graphical Abstract"
+    #started = False
+    abstract = ''
+
+    for line in text:
+
+        #print(line)
+        # if body in line or graphical_abstract in line:
+        #     started = False
+        # if started:
+        abstract += line
+        # if front in line:
+        #     started = True
+
+    # abstract = abstract.decode('utf-8')
+
+    lines, frequent_words = determine_lines_and_frequent_words(abstract, path)
+    sentences = assign_sentences_score(lines, frequent_words)
+    core_sentence = go_over_sentences(sentences)
+    core_sentence = core_sentence.replace('\n', ' ').replace(';', ',')
+    core_sentence = core_sentence.encode('utf-8')
+
+    writer.writerow({'File': file, 'Sentence': core_sentence})
+
+# DO NOT FORGET TO DECODE EXTRACTED RESULTS BEFORE NEXT STEP!

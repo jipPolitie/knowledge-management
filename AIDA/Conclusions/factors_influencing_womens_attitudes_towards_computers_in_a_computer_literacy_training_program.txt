@@ -1,0 +1,39 @@
+Based on the study findings, we found that the women’s computer attitudes were influenced by their computer
+training, including reducing anxiety and their perceptions of usefulness, and increasing liking. In the discussion
+of changing women’s computer attitudes, some researchers (e.g., Hilbert, 2011; Nakatani & Miyamoto, 2006)
+argue that working women have better attitudes, but this was not supported in the current study. The factors that
+influenced the attitudes of our participants were age, education level, nationality, and PC ownership. Before the
+training, only lower education level women had higher anxiety. Most of the influences took effect after the
+computer training. After the training, younger women and those who owned a computer increased their
+perceptions of usefulness of computers; non-Taiwanese women increased their anxiety, while women who
+owned computers reduced their anxiety. This indicates that the experience of learning about computers can
+influence women's computer attitudes in various ways. Therefore, we should include computer learning
+experience as a factor in the future research, and focus on the needs of different groups of women. To decrease
+their learning difficulties, the following suggestions are provided. Wong, Chai and Gao (2011) pointed out that non-alphabetic languages such as Chinese are more
+complicated to key in, including switching modes and phonetic vs. character selection, etc. The results of
+this study reveal that older women and women with lower education levels tend not to be good at phonetics
+and Chinese data input, so these became their biggest challenges and they needed extra help. For those who
+have difficulties in data input, using different types of input approaches is suggested, such as writing
+characters directly on a writing pad or keying in the phonetics of the desired characters. inconvenience caused by bad eyesight. For these women, it is suggested that TAs could assist individual
+learners according to their various needs. For example, accessibility settings introduced by Jacko (2005)
+such as magnifiers, text-to-speech utilities, on-screen keyboards and high contrast, could be employed. Programs that are designed for immigrant societies should adjust their design based on different cultural
+requirements, as pointed out by Veith, Schubert and Wulf (2007). In this research, the foreign brides’
+anxiety was higher than that of the Taiwanese women. It is suggested that the program needs to be designed
+based on their culture and language to teach them how to set up a multilingual environment with familiar
+data input and software. For example, Chinese women are familiar with using Hanyu Pinyin (spelling) data
+input and QQ to communicate with their friends and family, so this should be taken into consideration in
+the design of the program. Women who do not own their own computer do not have many chances to practice after class, so they have
+less access to a computer. It is suggested that after-class practice time be provided on a regular basis to
+increase their chances to practice. In addition, Selwyn (2003) suggested that governments or NGOs provide
+more public computers to give the public more chances to use them. Mayhorn, Stronge, McLaughlin and Rogers (2004) argue that step-by-step teaching could reduce older
+adults’ learning load. Consistent with the findings reported by Shieh et al. (2011), this study also found that
+the use of screen snapshots and step-by-step methods in the design of the teaching materials was helpful to
+the learners because they could review at home by themselves and could more easily recall what they had
+learned in class. It is suggested that future programs adopt similar approaches to the design of the training
+course materials for adult learners. In addition to improving the adults’ computer skills, it appears that the teaching assistants also gained
+opportunities to learn from the adult members, which echoes the assertions about Intergenerational Learning
+(Poynton, 2005). In other words, while the participating women improved their computer skills, the TAs also
+grew via interaction with the women. This is an example of mutual learning that was not expected at the
+beginning of the program, and so was not investigated in the current study. It is suggested that future research
+can study this overlooked aspect to further understand the value of Intergenerational Learning occurring
+between adult learners and young tutors in a training program.
