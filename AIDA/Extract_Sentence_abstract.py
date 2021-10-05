@@ -40,17 +40,17 @@ non_core_words = ["sought", "addition", "well-replicated", "replicated", "sample
 def determine_lines_and_frequent_words(abstract, path):
     lines = sent_detector.tokenize(abstract)
     text = open(path,encoding="utf8")
-    body = "==== Body"
-    refs = "==== Refs"
-    started = False
+    # body = "==== Body"
+    # refs = "==== Refs"
+    #started = False
     body_text = ''
     for line in text:
-        if refs in line:
-            started = False
-        if body in line:
-            started = True
-        if started:
-            body_text += line
+        # if refs in line:
+        #     started = False
+        # if body in line:
+        #     started = True
+        # if started:
+        body_text += line
     # body_text = body_text.decode('utf-8')
 
     base_words = nltk.tokenize.casual.casual_tokenize(body_text.lower())
@@ -133,8 +133,8 @@ def go_over_sentences(sentences):
 
 # Provide the directory here with all the articles that should be processed
 
-directory=r'E:\TU Delft\Q5\Joint Interdisciplinary Project\Programming\Testing\AIDA\Training Set Articles\Training Set Articles'
-csvfile = open('results_abstract.csv', 'w')
+directory=r'E:\TU Delft\Q5\Joint Interdisciplinary Project\Programming\knowledge-management\AIDA\Conclusions'
+csvfile = open('results_conclusion.csv', 'w')
 fieldnames = ['File', 'Sentence']
 writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter='|')
 writer.writeheader()
@@ -145,20 +145,20 @@ for file in os.listdir(directory):
     text = open(path,encoding="utf8")
 
 
-    front = "==== Front"
-    body = "==== Body"
-    graphical_abstract = "Graphical Abstract"
-    started = False
+    # front = "==== Front"
+    # body = "==== Body"
+    # graphical_abstract = "Graphical Abstract"
+    #started = False
     abstract = ''
 
     for line in text:
         #print(line)
-        if body in line or graphical_abstract in line:
-            started = False
-        if started:
-            abstract += line
-        if front in line:
-            started = True
+        # if body in line or graphical_abstract in line:
+        #     started = False
+        # if started:
+        abstract += line
+        # if front in line:
+        #     started = True
 
     # abstract = abstract.decode('utf-8')
     lines, frequent_words = determine_lines_and_frequent_words(abstract, path)
