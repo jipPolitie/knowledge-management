@@ -1,0 +1,210 @@
+
+==== Front
+Breastfeed MedBreastfeed MedbfmBreastfeeding Medicine1556-82531556-8342Mary Ann Liebert, Inc. 140 Huguenot Street, 3rd FloorNew Rochelle, NY 10801USA 2698228210.1089/bfm.2015.016610.1089/bfm.2015.0166Clinical ResearchPremature Infants 750–1,250 g Birth Weight Supplemented with a Novel Human Milk-Derived Cream Are Discharged Sooner Hair Amy B. 1Bergner Erynn M. 1Lee Martin L. 2Moreira Alvaro G. 3Hawthorne Keli M. 4Rechtman David J. 2Abrams Steven A. 4Blanco Cynthia L. 31 Section of Neonatology, Department of Pediatrics, Baylor College of Medicine, Texas Children's Hospital, Houston, Texas.2 Prolacta Bioscience, Industry, California.3 Department of Pediatrics, University of Texas Health Science Center, San Antonio, Texas.4 Department of Pediatrics, Dell Medical School at the University of Texas at Austin, Austin, Texas.Address correspondence to:Amy B. Hair, MDSection of NeonatologyDepartment of PediatricsTexas Children's Hospital6621 Fannin St, Ste W6104Houston, TX 77030E-mail:abhair@texaschildrens.org01 4 2016 01 4 2016 11 3 133 137 © Amy B. Hair, et al., 2016; Published by Mary Ann Liebert, Inc.2016This Open Access article is distributed under the terms of the Creative Commons License (http://creativecommons.org/licenses/by/4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly credited.Abstract
+Objective: Infants may benefit from early nutritional intervention to decrease hospital stay. To evaluate the effects of adding a human milk (HM)-derived cream (Cream) product to a standard feeding regimen in preterm infants.
+
+Materials and Methods: In a prospective multicenter randomized study, infants with birth weights 750–1,250 g were assigned to a Control or Cream group. The Control group received a standard feeding regimen consisting of mother's own milk or donor HM with donor HM-derived fortifier. The Cream group received the standard feeding regimen along with an additional HM-derived cream supplement when the HM they received was <20 kcal/oz. Primary outcomes of this secondary analysis included comorbidities, length of stay (LOS), and postmenstrual age (PMA) at discharge.
+
+Results: We enrolled 75 infants (Control n = 37, Cream n = 38) with gestational age 27.7 ± 1.8 weeks and birth weight 973 ± 145 g (mean ± SD). After adjusting for gestational age, birth weight, and presence of bronchopulmonary dysplasia (BPD), the Cream group had a decreased PMA at discharge (39.9 ± 4.8 versus 38.2 ± 2.7 weeks, p = 0.03) and LOS (86 ± 39 versus 74 ± 22 days, p = 0.05). For 21 infants with BPD, these values trended toward significance for PMA at discharge (44.2 ± 6.1 versus 41.3 ± 2.7 weeks, p = 0.08) and LOS (121 ± 49 versus 104 ± 23 days, p = 0.08).
+
+Conclusions: Very preterm infants who received an HM-derived cream supplement were discharged earlier. Infants with BPD may have benefited the most.
+==== Body
+Introduction
+Human milk (HM) is accepted as the ideal source of nutrition for all infants, including those born prematurely. Its use provides benefits related to host defense, gastrointestinal maturation, infection rate, neurodevelopmental outcomes, and long-term cardiovascular and metabolic disease.1 An exclusive HM diet significantly decreases the rates of necrotizing enterocolitis (NEC), sepsis, days of parenteral nutrition, and death.2–4 As such, the American Academy of Pediatrics5 recommends that mother's own milk or donor HM should be used as the foundation of enteral feeds for all very low birth weight (VLBW) infants.
+
+However, due to the increased requirements of VLBW infants, HM cannot meet the nutritional needs of this population without fortification.6,7 Recent data have shown that the average energy content of a nationwide sample of donor HM was 19 kcal/oz with 25% of samples falling below 17.3 kcal/oz and 65% of the samples below 20 kcal/oz.6 Another similar analysis of both donor and mother's own milk demonstrated that most samples had nutrient contents below the recommended values for preterm milk composition with 79% having a fat content <4 g/dL, 56% having protein content <1.5 g/dL, and 67% having an energy density <67 kcal/dL.8
+
+Optimal nutrition is especially important for VLBW infants with bronchopulmonary dysplasia (BPD). Despite an estimated 20–40% increase in caloric needs,9,10 infants with BPD receive more fluid and less energy than their healthy counterparts in the first weeks of life.11,12 Future nutrition and growth can then be further compromised by the need for fluid restriction, diuretics, and postnatal steroids to manage this disease.10
+
+A novel HM-derived cream supplement (Cream) allows for the enhancement of the energy density of feeds without a considerable increase in the volume of feeds given to the infant. We hypothesized that extremely premature infants, especially those with higher nutritional needs, who received supplementation with Cream would have improved outcomes and decreased length of stay (LOS).
+
+Materials and Methods
+In this multicenter trial, infants were fed an exclusive HM diet according to the investigative site's standard feeding protocol. This diet included mother's own milk or pasteurized donor HM fortified with pasteurized donor HM-derived fortifier, Prolact+H2MF (Prolacta Bioscience, Industry, CA). Details of this study and growth outcomes have been reported.13 After informed consent was obtained, infants were randomized in blocks of four into two groups. Investigators were blinded to block size. Once the infants began tolerating fortified enteral feeds (at ∼100 mL/kg/d), milk analysis with a near infrared milk analyzer (Spectrastar 2400RTW; Unity Scientific, Brookfield, CT) began. Infants randomized to the Cream group were supplemented with the 2.5 kcal/mL HM-derived cream supplement (Prolact CR) whenever their mother's own milk or donor HM was found to be below 20 kcal/oz. Cream was added through the procedure outlined previously,13 such that if the base HM was 19 kcal/oz, 2 mL of the HM-derived cream Supplement was added to 98 mL of mother's own milk or donor HM. This study was approved by the Institutional Review Board of Baylor College of Medicine and Affiliated Hospitals and The University of Texas Health Science Center (San Antonio, TX). It was registered with ClinicalTrials.gov (NCT01487928).
+
+Neonatal demographics and hospital courses were obtained from the medical record. Outcome variables collected included medically (indomethacin or ibuprofen course) or surgically managed patent ductus arteriosus (PDA), blood culture-proven late-onset sepsis, NEC (defined as Stage 2 NEC or greater by the modified Bell Criteria14), BPD (defined as oxygen therapy/positive pressure ventilation at 36 weeks postmenstrual age (PMA) to maintain an adequate range of oxygen saturation15), mortality, LOS, PMA at discharge, and growth parameters (weight, length, and head circumference). All growth parameters were plotted on the Olsen curve16 to obtain growth percentiles. Discharge criteria were defined by the individual attending physicians at the investigative sites. As this was a secondary analysis of a growth study, discharge criteria were not standardized in the original protocol. However, weight was not a specific criterion for discharge. As infants with BPD have increased nutritional needs,9,10 we performed a subgroup analysis to compare the control infants with BPD to the intervention group with BPD. The analyses in this article were performed in addition to those previously published with this study.13
+
+We performed a univariate statistical analysis using the Wilcoxon rank-sum test for quantitative data. For the categorical outcomes in the Cream versus Control comparison, the chi-square test for homogeneity, Fisher's exact test, or its multinomial equivalent was employed. The analyses for LOS and PMA at discharge utilized a multivariate linear model that controlled for gestational age, birth weight, and presence of BPD along with the interaction of BPD and cream use, as the main effects of study group and BPD could have had a nonlinear component represented by the multiplicative interaction of the two. All statistical calculations were performed utilizing an intent-to-treat analysis. Statistical significance was defined as p < 0.05.
+
+The study was not powered to detect effects on comorbidities, LOS, or PMA at discharge. As has been noted, this trial was originally focused and powered on growth outcomes.
+
+Results
+A total of 78 infants of 750 to 1,250 g were randomized; 3 of these infants were excluded from analysis (1 due to sepsis and a subsequent bowel obstruction before the start of milk analysis, 1 due to clinically significant congenital heart disease and chromosomal abnormality, and 1 due to intestinal perforation before the start of fortified feeds) as their underlying conditions placed undue influence on the primary outcomes of this study. Thus, 75 infants (Control n = 37, Cream n = 38) were evaluated. There were no significant differences in the characteristics of the Control and Cream intervention groups at study enrollment with the exception of race (Table 1). Twenty-one infants with BPD were also evaluated in a subgroup analysis. The BPD subgroup did not exhibit any significant difference in the study groups with respect to baseline characteristics (Table 2).
+
+Table 1. Infant Demographics and Characteristics (Mean ± SD)
+
+ 	Control group (n = 37)	Cream group (n = 38)	p	
+Birth weight, g	973 ± 152	973 ± 140	0.996	
+SGA at birth, %	18.9	13.2	0.504	
+Gestational age, weeks	27.7 ± 2.0	27.7 ± 1.6	0.93	
+Gender, % male	56.8	47.4	0.42	
+Race, % Hispanic/White/Black/Other	51.4/21.6/21.6/5.4	21.0/23.7/47.4/7.9	0.03	
+APGAR at 5 minutes	7 ± 2	7 ± 2	0.39	
+Mechanical ventilation, %	18.9	15.8	0.72	
+Antenatal steroids, %	81.1	79.0	0.82	
+Analyses of birth weight and gestational age used the two sample t-test; all others were based on the chi-square test for homogeneity.
+
+SD, standard deviation; SGA, small for gestational age.
+
+Table 2. BPD Subgroup Demographics
+
+ 	Control group with BPD (n = 12)	Cream group with BPD (n = 9)	p	
+Birth weight, g	949 ± 145	855 ± 104	0.12	
+SGA at birth, %	8.3	0.0	1.0	
+Gestational age, weeks	27.0 ± 1.7	26.7 ± 1.4	0.60	
+Gender, % male	66.7	44.4	0.40	
+Race, % Hispanic/White/Black/Other	58.3/8.3/25.0/8.3	11.1/22.2/44.4/22.2	0.16	
+APGAR at 5 minutes	7 ± 2	7 ± 3	0.40	
+Mechanical ventilation, %	41.7	33.3	1.0	
+Antenatal steroids, %	91.7	66.7	0.27	
+All analyses of categorical data in this table used Fisher's exact test or its multinomial equivalent; analyses of birth weight and gestational age used the Wilcoxon rank-sum test.
+
+BPD, bronchopulmonary dysplasia.
+
+The clinical outcomes are listed in Table 3. These outcomes were notable for a significantly shorter PMA at discharge in the Cream group (38.2 ± 2.7 weeks) compared to the Control group (39.9 ± 4.8 weeks), with a p-value of 0.03 after employing the linear adjustment model described above. LOS for infants that received cream was also shorter than those who did not receive cream (74 ± 22 days for the Cream group and 86 ± 39 days for the Control Group, p = 0.05, using the adjustment model). Data for the infants with BPD trended toward a shorter LOS and earlier PMA at discharge (Table 4). In this subset, infants in the Cream group were discharged from the hospital an average of 17 days sooner (LOS 104 ± 23 days for the BPD Cream group and 121 ± 49 days for the BPD Control group, p = 0.08). The PMA at discharge of the BPD Cream group was an average of 2.9 weeks earlier (PMA at discharge 41.3 ± 2.7 weeks for the BPD Cream group and 44.2 ± 6.1 weeks for the BPD Control group, p = 0.08).
+
+Table 3. Clinical Outcomes of Study Infants
+
+ 	Control group (n = 37)	Cream group (n = 38)	p	
+PDA ligation, %	8.1	2.6	0.36	
+PDA treated medically, %	27.0	29.0	0.85	
+Sepsis, %	5.4	7.9	1.0	
+Necrotizing enterocolitis, %	0	0	—	
+Bronchopulmonary dysplasia, %	32.4	23.7	0.40	
+Death, %	0	0	—	
+Length of stay, days	86 ± 39	74 ± 22	0.05a,b	
+PMA at discharge, weeks	39.9 ± 4.8	38.2 ± 2.7	0.03a,c	
+a General linear model with all of the data and including main effects of group (Cream versus Control), BPD, the interaction between the two, and gestational age and birth weight as covariates in an adjustment model.
+
+b p = 0.17 by two-sample t-test on log-transformed values.
+
+c p = 0.07 by two-sample t-test. All others by chi-square test for homogeneity.
+
+PDA, patent ductus arteriosus; PMA, postmenstrual age.
+
+Table 4. Clinical Outcomes of Infants with BPD
+
+ 	Control group with BPD (n = 12)	Cream group with BPD (n = 9)	p	
+PDA ligation, %	16.7	11.1	1.0	
+PDA treated medically, %	41.7	66.7	0.29	
+Sepsis, %	16.7	11.1	1.0	
+Necrotizing enterocolitis, %	0	0	—	
+Death, %	0	0	—	
+Length of stay, days	121 ± 49	104 ± 23	0.08a,b	
+PMA at discharge, weeks	44.2 ± 6.1	41.3 ± 2.7	0.08a,c	
+Fisher's exact test for categorical variables; Wilcoxon rank-sum test for quantitative variables (except for linear adjustment model).
+
+a General linear model with all of the data and including main effects of group (Cream versus Control), BPD, the interaction between the two, and gestational age and birth weight as covariates in an adjustment model.
+
+b p = 0.32 by two-sample t-test on log-transformed values.
+
+c p = 0.14 by two-sample t-test.
+
+No significant difference was noted in the rates of BPD, late-onset sepsis, or PDA requiring intervention between the two groups. The percentage of small for gestational age infants (<10th percentile on the Olsen Curve16) at 36 weeks PMA did not significantly differ between the groups. There were no recorded deaths or episodes of NEC in this study.
+
+Discussion
+We found that preterm infants who received the novel HM-derived cream supplement had a significantly earlier PMA at discharge and trend toward decreased LOS when compared to those who did not receive the cream supplement. These benefits also trended toward significance in the BPD subpopulation.
+
+Recent analyses show fat to be the most variable component in HM, accounting for decreases in energy density.6,7 Thus, this study design compensates for this lower lipid content in the subject's base milk and enhances the exclusive HM diet with adequate fortification that is recommended for premature infants.1–3
+
+Targeted individual fortification of HM has also emerged as an approach to provide infants with sufficient nutritional support for growth and development, while allowing them to receive the immune benefits of HM. Using a medium-chain triglyceride oil and a bovine-derived HM fortifier, de Halleux and Rigo8 observed that this method allowed for both maintenance of energy balance and adherence to the recommended values of individual nutrients in HM. The cream supplement may be useful in further investigations into this approach as its derivation from HM allows for the addition of HM lipids to the infant's diet. The advantage of utilizing an HM-derived lipid supplement over medium-chain triglyceride oils is the potential for improved tolerance, while avoiding exposures to allergens from the source of the current available oils (i.e., soy, sunflower).
+
+With these nutritional benefits, cost containment also exists as one of the most apparent advantages to an earlier discharge. By analyzing the 2001 Nationwide Inpatient Sample from the Healthcare Cost and Utilization Project, Russell et al.17 found that, while a diagnosis of prematurity or low birth weight represented only 8% of infant hospitalizations, these diagnoses accounted for 47% of the costs (∼$5.8 billion). Furthermore, illness-related costs associated with BPD are the highest of the common comorbidities of prematurity, reaching 2.3 times the amount required to care for a gestational age-matched infant without BPD.18 We did not include a cost analysis in this study; however, the cost of the cream supplement is relatively inexpensive, and we infer cost savings with decreasing LOS.
+
+The trend toward a decrease in LOS noted for the infants with BPD may be attributed to the vital role that adequate nutrition plays in weight gain and presumed lung growth and development.19,20 Human and animal models have shown that caloric restriction significantly reduces alveolar number and surface area in addition to collagen deposition in the lungs.21–24 Furthermore, HM lipids promote synthesis and secretion of pulmonary surfactant25 and improve the bioavailability of fat-soluble vitamins,9 including Vitamin A, which have independently been shown to reduce the incidence of BPD.12,25,26 Delivering additional lipids to meet the increased caloric needs of infants with BPD may also be advantageous as the metabolism of fat produces less carbon dioxide compared with carbohydrates.9,10 As a result, the decreased caloric intake by the Control subjects in our study may have interfered with their ability to continue lung development in the postnatal period, resulting in possible diminished pulmonary function.9
+
+This cream formulation, at 2.5 kcal/mL, also allows for a substantial amount of calories to be added without a considerable increase in total feeding volume. Fluid restriction is especially important in the management of VLBW infants due to their predisposition to developing pulmonary edema.9 It has been postulated that higher fluid intake inhibits the process of extracellular fluid contraction after birth resulting in decreased lung compliance and need for more ventilator support that may damage the lung tissue and cause disease.27 As such, greater fluid intake and less weight loss in the first 10 days of life have been demonstrated to increase an infant's risk of developing BPD.20,27 Thus, although no significant difference in the rate of BPD was detected in this analysis, larger studies that investigate mechanisms to provide safe calorie-dense feeds to VLBW infants and the subsequent pulmonary outcomes of these infants may be warranted. Supplements such as the one studied here may be useful in such investigations.
+
+This study was limited by the small sample size and, as a secondary analysis, was not powered to measure the primary outcomes of this investigation. As such, further studies would be needed to detect any difference in the rate of comorbidities or clinical outcomes of the BPD subgroup. In addition, the donor HM used by one investigative site was specifically formulated to provide a minimum of 20 kcal/oz. As a result, 13% (5/38) of infants randomized to the Cream group did not receive the intervention at any point during the trial. Those infants receiving mainly donor HM for their base milk supply may have falsely elevated the average energy density of the base milk of both the study and intervention group, minimizing the difference between them. In addition, the near-infrared milk analyzer for milk analysis used a secondary method for the measurement of HM and after comparison with primary AOAC© methods, despite calibration to bias samples, we found that there was a 1.2 kcal/oz overestimation of the caloric content of the HM samples.13 Therefore, more samples of milk in the intervention group likely qualified for cream than actually received it potentially, minimizing the clinical effect. Also of note, one of the two investigative sites had unblinded randomization due to logistical reasons. We do not feel that this is clinically relevant, but it is a limitation of the study.
+
+Conclusion
+We found a significantly earlier PMA at discharge and trend toward shorter LOS of 750–1250 g infants receiving the cream supplement. Although this difference only approached significance for the infants with BPD, this subset of infants seemed to be impacted. These findings have large implications in decreasing healthcare costs, improving individual fortification strategies, and enhancing overall nutrition of premature infants. Larger studies utilizing this supplement within an exclusive HM diet are needed to assess the full impact of its clinical effect, especially in relation to the outcome of infants with comorbidities with specific nutritional challenges such as BPD.
+
+Acknowledgments
+We would like to thank the following people for their invaluable assistance in the project: Pam Gordon (BSN, RN, RNC-NIC), Cindy Bryant (BSN, CCRN-Neo), Geneva Shores (BSN, RN, RNC-LRN), Nancy Hurst (PhD, RN, IBCLC), Kristina Tucker (BSN, RN, IBCLC), Laurel Laviolette, Mimi Hernandez (all from Texas Children's Hospital, Houston, TX), Texas Children's Hospital Milk Bank Technicians, Neonatal Intensive Care Unit Nurses and Neonatologists at Texas Children's Hospital, Texas Children's Hospital Clinical Research Center, Texas Children's Hospital Bad Pants Open Fund, Margarita Vasquez (MD), Laurie Weaver (RNC), Robin Tragus (RN), Rachel Jacob (RD) (all from the University of Texas Health Science Center, San Antonio, TX), and NICU Nurses and Neonatologists at University Hospital (San Antonio, TX). The project was funded by the National Center for Research Resources General Clinical Research for Children (RR00188). Prolacta Bioscience provided the product for the study.
+
+Disclosure Statement
+ A.H. and C.B. received research grant support and speaker honoraria from Prolacta Bioscience. M.L. and D.R. are employees of Prolacta Bioscience. The others declare no conflicts of interest.
+==== Refs
+References
+1 Schanler RJ  
+Outcomes of human milk-fed premature infants . Semin Perinatol 
+2011 ;35 :29 –33 21255704 
+2 Sullivan S  , Schanler RJ  , Kim JH , et al. 
+An exclusively human milk-based diet is associated with a lower rate of necrotizing enterocolitis than a diet of human milk and bovine milk-based products . J Pediatr 
+2010 ;156 :562 –567 20036378 
+3 Cristofalo EA  , Schanler RJ  , Blanco CL , et al. 
+Randomized trial of exclusive human milk versus preterm formula diets in extremely premature infants . J Pediatr 
+2013 ;163 :1592 –1595 23968744 
+4 Abrams SA  , Schanler RJ  , Lee ML , et al. 
+Greater mortality and morbidity in extremely preterm infants fed a diet containing cow milk protein products . Breastfeed Med 
+2014 ;9 :281 –285 24867268 
+5 American Academy of Pediatrics Section on Breastfeeding . Breastfeeding and the use of human milk . Pediatrics 
+2012 ;129 :e827 –e841 22371471 
+6 Wojcik KY  , Rechtman DJ  , Lee ML , et al. 
+Macronutrient analysis of a nationwide sample of donor breast milk . J Am Diet Assoc 
+2009 ;109 :137 –140 19103335 
+7 Vieira AA  , Soares FVM  , Pimenta HP , et al. 
+Analysis of the influence of pasteurization, freezing/thawing, and offer processes on human milk's macronutrient concentrations . Early Hum Dev 
+2011 ;87 :577 –580 21592688 
+8 de Halleux V  , Rigo J  
+Variability in human milk composition: Benefit of individualized fortification in very-low-birth-weight infants . Am J Clin Nutr 
+2013 ;98 :529S –535S 23824725 
+9 Biniwale MA  , Ehrenkranz RA  
+The role of nutrition in the prevention and management of bronchopulmonary dysplasia . Semin Perinatol 
+2006 ;30 :200 –208 16860160 
+10 Theile AR  , Radmacher PG  , Anschutz TW , et al. 
+Nutritional strategies and growth in extremely low birth weight infants with bronchopulmonary dysplasia over the past 10 years . J Perinatol 
+2012 ;32 :117 –122 21617642 
+11 Ehrenkranz RA  
+Early, aggressive nutritional management for very low birth weight infants: What is the evidence? 
+Semin Perinatol 
+2007 ;31 :48 –55 17462488 
+12 Ehrenkranz RA  
+Ongoing issues in the intensive care for the periviable infant – Nutritional management and prevention of bronchopulmonary dysplasia and nosocomial infections . Semin Perinatol 
+2014 ;38 :25 –30 24468566 
+13 Hair AB  , Blanco CL  , Moreira AG , et al. 
+Randomized trial of human milk cream as a supplement to standard fortification of an exclusive human milk-based diet in infants 750-1250g birth weight 
+J Pediatr 
+2014 ;165 :915 –920 25130571 
+14 Walsh M  , Kliegman R  
+Necrotizing enterocolitis: Treatment based on staging criteria . Pediatr Clin North Am 
+1986 ;33 :179 –201 3081865 
+15 Jobe AH  , Bancalari E  
+Bronchopulmonary dysplasia . Am J Respir Crit Care Med 
+2001 ;163 :1723 –1729 11401896 
+16 Olsen IE  , Groveman SA  , Lawson L , et al. 
+New intrauterine growth curves based on United States data . Pediatrics 
+2010 ;125 :e214 –e228 20100760 
+17 Russell RB  , Green NS  , Steiner CA , et al. 
+Cost of hospitalization for preterm and low birth weight infant in the United States . Pediatrics 
+2007 ;120 :e1 –e9 17606536 
+18 Johnson TJ  , Patel AL  , Jegier BJ , et al. 
+Cost of morbidities in very low birth weight infants . J Pediatr 
+2013 ;162 :243 –249 22910099 
+19 Jobe AH  
+Let's feed the preterm lung . J Pediatr (Rio J) 
+2006 ;82 :165 –166 16773171 
+20 Wemhöner A  , Ortner D  , Tschirch E , et al. 
+Nutrition of preterm infants in relation to bronchopulmonary dysplasia . BMC Pulm Med 
+2011 ;11 :7 21291563 
+21 Massaro GD  , Radaeva S  , Clerch LB , et al. 
+Lung alveoli: Endogenous programmed destruction and regeneration . Am J Physiol Lung Cell Mol Physiol 
+2002 ;283 :L305 –L309 12114191 
+22 Mataloun MM  , Rebello CM  , Mascaretti RS , et al. 
+Pulmonary responses to nutritional restriction and hyperoxia in premature rabbits . J Pediatr (Rio J) 
+2006 ;82 :179 –185 16670809 
+23 Massaro D  , Massaro GD  
+Hunger disease and pulmonary alveoli . Am J Respir Crit Care Med 
+2004 ;170 :723 –724 15447950 
+24 Coxson HO  , Chan IHT  , Mayo JR , et al. 
+Early emphysema in patients with anorexia nervosa . Am J Respir Crit Care Med 
+2004 ;170 :748 –752 15256394 
+25 Atkinson SA  
+Special nutritional needs of infants for prevention of and recovery from bronchopulmonary dysplasia . J Nutr 
+2001 ;131 :942S –946S 11238791 
+26 Tyson JE  , Wright LL  , Oh W , et al. 
+Vitamin A supplementation for extremely-low-birth-weight infants. National Institute of Child Health and Human Development Neonatal Research Network . N Engl J Med 
+1999 ;340 :1962 –1968 10379020 
+27 Oh W  , Poindexter BB  , Perritt R , et al. 
+Association between fluid intake and weight loss during the first ten days of life and risk of bronchopulmonary dysplasia in extremely low birth weight infants . J Pediatr 
+2005 ;147 :786 –790 16356432

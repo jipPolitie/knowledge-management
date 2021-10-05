@@ -1,0 +1,1073 @@
+
+==== Front
+EcologyEcology10.1002/(ISSN)1939-9170ECYEcology0012-96581939-9170John Wiley and Sons Inc. Hoboken 10.1002/ecy.1452ECY1452ArticleArticlesUnravelling the relative roles of top‐down and bottom‐up forces driving population change in an oceanic predator Horswill C. 
+1
+
+2
+Ratcliffe N. 
+1
+Green J. A. 
+3
+Phillips R. A. 
+1
+Trathan P. N. 
+1
+Matthiopoulos J. 
+2
+1 British Antarctic SurveyHigh CrossCambridgeCB3 0ETUnited Kingdom2 Institute of BiodiversityAnimal Health and Comparative MedicineUniversity of GlasgowGlasgowG12 8QQUnited Kingdom3 School of Environmental SciencesUniversity of LiverpoolLiverpoolL69 3GPUnited Kingdom* E‐mail: catrsw@gmail.com01 8 2016 8 2016 97 8 10.1111/ecy.2016.97.issue-81919 1928 24 12 2015 22 2 2016 © 2016 The Authors. Ecology, published by Wiley Periodicals, Inc., on behalf of the Ecological Society of America.This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.Abstract
+In the open ocean ecosystem, climate and anthropogenic changes have driven biological change at both ends of the food chain. Understanding how the population dynamics of pelagic predators are simultaneously influenced by nutrient‐driven processes acting from the “bottom‐up” and predator‐driven processes acting from the “top‐down” is therefore considered an urgent task. Using a state‐space demographic model, we evaluated the population trajectory of an oceanic predator, the Macaroni Penguin (Eudyptes chrysolophus), and numerically assessed the relative importance of bottom‐up and top‐down drivers acting through different demographic rates. The population trajectory was considerably more sensitive to changes in top‐down control of survival compared to bottom‐up control of survival or productivity. This study integrates a unique set of demographic and covariate data and highlights the benefits of using a single estimation framework to examine the links between covariates, demographic rates and population dynamics.
+
+density dependenceEl Niño Southern OscillationMacaroni Penguin (Eudyptes chrysolophus)Monte Carlo Markov chainpopulation modelpredationsea surface temperatureseabirdstochastic variable selectionNERC PhD studentshipNE/I52797/X source-schema-version-number2.0component-idecy1452cover-dateAugust 2016details-of-publishers-convertorConverter:WILEY_ML3GV2_TO_NLMPMC version:4.9.4 mode:remove_FC converted:31.08.2016Corresponding Editor: J. P. Y. Arnould.
+==== Body
+Introduction
+The predator‐driven or “top‐down” view of population control appears to be widely accepted by researchers considering terrestrial (Hairston et al. 1960), freshwater (Carpenter et al. 1985), and intertidal ecosystems (Paine 1980). In contrast, with the exception of human exploitation and fisheries by‐catch, the majority of population change in the pelagic zone is thought to be nutrient driven, or controlled from the “bottom‐up” (Aebischer et al. 1990, Stenseth et al. 2002). This is because the overall structure and functioning of the pelagic system is dominated by physical processes and nutrient fluxes (Pace et al. 1999, Behrenfeld et al. 2006). However, a number of studies have linked population change in pelagic predators to marked adjustments in community structure at lower trophic levels, indicative of top‐down control (e.g., Estes and Duggins 1995, Bascompte et al. 2005, Frank et al. 2005, Springer and van Vliet 2014).
+
+Marine ecosystems are receiving growing attention because anthropogenic drivers have precipitated biological change at both ends of the food chain. For example, in the Antarctic system, rapid regional warming has had a major impact on lower trophic levels (Vaughan et al. 2003, Atkinson et al. 2004), and the composition of predators occupying the upper trophic level has been repeatedly changed by “boom and bust” sealing, whaling, and fishing industries (Agnew 2004). Reliably predicting the population response to future climate change and regulating exploitation pressures at sustainable levels requires certainty in the ecological processes that influence population dynamics. Therefore, unravelling the effects of bottom‐up and top‐down forcing in this region, particularly on species that utilize the open ocean, is considered an urgent task (Smetacek and Nicol 2005). However, reliably separating these effects requires diverse demographic and covariate data that are difficult to collect for ocean‐scale populations. Consequently, studies comparing the relative importance of these population drivers are largely lacking for this system.
+
+The early view was that Antarctic and Sub‐Antarctic oceanic systems were relatively simple, characterized by a large prey resource, principally Antarctic krill (Euphausia superba), supporting an assemblage of apex predators (Laws 1977). However, an increasing number of studies have demonstrated that the demographic processes of particular Antarctic predators are controlled by trophic levels both above and below them (Schwarz et al. 2013, Horswill et al. 2016). By considering specific species of seals and seabirds as occupants of intermediate trophic levels, we improve our ability to evaluate the drivers of their population dynamics. This is best assessed using integrated population models (Francis and Sagar 2011, Matthiopoulos et al. 2013, Maunder and Punt 2013, Thomson et al. 2015, Tuck et al. 2015). In particular, Bayesian state‐space approaches permit relationships between covariates and demographic processes to reflect the available knowledge of the system (Buckland et al. 2004). Furthermore, missing data can be imputed and the measurement errors inherent in ecological data can be accounted for by estimation and prediction uncertainty (Buckland et al. 2004).
+
+Many populations of Antarctic and Sub‐Antarctic marine predators declined between the 1980s and early 2000s (Reid and Croxall 2001, Woehler et al. 2001, Lyver et al. 2014). For example, Macaroni Penguin (Eudyptes chrysolophus) colonies on South Georgia had a net decline of approximately 70% during this time (Trathan et al. 2012; Fig. 1A). Several studies have attributed this to a single driver, including climate (Forcada and Trathan 2009), or elevated levels of competition from the recovering populations of Antarctic fur seals (Arctocephalus gazella; Trathan et al. 2012). However, the relative importance of these different drivers is not understood. Furthermore, a recent examination of Macaroni Penguin survival rates highlighted that top‐down control mechanisms should also be considered when examining the demography of this species (Horswill et al. 2014).
+
+Figure 1 The population dynamics and demography of Macaroni Penguins at Bird Island, South Georgia between 1985 and 2011. (A) The population trajectory. The observed trajectory is shown with confidence interval estimated from the repeated colony counts in gray shading. The approximate point where the gradient of the population trajectory changed (±SE) is shown with a vertical dashed line. In all panels. the median posterior estimates are shown (solid points) with 95% credible interval (dashed line). (B–C) Posterior estimates of survival rates for (B) birds >1 yr old and (C) fledglings. The 95% confidence intervals of the independent survival estimates from the capture–mark–recapture fully time‐dependent model, are shown as the light gray shaded band. For comparison purposes, the survival estimates from the covariate model (Horswill et al. 2014) are also illustrated by the dark gray band. (D) Time series of posterior estimates of productivity rates (scaled to reflect number of chicks per pair). Observed productivity estimates are shaded in gray with confidence intervals taken from the repeated colony counts.
+
+In this study, we used an age‐structured state‐space model to integrate a unique set of demographic and covariate data and examine the links between individual covariates, demographic rates, and the overall population trajectory for Macaroni Penguins. This included 28 yr of abundance and productivity data, 8 yr of survival data and a diverse set of covariates. By subjecting this model to a sensitivity analysis, we also estimated the relative contributions of top‐down and bottom‐up forces in generating year‐to‐year variation in demography and population dynamics.
+
+Methods
+Study system
+This study uses data collected from the Fairy Point Macaroni Penguin colony on Bird Island, South Georgia (54°00′ S, 38°03′ W). Abundance and productivity were monitored annually between 1985 and 2012 (Table 1); the total number of breeding pairs was counted at the start of the incubation phase (29 November–10 December), and the number of chicks was counted shortly before fledging (16 February). Productivity is defined as the proportion of breeding pairs that reared a chick to the fledgling count date. Each annual count was repeated at least three times in the field, or to within 10% of the other estimates (methods are further detailed in CCAMLR 2004). Survival data were obtained from a mark–recapture study conducted between 2003 and 2012 based on passive integrated transponders (PIT; Horswill et al. 2014). To remove any temporal correlation introduced by the covariates that were retained in this earlier study, the estimates of survival utilized in the current study were reestimated from a model without covariates, that incorporated age and time‐specific variation and year as a nominal factor variable (recapture and transition rates were specified in agreement with the best candidate model reported by Horswill et al. 2014). This maximally flexible model produced year‐specific estimates of survival with associated yearly measures of uncertainty.
+
+Table 1 The candidate covariates used to resolve the population trajectory of Macaroni Penguins at Bird Island, South Georgia
+
+Process and covariate	Data availability	Reference of effect	
+Survival (fledging)			
+Predation pressure	2001–2012	Horswill et al. (2014)	
+Sea surface temperature anomalies (SSTa)	1985–2012	Horswill et al. (2014)	
+Survival (>1 yr)			
+Predation pressure	2001–2012	Horswill et al. (2014)	
+SSTa	1985–2012	Horswill et al. (2014)	
+Productivity			
+Female arrival mass	1989–2012	Crawford et al. (2006)	
+Predation	2001–2012	Le Bohec et al. (2003)	
+SSTa	1985–2012	Chambers (2004)	
+Southern Annular Mode (SAM)	1985–2012	Forcada and Trathan (2009)	
+El Niño/Southern Oscillation (ENSO)	1985–2012	Chambers (2004)	
+Intraspecific competition	1985–2012	Baylis et al. (2013)	
+Interspecific competition	1985–2012	Trathan et al. (2012)	
+
+Note:
+
+The lengths of available time series are also illustrated in Appendix S3.
+
+John Wiley & Sons, LtdState‐space population model
+Simultaneous estimation of parameters and hidden states was carried out alongside model selection in a state‐space population model that included (1) coefficients describing the relationship between different covariates and demographic processes between 1985 and 2012 (Appendix S1), (2) Bernoulli selection coefficients that determined the inclusion of each covariate, (3) missing (and thus imputed) segments of demographic and covariate time series, and (4) the magnitude and direction of different observation biases and imprecision (code listed in the accompanying Data S1 file). Inference was undertaken in OpenBUGS (available online).5 Models were fitted by running three Monte Carlo Markov chains (MCMC) for 1 × 106 iterations and retaining every 100th step in order to increase the effective MCMC sample size for the same amount of computer memory. The first 5,000 MCMC draws were removed as burn‐in. Each chain was initialized at different points in parameter space, and mixing and convergence of the MCMC was examined for each parameter and state. The amount of mixing between the three chains indicated the ability of the model to reach a steady state distribution. Convergence of the chains was confirmed using the Brooks‐Gelman‐Rubin diagnostic tool in the OpenBUGS software (all values <1.02). The final model structure was validated by removing the demographic data and simulating the population time series using the influential covariates and the marginal posterior distributions for the respective parameters. This procedure demonstrated whether the observed population time series could be recreated from the functional structure, the parameter estimates and the covariate data, and by not including the implicit covariance embedded in the MCMC samples was considered a stringent method for testing the descriptive power of the variables (Appendix S2).
+
+Covariates
+The demographic function of survival included covariates that were demonstrated to be influential at the population level in the analysis of deviance study reported by Horswill et al. (2014); i.e., predation pressure and local sea surface temperature anomalies (SSTa; Eqs. (2), (3); Table 1). Wider testing of candidate covariates in the survival function reduced model convergence and was therefore avoided. For the demographic function of productivity, we selected candidate covariates from information across Spheniscidae (Table 1). Top‐down control was assessed using a proxy of predation pressure. Bottom‐up control was assessed using several proxies of prey availability; female body mass at the start of the breeding season, two measures of competition, as well as one local and two quasi‐remote climatic variables: (1) SSTa, (2) the El Niño/Southern Oscillation (ENSO) phenomenon, and (3) the Southern Annular Mode (SAM).
+
+For the index of predation pressure we used the number of Northern (Macronectes halli) and Southern (M. giganteus) Giant Petrel chicks successfully reared to fledging. Northern and Southern Giant Petrels are large birds that are predators and scavengers. On Bird Island, these species breed sympatrically at densities that, at the time of publication, were among the highest in the world. Nesting pairs of Giant Petrels in three study areas close to the penguin study colony were visited weekly during incubation and chick‐rearing to determine the local productivity. This measure represents the number of adult Giant Petrels that will be foraging under highly constrained central‐place‐constraint for the whole of the penguin breeding season, including when the Macaroni Penguin chicks fledge. Penguins form a major component of Giant Petrel diet during the breeding season (Bonner and Hunter 1982, Hunter and Brooke 1992), and at Bird Island, this is thought to consist predominantly of adult Macaroni Penguins (Hunter 1983) scavenged from predation events by sub‐adult Antarctic fur seals (Bonner and Hunter 1982). More recently, anecdotal accounts from Bird Island report Macaroni Penguin chicks also being heavily predated by Giant Petrels as they fledge (J. A. Green, P. N. Trathan, and R. A. Phillips, personal observation), as well as an adult Macaroni Penguin being killed by a Giant Petrel in waters close to the study colony (J. Gillham, personal communication). Therefore, the predation pressure index is taken to reflect predation by both Giant Petrels and sub‐adult Antarctic fur seals.
+
+To examine the influence of Macaroni Penguin body condition on productivity rates we included the body mass of adult females at the start of the breeding season. The Macaroni Penguin breeding season is highly synchronous, and birds were weighed annually between 8 and 9 November using a spring balance ([n = 49–59]; ±0.05 kg; Pesola, Baar, Switzerland). A study of Macaroni Penguins breeding in the Indian Ocean did not identify a significant relationship between arrival mass and productivity, however, a positive correlation has been reported in other crested penguins (Rockhopper Penguins E. chrysocome filholi; Crawford et al. 2006). The influence of competition during the breeding season was examined using proxies of inter‐ and intraspecific effects. The foraging grounds and diets of breeding Macaroni Penguins and Antarctic fur seals overlap extensively during the breeding season (Reid et al. 1996, Trathan et al. 2006, Staniland et al. 2012). We used the number of Antarctic fur seal pups born on the fur seal study beach at Bird Island (minus those found dead) to provide a measure of female seals foraging within a restricted foraging range during the Macaroni Penguin breeding season. To examine intraspecific competition we used the number of Macaroni Penguin breeding pairs at the study colony. The trajectory of the study colony mirrored other, much larger colonies in the same region (Trathan et al. 2012). Therefore, this measure was taken to reflect the wider population density of penguins.
+
+SSTa are considered to have a major influence on prey biomass within the South Georgia continental shelf zone (Trathan et al. 2003). To reflect local conditions, we used SSTa in the foraging area used by Macaroni Penguins during the breeding season (35.5° W to 44.5° W, 52.5° S to 54.5° S). These data were obtained from the National Oceanographic and Atmospheric Administration (NOAA) International Research Institute (data available online)
+6. Ocean‐scale climate effects, such as the El Niño Southern Oscillation (ENSO) phenomenon and the Southern Annular Mode (SAM), are associated with major changes in upwelling, SSTa, circumpolar winds (Meredith et al. 2008) and local prey availability (Murphy et al. 2007). These data were obtained from the NOAA Climate Diagnostics Center (data available online),7 and the NOAA Climate Prediction Center (data available online).8 Candidate temporal lags for these climatic variables were calculated by summing plausible physical and biological process lags (following Horswill et al. 2014; Appendix S2). El Niño events are associated with warmer temperatures in the Scotia Sea region after approximately a 2‐yr lag, whereas the effects of SAM are typically more immediate, i.e., no lag (Meredith et al. 2008). Biological lags associated with the recruitment of krill to South Georgia were added to the physical lags in two potential spawning and dispersal scenarios. Either spawning occurs across the Scotia Sea with recruitment maintained within that year in all shelf regions (Brierley et al. 1999), or spawning occurs mainly in central and southern areas of the Scotia Sea, with dispersal occurring through interactions with the ocean and sea ice over the next 1–2 yr (Hofmann et al. 1998). All covariates were standardized to have a zero mean and unit variance to promote convergence across parameters with different scales (Congdon 2003). Annual values were calculated following Horswill et al. (2014; Appendix S2).
+
+Demographic model
+Incomplete attendance histories at the individual level caused by variable recapture rates within seasons precluded the identification of recruitment and missed breeding events. Studies of Crested Penguins marked with flipper bands report that recruitment can occur within the same year as first return following deferred reproduction (+1 yr; Guinard et al. 1998). The mean age of recruitment was therefore taken to correspond with the maximum age of first return for this population (4 yr; Horswill et al. 2014). In the absence of evidence for a significant sex difference in survival rates (Horswill 2015) we assumed a 1:1 sex ratio in the population. To account for the production of one chick per two adults, the model was based on female numbers only, i.e., the number of breeding females (equal to the number of breeding pairs), and the number of female chicks fledged (equal to half the total productivity). The model assumed that all birds aged four and above will breed annually. Although Macaroni Penguins may skip an individual breeding attempt following particularly adverse winter conditions (Williams and Rodwell 1992, Crawford et al. 2006), the study population did not fluctuate widely between years, and the PIT reader used in this study achieved very high recapture rates when it was fully operational (99%; Horswill et al. 2014). Consequently, it appears that intermittent breeding was not a common source of variation during the study period.
+
+The deterministic transition matrix was based on breeding success (b
+t) and five state variables: one fledgling (from fledging to 1 yr of age; ϕf,t), three sub‐adult (age classes 2–4 have the same survival probability as an adult), and one adult stage (ϕa,t):  (1) Rt=00000ϕa,tbt2ϕf,t000000ϕa,t000000ϕa,t000000ϕa,t000000ϕa,tϕa,t. 
+
+
+Macaroni Penguins lay two eggs, but near‐complete failure of the first‐laid egg means that they effectively produce a single‐egg clutch (Williams 1995). This permitted individual productivity and survival events to be modelled using binomial demographic stochasticity, and the probability of success for each time step using a logit function that incorporated candidate covariates (following Matthiopoulos et al. 2013). For purposes of model selection, a switch variable with an independent Bernoulli 0/1 indicator was used to determine whether each covariate was allowed to operate within the model for any given parameterization (George and McCulloch 1993). By using a uniform prior bounded between 0 and 1 to estimate the parameter of this indicator, we were also able to estimate the probability of inclusion for each covariate (Lunn et al. 2012; Eqs (2), (3), (4)). All prior distributions are detailed further in Appendices S1–S2.
+
+The logit functions for adult and fledgling survival rates are shown in Eqs. (2) and (3). The age‐specific drivers included changing combinations of top‐down control from predation pressure (P) and bottom‐up control from SSTa (with a year lag, S
+t−1):  (2) logit(ϕf,t)=αf,0+(I1α1+I2α2)Pt+I3α3St−1, 
+ (3) logit(ϕa,t)=αa,0+(I1α1)Pt+I3α3St−1. 
+
+
+Here, f and a denote birds in the fledging year and birds that are older than 1 yr, respectively. Age dependence was determined by using different parameters for the baseline survival of each age class (αf,0, αa,0). Following Horswill et al. (2014) the parameters for the predation (α1) and SSTa terms (α3) replicated the effect of these covariates across both age classes, and an extra coefficient (α2) was included in the function for fledgling survival to allow for an additional component of predation on fledglings (Horswill et al. 2014).
+
+The productivity function (Eq. (4)) included female arrival mass (A), environmental forces (SSTa S, SAM M, and ENSO E), inter‐ (D) and intraspecific competition (C), and predation pressure (P):  (4) logit(bt)=β0+I1β1At+I2β2P+I3β3St+I4β4St−1+I5β5Mt+I6β6Mt−1+I7β7E−2+I8β8E−3+I9β9Dt+I10β10Ct. 
+
+
+The number of breeding females estimated by the process model was fed back into the productivity function as the auto‐covariate C.
+
+Observation model
+Observation error was stochastically assigned in each time step to account for annual variation associated with detection and unspecified covariates. For survival, the maximum range of uncertainty was set using the 95% confidence intervals (CIs) from the mark–recapture analysis in order to encompass both process variability and observation error (Fig. 1B‐C). The true range of residuals for survival within the state‐space model will be narrower because some variability will be accounted for by the inclusion of covariates. Survival estimates were assumed to have a normal error distribution where the mean was equal to the mark‐recapture estimate, and the variance was set from a uniform distribution. Here, the maximum value was stochastically assigned from a gamma distribution that represented the available range of 95% CIs. For productivity, observation error was also applied through a normal error structure on the number of breeding females and the number of female chicks. The mean was equal to the colony count estimate and the variance was derived from the range of the repeated counts. These data were available for 5 yr between 2007 and 2012; therefore the same variance was applied to all years. The variance (s
+2) was calculated using the mean variance of the annual counts (σ¯2 = 1,727.3) and the mean number of counts (n¯ = 4.7 repeated counts):  (5) s2=σ¯2n¯=0.0028. 
+
+
+As with simpler regression analyses, the covariate data will also contain some observation error. Ignoring these uncertainties in a typical regression framework that uses model selection (e.g., via information criteria) can lead to spurious correlations. It was not computationally feasible to propagate these sources of uncertainty through the state‐space model, however, the embedded model selection approach essentially operates as a Bayesian equivalent to model averaging (Lunn et al. 2012). Therefore, this approach should reduce the probability of spurious correlations (Burnham and Anderson 2002).
+
+Missing data
+Missing data on female mass at the start of the breeding season were estimated as a normal variate with an expectation equal to the observed data (Table 1; Appendices S2–S3). The missing segment of the predation pressure time series was modelled as a random walk through time to enable serial autocorrelation to be included in the process (Table 1; Appendices S2–S3).
+
+Variables influencing the population trajectory
+To identify a suitable splitting point for presenting summary statistics on the early and later parts of the time series, we fitted a broken‐stick GLM to the raw data using the statistical package segmented in program R (Muggeo 2008). To quantify the relative importance of each covariate in determining the observed population trajectory, we compared the estimated population size between model iterations where the variable selection terms indicated specific covariates as being included. For covariates that were included in all model iterations, we refitted the model with the respective selection term set to 0. Years where the imputed values of missing covariate data may have been overestimated were removed from this analysis to minimize bias. This was assessed by examining the population trajectory for anomalous changes that may result in residual variation being artificially attributed to an imputed covariate value (Appendix S2). Repeated bootstrap sampling (5000 samples) was used to undertake multiple pairwise comparisons of the population trajectories estimated with and without the covariate included, calculating the squared residuals between randomly selected MCMC iterations from each scenario. The covariates were then ranked by these statistics to determine their relative influence on the population trajectory. Higher values and greater variability indicated that excluding a covariate reduced the model's ability to recreate the population size.
+
+Results
+Model fit
+The full model (Fig. 1A) and the validation model that did not include the demographic time series (Appendix S4) both convincingly recreated the observed population trajectory. Therefore, we infer that the population trajectory was adequately described by the parameters and covariates considered.
+
+Missing covariate data
+The imputed segment of the predation pressure time series was slightly higher and more variable (de‐standardized x¯<2000=302,SD<2000=75; Fig. 2A) than the segment of observed data (de‐standardized x¯≥2000=269,SD≥2000=68; Fig. 2A). This was largely attributed to elevated estimates of predation during 1986, 1987, 1990, and 1994. These values may have been inflated by the concurrent population declines (Figs. 1A and 2B), and therefore were removed from the sensitivity analysis. The imputed values for body mass of females at the start of the breeding season were highly similar to the observed values (de‐standardized imputed values x¯<1989=4.99,SD<1989=0.19, de‐standardized observed values x¯≥1989=5.04,SD≥1989=0.16).
+
+Figure 2 (A) Approximate predation rate of Macaroni Penguins per Giant Petrel based on the total number of Giant Petrels in the study areas (methods detailed in Appendix S2; penguins older than 1 yr, solid circles; fledglings, open squares). (B) The predation pressure index reflecting the productivity rate of northern and southern Giant Petrels at Bird Island, South Georgia. Observed values (i.e., number of chicks fledged from the study area) are shown as solid circles and imputed values are shown as solid triangles with 95% credible interval.
+
+Variables influencing survival rates
+The mean survival rate for the fledgling age class was slightly lower during the period of population decline compared to the period of population stability (x¯<2000=0.37,x¯≥2000=0.43. In addition, annual variability in fledgling survival was consistently high across both time periods (SD<2000=0.20,SD≥2000=0.22; Fig. 1B; Appendix S5). Likewise, mean survival rates in the older age class also increased slightly (x¯<2000=0.87,x¯≥2000=0.89), however variability was consistently low (SD<2000=0.07,SD≥2000=0.05;Fig. 1C; Appendix S5). Based on variable selection, both of the age specific predation effects were influential (Fig. 3A), and the directional influence followed Horswill et al. (2014; Appendix S1). The probability of inclusion for the main predation term was consistently above 0.5; i.e., this term was included in all model iterations. The effect of SSTa on survival rates was not resolvable from variable selection or posterior credible intervals (Appendix S1; Fig. 3A). Despite this, the estimates of survival from the state‐space model predominantly occurred within the confidence interval of the covariate model that was reported in our earlier study (Horswill et al. 2014), with lower values of survival estimated for the older age class during 2003 and 2004 (Fig. 1B,C).
+
+Figure 3 (A) The probability of each covariate influencing the population trajectory estimated using stochastic variable selection. Dashed line at 0.5; a covariate scoring predominantly above this will operate in more than 50% of model parameterizations. (B) The relative importance of each covariate in resolving the population trajectory; higher values and greater variability indicates more influence. Covariates are ordered within each demographic rate by the medianposterior estimate; sea surface temperature anomalies (SSTa); El Niño/Southern Oscillation (ENSO); Southern Annular Mode (SAM); time lags shown in subscript. Variables indicated as being included in the majority of model iterations based on variable selection are shaded gray; those excluded are white (box metrics: central line, median; box, interquartile range; whisker, 1.5 × inter‐quartile range).
+
+Variables influencing productivity rates
+Productivity increased during the study period (linear regression: F = 5.11, df = 25, P = 0.03), and values were lower during the period of population decline (x¯<2000=0.51,x¯≥2000=0.55; Fig. 1D; Appendix S5). Based on variable selection and posterior credible intervals, annual productivity was positively influenced by body mass of females at the start of the breeding season, and negatively influenced by intraspecific competition and ENSO with a 3‐yr lag (Fig. 3A). The remaining covariates were not resolvable based on variable selection or posterior credible intervals (Fig. 3A).
+
+Variables influencing the population trajectory
+The breeding population declined at 6.5% (SE = 0.6) per year from 1985 until ca. 2000, the trend thereafter could not be reliably resolved; declining at 1.2% (SE = 1.1; Fig. 1A). Prior to 2000, the proportion of a cohort that recruited to the breeding population at Bird Island was 0.06 (SD = 0.04) and the mean rate of adult mortality was 0.13 (SD = 0.07; Appendix S5). After 2000, the rate of recruitment was 0.09 (SD = 0.04) and the rate of adult mortality was 0.11 (SD = 0.05; Appendix S5). The sensitivity analysis was carried out using a 24‐yr time series (Appendix S2), and this population trajectory was most sensitive to the removal of predation pressure from the survival functions, especially the main predation term (Fig. 3B). The other covariates were relatively similar in their effect on population size (Fig. 3B).
+
+Discussion
+Unravelling the relative importance of bottom‐up and top‐down forcing in the pelagic zone is central to regulating fishery pressures at sustainable levels, and predicting how marine systems will be influenced by future climatic changes. We sought to examine the links between individual covariates, demographic rates and the overall population trajectory of Macaroni Penguins, and quantify the relative importance of bottom‐up and top‐down drivers acting through different demographic rates.
+
+Variables influencing survival rates
+Between 1987 and 1990 the survival rate of Macaroni Penguins from Bird Island that were marked with flipper‐bands was estimated to be x¯∼0.75 (σ∼0.06) (Williams and Rodwell 1992). We estimated adult survival for the same period to be higher and infer that flipper‐banding may have impaired survival rates (Saraux et al. 2011) during the Williams and Rodwell (1992) study. An alternative explanation is that survival rates estimated by Williams and Rodwell (1992) were based on visual recapture assuming 100% recapture rates that resulted in underestimation. In contrast, our study incorporated errors associated with incomplete detection within the observation model for survival. In agreement with Horswill et al. (2014), survival rates were generally lower during the fledgling year, and increased from age one. However, under certain conditions (low predation pressure), the survival rates of the two age classes were comparable (Fig. 1B–C).
+
+The estimates of survival during the period of population stability were highly similar to those reported by Horswill et al. (2014) for the same time period. The lower estimates generated by the present study for the older age class during 2008 and 2009 is likely to represent the lack of inference attributed to SSTa. This also demonstrates the relative significance of the predation pressure covariate in resolving this demographic process. A negative relationship between survival and predation pressure agrees with dietary analysis that shows Macaroni Penguins form a major component of Giant Petrel diet during the breeding season (Hunter 1983). However, years with particularly low survival rates for Macaroni Penguins also coincided with a decrease in vital rates amongst other species of marine predators that breed on Bird Island. For example, during 1987, the survival rates of Macaroni and Gentoo Penguins (Pygoscelis papua) decreased (Williams and Rodwell 1992), and following the 1987 winter, the breeding season of Gentoo Penguins and Antarctic fur seals was delayed (Duck 1990, Williams 1990). A delay in the onset of breeding may indicate adverse climatic conditions during the preceding winter (e.g., Barbraud and Weimerskirch 2006). In addition, rates of productivity at Bird Island were reduced for several marine predator species during 1994 (Reid and Croxall 2001), and finally, Gentoo Penguins experienced high adult mortality and very low productivity during 2009 (British Antarctic Survey, unpublished data). Therefore, the predation pressure index may represent mechanisms acting at the community level, and further work is needed to examine the interaction between bottom‐up and top‐down forces during adverse climatic conditions (e.g., Votier et al. 2004).
+
+Variables influencing productivity
+The mean productivity rate during the period of population decline was similar to other decreasing populations of Macaroni Penguins breeding in colonies of comparable size (x¯=0.46−0.57 chicks per pair; Crawford et al. 2006). However, by the end of the study period, annual rates were comparable to an increasing population of Rockhopper Penguins (x¯=0.64 chicks per pair; Baylis et al. 2013). Observational studies indicate that Giant Petrels can depredate penguin chicks at the colony (Le Bohec et al. 2003), however, this foraging strategy has rarely been observed at Bird Island, where predation of Macaroni Penguin chicks appears to be focused on the fledging period. In agreement with this, top‐down control was not identified as being influential to productivity. Instead, low rates of productivity were consistently associated with a decrease in female body mass at the start of the breeding season and a higher value of ENSO; i.e., an El Niño event. A positive relationship between arrival mass and productivity has not been previously shown for this species, however, it has been reported for other crested penguins (Crawford et al. 2006). Likewise, a negative relationship between productivity and ENSO has been previously documented in other species of penguin (e.g., Chambers 2004). Arrival mass and ENSO are bottom‐up processes representing local prey availability immediately before and during the breeding season (Murphy et al. 2007). During this period the study population of Macaroni Penguins are foraging locally (Horswill et al., 2014), and therefore a change in local food availability seems the most likely explanation for lower productivity rates).
+
+The arrival body mass of female Macaroni Penguins decreased between 1988 and 1992 (Reid and Croxall 2001). Furthermore, the ENSO had a marked preponderance of El Niño compared with La Niña events between 1983 and 2008 (Meredith et al. 2008). Consequently, the overall increase in productivity between 1985 and 2012 cannot be attributed to either of these variables; i.e., the predicted trend based on the observed change in these covariates would have been in the opposite direction to that observed. Productivity rates also demonstrated a negative relationship with intraspecific competition, such that productivity increased at lower population densities. Here, the proposed mechanism is principally a product of resource competition, whereby per capita availability of prey and high quality nesting sites increased as the population declined. A negative relationship between population density and productivity has been previously documented in several species of seabird (e.g., Weimerskirch and Jouventin 1987, Frederiksen and Bregnballe 2001), including penguins (Rockhopper Penguins; Baylis et al. 2013).
+
+Variables influencing the population trajectory
+The colony of Macaroni Penguins examined in this study declined rapidly between 1985 and the early 2000s because recruitment did not sufficiently balance adult mortality rates (Appendix S5). The rate of decline was similar to other much larger colonies in the same region (Trathan et al. 2012), and therefore it seems likely that the mechanisms discussed here were influential to the population more broadly. The model's ability to replicate the change in population trajectory without the observed time‐series of demographic data indicates that the principal contributing mechanisms were captured, namely predation, arrival mass, ENSO and intraspecific competition. In agreement with life history theory on long‐lived species, population size was considerably more sensitive to covariates acting on adult survival rates, compared to those acting on juvenile survival and productivity (Sæther and Bakke 2000). However, the additional component of predation pressure acting on fledgling survival rates appeared to be slightly more influential than bottom‐up control of adult survival rates. This is likely to reflect the lack of influence attributed to SSTa across both survival functions. Therefore, as time‐series of demographic and covariate data are extended, it would be worthwhile evaluating alternative bottom‐up covariates as drivers of survival. Finally, the bottom‐up variables acting through productivity generated a similar population‐level effect to SSTa acting through survival. Consequently, it appears that the population dynamics of Macaroni Penguins are relatively canalized (i.e., preserved) against climate variations.
+
+Conclusions
+This study integrated a unique set of demographic and covariate data in order to assess how an ocean‐scale population is influenced by bottom‐up and top‐down drivers. We conclude that the population of Macaroni Penguins at Bird Island rapidly declined between 1985 and the early 2000s following an imbalance between recruitment to the breeding population and adult mortality. The population later stabilized following an increase in survival and productivity. It was not possible to reliably attribute the increase in survival to a single factor; however, the increase in productivity appeared to be driven by a bottom‐up negative feedback with population size. Despite this, population size was considerably more sensitive to changes in top‐down control of survival rates, compared to bottom‐up control of survival or productivity. Under the observed conditions, we can predict that a continued increase in the population size of Giant Petrels or a shift in their predatory behavior (to include chicks at the colony) could rapidly destabilize the penguin population. More broadly, this study highlights the importance of considering how pelagic predators are influenced by multiple drivers when examining their population dynamics, and assessing options for conservation management.
+
+Supporting information
+ 
+
+Click here for additional data file.
+
+  
+
+Click here for additional data file.
+
+  
+
+Click here for additional data file.
+
+  
+
+Click here for additional data file.
+
+  
+
+Click here for additional data file.
+
+  
+
+Click here for additional data file.
+
+  
+
+Click here for additional data file.
+
+ Acknowledgments
+We would like to thank all members of the Bird Island science team from 1985 to 2012. Thanks also to Jaume Forcada for discussions on fur seal productivity, Mark Preston and Vsevolod Afanasyev for development of the gateway transponder reader system, and to Helen Peat and Andy Wood for data management. Thanks are also extended to Sarah Converse, Marc Kéry, and Michael Schaub for discussions on model selection approaches, as well as three anonymous reviewers for helpful comments on an earlier version of this manuscript. This analysis was funded by a NERC PhD studentship grant number NE/I52797/X.
+
+Notes
+5 
+http://www.mrc-bsu.cam.ac.uk/bugs/
+
+
+6 
+http://iridl.ldeo.columbia.edu/SOURCES/.NOAA/.NCEP/.EMC/.CMB/.GLOBAL/.Reyn_SmithOIv2/.monthly/.SSTa/
+
+
+7 
+http://www.cdc.noaa.gov/people/cathy.smith/best/
+
+
+8 
+http://www.cpc.ncep.noaa.gov/
+==== Refs
+Literature Cited
+
+
+Aebischer , N. J. 
+, 
+J. C. 
+Coulson 
+, and 
+J. M. 
+Colebrookl 
+. 1990 
+Parallel long‐term trends across four marine trophic levels and weather . Nature 
+347 :753 –755 .
+
+
+Agnew , D. J. 
+
+2004 
+Fishing south: the history and management of South Georgia fisheries . Government of South Georgia and The Penna Press , St. Albans, UK .
+
+
+Atkinson , A. 
+, 
+V. 
+Siegel 
+, 
+E. 
+Pakhomov 
+, and 
+P. 
+Rothery 
+. 2004 
+Long‐term decline in krill stock and increase in salps within the Southern Ocean . Nature 
+432 :100 –103 .15525989 
+
+
+Barbraud , C. 
+, and 
+H. 
+Weimerskirch 
+. 2006 
+Antarctic birds breed later in response to climate change . Proceedings of the National Academy of Sciences USA 
+103 :6248 –6251 .
+
+
+Bascompte , J. 
+, 
+C. J. 
+Melián 
+, and 
+E. 
+Sala 
+. 2005 
+Interaction strength combinations and the overfishing of a marine food web . Proceedings of the National Academy of Sciences USA 
+102 :5443 –5447 .
+
+
+Baylis , A. M. M. 
+, 
+A. C. 
+Wolfaardt 
+, 
+S. 
+Crofts 
+, 
+P. A. 
+Pistorius 
+, and 
+N. 
+Ratcliffe 
+. 2013 
+Increasing trend in the number of southern rockhopper penguins (Eudyptes c. chrysocome) breeding at the Falkland Islands . Polar Biology 
+36 :1007 –1018 .
+
+
+Behrenfeld , M. J. 
+, 
+R. T. 
+O'Malley 
+, 
+D. A. 
+Siegel 
+, 
+C. R. 
+McClain 
+, 
+J. L. 
+Sarmiento 
+, 
+G. C. 
+Feldman 
+, 
+A. J. 
+Milligan 
+, 
+P. G. 
+Falkowski 
+, 
+R. M. 
+Letelier 
+, and 
+E. S. 
+Boss 
+. 2006 
+Climate‐driven trends in contemporary ocean productivity . Nature 
+444 :752 –755 .17151666 
+
+
+Bonner , W. N. 
+, and 
+S. 
+Hunter 
+. 1982 
+Predatory interactions between Antarctic fur seals, macaroni penguins and giant petrels . British Antarctic Survey Bulletin 
+56 :75 –79 .
+
+
+Brierley , A. S. 
+, 
+D. A. 
+Demer 
+, 
+J. L. 
+Watkins 
+, and 
+R. P. 
+Hewitt 
+. 1999 
+Concordance of interannual fluctuations in acoustically estimated densities of Antarctic krill around South Georgia and Elephant Island: biological evidence of same‐year teleconnections across the Scotia Sea . Marine Biology 
+134 :675 –681 .
+
+
+Buckland , S. T. 
+, 
+K. B. 
+Newman 
+, 
+L. 
+Thomas 
+, and 
+N. B. 
+Koesters 
+. 2004 
+State‐space models for the dynamics of wild animal populations . Ecological Modelling 
+171 :157 –175 .
+
+
+Burnham , K. P. 
+, and 
+D. R. 
+Anderson 
+. 2002 
+Model selection and multi‐model inference: a practical information‐theoretic approach . Springer , New York, New York, USA .
+
+
+Carpenter , S. R. 
+, 
+J. F. 
+Kitchell 
+, and 
+J. R. 
+Hodgson 
+. 1985 
+Cascading trophic interactions and lake productivity . BioScience 
+35 :634 –639 .
+
+CCAMLR 
+. 2004 
+CCAMLR ecosystem monitoring program; standard methods . CCAMLR , Hobart, Tasmania, Australia .
+
+
+Chambers , L. 
+
+2004 
+The impact of climate on little penguins . BMRC research report no. 100, Bureau of Meteorology, Melbourne, Australia.
+
+
+Congdon , P. 
+
+2003 
+Applied Bayesian modelling . John Wiley and Sons , New York, New York, USA .
+
+
+Crawford , R. J. M. 
+, 
+B. M. 
+Dyer 
+, 
+J. 
+Cooper 
+, and 
+L. G. 
+Underhill 
+. 2006 
+Breeding numbers and success of Eudyptes penguins at Marion Island, and the influence of mass and time of arrival of adults . CCAMLR Science 
+13 :175 –190 .
+
+
+Duck , C. D. 
+
+1990 
+Annual variation in the timing of reproduction in Antarctic fur seals, Arctocephalus gazella, at Bird Island, South Georgia . Journal of Zoology 
+222 :103 –116 .
+
+
+Estes , J. A. 
+, and 
+D. O. 
+Duggins 
+. 1995 
+Sea otters and kelp forests in Alaska: generality and variation in a community ecological paradigm . Ecological Monographs 
+65 :75 –100 .
+
+
+Forcada , J. 
+, and 
+P. N. 
+Trathan 
+. 2009 
+Penguin responses to climate change in the Southern Ocean . Global Change Biology 
+15 :1618 –1630 .
+
+
+Francis , R. I. C. 
+, and 
+P. M. 
+Sagar 
+. 2011 
+Modelling the effect of fishing on southern Buller's albatross using a 60‐year dataset . New Zealand Journal of Zoology 
+39 :3 –17 .
+
+
+Frank , K. T. 
+, 
+B. 
+Petrie 
+, 
+J. S. 
+Choi 
+, and 
+W. C. 
+Leggett 
+. 2005 
+Trophic cascades in a formerly cod‐dominated ecosystem . Science 
+308 :1621 –1623 .15947186 
+
+
+Frederiksen , M. 
+, and 
+T. 
+Bregnballe 
+. 2001 
+Conspecific reproductive success affects age of recruitment in a great cormorant, Phalacrocorax carbo sinensis, colony . Proceedings of the Royal Society B 
+268 :1519 –1526 .11454297 
+
+
+George , E. I. 
+, and 
+R. E. 
+McCulloch 
+. 1993 
+Variable selection via Gibbs sampling . Journal of the American Statistical Association 
+88 :881 –889 .
+
+
+Guinard , E. 
+, 
+H. 
+Weimerskirch 
+, and 
+P. 
+Jouventin 
+. 1998 
+Population changes and demography of the northern rockhopper penguin on Amsterdam and Saint Paul Islands . Colonial Waterbirds 
+21 :222 –228 .
+
+
+Hairston , N. G. 
+, 
+F. E. 
+Smith 
+, and 
+L. B. 
+Slobodkin 
+. 1960 
+Community structure, population control, and competition . American Naturalist 
+94 :421 –425 .
+
+
+Hofmann , E. E. 
+, 
+J. M. 
+Klinck 
+, 
+R. A. 
+Locarnini 
+, 
+B. 
+Fach 
+, and 
+E.  Murphy 
+. 1998 
+Krill transport in the Scotia Sea and environs . Antarctic Science 
+10 :406 –415 .
+
+
+Horswill , C. 
+
+2015 
+The relative importance of opposing drivers in determining population change in macaroni penguins Eudyptes chrysolophus . University of Glasgow , Glasgow , UK.
+
+
+Horswill , C. 
+, 
+J. 
+Matthiopoulos 
+, 
+J. A. 
+Green 
+, 
+M. P. 
+Meredith 
+, 
+J. 
+Forcada 
+, 
+H. J. 
+Peat 
+, 
+M. 
+Preston 
+, 
+P. N. 
+Trathan 
+, and 
+N. 
+Ratcliffe 
+. 2014 
+Survival in macaroni penguins and the relative importance of different drivers: individual traits, predation pressure and environmental variability . Journal of Animal Ecology 
+83 :1057 –1067 .24846695 
+
+
+Horswill , C. 
+, 
+J. 
+Matthiopoulos 
+, 
+N. 
+Ratcliffe 
+, 
+J. A. 
+Green 
+, 
+P. N. 
+Trathan 
+, 
+R. A. R. 
+McGill 
+, 
+R. A. 
+Phillips 
+, and 
+T. C. 
+O'Connell 
+. 2016 
+Drivers of intrapopulation variation in resource use in a generalist predator, the macaroni penguin . Marine Ecology Progress Series 
+548 :223 –247 . http://dx.doi.org/10.3354/meps11626
+
+
+
+Hunter , S. 
+
+1983 
+The food and feeding ecology of the giant petrels Macronectes halli and M. giganteus at South Georgia . Journal of Zoology 
+200 :521 –538 .
+
+
+Hunter , S. 
+, and 
+M. de. L. 
+Brooke 
+. 1992 
+The diet of giant petrels Macronectes spp. at Marion Island, Southern Indian Ocean . Colonial Waterbirds 
+15 :56 –65 .
+
+
+Laws , R. M. 
+
+1977 
+Seals and whales of the Southern Ocean . Philosophical Transactions of the Royal Society B 
+279 :81 –96 .
+
+
+Le Bohec , C. 
+, 
+M. 
+Gauthier‐Clerc 
+, 
+J.‐P. 
+Gendner 
+, 
+N. 
+Chatelain 
+, and 
+Y. 
+Le Maho 
+. 2003 
+Nocturnal predation of king penguins by giant petrels on the Crozet Islands . Polar Biology 
+26 :587 –590 .
+
+
+Lunn , D. 
+, 
+C. 
+Jackson 
+, 
+N. 
+Best 
+, 
+A. 
+Thomas 
+, and 
+D. 
+Spiegelhalter 
+. 2012 
+The BUGS book: a practical introduction to Bayesian analysis . Chapman & Hall/CRC Texts in Statistical Science , Boca Raton, Florida, USA .
+
+
+Lyver , P. O. B. 
+, 
+M. 
+Barron 
+, 
+K. J. 
+Barton 
+, 
+D. G. 
+Ainley 
+, 
+A. 
+Pollard 
+, 
+S. 
+Gordon 
+, 
+S. 
+McNeill 
+, 
+G. 
+Ballard 
+, and 
+P. R. 
+Wilson 
+. 2014 
+Trends in the breeding population of Adélie penguins in the Ross Sea, 1981–2012: a coincidence of climate and resource extraction effects . PLoS ONE 
+9 :1 –10 .
+
+
+Matthiopoulos , J. 
+, 
+L. 
+Cordes 
+, 
+B. 
+Mackey 
+, 
+D. 
+Thompson 
+, 
+C. D. 
+Duck 
+, 
+S. 
+Smout 
+, 
+M. 
+Caillat 
+, and 
+P. 
+Thompson 
+. 2013 
+State‐space modelling reveals proximate causes of harbour seal population declines . Oecologia 
+174 :151 –162 .24036987 
+
+
+Maunder , M. N. 
+, and 
+A. E. 
+Punt 
+. 2013 
+A review of integrated analysis in fisheries stock assessment . Fisheries Research 
+142 :61 –74 .
+
+
+Meredith , M. P. 
+, 
+E. J. 
+Murphy 
+, 
+E. J. 
+Hawker 
+, 
+J. C. 
+King 
+, and 
+M. I. 
+Wallace 
+. 2008 
+On the interannual variability of ocean temperatures around South Georgia, Southern Ocean: forcing by El Niño/Southern Oscillation and the Southern Annular Mode . Deep Sea Research Part II: Topical Studies in Oceanography 
+55 :2007 –2022 .
+
+
+Muggeo , V. M. R. 
+
+2008 
+Segmented: an R package to fit regression models with broken‐line relationships . Rnews 
+8 :20 –25 .
+
+
+Murphy , E. J. 
+, 
+P. N. 
+Trathan 
+, 
+J. L. 
+Watkins 
+, 
+K. 
+Reid 
+, 
+M. P. 
+Meredith 
+, 
+J. 
+Forcada 
+, 
+S. E. 
+Thorpe 
+, 
+N. M. 
+Johnston 
+, and 
+P. 
+Rothery 
+. 2007 
+Climatically driven fluctuations in Southern Ocean ecosystems . Proceedings of the Royal Society B 
+274 :3057 –3067 .17939986 
+
+
+Pace , M. L. 
+, 
+J. J. 
+Cole 
+, 
+S. R. 
+Carpenter 
+, and 
+J. F. 
+Kitchell 
+. 1999 
+Trophic cascades revealed in diverse ecosystems . Trends in Ecology & Evolution 
+14 :483 –488 .10542455 
+
+
+Paine , R. T. 
+
+1980 
+Food webs: linkage, interaction strength and community infrastructure . Journal of Animal Ecology 
+49 :667 –685 .
+
+
+Reid , K. 
+, and 
+J. P. 
+Croxall 
+. 2001 
+Environmental response of upper trophic‐level predators reveals a system change in an Antarctic marine ecosystem . Proceedings of the Royal Society B 
+268 :377 –384 .11270434 
+
+
+Reid , K. 
+, 
+P. N. 
+Trathan 
+, 
+J. P. 
+Croxall 
+, and 
+H. 
+Hill 
+. 1996 
+Krill caught by predators and nets: differences between species and techniques . Marine Ecology Progress Series 
+140 :13 –20 .
+
+
+Sæther , B.‐E. 
+, and 
+Ø. 
+Bakke 
+. 2000 
+Avian life history variation and contribution of demographic traits to the population growth rate . Ecology 
+81 :642 –653 .
+
+
+Saraux , C. 
+, 
+C. 
+Le Bohec 
+, 
+J. M. 
+Durant 
+, 
+V. A. 
+Viblanc 
+, 
+M. 
+Gauthier‐Clerc 
+, 
+D. 
+Beaune 
+, 
+Y.‐H. 
+Park 
+, 
+N. G. 
+Yoccoz 
+, 
+N. C. 
+Stenseth 
+, and 
+Y. 
+Le Maho 
+. 2011 
+Reliability of flipper‐banded penguins as indicators of climate change . Nature 
+469 :204 –254 .
+
+
+Schwarz , L. K. 
+, 
+M. E. 
+Goebel 
+, 
+D. P. 
+Costa 
+, and 
+A. M. 
+Kilpatrick 
+. 2013 
+Top‐down and bottom‐up influences on demographic rates of Antarctic fur seals Arctocephalus gazella
+ . Journal of Animal Ecology 
+82 :903 –911 .23444975 
+
+
+Smetacek , V. 
+, and 
+S. 
+Nicol 
+. 2005 
+Polar ocean ecosystems in a changing world . Nature 
+437 :362 –368 .16163347 
+
+
+Springer , A. M. 
+, and 
+G. B. 
+van Vliet 
+. 2014 
+Climate change, pink salmon, and the nexus between bottom‐up and top‐down forcing in the subarctic Pacific Ocean and Bering Sea . Proceedings of the National Academy of Sciences USA 
+111 :E1880 –E1888 .
+
+
+Staniland , I. J. 
+, 
+S. L. 
+Robinson 
+, 
+J. R. D. 
+Silk 
+, 
+N. 
+Warren 
+, and 
+P. N. 
+Trathan 
+. 2012 
+Winter distribution and haul‐out behaviour of female Antarctic fur seals from South Georgia . Marine Biology 
+159 :291 –301 .
+
+
+Stenseth , N. C. 
+, 
+A. 
+Mysterud 
+, 
+G. 
+Ottersen 
+, 
+J. W. 
+Hurrell 
+, 
+K.‐S. 
+Chan 
+, and 
+M. 
+Lima 
+. 2002 
+Ecological effects of climate fluctuations . Science 
+297 :1292 –1296 .12193777 
+
+
+Thomson , R. B. 
+, 
+R. L. 
+Alderman 
+, 
+G. N. 
+Tuck 
+, and 
+A. J. 
+Hobday 
+. 2015 
+Effects of climate change and fisheries bycatch on shy albatross (Thalassarche cauta) in southern Australia . PLoS ONE 
+10 :e0127006 .26057739 
+
+
+Trathan , P. N. 
+, 
+A. S. 
+Brierley 
+, 
+M. A. 
+Brandon 
+, 
+D. G. 
+Bone 
+, 
+C. 
+Goss 
+, 
+S. A. 
+Grant 
+, 
+E. J. 
+Murphy 
+, and 
+J. L. 
+Watkins 
+. 2003 
+Oceanographic variability and changes in Antarctic krill (Euphausia superba) abundance at South Georgia . Fisheries Oceanography 
+12 :569 –583 .
+
+
+Trathan , P. N. 
+, 
+C. J. 
+Green 
+, 
+J. 
+Tanton 
+, 
+H. J. 
+Peat 
+, 
+J. 
+Poncet 
+, and 
+A. 
+Morton 
+. 2006 
+Foraging dynamics of macaroni penguins Eudyptes chrysolophus at South Georgia during brood‐guard . Marine Ecology Progress Series 
+323 :239 –251 .
+
+
+Trathan , P. N. 
+, 
+N. 
+Ratcliffe 
+, and 
+E. A. 
+Masden 
+. 2012 
+Ecological drivers of change at South Georgia: the krill surplus, or climate variability . Ecography 
+35 :983 –993 .
+
+
+Tuck , G. N. 
+, 
+R. B. 
+Thomson 
+, 
+C. 
+Barbraud 
+, 
+K. 
+Delord 
+, 
+M. 
+Louzao 
+, 
+M. 
+Herrera 
+, and 
+H. 
+Weimerskirch 
+. 2015 
+An integrated assessment model of seabird population dynamics: Can individual heterogeneity in susceptibility to fishing explain abundance trends in Crozet wandering albatross? 
+Journal of Applied Ecology 
+52 :950 –959 .
+
+
+Vaughan , D. G. 
+, 
+G. J. 
+Marshall 
+, 
+W. M. 
+Connolley 
+, 
+C. 
+Parkinson 
+, 
+R. 
+Mulvaney 
+, 
+D. A. 
+Hodgson 
+, 
+J. C. 
+King 
+, 
+C. J. 
+Pudsey 
+, and 
+J.  Turner 
+. 2003 
+Recent rapid regional climate warming on the Antarctic Peninsula . Climatic Change 
+60 :243 –274 .
+
+
+Votier , S. C. 
+, et al. 2004 
+Changes in fisheries discard rates and seabird communities . Nature 
+427 :727 –730 .14973483 
+
+
+Weimerskirch , H. 
+, and 
+P. 
+Jouventin 
+. 1987 
+Population dynamics of the wandering albatross, Diomedea exulans, of the Crozet Islands: causes and consequences of the population decline . Oikos 
+49 :315 –322 .
+
+
+Williams , T. D. 
+
+1990 
+Annual variation in breeding biology of gentoo penguins, Pygoscelis papua, at Bird Island, South Georgia . Journal of Zoology 
+222 :247 –258 .
+
+
+Williams , T. D. 
+
+1995 
+The penguins; Scheniscidae . Oxford University Press , Oxford , UK.
+
+
+Williams , T. D. 
+, and 
+S. 
+Rodwell 
+. 1992 
+Annual variation in return rate, mate and nest‐site fidelity in breeding gentoo and macaroni penguins . Condor 
+94 :636 –645 .
+
+
+Woehler , E. J. 
+, et al. 2001 
+A statistical assessment of the status and trends of Antarctic and SubAntarctic seabirds . SCAR/CCAMLR/NSF , Cambridge, UK .
