@@ -1,0 +1,105 @@
+
+==== Front
+BMC Cardiovasc DisordBMC Cardiovasc DisordBMC Cardiovascular Disorders1471-2261BioMed Central London 49610.1186/s12872-017-0496-3Case ReportEarly detection of myocardial infarction following blunt chest trauma by computed tomography: a case report Lee Thung-Lip lip1969@hotmail.com 1Hsuan Chin-Feng calvin.hsuan@msa.hinet.net 1Shih Chen-Hsiang leptospirosis819@hotmail.com 1Liang Huai-Wen eatecg@gmail.com 1Tsai Hsing-Shan 1Tseng Wei-Kung arthurtseng@me.com 1Hsu Kwan-Lih ed103914@edah.org.tw 21 0000 0004 1797 2180grid.414686.9Division of Cardiology, Department of Internal Medicine, E-Da hospital / I-Shou University, Kaohsiung, Taiwan 2 Department of Internal Medicine, E-Da cancer hospital / I-Shou University, Kaohsiung, Taiwan 10 2 2017 10 2 2017 2017 17 565 11 2016 7 2 2017 © The Author(s). 2017
+Open AccessThis article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.Background
+Blunt cardiac trauma encompasses a wide range of clinical entities, including myocardial contusion, cardiac rupture, valve avulsion, pericardial injuries, arrhythmia, and even myocardial infarction. Acute myocardial infarction due to coronary artery dissection after blunt chest trauma is rare and may be life threatening. Differential diagnosis of acute myocardial infarction from cardiac contusion at this setting is not easy.
+
+Case presentation
+Here we demonstrated a case of blunt chest trauma, with computed tomography detected myocardium enhancement defect early at emergency department. Under the impression of acute myocardial infarction, emergent coronary angiography revealed left anterior descending artery occlusion. Revascularization was performed and coronary artery dissection was found after thrombus aspiration. Finally, the patient survived after coronary stenting.
+
+Conclusion
+Perfusion defects of myocardium enhancement on CT after blunt chest trauma can be very helpful to suggest myocardial infarction and facilitate the decision making of emergent procedure. This valuable sign should not be missed during the initial interpretation.
+
+Keywords
+Blunt chest traumaCoronary dissectionComputed tomographyMyocardial infarctionissue-copyright-statement© The Author(s) 2017
+==== Body
+Background
+Blunt cardiac trauma encompasses a wide range of clinical entities, including myocardial contusion, cardiac rupture, valve avulsion, pericardial injuries, arrhythmia, and coronary artery injury leading to myocardial ischemia or infarction. Autopsy studies of blunt chest trauma (BCT) have revealed that injury to the heart is involved in 20%, and the coronary arteries in less than 2% [1].
+
+According to a review of 77 published cases of myocardial infarctions caused by BCT, the most frequently injured vessel is left anterior descending artery (LAD) (71%), followed by right coronary artery (19%), left main artery (6%), and left circumflex artery (3%). Coronary artery occlusion and dissection were documented in 57% and 16% of cases respectively. Other traumatic coronary injuries including vascular rupture, focal spasm, fissuring of atherosclerotic plaque, external hematoma compression, coronary embolism and thrombosis due to intimal tears, can also result in myocardial infarction [2].
+
+Here we demonstrate a case of acute myocardial infarction (AMI) due to coronary artery dissection after blunt chest trauma, with computed tomography (CT) detected myocardium enhancement defect early at emergency department and the patient survived after coronary stenting.
+
+Case presentation
+A 41-year-old man without any cardiovascular risk factors had a collision with a tree trunk while riding a motorcycle. Consciousness disturbance was noted at the emergency department one hour after the accident, physical examination revealed facial laceration and multiple sites trauma including ecchymosis over the chest wall. Whole body contrast-enhanced CT showed bilateral frontal subdural hematoma, multiple craniofacial bone fractures, left anterior rib fracture, and liver laceration with hemoperitoneum. Hypotension developed two hours after arrival with poor response to initial fluid resuscitation. Electrocardiogram (ECG) showed QS pattern with ST segment elevation at lead V2 to V3, ST segment elevation at lead I and aVL, and reciprocal ST segment depression at leads II, III and aVF (Fig. 1). CT was re-evaluated and a decreased myocardial enhancement over the interventricular septum and apex of the left ventricle was noted (arrowhead, Fig. 2). Under the impression of anterior AMI, coronary angiography showed total occlusion of the LAD (arrowhead, Fig. 3a). A dissection flap appeared at the occlusion site after thrombus aspiration (arrowhead, Fig. 3b). Two Driver bare metal stents of 4.0*30 and 3.5*24 mm were implanted to ensure full coverage of the dissection. The final angiography revealed optimal result with TIMI III flow (Fig. 3c). Patient’s hemodynamics was stable after the procedure and his consciousness improved gradually. No anticoagulant was prescribed due to high bleeding risk, and the subsequent hospital stay was uneventful. Echocardiography performed after the procedure revealed akinesis over the anterior wall of the left ventricle. The highest levels of cardiac enzymes were CK 4839 U/L, CK-MB 468.7 U/L, and hsTroponin-I 178.2 ng/ml. The patient discharged 14 days later with daily regimen of clopidogrel 75 mg and acetylsalicylic acid 100 mg for 3 months, then acetylsalicylic acid alone for another 6 months. No angiotensin-converting-enzyme inhibitor or beta-blocker was prescribed due to his relative low blood pressure, and neither statin prescribed due to his normal lipid level and non-atherosclerotic cause of myocardial infarction. In a 12-month follow-up the patient is asymptomatic, without any heart failure or recurrent symptom of myocardial ischemia.Fig. 1 ECG showed QS pattern with ST segment elevation at lead V2 to V3 and reciprocal ST segment depression at leads II, III and aVF
+
+
+Fig. 2 Contrast-enhanced CT revealed decreased myocardial enhancement over the interventricular septum and the left ventricular apex (arrowhead)
+
+
+Fig. 3 
+a Coronary angiography revealed total occlusion of the proximal LAD with a sharp end (arrowhead). b A long dissection flap (arrowhead) appeared at the occlusion site after thrombus aspiration. c Final angiography showed optimal stenting result of LAD
+
+
+
+
+Discussion
+The diagnosis of cardiac contusion in patients with BCT remains controversial, and early recognition of AMI from cardiac contusion is not easy. In cases of suspicious AMI, incremental myocardial damage may occur if the essential revascularization is delayed. Emergent coronary angiography with potential angioplasty is the preferred method of evaluation and management.
+
+Symptoms such as chest pain in patients with AMI may mimic a concomitant rib fracture or muscular injury. Although a meta-anaysis supports the use of ECG and cardio-biomarker for the diagnosis of clinically significant myocardial injuries [3], ST segment abnormalities after BCT can be caused by cardiac contusion and pericarditis as well [4]. Troponin is the golden standard for diagnosis of myocardial infarction according to the new definition [5]. However, Mahmood I, et al. reported that one-fifth of patients with BCT had elevated troponin level even in the absence of clinical evidence of acute cardiac involvement [6]. Echocardiography may show regional abnormalities in wall motion in patients with myocardial contusion, but it cannot reliably distinguish cardiac contusion from ischemia associated with coronary artery dissection, either [4]. None of the above single examination alone is reliable for detection of myocardial infarction after BCT. Integrating information from multiple tests including ECG, echocardiography, cardiac biomarkers, and other image modalities like CT, is the key to early recognition of the event.
+
+Magnetic resonance imaging (MRI) was reported to detect coronary artery anomalies and AMI after BCT [7, 8]. Delayed enhanced cardiac MRI can also detect the coronary wall hematoma, pericardial tears and the extent of post-traumatic AMI, as well as differentiate between contusion and AMI [9]. However, MRI plays lesser role during acute BCT setting due to long scanning time and challenges related to patients with polytrauma and unstable hemodynamics [10].
+
+Currently, multidetector computerized tomography (MDCT) is the ideal imaging tool for the diagnosis and delineation of coronary artery anomalies in the population with relative low cardiovascular risk and low pretest probability of CAD population. MDCT may indicate for evaluate patient with BCT, and enables a comprehensive assessment of thoracic lesions including chest wall trauma, injured aorta, pericardial injury, coronary injury and cardiac rupture [10]. There are also some literature reported AMI diagnosed by MDCT after BCT with relative stable condition [8, 11]. However, coronary angiography instead of MSCT is preferred for higher risk group of population and in the setting of acute coronary syndrome, except for some specific indications, for examples coronary anomalies like anomalous origin and giant aneurysm [12].
+
+CT is well described as a routine imaging modality for detecting thoracic injuries caused by BCT [13, 14]. Improvement in imaging technology had permitted the demonstration of the focal decreased ventricular myocardial enhancement in a specific coronary artery distribution, consistent with myocardial infarction [15]. There is report demonstrated focal myocardial enhancement defect on CT in a case of delayed diagnosed myocardial infarction after BCT [16]. In this present case, we showed early detection of myocardial enhancement defect on CT and subsequent immediate coronary revascularization with good clinical outcome.
+
+Conclusion
+AMI due to coronary artery dissection after BCT is rare and may be life threatening. Perfusion defects of myocardium enhancement on CT can be very helpful to suggest myocardial infarction and facilitate the decision making of emergent procedure. This valuable sign should not be missed during the initial interpretation.
+
+Limitation
+Coronary optical coherence tomography and intravascular ultrasound can provide further informative assessment of the dissected coronary artery, and facilitated the selection of size and length of the stent. In this case, we did not perform these procedures due to the unstable hemodynamic condition and no insurance coverage of the procedures.
+
+Abbreviations
+AMIAcute myocardial infarction
+
+BCTBlunt chest trauma
+
+CTComputed tomography
+
+ECGElectrocardiogram
+
+LADLeft anterior descending artery
+
+MDCTMultidetector computerized tomography
+
+MRIMagnetic resonance imaging
+
+Acknowledgements
+No acknowledgements.
+
+Funding
+There is no funding pertaining to the manuscript.
+
+Availability of data and materials
+All information contained within the manuscript here.
+
+Authors’ contributions
+TLL wrote the manuscript. CFH conducted the coronary angiography. CHS directed the medical care throughout patient’s admission. HWL and HST collected the data, image and all information needed to write the manuscript. WKT supervised all the diagnostic and therapeutic measuers. WLH participated in the review of the manuscript. All authors read and approved the final manuscript.
+
+Competing interests
+The authors declare that they have no competing interests.
+
+Consent for publication
+Written informed consent was obtained from the patient for publication of this case report and any accompanying images. A copy of the written consent is available for review by the Editor of this journal.
+
+Ethics approval and consent to participate
+Not applicable.
+==== Refs
+References
+1. Pretre R  Chilcott M   Blunt trauma to the heart and great vessels N Engl J Med 1997 336 9 626 32 10.1056/NEJM199702273360906 9032049 
+2. Christensen MD  Nielsen PE  Sleight P   Prior blunt chest trauma may be a cause of single vessel coronary disease; hypothesis and review Int J Cardiol 2006 108 1 1 5 10.1016/j.ijcard.2005.04.010 15964088 
+3. Maenza RL  Seaberg D  D’Amico F   A meta-analysis of blunt cardiac trauma: ending myocardial confusion Am J Emerg Med 1996 14 3 237 41 10.1016/S0735-6757(96)90165-5 8639191 
+4. Plautz CU  Perron AD  Brady WJ   Electrocardiographic ST-segment elevation in the trauma patient: acute myocardial infarction vs myocardial contusion Am J Emerg Med 2005 23 4 510 6 10.1016/j.ajem.2004.03.014 16032622 
+5. Thygesen K  Alpert JS  Jaffe AS  Simoons ML  Chaitman BR  White HD    Third universal definition of myocardial infarction Eur Heart J 2012 33 20 2551 67 10.1093/eurheartj/ehs184 22922414 
+6. Mahmood I  El-Menyar A  Dabdoob W  Abdulrahman Y  Siddiqui T  Atique S    Troponin T in patients with traumatic chest injuries with and without cardiac involvement: insights from an observational study N Am J Med Sci 2016 8 1 17 24 10.4103/1947-2714.175188 27011943 
+7. Baccouche H  Beck T  Maunz M  Fogarassy P  Beyer M   Cardiovascular magnetic resonance of myocardial infarction after blunt chest trauma: a heartbreaking soccer shot J Cardiovasc Magn Reson 2009 11 39 10.1186/1532-429X-11-39 19818151 
+8. Malbranque G  Serfaty JM  Himbert D  Steg PG  Laissy JP   Myocardial infarction after blunt chest trauma: usefulness of cardiac ECG-gated CT and MRI for positive and aetiologic diagnosis Emerg Radiol 2011 18 3 271 4 10.1007/s10140-010-0925-4 21234635 
+9. Southam S  Jutila C  Ketai L   Contrast-enhanced cardiac MRI in blunt chest trauma: differentiating cardiac contusion from acute peri-traumatic myocardial infarction J Thorac Imaging 2006 21 2 176 8 10.1097/00005382-200605000-00010 16770235 
+10. Restrepo CS  Gutierrez FR  Marmol-Velez JA  Ocazionez D  Martinez-Jimenez S   Imaging patients with cardiac trauma Radiographics 2012 32 3 633 49 10.1148/rg.323115123 22582351 
+11. Marchesini J  Campo G  Righi R  Benea G  Ferrari R   Coronary artery anomalies presenting with ST-segment elevation myocardial infarction Clin Pract 2011 1 4 e107 10.4081/cp.2011.e107 24765348 
+12. Taylor AJ  Cerqueira M  Hodgson JM  Mark D  Min J  O’Gara P    ACCF/SCCT/ACR/AHA/ASE/ASNC/NASCI/SCAI/SCMR 2010 appropriate use criteria for cardiac computed tomography Circulation 2010 122 21 e525 55 10.1161/CIR.0b013e3181fcae66 20975004 
+13. Chung JH  Cox CW  Mohammed TL  Kirsch J  Brown K  Dyer DS    ACR appropriateness criteria blunt chest trauma J Am Coll Radiol 2014 11 4 345 51 10.1016/j.jacr.2013.12.019 24603073 
+14. Çorbacıoğlu SK  Er E  Aslan S  Seviner M  Aksel G  Doğan NÖ  Güler S  Bitir A   The significance of routine thoracic computed tomography in patients with blunt chest trauma Injury 2015 46 5 849 53 10.1016/j.injury.2014.12.022 25683210 
+15. Arnett JH  Mohajer K  Okon SA   Evidence of acute myocardial infarction on CT Br J Radiol 2007 80 957 e219 21 10.1259/bjr/24678934 17928493 
+16. Oghlakian G  Maldjian P  Kaluski E  Saric M   Acute myocardial infarction due to left anterior descending coronary artery dissection after blunt chest trauma Emerg Radiol 2010 17 2 149 51 10.1007/s10140-009-0799-5 19214607

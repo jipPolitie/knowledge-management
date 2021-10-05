@@ -1,0 +1,325 @@
+
+==== Front
+BMC Cardiovasc DisordBMC Cardiovasc DisordBMC Cardiovascular Disorders1471-2261BioMed Central London 48210.1186/s12872-017-0482-9Research ArticleMortality and morbidity trends after the first year in survivors of acute myocardial infarction: a systematic review Johansson Saga Saga.Johansson@astrazeneca.com 1Rosengren Annika Annika.Rosengren@gu.se 23Young Kate kateyoung524@gmail.com 4Jennings Em Em.Jennings@astrazeneca.com 51 AstraZeneca Gothenburg, Pepparedsleden 1, S-431 83 Mölndal, Sweden 2 0000 0000 9919 9582grid.8761.8Department of Molecular and Clinical Medicine, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden 3 000000009445082Xgrid.1649.aSahlgrenska University Hospital, Gothenburg, Sweden 4 Research Evaluation Unit, Oxford PharmaGenesis, 503 Washington Ave, Newtown, PA 18940 USA 5 AstraZeneca R&D, 132 Hills Rd, Cambridge, CB2 1PG UK 7 2 2017 7 2 2017 2017 17 5329 10 2016 23 1 2017 © The Author(s). 2017
+Open AccessThis article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.Background
+Most studies of outcomes after myocardial infarction (MI) focus on the acute phase after the index event. We assessed mortality and morbidity trends after the first year in survivors of acute MI, by conducting a systematic literature review.
+
+Methods
+Literature searches were conducted in Embase, MEDLINE, and the Cochrane Database of Systematic Reviews to identify epidemiological studies of long-term (>10 years) mortality and morbidity trends in individuals who had experienced an acute MI more than 1 year previously.
+
+Results
+Thirteen articles met the inclusion criteria. Secular trends showed a consistent decrease in mortality and morbidity after acute MI from early to more recent study periods. The relative risk for all-cause death and cardiovascular outcomes (recurrent MI, cardiovascular death) was at least 30% higher than that in a general reference population at both 1–3 years and 3–5 years after MI. Risk factors leading to worse outcomes after MI included comorbid diabetes, hypertension and peripheral artery disease, older age, reduced renal function, and history of stroke.
+
+Conclusions
+There have been consistent improvements in secular trends for long-term survival and cardiovascular outcomes after MI. However, MI survivors remain at higher risk than the general population, particularly when additional risk factors such as diabetes, hypertension, or older age are present.
+
+Keywords
+Long-termMorbidityMortalityMyocardial infarctionRisk factorshttp://dx.doi.org/10.13039/100004325AstraZenecaissue-copyright-statement© The Author(s) 2017
+==== Body
+Background
+The incidence of acute myocardial infarction (AMI) and case-fatality rates after AMI are declining in most countries, especially in those with high per capita incomes [1–3]. However, the aging world population, population growth, and the rising prevalence of long-term survivors of AMI mean that the burden of disease is generally increasing [1]. Secular trends in reduced morbidity and mortality in individuals with acute coronary syndromes, including AMI, are underpinned by advances in treatment and by the implementation of processes of care, such as networks for the treatment of ST-elevation MI (STEMI) [4, 5].
+
+Survivors of AMI are at high risk of a recurrent myocardial infarction (MI), as well as other manifestations of cardiovascular (CV) disease such as stroke [6–8]. Most studies of post-MI outcomes focus on the acute phase after the index event, with few data available for follow-up beyond the first year. However, although the risk of CV events is highest in the first year post-index MI, it remains elevated in subsequent years [9, 10].
+
+The objective of this systematic literature review was to assess whether morbidity and mortality in survivors of AMI after the first year mirror the general secular trend observed in survivors of MI, based on the results of epidemiological studies describing morbidity and mortality trends covering at least 10 years in long-term (>1 year) survivors of AMI.
+
+Methods
+Systematic review
+Literature searches were conducted in June 2015 in Embase, MEDLINE, and the Cochrane Database of Systematic Reviews to identify epidemiological studies of long-term (≥10-year) morbidity and mortality trends in individuals who had experienced an AMI more than 1 year previously. The following search string was used: ((acute coronary syndrome.mp.) OR ((myocardium OR myocardial) AND (ischemi* OR ischaemi*)).mp. OR (coronary heart disease.mp.) OR (coronary artery disease.mp.) OR (myocardial infarction.mp.) OR (unstable angina.mp.)) AND ((natural history.mp.) OR (longitudinal study.mp.) OR (survival.mp.) OR ((secular or time) adj1 trend*).mp. OR ((long term or long-term) adj1 prognosis).mp. OR (prognosis adj1 (following or after)).mp.) OR ((impact and (risk factor or model)).ab. OR (prognos* and model).ab. OR (attribut* risk.ab.)) NOT (clinical trial.mp.). Searches were limited to studies in adults that were published in the English language from 1 January 2010.
+
+To be eligible for inclusion, studies needed to present 10-year data for trends analysis of mortality or other outcomes of atherosclerotic CV disease beyond the first year in survivors of AMI. A flow chart of the literature searches is depicted in Fig. 1.Fig. 1 Flow chart of systematic literature searches. AMI acute myocardial infarction
+
+
+
+
+Data collection
+The following data were extracted: study characteristics (study region, data source, study years, study population, number of included individuals, mean age, proportion of men, and amount of follow-up time); and all-cause mortality and CV disease outcomes (incidence, risk analysis, and time trends).
+
+Results
+Study selection
+The initial search identified 14,440 articles, of which 14,310 were excluded based on a review of the title and/or abstract and 130 underwent full-text review (Fig. 1). Following full-text review, a further 117 articles were excluded (Fig. 1 lists reasons for exclusion and the corresponding number of articles excluded). Thirteen articles fulfilled the inclusion criteria and did not meet the exclusion criteria [11–23].
+
+Study characteristics
+The characteristics of the included studies are summarized in Table 1. Four studies were conducted in Sweden [12, 13, 18, 21], one study (with several subgroups and follow-up times) was carried out in the Netherlands [11, 14–17, 22], and one study each took place in Denmark [19], Spain [23] and the United Kingdom [20]. National or regional registries were used as data sources in the four Swedish studies [12, 13, 18, 21], the Danish study [19], and the study from the United Kingdom [20], whereas data from Spain [23] and the Netherlands [11, 14–17, 22] were from single-center studies. Study years covered ranged from 1985 to 2010. The number of included individuals in each study ranged from 1393 to 175,216, mean patient age ranged from 56 years to 81 years, and the proportion of men ranged from 49% to 81%.Table 1 Characteristics of included studies (eight study populations; 13 articles)
+
+Study region	Data source(s)	Study years	Study population	Number	Mean age (years)	Men (%)	Follow-up (years)	Reference	
+Denmark	National Prescription Register, National Patient Register, Central Population Register	1997–2006	Individuals aged ≥30 years with first MI and without prior diabetes	77,147	70	61	Up to 5	Norgaard et al. 2010 [19]	
+Spain	Single center Coronary Care Unit Registry	1988–2008	Individuals aged ≥75 years with first STEMI	1393	81	49	1 and 5	Viana-Tejedor et al. 2015 [23]	
+Sweden	National Hospital Discharge Register, National Cause of Death Registry	1993–2004	Individuals admitted for first MI (no prior HF or CAD)	175,216	69	64	3	Shafazand et al. 2011 [21]	
+	RIKS-HIA	1996–2007	Individuals with first STEMI	61,238	70	65	Up to 15	Jernberg et al. 2011 [13]	
+	National Inpatient Register	1987–2006	Individuals with first MI aged 25–54 years	37,276	NR	81	4	Nielsen et al. 2014 [18]	
+	Northern Sweden MONICA MI Registry, Swedish National Cause of Death Registry	1985–2006	Individuals with first MI	8630	56	78	Median: 7.1	Isaksson et al. 2011 [12]	
+Netherlands	Thoraxcenter ICCU, Erasmus University Medical Center	1985–2008	Individuals hospitalized for MI						
+			With NSTEMIa
+	7614	63	70	3	Nauta et al. 2011 [15]	
+			With STEMIa
+	6820	61	75	3	Nauta et al. 2011 [15]	
+							10	Snelder et al. 2013 [22]	
+			With renal impairmentb
+	8632			Up to 20	Nauta et al. 2013 [17]	
+			With diabetesa
+	2015			Up to 20	Nauta et al. 2012 [14]	
+			With elevated blood glucosec
+	4671			Up to 20	Deckers et al. 2013 [11]	
+			Womena
+	4028			Up to 20	Nauta et al. 2012 [16]	
+United Kingdom	CALIBER (CPRD, MINAP, HES, and ONS)	2000–2010	Individuals with stable angina, other CHD, unstable angina, STEMI, NSTEMI, or unclassified MI	102,023 (STEMI: 4700; NSTEMI: 6818; unclassified MI: 9620)	STEMI: 66; NSTEMI: 72; unclassified MI: 69	STEMI: 72; NSTEMI: 63; unclassified MI: 65	Mean: 4.4d
+	Rapsomaniki et al. 2014 [20]	
+
+CAD coronary artery disease, CALIBER CArdiovascular disease research using LInked BEspoke studies and electronic health Records, CHD coronary heart disease, CPRD Clinical Practice Research Datalink, HES Hospital Episodes Statistics, HF heart failure, ICCU intensive coronary care unit, MI myocardial infarction, MINAP Myocardial Ischaemia National Audit Project registry, MONICA MONItoring trends and determinants in CArdiovascular disease, NR not reported, NSTEMI non-ST-elevation myocardial infarction, ONS Office for National Statistics, RIKS-HIA Register of Information and Knowledge about Swedish Heart Intensive care Admissions, STEMI ST-elevation myocardial infarction
+
+
+aOf 14,434 individuals hospitalized for MI
+
+
+bOf 12,087 individuals hospitalized for MI
+
+
+cOf 11,324 individuals hospitalized for MI
+
+
+dFollow-up started 6 months after the event
+
+
+
+
+All-cause mortality
+Incidence
+Data on all-cause mortality were provided for six study populations, described in 11 articles (Table 2) [11–18, 20, 22, 23]. Information on secular trends in all-cause mortality was provided for five study populations, all of which showed a consistent decrease when advancing from early to more recent study periods (Table 2) [12–15, 18, 22, 23]. Data for time periods starting 1 year after the event were shown graphically and were not reported separately.Table 2 All-cause mortality (six study populations; 11 articles)
+
+Reference	Assessment	Mortality/survival	
+Viana-Tejedor et al. 2015 [23]	Mortality in years 1–5 in patients alive 1 year after MIa
+	• Mortality 1988–1993: 26.9% (42/156); 1994–1998: 32.5% (66/203); 1999–2003: 23.7% (57/241); 2004–2008: 15.4% (48/311)
+• 1-year and 5-year mortality decreased significantly over the 20-year period of study (p < 0.001)	
+Jernberg et al. 2011 [13]	Risk of death up to 12 years after event	• Time trends show risk of death 1996–1997 > 1998–1999 > 2000–2001 > 2002–2003 > 2004–2005 > 2006–2007b
+	
+Nielsen et al. 2014 [18]	Survival probability for 4 years after event	• For men, time trends show survival probability 1987–1991 < 1992–1996 < 1997–2001 < 2002–2006b
+
+• For women, time trends show survival probability 1987–1991 < 1992–1996 < 1997–2001, but levels for 2002–2006 were similar to those for 1997–2001b
+	
+Isaksson et al. 2011 [12]	Survival up to 24 years after event	• Time trends show survival 1985–1988 < 1989–1994 < 1995–2000 < 2001–2006b
+
+• Survival in women was generally higher than that for men before 2000, but similar for men and women after 2000	
+Nauta et al. 2011 [15]	Survival for 3 years after event in patients with NSTEMI	• Time trends show survival 1985–1990 < 1990–2000 < 2000–2008b
+	
+Snelder et al. 2013 [22]	Mortality for up to 10 years after event in patients with STEMI	• Time trends show mortality 1985–1990 > 1990–2000 > 2000–2008b
+	
+Nauta et al. 2013 [17]	Mortality for up to 20 years after event according to renal function	• Time trends for mortality stage 4–5 chronic kidney disease > stage 3 > stage 2 > normal kidney functionb
+	
+Nauta et al. 2012 [14]	Mortality for up to 20 years after event according to diabetes status	• Mortality was higher in patients with diabetes than in those without
+• There was an increase in the risk of presenting with diabetes during the study period
+• Time trends show mortality 1985–1989 > 1990–1999 > 2000–2008 in patients with diabetes, and 1985–1989 ≈ 1990–1999 > 2000–2008 in patients without diabetesb
+	
+Deckers et al. 2013 [11]	Mortality for up to 20 years after event according to glucose levels	• Mortality was highest in patients with severe hyperglycemia, followed by those with mild hyperglycemia, and was lowest in those with normal glucose levelsb
+	
+Nauta et al. 2012 [16]	Mortality for up to 20 years after event according to sex	• From 1985 to 2008, age at presentation increased and patients were more likely to have diabetes or anemia at presentation
+• Adjusted 20-year mortality was significantly lower in women than in men	
+Rapsomaniki et al. 2014 [20]	Cumulative all-cause mortality up to 5.5 years after eventc
+	• Mortality in stable patients after NSTEMI > after STEMIb
+	
+
+MI myocardial infarction, NSTEMI non-ST-elevation myocardial infarction, STEMI ST-elevation myocardial infarction
+
+
+aCalculated from data reported in the study
+
+
+bAll shown on curve; actual values not reported for time starting 1 year after the event
+
+
+cFollow-up started 6 months after the event
+
+
+
+
+Relative risk
+Relative risk analyses for all-cause death from 1 year after the AMI were reported in one study, conducted in Denmark (Table 3) [19]. The reference population comprised inhabitants of Denmark aged 30 years and above, with no prior prescriptions for glucose-lowering drugs and no history of MI [19]. The relative risk of all-cause death was increased at 1–3 years and 3–5 years after MI compared with the reference population, and was higher in women than in men (Table 3) [19]. Relative risk values for the time period January 1997–June 2001 were similar to those for the time period July 2001– December 2006 [19].Table 3 All-cause death: relative risk analysis (one study population; one article)
+
+Reference	Assessment	Relative risk analysis	
+Norgaard et al. 2010 [19]	Relative risk (95% CI) versus reference population at 1–3 years and 3–5 years after MI during time periods 1997–2001 and 2001–2006	Men	
+1997–2001: 1–3 years, 1.42 (1.36–1.49); 3–5 years, 1.38 (1.31–1.45)	
+2001–2006: 1–3 years, 1.47 (1.39–1.55); 3–5 years, 1.46 (1.32–1.62)	
+Women	
+1997–2001: 1–3 years, 1.90 (1.81–2.00); 3–5 years, 1.84 (1.74–1.94)	
+2001–2006: 1–3 years, 2.02 (1.91–2.15); 3–5 years, 1.80 (1.60–2.02)	
+
+CI confidence interval, MI myocardial infarction
+
+
+
+
+Another study compared estimated mortality in the study population (aged 25–54 years) in the 4 years after the index AMI with that expected in the general population, but data from 1 year after the event were not reported separately [18]. The excess in observed versus expected mortality decreased from early to more recent study periods in men, but less so in women [18].
+
+Risk factors
+Several risk factors were identified that led to worse outcomes, as follows. Mortality was higher in individuals with diabetes than in those without diabetes across study periods [14]. Mortality increased with increasing severity of hyperglycemia [11] and with decreasing renal function [17]. It was lower in women than in men [12, 16], but the rates became more similar between the sexes in more recent years [12, 18]. As expected, mortality increased with age [12]. Significant risk factors for all-cause death in patients who had experienced STEMI and non-ST-elevation myocardial infarction (NSTEMI) included increasing age, smoking, hypertension, diabetes, peripheral artery disease, history of stroke, chronic kidney disease, chronic obstructive pulmonary disease, chronic liver disease, and history of cancer [20]. Primary percutaneous coronary intervention was shown to lower all-cause mortality in patients with STEMI [23].
+
+CV outcomes
+Incidence
+Incidence data for CV outcomes (heart failure [21], non-fatal MI/coronary death [20]) were provided in two studies (Table 4) [20, 21]. The incidence of heart failure at 1–3 years in patients surviving 1 year without heart failure decreased over time, ranging from 2.32% in the earliest study period (1993–1995) to 1.47% in the most recent study period (2002–2004) in the 35–64-year age group, and from 5.03% in the earliest to 4.28% in the most recent study period in the 65–84-year age group (p for trend <0.001 in both age groups) [21]. No data were provided that compared the incidence of CV outcomes or mortality with those in the general population.Table 4 Cardiovascular outcomes: incidence (two study populations; two articles)
+
+Reference	Assessment	Incidence	
+Shafazand et al. 2011 [21]	HF at 1–3 years in patients surviving 1 year without HF	35–64-year age group
+1993–1995: 2.32%
+1996–1998: 1.82%
+1999–2001: 1.79%
+2002–2004: 1.47%
+
+p < 0.001
+65–84-year age group
+1993–1995: 5.03%
+1996–1998: 4.44%
+1999–2001: 4.45%
+2002–2004: 4.28%
+
+p < 0.001	
+Rapsomaniki et al. 2014 [20]	Cumulative non-fatal MI/coronary death risk up to 5.5 years after eventa
+	Cumulative risk of non-fatal MI/coronary death was shown to increase further after 1 year for up to 5.5 years; cumulative risk of death in stable patients after NSTEMI > MI (type unspecified) > after STEMIb
+	
+
+HF heart failure, MI myocardial infarction, NSTEMI non-ST-elevation myocardial infarction, STEMI ST-elevation myocardial infarction
+
+
+aFollow-up started 6 months after the event
+
+
+bAll shown on curve; actual values not reported for time starting 1 year after the event
+
+
+
+
+Relative risk
+Relative risk analyses for CV outcomes (recurrent MI, CV death) were reported in one study, conducted in Denmark (Table 5) [19]. The relative risks of recurrent MI and CV death increased at 1–3 years and 3–5 years after MI compared with the reference population, and were higher in women than in men (Table 5) [19]. Relative risks for the time period 1997–2001 were similar to those for 2001–2006 [19].Table 5 Cardiovascular outcomes: relative risk (one study population; one article)
+
+Reference	Assessment	Risk analysis	
+Norgaard et al. 2010 [19]	Relative risk (95% CI) of recurrent MI versus reference population at 1–3 years and 3–5 years after MI during time periods 1997–2001 and 2001–2006	Men	
+1997–2001: 1–3 years, 2.99 (2.80–3.18); 3–5 years, 2.67 (2.48–2.87)	
+2001–2006: 1–3 years, 2.92 (2.69–3.17); 3–5 years, 2.70 (2.30–3.17)	
+Women	
+1997–2001: 1–3 years, 5.67 (5.25–6.11); 3–5 years, 4.33 (3.93–4.78)	
+2001–2006: 1–3 years, 5.64 (5.13–6.21); 3–5 years, 5.15 (4.24–6.25)	
+	Relative risk (95% CI) of CV death versus reference population at 1–3 years and 3–5 years after MI during time periods 1997–2001 and 2001–2006	Men	
+1997–2001: 1–3 years, 2.11 (2.00–2.23); 3–5 years, 1.99 (1.88–2.11)	
+2001–2006: 1–3 years, 2.14 (2.00–2.28); 3–5 years, 2.10 (1.86–2.34)	
+Women	
+1997–2001: 1–3 years, 2.80 (2.64–2.97); 3–5 years, 2.63 (2.46–2.81)	
+2001–2006: 1–3 years, 2.92 (2.72–3.13); 3–5 years, 2.77 (2.42–3.17)	
+
+CI confidence interval, CV cardiovascular, MI myocardial infarction
+
+
+
+
+Risk factors
+Several risk factors were identified that led to worse outcomes, as follows. The incidence of non-fatal MI/coronary death 1 year to 5.5 years after acute coronary syndromes in stable patients was highest after NSTEMI, followed by unspecified MI and then STEMI [20]. Identified significant risk factors for non-fatal MI/coronary death in patients with STEMI and NSTEMI included increasing age, smoking, hypertension, diabetes, peripheral artery disease, history of stroke, chronic kidney disease, and chronic obstructive pulmonary disease [20].
+
+Discussion
+This systematic literature review reveals consistent improvements from early to more recent periods in secular trends for long-term survival and CV outcomes after MI. However, compared with the general population, MI survivors remain at higher risk, particularly older individuals and patients with comorbid hypertension, diabetes, peripheral artery disease, or history of stroke. In the single study that compared survival after the first year with that of the general population, there was a lack of improvement between the time periods 1997–2001 and 2001–2006; most of the decrease in mortality would therefore seem to occur during the first year [19].
+
+Secular trends data focusing on outcomes specifically in survivors of MI after 1 year are scarce, with only one study in this review reporting such information [19]. In that study, a general population of similar age was included as a reference, and the relative risk of all-cause death was shown to be increased at both 1–3 years and 3–5 years after MI compared with the reference population [19]. These data are supported by those of a recently published, large, four-country analysis, which showed an annual risk of death 1 year onwards after MI that was more than double that of a similar general population age group, with about half of deaths due to CV disease [10]. The four-country analysis used “big data” from hospital health records to assess long-term CV disease outcomes starting 1 year after the most recent discharge following AMI. It was conducted in the United States and three European countries, and included more than 100,000 survivors of MI aged 65 years and older.
+
+Studies have shown the increased risk of CV events in individuals after MI to be higher in the first year following the index MI than in subsequent years [9, 10]. In a large Swedish registry study that formed part of the four-country analysis which included 97,254 patients discharged after MI, the risk of non-fatal MI, non-fatal stroke, or CV death (primary composite end point) during the first year after the index MI was 18.3% [9]. Although the risk was lower in the subsequent 3 years than in the first year, it remained relatively high with about one in five patients without a combined end point during the first year having a non-fatal MI, non-fatal stroke, or CV death during the following 3 years [9]. Similarly, in the four-country analysis, death, stroke, or further MI after the first year following an MI occurred in about one-third of patients during the subsequent 3 years [10].
+
+The high risk of vascular events after 1 year post-MI suggests that prolonged surveillance beyond 12 months is required in this patient group. Results from a recent clinical trial suggest that prolonged dual antiplatelet therapy (DAPT) beyond the first year after an AMI is beneficial in terms of preventing vascular events [24]. In the DAPT study in patients treated with a drug-eluting stent, of whom 31% presented with AMI, prolonged DAPT beyond 12 months significantly lowered the cumulative incidence of stent thrombosis and of major CV and cerebrovascular events during the subsequent 18 months compared with acetylsalicylic acid alone [25]. Current guidelines recommend DAPT for 12 months for secondary prevention [26–29], with European Society of Cardiology guidelines noting that the duration may be extended (up to 30 months) in selected patients, if required [27]. In patients stable 1 year after an AMI, validated prognostic models based on individual patient risk profiles can help to inform a decision of whether or not to prolong DAPT [30].
+
+Studies in the current review show a particularly high risk of vascular events after MI in older individuals and in patients with hypertension, diabetes, peripheral artery disease, or history of stroke [14, 20]. Strong associations between the risk of subsequent MI, stroke, or death and the presence of diabetes, peripheral artery disease, and history of stroke were also revealed by the four-country analysis, which further identified comorbid heart failure, renal disease, and chronic obstructive pulmonary disease as risk factors [10]. These results indicate a particular need for better treatment options in these high-risk patient groups.
+
+The current review highlights large information gaps for outcomes that occur 1 year or more after the index MI. Although most studies show time trends graphically, they do not report actual data values separately for the time period starting from 1 year post-MI. Thus, it is difficult to attribute differences and trends in longer-term survival to specific time periods after the index event. In addition, studies that report mortality and incidence data for the time period starting 1 year after the index event mostly present these as absolute values rather than values relative to a control population, making it difficult to assess to what extent the data from 1 year after the event differ from those in the general population.
+
+Conclusions
+In conclusion, there have been consistent improvements in secular trends for long-term survival and CV outcomes after MI. However, MI survivors remain at higher risk than the general population, particularly if there are additional risk factors such as older age, hypertension, or diabetes, all of which lead to worse outcomes.
+
+Abbreviations
+AHAAmerican Heart Association
+
+AMIAcute myocardial infarction
+
+CADCoronary artery disease
+
+CALIBERCArdiovascular disease research using LInked BEspoke studies and electronic health Records
+
+CHDCoronary heart disease
+
+CIConfidence interval
+
+CPRDClinical Practice Research Datalink
+
+CVCardiovascular
+
+DAPTDual antiplatelet therapy
+
+ESCEuropean Society of Cardiology
+
+HESHospital Episodes Statistics
+
+HFHeart failure
+
+ICCUIntensive coronary care unit
+
+MIMyocardial infarction
+
+MINAPMyocardial Ischaemia National Audit Project registry
+
+MONICAMONItoring trends and determinants in CArdiovascular disease
+
+NRNot responsive
+
+NSTEMINon-ST-elevation myocardial infarction
+
+ONSOffice for National Statistics
+
+RIKS-HIARegister of Information and Knowledge about Swedish Heart Intensive care Admissions
+
+STEMIST-elevation myocardial infarction
+
+Acknowledgements
+Writing support was provided by Dr Anja Becher, from Oxford PharmaGenesis, Oxford, UK, and was funded by AstraZeneca Gothenburg, Mölndal, Sweden.
+
+Funding
+This analysis was funded by AstraZeneca Gothenburg, Mölndal, Sweden.
+
+Availability of data and material
+All data generated or analyzed during this study are included in this published article.
+
+Authors’ contributions
+KY performed the systematic literature searches. SJ, AR, KY, and EJ analyzed the data and were major contributors in writing the manuscript. All authors read and approved the final manuscript.
+
+Competing interests
+Saga Johansson is an employee of AstraZeneca Gothenburg, Mölndal, Sweden. Annika Rosengren reports no disclosures. At the time the analysis was conducted, Kate Young was an employee of Oxford PharmaGenesis, Newtown, PA, USA, which has received funding from AstraZeneca. Em Jennings is an employee of AstraZeneca R&D, Cambridge, UK.
+
+Consent for publication
+Not applicable.
+
+Ethics approval and consent to participate
+Not applicable.
+==== Refs
+References
+1. Moran AE  Forouzanfar MH  Roth GA  Mensah GA  Ezzati M  Flaxman A  Murray CJ  Naghavi M   The global burden of ischemic heart disease in 1990 and 2010: the Global Burden of Disease 2010 study Circulation 2014 129 14 1493 1501 10.1161/CIRCULATIONAHA.113.004046 24573351 
+2. Mozaffarian D  Benjamin EJ  Go AS  Arnett DK  Blaha MJ  Cushman M  de Ferranti S  Despres JP  Fullerton HJ  Howard VJ    Heart disease and stroke statistics – 2015 update: a report from the American Heart Association Circulation 2015 131 4 e29 322 10.1161/CIR.0000000000000152 25520374 
+3. Nichols M  Townsend N  Scarborough P  Rayner M   Cardiovascular disease in Europe 2014: epidemiological update Eur Heart J 2014 35 42 2929 10.1093/eurheartj/ehu378 25381246 
+4. Jokhadar M  Jacobsen SJ  Reeder GS  Weston SA  Roger VL   Sudden death and recurrent ischemic events after myocardial infarction in the community Am J Epidemiol 2004 159 11 1040 1046 10.1093/aje/kwh147 15155288 
+5. Wallentin L  Kristensen SD  Anderson JL  Tubaro M  Sendon JL  Granger CB  Bode C  Huber K  Bates ER  Valgimigli M    How can we optimize the processes of care for acute coronary syndromes to improve outcomes? Am Heart J 2014 168 5 622 631 10.1016/j.ahj.2014.07.006 25440789 
+6. Smolina K  Wright FL  Rayner M  Goldacre MJ   Long-term survival and recurrence after acute myocardial infarction in England, 2004 to 2010 Circ Cardiovasc Qual Outcomes 2012 5 4 532 540 10.1161/CIRCOUTCOMES.111.964700 22740013 
+7. Witt BJ  Brown RD Jr  Jacobsen SJ  Weston SA  Yawn BP  Roger VL   A community-based study of stroke incidence after myocardial infarction Ann Intern Med 2005 143 11 785 792 10.7326/0003-4819-143-11-200512060-00006 16330789 
+8. Campo G  Saia F  Guastaroba P  Marchesini J  Varani E  Manari A  Ottani F  Tondi S  De Palma R  Marzocchi A   Prognostic impact of hospital readmissions after primary percutaneous coronary intervention Arch Intern Med 2011 171 21 1948 1949 10.1001/archinternmed.2011.536 22123806 
+9. Jernberg T  Hasvold P  Henriksson M  Hjelm H  Thuresson M  Janzon M   Cardiovascular risk in post-myocardial infarction patients: nationwide real world data demonstrate the importance of a long-term perspective Eur Heart J 2015 36 19 1163 1170 10.1093/eurheartj/ehu505 25586123 
+10. Rapsomaniki E, Thuresson M, Yang E, Blin P, Hunt P, Chung SC, Stogiannis D, Pujades-Rodriguez M, Timmis A, Denaxas SC, et al. Using big data from health records from four countries to evaluate chronic disease outcomes: a study in 114 364 survivors of myocardial infarction. Eur Heart J Qual Care Clin Outcomes. 2016;2(3):172–83.
+11. Deckers JW  van Domburg RT  Akkerhuis M  Nauta ST   Relation of admission glucose levels, short- and long-term (20-year) mortality after acute myocardial infarction Am J Cardiol 2013 112 9 1306 1310 10.1016/j.amjcard.2013.06.007 23866731 
+12. Isaksson RM  Jansson JH  Lundblad D  Naslund U  Zingmark K  Eliasson M   Better long-term survival in young and middle-aged women than in men after a first myocardial infarction between 1985 and 2006. An analysis of 8630 patients in the northern Sweden MONICA study BMC Cardiovasc Disord 2011 11 1 10.1186/1471-2261-11-1 21208409 
+13. Jernberg T  Johanson P  Held C  Svennblad B  Lindback J  Wallentin L   Association between adoption of evidence-based treatment and survival for patients with ST-elevation myocardial infarction JAMA 2011 305 16 1677 1684 10.1001/jama.2011.522 21521849 
+14. Nauta ST  Deckers JW  Akkerhuis KM  van Domburg RT   Short- and long-term mortality after myocardial infarction in patients with and without diabetes: changes from 1985 to 2008 Diabetes Care 2012 35 10 2043 2047 10.2337/dc11-2462 22815296 
+15. Nauta ST  Deckers JW  Akkerhuis M  Lenzen M  Simoons ML  van Domburg RT   Changes in clinical profile, treatment, and mortality in patients hospitalised for acute myocardial infarction between 1985 and 2008 PLoS One 2011 6 11 e26917 10.1371/journal.pone.0026917 22073220 
+16. Nauta ST  Deckers JW  van Domburg RT  Akkerhuis KM   Sex-related trends in mortality in hospitalized men and women after myocardial infarction between 1985 and 2008: equal benefit for women and men Circulation 2012 126 18 2184 2189 10.1161/CIRCULATIONAHA.112.113811 23008438 
+17. Nauta ST  van Domburg RT  Nuis RJ  Akkerhuis M  Deckers JW   Decline in 20-year mortality after myocardial infarction in patients with chronic kidney disease: evolution from the prethrombolysis to the percutaneous coronary intervention era Kidney Int 2013 84 2 353 358 10.1038/ki.2013.71 23486524 
+18. Nielsen S  Bjorck L  Berg J  Giang KW  Zverkova Sandstrom T  Falk K  Maatta S  Rosengren A   Sex-specific trends in 4-year survival in 37 276 men and women with acute myocardial infarction before the age of 55 years in Sweden, 1987–2006: a register-based cohort study BMJ Open 2014 4 5 e004598 10.1136/bmjopen-2013-004598 24793251 
+19. Norgaard ML  Andersen SS  Schramm TK  Folke F  Jorgensen CH  Hansen ML  Andersson C  Bretler DM  Vaag A  Kober L    Changes in short- and long-term cardiovascular risk of incident diabetes and incident myocardial infarction--a nationwide study Diabetologia 2010 53 8 1612 1619 10.1007/s00125-010-1783-z 20454950 
+20. Rapsomaniki E  Shah A  Perel P  Denaxas S  George J  Nicholas O  Udumyan R  Feder GS  Hingorani AD  Timmis A    Prognostic models for stable coronary artery disease based on electronic health record cohort of 102 023 patients Eur Heart J 2014 35 13 844 852 10.1093/eurheartj/eht533 24353280 
+21. Shafazand M  Rosengren A  Lappas G  Swedberg K  Schaufelberger M   Decreasing trends in the incidence of heart failure after acute myocardial infarction from 1993–2004: a study of 175,216 patients with a first acute myocardial infarction in Sweden Eur J Heart Fail 2011 13 2 135 141 10.1093/eurjhf/hfq205 21118860 
+22. Snelder SM  Nauta ST  Akkerhuis KM  Deckers JW  van Domburg RT   Weekend versus weekday mortality in ST-segment elevation acute myocardial infarction patients between 1985 and 2008 Int J Cardiol 2013 168 2 1576 1577 10.1016/j.ijcard.2013.01.053 23422853 
+23. Viana-Tejedor A  Loughlin G  Fernandez-Aviles F  Bueno H   Temporal trends in the use of reperfusion therapy and outcomes in elderly patients with first ST elevation myocardial infarction Eur Heart J Acute Cardiovasc Care 2015 4 5 461 467 10.1177/2048872614565928 25561687 
+24. Bonaca MP  Bhatt DL  Cohen M  Steg PG  Storey RF  Jensen EC  Magnani G  Bansilal S  Fish MP  Im K    Long-term use of ticagrelor in patients with prior myocardial infarction N Engl J Med 2015 372 19 1791 1800 10.1056/NEJMoa1500857 25773268 
+25. Mauri L  Kereiakes DJ  Yeh RW  Driscoll-Shempp P  Cutlip DE  Steg PG  Normand SL  Braunwald E  Wiviott SD  Cohen DJ    Twelve or 30 months of dual antiplatelet therapy after drug-eluting stents N Engl J Med 2014 371 23 2155 2166 10.1056/NEJMoa1409312 25399658 
+26. Amsterdam EA  Wenger NK  Brindis RG  Casey DE Jr  Ganiats TG  Holmes DR Jr  Jaffe AS  Jneid H  Kelly RF  Kontos MC    2014 AHA/ACC guideline for the management of patients with non-ST-elevation acute coronary syndromes: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines J Am Coll Cardiol 2014 64 24 e139 228 10.1016/j.jacc.2014.09.017 25260718 
+27. Roffi M  Patrono C  Collet JP  Mueller C  Valgimigli M  Andreotti F  Bax JJ  Borger MA  Brotons C  Chew DP    2015 ESC Guidelines for the management of acute coronary syndromes in patients presenting without persistent ST-segment elevation: Task Force for the management of acute coronary syndromes in patients presenting without persistent ST-segment elevation of the European Society of Cardiology (ESC) Eur Heart J 2016 37 267 315 10.1093/eurheartj/ehv320 26320110 
+28. Steg PG  James SK  Atar D  Badano LP  Blomstrom-Lundqvist C  Borger MA  Di Mario C  Dickstein K  Ducrocq G  Fernandez-Aviles F    ESC Guidelines for the management of acute myocardial infarction in patients presenting with ST-segment elevation Eur Heart J 2012 33 20 2569 2619 10.1093/eurheartj/ehs215 22922416 
+29. Windecker S  Kolh P  Alfonso F  Collet JP  Cremer J  Falk V  Filippatos G  Hamm C  Head SJ  Juni P    2014 ESC/EACTS guidelines on myocardial revascularization: the Task Force on Myocardial Revascularization of the European Society of Cardiology (ESC) and the European Association for Cardio-Thoracic Surgery (EACTS) developed with the special contribution of the European Association of Percutaneous Cardiovascular Interventions (EAPCI) Eur Heart J 2014 35 37 2541 2619 10.1093/eurheartj/ehu278 25173339 
+30. Pasea L  Chung SC  Pujades Rodriguez M  Jennings E  Emmas C  Westergaard M  Johansson S  Hemingway H   Development and validation of prognostic models for myocardial infarction, stroke and cardiovascular death and hospitalised bleeding in stable myocardial infarction survivors J Am Coll Cardiol 2015 65 10S A1382 10.1016/S0735-1097(15)61382-1

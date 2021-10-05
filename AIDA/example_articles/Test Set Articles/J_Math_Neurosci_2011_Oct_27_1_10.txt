@@ -1,0 +1,259 @@
+
+==== Front
+J Math NeurosciJ Math NeurosciJournal of Mathematical Neuroscience2190-8567Springer 2190-8567-1-1010.1186/2190-8567-1-10ResearchDiffusion laws in dendritic spines Holcman David 12holcman@biologie.ens.frSchuss Zeev 3schuss@post.tau.ac.il1 Institute for Biology (IBENS), Group of Computational Biology and Applied Mathematics Ecole Normale Supérieure, 46 rue d'Ulm, 75005 Paris, France2 Department of Applied Mathematics, UMR 7598 Université Pierre et Marie Curie, Boite Courrier 187, 75252 Paris, France3 Department of Mathematics, Tel-Aviv University, Tel-Aviv 69978, Israel2011 27 10 2011 1 10 10 1 8 2011 27 10 2011 Copyright ©2011 Holcman and Schuss; licensee Springer.2011Holcman and Schuss; licensee Springer.This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/2.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.Dendritic spines are small protrusions on a neuronal dendrite that are the main locus of excitatory synaptic connections. Although their geometry is variable over time and along the dendrite, they typically consist of a relatively large head connected to the dendritic shaft by a narrow cylindrical neck. The surface of the head is connected smoothly by a funnel or non-smoothly to the narrow neck, whose end absorbs the particles at the dendrite. We demonstrate here how the geometry of the neuronal spine can control diffusion and ultimately synaptic processes. We show that the mean residence time of a Brownian particle, such as an ion or molecule inside the spine, and of a receptor on its membrane, prior to absorption at the dendritic shaft depends strongly on the curvature of the connection of the spine head to the neck and on the neck's length. The analytical results solve the narrow escape problem for domains with long narrow necks.
+==== Body
+1 Introduction
+Recognized more than 100 hundreds years ago by Ramón y Cajal, dendritic spines are small terminal protrusions on neuronal dendrites, and are considered to be the main locus of excitatory synaptic connections. The general spine geometry consists of a relatively narrow cylindrical neck connected to a bulky head (the round part in Figure 1). Their geometrical shape correlates with their physiological function [1-6]. More than three decades ago, the spine-dendrite communication associated with the particle transfer was already anticipated [7] to be mediated not only by pure diffusion but it was hypothesized to involve other mechanisms such as twitching. This idea was reinforced by the findings [8] that inside the spine, the cytoplasmic actin is organized in filaments, involved in various forms of experimentally induced synaptic plasticity by changing the shape or volume of the pre- and postsynaptic side and by retracting and sprouting synapses. The fast dendritic spine contraction was finally confirmed in cultured hippocampal neurons [9] and consequences were studied theoretically in [10-12]. Interestingly, a serial electron microscopy and three-dimensional reconstructions of dendritic spines from Purkinje spiny branchlets of normal adult rats allowed to relate spine geometry to synaptic efficacy [1]. This image reconstruction approach leads to the conclusion that the cerebellar spine necks are unlikely to reduce transfer of synaptic charge by more than 5-20%, even if their smooth endoplasmic reticulum were to completely block passage of current through the portion of the neck that it occupies. The constricted spine neck diameter was proposed to isolate metabolic events in the vicinity of activated synapses by reducing diffusion to neighboring synapses, without significantly influencing the transfer of synaptic charge to the postsynaptic dendrite [1].
+
+Figure 1 Upper row: (from left to right) The dendritic spine head is connected smoothly to the neck (the postsynaptic density (PSD) is marked red) and (right) the connection is not smooth (from [6]). Lower row: A mathematical idealization of a cross section: A cross section of a sharp and non-sharp connection approximating the spine morphology.
+
+Change of spine morphology can be induced by synaptic potentiation protocols [13-15] and indeed intracellular signaling such as calcium released from stores alters the morphology of dendritic spines in cultured hippocampal neurons. These changes in geometry can affect the spine-dendrite communication. One of the first quantitative assessment of geometry was obtained by a direct measurement [16] of diffusion though the spine neck. Using photobleaching and photorelease of fluorescein dextran, by generating concentration gradients between spines and shafts in rat CA1 pyramidal neurons, the time course of re-equilibration was well approximated by a single exponential decay, with a time constant in the range of 20 to 100 ms. The role of the spine neck was further investigated using flash photolysis of caged calcium [3,17] and theory [18], and the main conclusion was that geometrical changes in the spine neck such as the length or the radius are key modulator of the spine-dendrite communication [12,19,20], affecting calcium dynamics. However, in all these studies, the nature of the connection between the neck and head was not considered. The theoretical studies [19,21] considered non-smooth connection only of the head to the narrow cylindrical neck (Figure 1) and did not account for any effect of curvature. This is precisely the goal of this article to investigate the consequences of this connection.
+
+The connection between the head and the neck is not only relevant for the three-dimensional diffusion, but also essential to the analysis of other synaptic properties. Indeed, synaptic transmission and plasticity involve the trafficking of receptors [22-27] such as AMPA or NMDA receptors (AMPARs or NMDARs) that mediate the glutamatergic-induced synaptic current. Single particle approaches have further [28,29] revealed the heterogeneity of two-dimensional trajectories occurring on the neuron surface, suggesting that there are several biophysical processes involved in regulating the receptor motion. In addition, the number and type of receptors that shape the synaptic current [23] could be regulated by the spine geometry. This question was further explored theoretically [30,31], using asymptotic expressions for the residence time and experimentally [32] by monitoring the movements of AMPARs on the surface of mature neurons using FRAP. Employing a combination of confocal microscopy and photobleaching techniques in living hippocampal CA1 pyramidal neurons, a correlation between spine shape parameters and the diffusion and compartmentalization of membrane-associated proteins was recently confirmed [33]. Lateral diffusion seems to be a constitutive process of AMPAR trafficking; it depends on spine morphology and is restricted by the spine geometry [34].
+
+In this article, we develop a method for computing the NET from composite spine-like structures that consist of a relatively large compartment (head) Ω1 and a narrow cylindrical neck of cross section |∂Ωa and length L (see Figure 2). Our connection formula is given as
+
+Figure 2 The composite domain consists of a head Ω1 connected by an interface ∂Ωi to narrow neck Ω2. The entire boundary is reflecting, except for a small absorbing part ∂Ωa.
+
+ (1) τ¯x→∂Ωa=τ¯x→∂Ωi+L22D+∣Ω1∣L∣∂Ωa∣D. 
+
+The connection between the two parts in the context of the NET problem was attempted in [21,35] for the oversimplified model of a discontinuous connection. Here, we study a large class of connections and reveal the role of curvature in the spine-neck connection in regulating diffusion flux through narrow necks. More specifically, we study here the residence time of a Brownian particle from the spine head to the absorbing end of the spine neck moving either on the surface or inside the spine. We use the results of [36,37] for the mean first passage time (MFPT) to an absorbing boundary at the end of a cusp-shaped protrusion in the head. They account for the effects of curvature generated by the neck-head connection in the spine. The reciprocal of the MFPT is the rate of arrival (probability flux) of Brownian particles from the head to the dendrite [38]. We calculate the narrow escape time (NET) from spine-shaped domains with heads connected smoothly and non-smoothly to the neck.
+
+2 The NET from a domain with a bottleneck
+We consider two- and three-dimensional composite domains Ω that consist of a head Ω1 connected through a small interface ∂Ωi to a narrow cylindrical neck Ω2. The boundary of Ω is assumed reflecting to Brownian particles, except the far end of Ω2, denoted ∂Ωa, which is absorbing. For example, in Figure 2, the interface ∂Ωi is the black segment AB and the absorbing boundary ∂Ωa is the segment CD at the bottom of the strip. The NET from such a composite domain cannot be calculated by the methods of [39-42], because the contribution of the singular part of Neumann's function to the MFPT in a composite domain with a funnel or another bottleneck is not necessarily dominant. The method of matched asymptotic expansions requires different boundary or internal layers at a cusp-like absorbing window than at an absorbing window which is cut from a smooth reflecting boundary (see [43-46]). The methods used in [21,35] for constructing the MFPT in a composite domain of the type shown in Figure 1d are made precise here and the new method extends to the domains of the type shown in Figure 1c.
+
+First, we recount some basic facts about the NET [35,39-41,43-45,47,48]. The NET is the MFPT of a Brownian trajectory to a small absorbing part of the boundary of a domain, whose remaining boundary reflects Brownian trajectories. Refined asymptotic formulas for the NET were derived in [42,46,49,50], and were used to estimated chemical reaction rates.
+
+Consider Brownian motion x(t) in a sufficiently regular bounded domain Ω, whose boundary ∂Ω consists of a reflecting part ∂Ωr and an absorbing part ∂Ωa. The expected lifetime of x(t) in Ω, given x(0) = x ∈ Ω, is the MFPT v(x) of x(t) from x to ∂Ωa is the solution of the mixed boundary value problem [38]
+
+ (2) Δv(x)=-1Dforx∈Ω 
+
+ (3) v(x)=0forx∈∂Ωa 
+
+ (4) ∂v(x)∂n=0forx∈∂Ωr, 
+
+where ∂v(x)/∂n is the normal derivative at the boundary point x. If the size of the absorbing part ∂Ωa of the boundary is much smaller than the reflecting part ∂Ωr, the MFPT τ¯=v(x) is to leading order independent of x ∈ Ωa and can be represented by the Neumann function N(x, y) as
+
+ (5) τ¯=v(y)=-1D∫ ΩN(x,y)dx-∫ ∂ΩaN(x,y)∂v(x)∂ndSx. 
+
+The sum of the integrals is independent of y ∈ Ωa outside a boundary layer near ∂Ωa. The Neumann function is a solution of the boundary value problem
+
+ (6) ΔxN(x,y)=-δ(x-y)+1∣Ω∣forx,y∈Ω 
+
+ (7) ∂N(x,y)∂nx=0forx∈∂Ω,y∈Ω 
+
+and is defined up to an additive constant [39,47].
+
+2.1 The MFPT from the head to the interface
+In the two-dimensional case considered in [40] the interface ∂Ωi is an absorbing window cut from the smooth reflecting boundary of Ω1, as in Figure 1d. The MFPT τ¯x→∂Ωi is the NET from the reflecting domain Ω1 to the small interface ∂Ωi (of length a), such that ε = π|∂Ωi|/|∂Ω1| = πa/|∂Ω1| << 1 (this corrects the definition in [40]). It is given by
+
+ (8) τ¯x→∂Ωi=∣Ω1∣πDln∣∂Ω1∣π∣∂Ωi∣+O(1)forx∈Ω1outsideaboundarylayernear∂Ωi. 
+
+In particular, if Ω1 is a disk of radius R, then for x = the center of the disk,
+
+ (9) τ¯x→∂Ωi=R2DlogRa+2log2+14+O(ε), 
+
+averaging with respect to a uniform distribution of x the disk
+
+ (10) τ¯x→∂Ωi=R2DlogRa+2log2+18+O(ε). 
+
+When the interface ∂Ωi (of length a) is located at an algebraic cusp with radius of curvature Rc (see Figures 1c and 2), the MFPT is given in [36,37] as
+
+ (11) τ¯=∣Ω1∣4D2a/Rc(1+O(1))forε≪∣∂Ω∣. 
+
+In the case of Brownian motion on a spherical head of the surface of revolution obtained by rotating the curve in Figure 1d about its axis, Ω1 is a sphere of radius R centered at the origin, connected to Ω2 by a circle ∂Ωi centered on the north-south axis near the south pole, with small radius a = R sin δ/2. The domain Ω2 is a right cylinder of radius a connected to Ω1 at ∂Ωi, and the absorbing boundary ∂Ωa is the circle of radius a at the bottom of the cylinder. The MFPT from Ω1 to ∂Ωi is given in [37,41,51-53] as
+
+ (12) τ¯x→∂Ωi=2R2Dlogsinθ2sinδ2, 
+
+where θ is the angle between x and the south-north axis of the sphere.
+
+A surface of revolution generated by rotating a curve about an axis, as in Figure 3, with a funnel of diameter ε can be represented parametrically as
+
+Figure 3 A surface of revolution with a funnel. The z-axis points down.
+
+ (13) x=r(z)cosθ,y=r(z)sin(θ),0≤θ<2π,0≤z<Λ, 
+
+where the axis of symmetry is the z-axis with z = 0 at the top of the surface and z = Λ at the end of the funnel, r is distance to the z-axis, and r = r(z) is the equation of the generating curve. We have
+
+ (14) r(z)=O(z)nearz=0r(z)=a+ℓ-α(Λ-z)1+α(1+o(1))forα>0nearz=Λ, 
+
+where ℓ has dimension of length. For α = 1 the parameter ℓ is related to the radius of curvature Rc at z = Λ by ℓ = 2Rc. For α > 0 [37]
+
+ (15) τ¯x→∂Ωi~∣Ω1∣2Dℓaα/1+α(1+α)sinπ1+α, 
+
+where |Ω1| is the entire area of the surface. In particular, for α = 1 we get the MFPT
+
+ (16) τ¯x→∂Ωi~∣Ω1∣4D2a/Rc. 
+
+The case α = 0 corresponds to a circular cap of a small radius a cut from a closed surface.
+
+The MFPT of Brownian motion from a solid ball Ω1 to a disk ∂Ωi of small radius a near the south pole is given by [42]
+
+ (17) τ¯x→∂Ωi=∣Ω1∣4aD1+aπRlogRa+oaRlogRa 
+
+(note that the MFPT is independent of x up to second order, see [46]). For a general three-dimensional domain, Ω1 the MFPT to a circular cap ∂Ωi cut from a smooth boundary is given by [42]
+
+ (18) τ¯x→∂Ωi=∣Ω1∣4aD1+Lx+Rx2π∂Ωiπ1∕2 log∂Ω1∂Ωi+o∂Ωi∂Ω1 log∂Ωi∂Ω1+O(1)D, 
+
+where Lx, Rx are the principal curvatures at a point x, and |∂Ωi| = πa2 is the area of the circular cap.
+
+When the interface ∂Ωi is a circular disk of radius a at the end of an axisymmetric solid funnel, the MFPT is drastically affected and changes to
+
+ (19) τ¯x→∂Ωi=12Rca3∕2∣Ω1∣RcD(1+o(1))fora≪Rc, 
+
+where Rc is the radius of curvature at the end of the funnel [37].
+
+3 Connecting a head to a narrow neck
+We consider Brownian motion in a domain Ω that consists of a head, which is a regular bounded domain Ω1, and a narrow neck Ω2, which is a right circular or planar cylinder of length L, perpendicular to the boundary ∂Ω1, and of radius a (see Figure 2). Thus, the interface ∂Ωi between the head and the neck is a line segment, a circle, or a circular disk, depending on the dimension. We assume that ∂Ω1 - ∂Ωi is reflecting and that the other basis of the neck, ∂Ωa ⊂ ∂Ω2, is absorbing for the Brownian motion. The length (or area) |∂Ωi| is given by
+
+ (20) ∣∂Ωi∣=aforalinesegment2πaforacircleπa2foradisk. 
+
+The MFPT τ¯x→∂Ωa can be represented as [54], [[38], Lemma 10.3.1, p. 388]
+
+ (21) τ¯x→∂Ωa=τ¯x→∂Ωi+τ¯∂Ωi→∂Ωa, 
+
+where the MFPT τ¯∂Ωi→∂Ωa is τ¯x→∂Ωa, averaged over ∂Ωi with respect to the flux density of Brownian trajectories in Ω1 into an absorbing boundary at ∂Ωi (see [38] for further details).
+
+First, we calculate τ¯∂Ωi→∂Ωa and the absorption flux at the interface. In the narrow neck Ω2 the boundary value problem (2)-(4) can be approximated by the one-dimensional boundary value problem
+
+ Duzz=-1u(0)=0,u(L)=uH, 
+
+where the value at the interface u(L) = uH is yet unknown. The solution is given by
+
+ (22) u(z)=-z22D+Bz, 
+
+so that
+
+ (23) u(L)=uH=-L22D+BL, 
+
+which relates the unknown constants B and uH. The constant B is found by multiplying Equation 2 by the Neumann function N(x, y), integrating over Ω1, applying Green's formula, and using the boundary conditions (3) and (4). Specifically, we obtain for all y ∈ ∂Ωi
+
+ (24) v(y)=-1D∫ Ω1N(x,y)dx-∫ ∂ΩiN(x,y)∂v(x)∂ndSx+1∣Ω1∣∫ Ω1v(x)dx. 
+
+Approximating, as we may, v(y) ≈ u(L) and using (23), we obtain
+
+ (25) -L22D+BL=-1D∫ Ω1N(x,y)dx-∫ ∂ΩiN(x,y)∂v(x)∂ndSx+1∣Ω1∣∫ Ω1v(x)dx. 
+
+Because v(x) is the solution of the boundary value problem (2)-(4) in the entire domain Ω = Ω1 ⋃ Ω2, the meaning of (25) is the connecting rule (21), where
+
+ (26) τ¯x→∂Ωa=1∣Ω1∣∫ Ω1v(x)dx 
+
+ (27) τ¯∂Ωi→∂Ωa=u(L) 
+
+ (28) τ¯x→∂Ωi=-1D∫ ΩN(x,y)dx-∫ ∂ΩiN(x,y)∂v(x)∂ndSx. 
+
+Equation 26 gives the MFPT, averaged over Ω1. The averaging is a valid approximation, because the MFPT to ∂Ωi is constant to begin with (except in a negligible boundary layer). Equation 27 is the MFPT from the interface to the absorbing end ∂Ωa of the strip, and (28) follows from (5).
+
+Matching the solutions in Ω1 and Ω2 continuously across ∂Ωi, we obtain the total flux on ∂Ωi as
+
+ (29) J=D∫ ∂Ωi∂v(x)∂νdSx=-(∣Ω1∣+∣Ω2∣), 
+
+Noting that ∂v(x)/∂n = -u'(0) = -B, we get from (20) and (29) that
+
+ (30) B=-∣Ω1∣aD+LDforalinesegment∣Ω1∣2πaD+LDforacircle∣Ω1∣πa2D+LDforacirculardisk. 
+
+Finally, we put (21)-(30) together to obtain
+
+ (31) τ¯x→∂Ωa=τ¯x→∂Ωi+L22D+∣Ω1∣L∣∂Ωa∣D. 
+
+The MFPT τ¯x→∂Ωi is given by (8)-(19) above.
+
+3.1 The NET from two- and three-dimensional domains with bottlenecks
+The expression (31) for the NET from a domain with a bottleneck in the form of a one-dimensional neck, such as a dendritic spine, can be summarized as follows. Consider a domain Ω with head Ω1 and a narrow cylindrical neck Ω2 of length L and radius a. The radius of curvature at the bottleneck in smooth connecting funnel is Rc. In the two-dimensional case
+
+ (32) τ¯x→∂Ωa=∣Ω1∣πDln∣∂Ω1∣a+O(1)D+L22D+∣Ω1∣LaDplanarspineconnectedtotheneckatarightangleπ∣Ω1∣DRca(1+o(1))+L22D+∣Ω1∣L2πaDplanarspinewithasmoothconnectingfunnel∣Ω1∣2πDlogsinθ2sinδ2+L22D+∣Ω1∣L2πaDsphericalspineconnectedtotheneckatarightangle∣Ω1∣2Dεℓ-α∕1+α2α∕1+α(1+α)sinπ1+α+L22D+∣Ω1∣L2πaDsphericalspinewithasmoothconnectingfunnel, 
+
+where R is the radius of the sphere, a = R sin δ/2, and θ is the initial elevation angle on the sphere. If |Ω1| >>aL and L >>a, the last term in (32) is dominant, which is the manifestation of the many returns of Brownian motion from the neck to the head prior to absorption at ∂Ωa (see an estimate in [19]). The last line of (32) agrees with the explicit calculation in [37].
+
+The NET of a Brownian motion from a three-dimensional domain Ω with a bottleneck in the form of a narrow circular cylinder of cross-sectional area πa2 is given by
+
+ (33) τ¯x→∂Ωa=∣Ω1∣4aD1+aπRlogRa+O(1)D+L22D+∣Ω1∣Lπa2DsolidsphericalheadofradiusRconnectedtotheneckatarightangle∣Ω1∣4aD1+(Lx+Rx)2π∂Ωaπ1∕2 log|∂Ω1||∂Ωa|+o∂Ωa∂Ω1 log∂Ωa∂Ω1+O(1)D+L22D+∣Ω1∣Lπa2Dageneralheadconnectedtotheneckatarightangle12Rca3∕2∣Ω1∣RcD(1+o(1))+L22D+∣Ω1∣Lπa2Dageneralheadconnectedsmoothlytotheneckbyafunnel, 
+
+where Rc is the curvature at the cusp. The order 1 term can be computed for the sphere using the explicit expression of the Neumann-Green function [46]. Figures 4 and 5 show the NET for various parameters, such as the neck length and radius.
+
+Figure 4 Left: The NET of Brownian motion on a sphere with a bottleneck connected by a smooth funnel to the neck (dashed line), and with a non-smooth connection (continuous line). Right: The NET of Brownian motion in a ball with a bottleneck connected by a smooth funnel to the neck (dashed line), and with a non-smooth connection (continuous line).
+
+Figure 5 Effect of modulating the neck length. The geometry is the same as in Figure 5.
+
+Finally, the influence of the neck length on the residence time is shown in Figure 5: changing the neck length modulates dramatically the residence time. Interestingly, the geometry of the connection affects much significantly the dimension two rather than that the three dimensional Brownian motion.
+
+Discussion and conclusion
+We have shown that the mean residence time (or flux) of Brownian particles inside a spine-like structure or on its surface depends strongly on the geometrical properties of both head and neck. Surprisingly, it also depends strongly on the smoothness of the connection between the two.
+
+The application to a freely diffusing AMPA receptor, which is responsible for the excitatory synaptic current, shows that its motion on the spine membrane is strongly restricted by dendritic spine geometry. Our results can be used to estimate the residence time of the receptor on the membrane if interactions with any scaffolding molecules are neglected (the latter are mostly concentrated in a local microdomain called the PSD). Using Equation 32 for non-smooth geometry (Figure 1b) and for a spherical head of radius R = 1 μm, a neck length L = 1 μm, a neck radius a = 0.1 μm, and a diffusion coefficient D = 0.1 μm2/s, we obtain from the third line of Equation 32 that the residence time is τ2D ≈ 260 s, while for a smooth connecting geometry (1a) with a curvature radius of Rc = 1 μm at the connecting neck-head τ2D ≈ 1150 s (line 2 in Equation 32). Evidently, the residence time is more than doubled, leading to the conclusion that there is a significant difference between the function of spines with smoothly and non-smoothly connected necks. We conclude from this analysis that an AMPA receptors that do not interact with the PSD stay on a typical dendritic spine between one and a half to 5 min on average and this residence time is controlled mostly by the geometrical properties of the spine.
+
+We now consider the residence time for freely diffusing particles such as molecules, mRNA, and ions (e.g., calcium) inside a dendritic spine. For a calcium ion, the diffusion constant is about Dca = 400 μm2/s [12]. Calcium ions that exit the spine only to the dendrite shaft at the end of the neck, but not through exchangers, give the following residence time estimates. Using formula 33 for a non-smooth connection between the spine head and the neck, we obtain that τ3D ≈ 195 ms (line 1), while for a smooth connection with radius of curvature 1 μm, the residence time is τ3D ≈ 820 ms (line 3 in Equation 33). Interestingly, the mean residence time is tripled from the non-smooth to a smooth connection.
+
+A remaining open question is to extend the present analysis to the case where many binding molecules can trap receptors. This effect should be expected to significantly increase the residence time inside a dendritic spine, as has already been observed in [55] for the case of a receptor inside the PSD. The present mathematical analysis of the residence time provides a solution to the narrow escape problem for domains with bottlenecks [21,35]. Other generalizations of this study is to include the dynamics of many receptors [30,56] or/and to study dendritic trafficking [57].
+
+There are many other factors that affect the spine-dendrite communication with respect to calcium. This includes calcium pumps, endogenous buffers, calcium stores, the number and rates of exchangers. These mechanisms affect the residence of calcium in spines [58-60] and it would be interesting to add them in the present analysis.
+
+Competing interests
+The authors declare that they have no competing interests.
+
+Authors' contributions
+DH and ZS contributed equally to the manuscript. All authors read and approved the final manuscript.
+
+Acknowledgements
+This research was supported by an ERC starting Grant.
+==== Refs
+Harris KM Stevens JK Dendritic spines of rat cerebellar Purkinje cells: serial electron microscopy with reference to their biophysical characteristics J Neurosci 1988 12 4455 4469 3199186 
+Bourne JN Harris KM Balancing structure and function at hippocampal dendritic spines Annu Rev Neurosci 2008 31 47 67 10.1146/annurev.neuro.31.060407.125646 18284372 
+Korkotian E Holcman D Segal M Dynamic regulation of spine-dendrite coupling in cultured hippocampal neurons Eur J Neurosci 2004 20 10 2649 2663 10.1111/j.1460-9568.2004.03691.x 15548208 
+Hotulainen P Hoogenraad CC Actin in dendritic spines: connecting dynamics to function J Cell Biol 2010 189 4 619 629 10.1083/jcb.201003008 20457765 
+Newpher TM Ehlers MD Spine microdomains for postsynaptic signaling and plasticity Trends Cell Biol 2009 5 218 227 19328694 
+Sheng M Hoogenraad CC The postsynaptic architecture of excitatory synapses: a more quantitative view Annu Rev Biochem 2007 76 823 847 10.1146/annurev.biochem.76.060805.160029 17243894 
+Crick F Do dendritic spines twitch? Trends Neurosci 1982 5 44 46 
+Filkova E Delay RJ Cytoplasmic actin in dendritic spines as a possible mediator of synaptic plasticity J Cell Biol 1982 95 350 365 
+Korkotian E Segal M Spike-associated fast contraction of dendritic spines in cultured hippocampal neurons Neuron 2001 30 3 751 758 10.1016/S0896-6273(01)00314-2 11430808 
+Holcman D Schuss Z Korkotian E Calcium dynamic in dendritic spines and spine motility Biophys J 2004 87 81 91 10.1529/biophysj.103.035972 15240447 
+Holcman D Schuss Z Modeling calcium dynamics in dendritic spines SIAM J Appl Math 2005 65 3 1006 1026 10.1137/S003613990342894X 
+Holcman D Korkotian E Segal M Calcium dynamics in dendritic spines, modeling and experiments Cell Calcium 2005 37 5 467 475 10.1016/j.ceca.2005.01.015 15820395 
+Papa M Segal M Morphological plasticity in dendritic spines of cultured hippocampal neurons Neuroscience 1996 71 4 1005 1011 10.1016/0306-4522(95)00490-4 8684603 
+Collin C Miyaguchi K Segal M Dendritic spine density and LTP induction in cultured hippocampal slices J Neurophysiol 1997 77 3 1614 1623 9084624 
+Korkotian E Segal M Release of calcium from stores alters the morphology of dendritic spines in cultured hippocampal neurons Proc Natl Acad Sci USA 1999 96 21 12068 12072 10.1073/pnas.96.21.12068 10518577 
+Svoboda K Tank DW Denk W Direct measurement of coupling between dendritic spines and shafts Science 1996 272 5262 716 719 10.1126/science.272.5262.716 8614831 
+Bloodgood BL Sabatini BL Neuronal activity regulates diffusion across the neck of dendritic spines Science 2005 310 5749 866 869 10.1126/science.1114816 16272125 
+Holcman D Marchewka A Schuss Z Survival probability of diffusion with trapping in cellular neurobiology Phys Rev E Stat Nonlinear Soft Matter Phys 2005 72 3 031910 
+Biess A Korkotian E Holcman D Diffusion in a dendritic spine: the role of geometry Phys Rev E Stat Nonlinear Soft Matter Phys 2007 76 021922 
+Holcman D Kupka I Some questions in computational cellular biology J Fixed Point Theory Appl 2010 7 1 67 83 10.1007/s11784-010-0012-1 
+Berezhkovskii AM Barzykin AV Zitserman VY Escape from cavity through narrow tunnel J Chem Phys 2009 130 24 245104 10.1063/1.3160546 19566185 
+Chen L Chetkovich DM Petralia RS Sweeney NT Kawasaki Y Wenthold RJ Bredt DS Nicoll RA Stargazin regulates synaptic targeting of AMPA receptors by two distinct mechanisms Nature 2000 408 936 10.1038/35050030 11140673 
+Bredt DS Nicoll RA AMPA receptor trafficking at excitatory synapses Neuron 2003 40 361 10.1016/S0896-6273(03)00640-8 14556714 
+Adesnik H Nicoll RA England PM Photoinactivation of native AMPA receptors reveals their real-time trafficking Neuron 2005 48 6 977 985 10.1016/j.neuron.2005.11.030 16364901 
+Shi SH Hayashi Y Petralia RS Zaman SH Wenthold RJ Svoboda K Malinow R Rapid spine delivery and redistribution of AMPA receptors after synaptic NMDA receptor activation Science 1999 284 5421 1811 1816 10.1126/science.284.5421.1811 10364548 
+Malinow R Malenka RC AMPA receptor trafficking and synaptic plasticity Annu Rev Neurosci 2002 25 103 126 10.1146/annurev.neuro.25.112701.142758 12052905 
+Malinow R AMPA receptor trafficking and long-term potentiation Philos Trans R Soc Lond B Biol Sci 2003 358 1432 707 714 (Review) 10.1098/rstb.2002.1233 12740116 
+Borgdorff AJ Choquet D Regulation of AMPA receptor lateral movements Nature 2002 417 6889 649 653 10.1038/nature00780 12050666 
+Choquet D Triller A The role of receptor diffusion in the organization of the postsynaptic membrane Nat Rev Neurosci 2003 4 251 265 12671642 
+Holcman D Triller A Modeling synaptic dynamics and receptor trafficking Biophys J 2006 91 7 2405 2415 10.1529/biophysj.106.081935 16844759 
+Earnshaw BA Bressloff PC A biophysical model of AMPA receptor trafficking and its regulation during LTP/LTD J Neurosci 2006 26 12362 12373 10.1523/JNEUROSCI.3601-06.2006 17122061 
+Ashby MC Maier SR Nishimune A Henley JM Lateral diffusion drives constitutive exchange of AMPA receptors at dendritic spines and is regulated by spine morphology J Neurosci 2006 26 7046 10.1523/JNEUROSCI.1235-06.2006 16807334 
+Hugel S Abegg M de Paola N Caroni P Gähwiler BH McKinney RA Dendritic spine morphology determines membrane-associated protein exchange between dendritic shafts and spine heads Cereb Cortex 2009 19 3 697 702 10.1093/cercor/bhn118 18653666 
+Makino H Malinow R AMPA receptor incorporation into synapses during LTP: the role of lateral movement and exocytosis Neuron 2009 64 3 381 390 10.1016/j.neuron.2009.08.035 19914186 
+Schuss Z Singer A Holcman D The narrow escape problem for diffusion in cellular microdomains Proc Natl Acad Sci USA 2007 104 41 16098 16103 10.1073/pnas.0706599104 17901203 
+Holcman D Hoze N Schuss Z Narrow escape through a funnel and effective diffusion on a crowded membrane Phys Rev E 2011 84 021906 
+Holcman D Schuss Z Brownian motion in dire straits: Part I 2011 
+Schuss Z Diffusion and Stochastic Processes: An Analytical Approach 2010 New York: Springer 
+Singer A Schuss Z Holcman D Eisenberg B Narrow escape I J Stat Phys 2006 122 3 437 463 10.1007/s10955-005-8026-6 
+Singer A Schuss Z Holcman D Narrow escape II J Stat Phys 2006 122 3 465 489 10.1007/s10955-005-8027-5 
+Singer A Schuss Z Holcman D Narrow escape III J Stat Phys 2006 122 3 491 509 10.1007/s10955-005-8028-4 
+Singer A Schuss Z Holcman D Narrow escape and leakage of Brownian particles Phys Rev E 2008 78 051111 
+Ward MJ Keller JB Strong localized perturbations of eigenvalue problems SIAM J Appl Math 1993 53 770 798 10.1137/0153038 
+Ward MJ Henshaw WD Keller JB Summing logarithmic expansions for singularly perturbed eigenvalue problems SIAM J Appl Math 1993 53 799 828 10.1137/0153039 
+Ward MJ Van De Velde E The onset of thermal runaway in partially insulated or cooled reactors IMA J Appl Math 1992 48 53 85 10.1093/imamat/48.1.53 
+Cheviakov A Ward MJ Straube R An Asymptotic analysis of the mean first passage time for narrow escape problems: Part II: the sphere SIAM Multiscale Model Simul 2010 8 3 836 870 10.1137/100782620 
+Holcman D Schuss Z Escape through a small opening: receptor trafficking in a synaptic membrane J Stat Phys 2004 117 5-6 191 230 
+Kolokolnikov T Titcombe M Ward MJ Optimizing the fundamental neumann eigenvalue for the laplacian in a domain with small traps Eur J Appl Math 2005 16 161 200 10.1017/S0956792505006145 
+Holcman D Schuss Z Diffusion through a cluster of small windows and flux regulation in microdomains Phys Lett A 2008 372 3768 3772 10.1016/j.physleta.2008.02.076 
+Holcman D Schuss Z Diffusion escape through a cluster of small absorbing windows J Phys A Math Theoret 2008 41 155001 10.1088/1751-8113/41/15/155001 
+Gandolfi A Gerardi A Marchetti F Diffusion-controlled reactions in two dimensions Acta Applicandae Mathematicae 1985 4 139 159 10.1007/BF00052459 
+Linderman J Laufengerger D Analysis of intracellular receptor/Ligand sorting: calculation of mean surface and bulk diffusion times within a sphere Biophys J 1986 50 295 305 10.1016/S0006-3495(86)83463-4 3741985 
+Coombs D Straube R Ward M Diffusion on a sphere with localized traps: mean first passage time, eigenvalue asymptotics, and fekete points SIAM J Appl Math 2009 70 1 302 332 10.1137/080733280 
+Matkowsky BJ Schuss Z Tier C Uniform expansions of the transition rate in Kramers' problem J Stat Phys 1984 35 3-4 443 456 10.1007/BF01014395 
+Taflia A Holcman D Dwell time of a Brownian molecule in a microdomain with traps and a small hole on the boundary J Chem Phys 2007 126 23 234107 10.1063/1.2746840 17600404 
+Bressloff PC Earnshaw BA A dynamical corral model of protein trafficking in spines Biophys J 2009 96 1786 1802 10.1016/j.bpj.2008.12.3889 19254538 
+Bressloff PC Cable theory of protein receptor trafficking in dendritic trees Phys Rev E 2009 79 041904 
+Majewska A Brown E Ross J Yuste R Mechanisms of calcium decay kinetics in hippocampal spines: role of spine calcium pumps and calcium diffusion through the spine neck in biochemical compartmentalization J Neurosci 2000 20 5 1722 1734 10684874 
+Majewska A Tashiro A Yuste R Regulation of spine calcium dynamics by rapid spine motility J Neurosci 2000 20 22 8262 8268 11069932 
+Yuste R Majewska A Holthoff K From form to function: calcium compartmentalization in dendritic spines Nat Neurosci 2000 7 653 659 10862697

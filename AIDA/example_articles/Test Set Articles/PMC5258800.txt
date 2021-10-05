@@ -1,0 +1,176 @@
+
+==== Front
+Appl Magn ResonAppl Magn ResonApplied Magnetic Resonance0937-9347Springer Vienna Vienna 84710.1007/s00723-016-0847-8Original Paper23Na and 27Al NMR Study of Structure and Dynamics in Mordenite Sergeev N. A. sergeev@wmf.univ.szczecin.pl 1Paczwa M. 1Olszewski M. 1Panich A. M. 21 0000 0000 8780 7659grid.79757.3bInstitute of Physics, University of Szczecin, 70-451 Szczecin, Poland 2 0000 0004 1937 0511grid.7489.2Department of Physics, Ben-Gurion University of the Negev, P. O. Box 653, 8410501 Be’er Sheva, Israel 9 11 2016 9 11 2016 2017 48 2 115 124 28 8 2016 13 10 2016 © The Author(s) 2016
+Open AccessThis article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.Temperature dependencies of 27Al and 23Na nuclear magnetic resonance spectra and spin–lattice relaxations in mordenite have been studied in static and magic angle spinning regimes. Our data show that the spin–lattice relaxations of the 23Na and 27Al nuclei are mainly governed by interaction of nuclear quadrupole moments with electric field gradients of the crystal, modulated by translational motion of water molecules in the mordenite channels. At temperatures below 200 K, the dipolar interaction of nuclear spins with paramagnetic impurities becomes an important relaxation mechanism of the 23Na and 27Al nuclei.
+
+issue-copyright-statement© Springer-Verlag Wien 2017
+==== Body
+Introduction
+The mineral mordenite, Na8Al8Si40O96·24H2O, is a channel-type zeolite [1]. Its framework consists of AlO4 and SiO4 tetrahedra linked together via common oxygen atoms (Fig. 1). The mordenite structure exhibits two types of elliptical nanosized channels, both running along the c-axis [2, 3]. The wide channels have aperture of 0.65 × 0.70 nm and are formed by the assemblage of 12-membered rings, each having 12 oxygen atoms. The narrow channels have aperture of 0.26 × 0.57 nm and are built of eight-membered rings, each having eight oxygen atoms. The wide and narrow channels are linked by eight-membered ring channels (aperture 0.34 × 0.48 nm) running along the b-axis [2, 3]. Water molecules and Na+ ions are located in the above-mentioned channels [1–3] and possess certain mobility at ambient conditions. While water molecules can be desorbed from the channels, the sodium ions can be substituted by some other ions by means of ionic exchange [1].Fig. 1 Framework structure of mordenite viewed along the 12-ring channels. The very small and elongated eight-ring channels can also be observed. The eight-ring channels running perpendicular to the large pores are not discernible in this picture
+
+
+
+
+The dynamics of water molecules in mordenite have been studied by nuclear magnetic resonance (NMR) [4, 5]. Analysis of the temperature dependencies of the proton spin-relaxation times in the laboratory and rotating frames (T
+1 and T
+1ρ) revealed diffusion of water molecules along the channels above T = 200 K. Temperature dependencies of the 1
+H dipolar spin-relaxation time T
+1D showed that the dipolar relaxation in mordenite is responsive to slow 180° reorientations (flips) of water molecules around their second-order symmetry axes.
+
+In the present paper, we report on the NMR study of quadrupolar 27Al and 23Na nuclei in mordenite. We studied temperature dependencies of the 27Al and 23Na NMR spectra in static and magic angle spinning (MAS) regimes, as well as the temperature dependencies of the spin–lattice relaxation times of the 27Al and 23Na nuclei.
+
+Experiment
+We studied a powder sample of natural mordenite from Nidym, Siberia, with chemical composition Na0.9Ca0.05AlSi5O12.3·1H2O [4]. The 27Al and 23Na NMR spectra were measured using a Bruker Avance-400 NMR spectrometer at resonance frequencies of 104.26652 and 105.842 MHz, respectively, in the applied magnetic field of B
+0 = 9.4 T. The MAS rate used in the experiments was 14 kHz. Free induction decay (FID) signals were recorded after applying a single radio-frequency (RF) pulse and 100 signal acquisitions. The NMR spectra of 23Na and 27Al were obtained by Fourier transformation of the FID signals. Both 27Al (natural abundance 100%, spin I = 5/2) and 23Na (natural abundance 100%, spin I = 3/2) are quadrupolar nuclei, and their NMR spectra consist of the central transition (+1/2 ⟷ −1/2) and a number of satellites. For a selective excitation of the central transition, the optimal pulse duration is equal to that of a non-selective π/2 pulse divided by (I + 1/2) [6]. In our experiments, the RF pulse of 1.0 μs was used. The spin–lattice relaxation times T
+1 of 23Na and 27Al nuclei were measured by saturation recovery method. The relaxation processes for 23Na and 27Al nuclei in mordenite are found to be well described by single exponentials. The Dmfit program [7] was used to simulate the 27Al spectra to extract the isotropic chemical shifts (δ
+iso), quadrupolar coupling constants (QCC), and the asymmetry parameters (η
+Q).
+
+Results and Discussion
+The 27Al NMR spectrum of the powder mordenite is represented by a single line with isotropic chemical shift δ
+iso of ~61 ppm. This value is characteristic of 27Al nuclei of AlO4 groups in different zeolites, in which δ
+iso varies in the range of 60 ÷ 63 ppm [1, 8–11]. The lineshape of the quadrupolar 27Al nuclei in mordenite is determined by two contributions, namely by (1) the interaction of nuclear quadrupole moments with electric field gradients (EFG) on the 27Al sites and (2) nuclear dipolar interactions. To determine the contributions of different interactions to the NMR shape of 27Al in mordenite, we measured the 27Al NMR spectra with and without 1H decoupling and with and without sample spinning at different temperatures.
+
+The 27Al NMR spectra of mordenite obtained at T = 300 K and T = 390 K are shown in Fig. 2. Figure 2a shows the spectra obtained using the 1H decoupling, which allows to eliminate the effect of the magnetic dipolar coupling between the resonance nuclei (in our case 27Al) and 1H nuclei. Herewith, the 27Al NMR spectra reveal the same shape and width (Δν = 1.5 kHz) at T = 300 and 390 K (Fig. 2a). Since the dipolar interactions between 1H and 27Al nuclei are averaged out by the 1H decoupling and thus only quadrupole interactions are the case, the aforementioned finding means that the temperature variation of electric field gradient (EFG) at the 27Al sites in the region of 300–390 K is slight and actually is not observed in the experiment.Fig. 2 
+a
+27Al NMR spectra with 1H-decoupling at T = 300 and T = 390 K; b
+27Al MAS NMR spectra at Ω
+rot = 14 kHz at T = 300 K and T = 370 K; c
+27Al NMR spectra without 1H-decoupling at T = 300 K and T = 390 K; d
+27Al MAS NMR spectra at T = 370 K; Ω
+rot = 14 kHz (top) and Ω
+rot = 0 kHz (bottom)
+
+
+
+
+The EFG at the 27Al site in the mordenite structure is caused by electric charges of the ions of crystal lattice and by the electric dipolar moments of water molecules. If the latter contribution is considerable, its averaging must be observable in the temperature dependence of 27Al NMR spectra. However, Fig. 2b, c does not show noticeable variations in the temperature range from 300 to 390 K. This means that the contribution of electric dipolar moments of water molecules to the static and MAS 27Al NMR line shapes at 300–390 K is very small. The same conclusion follows from the comparison of the 27Al NMR spectra obtained at T = 300 and 390 K measured with and without 1H decoupling, which are shown in Fig. 2a, c. These spectra show the same lineshape and width, indicating that the dipolar interactions between of 27Al and 1H nuclei are very small in the range from 300 to 390 K. This finding is in agreement with the flipping and diffusion of water molecules along the mordenite channels obtained by 1H NMR [5], which results in an effective averaging of the above-mentioned contribution at T > 300 K.
+
+The rotation of sample at the magic angle leads to complete averaging of the dipolar interaction among 27Al and other nuclei (1H, 23Na and, 29Si) in mordenite. In this case, the shape of NMR spectra is determined only by the incompletely averaged by MAS second-order quadrupole effects contributing to the central transition [6].
+
+The second moment of the powder MAS NMR spectrum is defined by equations [6]:  1 M2MAS=0.25×νiso2 
+ 2 νiso=-νQ230νLII+1-341+η23. 
+
+
+Here, the quadrupole frequency is 3 νQ=3e2qQ2I(2I-1)h≡32I(2I-1)Cqcc, where ν
+L is the Larmor frequency, q is the electric field gradient, η is the asymmetry parameter of EFG, Q is the nuclear quadrupole moment, and Cqcc=2I(2I-1)3vQ≡e2qQh is the quadrupole coupling constant (QCC) [6].
+
+
+27Al NMR spectra at T = 370 K shown in Fig. 2d reveal noticeable difference in static and MAS regimes, i.e., line width Δν = 1.53 and 0.74 kHz at Ω
+rot = 0 and 14 kHz, respectively. These spectra yield M2static≈2.4kHz2 and M2MAS≈0.2kHz2, thus M2staticM2MAS≈3.5, which is close to the ratio of 3.6 calculated in [6]. Using Eqs. (1–3), we obtain νiso≈0.9kHz, vQ1+η23≈0.6MHz, and Cqcc1+η23≈4MHz.
+
+
+The absence of the fine structure in 27Al NMR spectra (Fig. 3) does not allow us to precisely determine parameters C
+qcc and η. Using the DMFit program [7], we simulated the shape of the powder 27Al MAS NMR spectrum in mordenite and found the optimal values of C
+qcc = 2 (0.2) MHz and η = 0.5 (0.1), as shown in Fig. 3.Fig. 3 Experimental 27Al MAS NMR spectrum of mordenite measured at T = 300 K and Ω
+rot = 14 kHz (bottom) and the simulated one for C
+qcc = 2 (0.2) MHz, η = 0.5 (0.1), δ
+CSA = 61.21 (0.07) ppm, and Δν
+Lorentz = 460.5 (0.5) Hz
+
+
+
+
+The literature data [1, 6, 8–11] show the QCC (27Al) C
+qcc in different zeolites are in the range of 2 ÷ 5 MHz. One can find that our experimental values are within this range. We note that Chae et al. [12] calculated the quadrupole parameters of Al in mordenite with various Si/Al rations using the point change model [13] with the 4 and 20 nearest neighbor oxygen atoms. The coordinates of the atoms surrounding Al sites were taken from the neutron powder diffraction data [14]. However, the obtained value C
+qcc ≤ 1 MHz is different from the experimental one obtained in this paper.
+
+The sodium cations in the mordenite structure are mainly located in eight-membered oxygen rings, occupying positions away from the channel center. Some of the cations are also placed in the 12-ring channels [1–3]. The magic angle spinning of the sample results in complete averaging of dipolar interaction of 23Na spins with the spins of the other nuclei in mordenite, i.e., with 1H, 23Na, 29Si, and 27Al. In the case that all sodium nuclei are equivalent, the shape of the central NMR transition would be determined only by the incompletely averaged by MAS second-order quadrupole interaction term [8], which yields a characteristic asymmetric line. Such asymmetric line is observed in the experimental 23Na MAS NMR spectrum of mordenite at T = 200 K (Fig. 4). In the case in question, however, such lineshape may also be caused by structurally inequivalent sodium ions located in the wide and narrow channels of mordenite. We note that similar asymmetric line was observed by Hunger et al. [15] in one-dimensional 23Na MAS NMR spectrum of dehydrated mordenitie, while their two-dimensional triple-quantum (2D-3Q) 23Na MAS NMR spectrum revealed two peaks, attributed to sodium cations located in the side pockets of eight-membered oxygen rings and those on positions in the 12-ring channels. As known, mordenite dehydration leads to some displacements of the cations making their structural positions in dehydrated and non-dehydrated mordenites somewhat different. Anyhow, taking into account an inequivalence of the sodium ion positions, it is worth suggesting that the 23Na line asymmetry observed is caused by two contributions, namely, by the quadrupole interaction and a superposition of NMR signals coming from the structurally inequivalent sodium atoms with two different populations.Fig. 4 Experimental 23Na MAS NMR spectrum of mordenite at T = 200 K and MAS 14 kHz
+
+
+
+
+The temperature dependencies of the 27Al and 23Na spin–lattice relaxation rates R
+1 in mordenite are shown in Fig. 5.Fig. 5 Temperature dependencies of the spin–lattice relaxation rates of 27Al (a) and 23Na (b) nuclei in mordenite. Experimental data are shown by open circles, and simulated contributions of quadrupole interactions and paramagnetic impurities are shown by dashed and dotted lines, correspondingly
+
+
+
+
+There are several contributions to the longitudinal relaxation of the 23Na and 27Al nuclei [16], namely, (1) interaction of the nuclear quadrupole moment with electric field gradient of the crystal modulated by lattice vibrations (spin–phonon interaction) and motion of cations and water molecules, (2) magnetic dipolar interaction of nuclear spins with paramagnetic impurities, and (3) magnetic dipolar interaction with magnetic moments of the framework ions (27Al, 29Si, 23Na) and of 1H nuclei of water molecules [16]. Herewith, cation and water motions are of a hopping-like nature, i.e., these atoms and molecules spent most of time in potential wells corresponding to the equilibrium positions, while the time of molecular jumps between these potential wells is much shorter.
+
+The phonon-based relaxation mechanism is known to be too slow and leads to the relaxation times being by 4–5 orders of magnitude longer than those experimentally obtained for quadrupolar nuclei in zeolites [16]. The spin–lattice relaxation via paramagnetic impurities usually dominates at low temperatures [16] that are beyond the temperature range of our study. Our estimation of the contribution of 1H–27Al and 1H–23Na magnetic dipolar interactions to the 27Al and 23Na spin–lattice relaxations yield T
+1min that is much longer than the experimental values of T
+1min varying from 0.5 to 5 s (Fig. 5). Therefore, in the case in question, only quadrupolar mechanism needs to be considered.
+
+For nuclei with I > 1/2, such as 27Al (I = 5/2) and 23Na (I = 3/2), the energy-level spacings in magnetic field are rendered unequal by quadrupole interaction, and the nuclear spin–lattice relaxation process is described by 2I relaxation times [15–20]. However, usually, the difference between these exponentials in such a multiexponential process can hardly be distinguished and, particularly for selective excitation of the central transition [6], the relaxation is well described by an exponential function [16, 21–25]. This is the case of our experimental 27Al and 23Na relaxation data in mordenite, which are well described by a single exponential.
+
+Translational and orientational diffusion of water molecules modulates only a part of the EFG tensor governed by electric dipolar moments of water molecules, while the other part of the EFG tensor determined by the electric charges of the ions of lattice remains unchanged. The quadrupolar relaxation related to the former mechanism is described as [15–20]  4 R1Q≡T1Q-1≅α×δCQ¯2τc1+ω02τc2+4τc1+4ω02τc2, where ω
+0 = 2πν
+L is the Larmor frequency of the quadrupole nucleus, δCQ=e2δqQħ describes the fluctuations of the quadrupole coupling constant [20] at the resonant nuclei sites, and τc is the correlation time of activated translational and reorientational jumps of electric dipoles of water molecules. Parameter α depends on the asymmetry parameter η and was estimated by us as α ≈ 0.13 ÷ 0.17. The symbol ⋯¯ represents an ensemble averaging.
+
+Equation (4) yields R1Q∼τc for ω0τc<<1 and R1Q∼1τc for ω0τc>>1 with a maximum of R1Q (corresponding to the minimum of T1Q) in the intermediate region. Since the correlation time τ
+c caused by the molecular motion usually follows the Arrhenius-type temperature dependence, τc=τ0expEaRT, the asymptotic behavior of logR1Q(1T) is represented by a straight line. Just such a behavior is obtained in our experiment in the temperature range from 200 to 390 K (Fig. 5). The deviation from the linear slowdown below T = 200 K is known to be caused by the interaction of nuclear spins with paramagnetic defects and impurities [18, 25, 26]. This contribution, mediated by the dipole–dipole interaction of nuclear spins with unpaired electron spins of paramagnetic defects, is given by expression [25–30]:  5 R1ne≡T1ne-1=γ2HL2τce1+(ω0×τce), where HL2 is determined as 6 HL2=25μp2NpN∑irij-6. where μp2=J(J+1)γJ2ħ2 is the squared magnetic moment of the paramagnetic defect, N
+p is the density of the paramagnetic defects, N is the density of the resonant atoms, τce is the correlation time that describes the reorientation of the electron spin caused by electron spin–lattice relaxation, and r
+ij is the distance from the jth paramagnetic center to the ith resonant nucleus. Therefore, the experimental temperature dependences of the spin–lattice relaxation rates in the mordenite are described by expression: 7 R1=T1-1=α×δCQ¯2×τc1+ω0τc2+4τc1+2ω0τc2+γ2HL2τce1+ω0τce2. 
+
+
+The experimental temperature dependencies of the spin–lattice relaxation rates and the results of their simulation by function of Eq. (7) are presented in Fig. 5. The obtained adjusting parameters are given in Tables 1 and 2. Figure 5 shows a satisfactory agreement between the experimental data and calculations.Table 1 Calculated parameters that describe contribution R1Q≡T1Q-1 to the spin–lattice relaxation of 27Al and 23Na nuclei in mordenite
+
+Nucleus	
+αδCQ¯2×104, (rad kHz)2
+	
+τ
+0, s	
+E¯a, kJ/mol	
+
+27Al	7.9 (0.7)	10−13
+	21.6 (0.5)	
+
+23Na	266 (70)	10−13
+	22.7 (0.5)	
+
+Table 2 Calculated parameters that describe contribution R1ne=Tne-1 to the spin–lattice relaxation of 27Al and 23Na nuclei in mordenite
+
+Nucleus	
+γ2HL2×104, (rad kHz)2
+	
+τ0e, s	
+Ee1, kJ/mol	
+
+27Al	7.5 (0.8)	10−9
+	0.8 (0.1)	
+
+23Na	5.0 (0.5)	10−9
+	0.8 (0.1)	
+
+
+
+The obtained activation energy of ~21 kJ/mol suggests that the modulation of quadrupole interactions by means of translational and reorientational jumps of electric dipoles of water molecules [4, 5] is responsible for the relaxation process of the 27Al and 23Na nuclei. From the data represented in Table 1, the averaged fluctuations of the quadrupole coupling constants are found to be δCQ¯2≈0.03MHz for 27Al nuclei and δCQ¯2≈0.16MHz for 23Na nuclei.
+
+Unfortunately, the absence of reliable coordinates of hydrogen atoms and discrepancies in the published coordinates of the other atoms in the mordenite structure does not allow estimation of the contributions of various atoms to EFG. Our rough estimates show that the contributions of charges of oxygen atoms and electric dipole moments of water molecules to EFG of Al and Na atoms are of the same order. Although mordenite structure differs from the structure of natrolite, this finding is consistent with our estimations of the various contributions to the EFG of Al and Na atoms in natrolite [31].
+
+Conclusion
+Analysis of the temperature dependencies of 27Al and 23Na NMR spectra show that the shapes of the spectra are mainly determined by the second-order quadrupole interactions, while the dipole–dipole contribution coming from 1H nuclei is very small. The spin–lattice relaxation of 27Al and 23Na is governed by the electric quadrupole interaction of nuclei with the crystal electric field gradients modulated by translational motion of H2O molecules in the mordenite channels. The interaction of the 27Al and 23Na nuclear spins with paramagnetic impurities becomes to be significant relaxation mechanism at T < 200 K.
+==== Refs
+References
+1. Engelhardt G  Michel D   High-Resolution Solid-State NMR of Silicates and Zeolites 1987 Chichester, New York, Brisbane, Toronto, Singapore John Wiley & Sons 
+2. Meier WM   Z. Kristallogr. 1961 115 439 450 10.1524/zkri.1961.115.5-6.439 
+3. Simoncic P  Armbruster T   Am. Mineral. 2004 89 421 431 10.2138/am-2004-2-323 
+4. I.A. Belitsky, S.P. Gabuda, Yu.G. Kriger, V.P. Naumov, V.V. Nogteva, A.M. Panich, I.E. Paukov, in D.K. Arkhipenko (ed.), Molecular Spectroscopy and X-Ray Radiography of Minerals. Proc. Inst. Geol. Geophys. Acad. Sci. USSR, Siberian Branch. Nauka, Novosibirsk, No. 487 (1981) pp. 167–178
+5. Panich AM  Sergeev NA  Paczwa M  Olszewski M   Solid State Nucl. Magn. Reson. 2016 76–77 24 28 10.1016/j.ssnmr.2016.03.007 
+6. D. Freude, in Encyclopaedia of Analytical Chemistry, ed. by R.A. Meyers (John Wiley, Chichester, 2000), pp. 12188–12224
+7. Massiot D  Fayon F  Capron M  King I  Le Calve S  Alonso B  Durand J-O  Bujoli B  Gan Z  Hoatson G   Magn. Reson. Chem. 2002 40 70 76 10.1002/mrc.984 
+8. Mafra L  Vidal-Moya JA  Blasco T   Annu. Rep. NMR Spectrosc. 2012 77 259 351 10.1016/B978-0-12-397020-6.00004-0 
+9. Haouas M  Taulelle F  Martineau Ch   Progr. NMR Spectrosc. 2016 94–95 11 36 10.1016/j.pnmrs.2016.01.003 
+10. Hunger M  Horvath T   Ber. Bunsenges. Phys. Chem. 1995 99 1316 1320 10.1002/bbpc.199500077 
+11. Chen T-H  Wouters BH  Grobet PJ   Eur. J. Inorg. Chem. 2000 2000 281 285 10.1002/(SICI)1099-0682(200002)2000:2<281::AID-EJIC281>3.0.CO;2-I 
+12. Chae S  Han OH  Lee SY   Bull. Korean Chem. Soc. 2007 28 2069 2074 10.5012/bkcs.2007.28.11.2069 
+13. Valijev KA  Zaripov MM  Strukt Zh   Strukt. Khim. 1966 7 494 
+14. Martucci A  Cruciani G  Alberti A  Ritter C  Ciambelli P  Rapacciuolo M   Micropor. Mesopor. Mater. 2000 35–36 405 412 10.1016/S1387-1811(99)00237-1 
+15. Hunger M  Sarv P  Samoson A   Solid State Nucl. Magn. Reson. 1997 9 115 120 10.1016/S0926-2040(97)00051-9 9477442 
+16. Haase J  Pfeifer H  Oehme W  Klinowski J   Chem. Phys. Letters 1988 150 189 193 10.1016/0009-2614(88)80025-3 
+17. Hubbard PS   J. Chem. Phys. 1970 53 985 987 10.1063/1.1674167 
+18. Abragam A   The principles of nuclear magnetism 1961 London Oxford Univ. Press 
+19. Haase J  Park KD  Guo K  Timken HKC  Oldfield E   J. Phys. Chem. 1991 95 6996 7002 10.1021/j100171a050 
+20. Andrew ER  Tunstall DP   Proc. Phys. Soc. London 1991 78 1 11 10.1088/0370-1328/78/1/302 
+21. Seliger J  Blinc R   J. Phys. Condens. Matter 1993 5 9401 9410 10.1088/0953-8984/5/50/020 
+22. Panich AM  Lee ChE   Hyperfine Interact. 2010 198 31 34 10.1007/s10751-010-0187-2 
+23. A.M. Panich, S. Kashida, J. Phys.: Condens. Matter 20, 395211 (8 pp) (2008)
+24. A.M. Panich, D. Ailion, S. Kashida, N. Gasanly, Phys. Rev. B 69, 245319 (7 pp) (2004)
+25. Panich AM  Belitskii IA  Moroz NK  Gabuda SP  Drebushchak VA  Seretkin YuV   J. Struct. Chem. 1990 31 56 63 10.1007/BF00752014 
+26. Fukushima E  Roeder SBW   Experimental Pulse NMR : a Nuts and Bolts Approach  1981 London Addison-Wesley 
+27. Phua TT  Beadry BJ  Peterson DT  Torgeson DR  Barnes RG  Belhoul M  Styles GA  Seymour EFW   Phys. Rev. B 1983 28 6227 6250 10.1103/PhysRevB.28.6227 
+28. Pigg AL  Day SM   Phys. Rev. B 1975 11 3219 3224 10.1103/PhysRevB.11.3219 
+29. Panich AM  Sergeev NA   Phys. B 2010 405 2034 2038 10.1016/j.physb.2010.01.097 
+30. Panich AM  Shames AI  Sergeev NA   Appl. Magn. Reson. 2013 44 107 116 10.1007/s00723-012-0392-z 
+31. Sapiga AV  Sergeev NA   Cryst. Res. Technol. 2001 36 875 883 10.1002/1521-4079(200110)36:8/10<875::AID-CRAT875>3.0.CO;2-#

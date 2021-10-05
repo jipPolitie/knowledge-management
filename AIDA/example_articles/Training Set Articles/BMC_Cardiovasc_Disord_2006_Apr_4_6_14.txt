@@ -1,0 +1,193 @@
+
+==== Front
+BMC Cardiovasc DisordBMC Cardiovascular Disorders1471-2261BioMed Central London 1471-2261-6-141659500010.1186/1471-2261-6-14Research ArticleEffects of abciximab on key pattern of human coronary restenosis in vitro: impact of the SI/MPL-ratio Voisard Rainer 1rainer.voisard@uni-ulm.deAlan Mustafa 1mustafa.alan@uni-ulm.deMüller Lutz von 2lutz.vonmueller@uni-ulm.deBaur Regine 1regine.baur@uni-ulm.deHombach Vinzenz 1vinzenz.hombach@uni-ulm.de1 Department of Internal Medicine II – Cardiology, University of Ulm, Robert-Kochstrasse 8, D-89081 Ulm, (Rainer Voisard, M.D., Mustafa Alan, Regine Baur, Vinzenz Hombach, M.D.), Germany 2 Department of Virology, Institute of Mikrobiology and Immunology, University of Ulm, Robert-Kochstrasse 8, D-89081 Ulm, (Lutz von Müller, M.D.), Germany 2006 4 4 2006 6 14 14 6 9 2005 4 4 2006 Copyright © 2006 Voisard et al; licensee BioMed Central Ltd.2006Voisard et al; licensee BioMed Central Ltd.This is an Open Access article distributed under the terms of the Creative Commons Attribution License (), which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+
+Background
+The significant reduction of angiographic restenosis rates in the ISAR-SWEET study (intracoronary stenting and antithrombotic regimen: is abciximab a superior way to eliminate elevated thrombotic risk in diabetes) raises the question of whether abciximab acts on clopidogrel-independent mechanisms in suppressing neointimal hyperplasia. The current study investigates the direct effect of abciximab on ICAM-1 expression, migration and proliferation.
+
+Methods
+ICAM-1: Part I of the study investigates in cytoflow studies the effect of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on TNF-α induced expression of intercellular adhesion molecule 1 (ICAM-1). Migration: Part II of the study explored the effect of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on migration of HCMSMC over a period of 24 h. Proliferation: Part III of the study investigated the effect of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on proliferation of HUVEC, HCAEC, and HCMSMC after an incubation period of 5 days.
+
+Results
+ICAM-1: In human venous endothelial cells (HUVEC), human coronary endothelial cells (HCAEC) and human coronary medial smooth muscle cells (HCMSMC) no inhibitory or stimulatory effect on expression of ICAM-1 was detected. Migration: After incubation of HCMSMC with abciximab in concentrations of 0.0002 – 2 μg/ml a stimulatory effect on cell migration was detected, statistical significance was achieved after incubation with 0.002 μg/ml (p < 0.05), 0.002 μg/ml (p < 0.001), and 0.2 μg/ml (p < 0.05). Proliferation: Small but statistically significant antiproliferative effects of abciximab were detected after incubation of HUVEC (0.02 and 2.0 μg/ml; p = 0.01 and p < 0.01), HCAEC (2.0 and 20.0 μg/ml; p < 0.05 and p < 0,01), and HCMSMC (2.0 and 20.0 μg/ml; p < 0.05 and p < 0.05). The significant inhibition (SI) of cell proliferation found in HCAEC and HCMSMC was achieved with drug concentrations more than 10 times beyond the maximal plasma level (MPL), resulting in a SI/MPL-ratio > 1.
+
+Conclusion
+Thus, the anti-restenotic effects of systemically administered abciximab reported in the ISAR-SWEET-study were not caused by a direct inhibitory effect on ICAM-1 expression, migration or proliferation.
+==== Body
+Background
+The observations that abciximab was associated with a reduction in angiographic restenosis rates in the ISAR-SWEET- study [1] was surprising. In previous placebo-controlled trials of abciximab during coronary intervention, GP IIb/IIIa blockade was found to reduce target vessel revascularization (TVR) rates after ballon angioplasty in patients without diabetes only in the EPIC trial [2], to have no influence on TVR in patients without diabetes after balloon angioplasty in EPILOG [3], or to reduce TVR and angiographic restenosis in patients with diabetes only after stenting in the EPISTENT [4,5] and ADMIRAL trials [6]. Moreover in the ISAR-SMART-2 trial [7] and in the CADILLAC-study [8] angiographic restenosis did not differ between patients treated with abciximab and placebo, both after angioplasty and stenting.
+
+The significant reduction in angiographic restenosis in ISAR-SWEET [1] and CADILLAC [2] raises the question of whether abciximab acts on clopidogrel-independent mechanisms in suppressing neointimal hyperplasia. Two potential examples of such mechanisms suggested include anti-inflammatory effects on leukocyte Mac-I [9] and antiproliferative effects on vitronectin receptor on platelets and smooth muscle cells [10]. Restenosis is essentially characterized by migration and proliferation of smooth muscle cells and extracellular matrix accumulation. In human coronary restenotic lesions highly increased migratory [11] and proliferative activity [12] have been reported. There is now increasing evidence for a role of inflammation in the development of restenosis. Our group has demonstrated in a human coronary three-dimensional model of leukocyte attack (3DLA-model) that monocytes trigger a reactive proliferation of smooth muscle cells [13]. Several authors have suggested that the early rise in systemic markers of inflammation after angioplasty can be diminished by abciximab [14,15].
+
+The current study investigates the effect of abciximab on expression of the intercellular adhesion molecule-1 (ICAM-1), migration, and proliferation in human vascular cells. The clinical relevance of the data is characterized by the so-called SI/MPL-ratio [16], calculating the relation between a significant inhibitory in vitro effect (SI) and the maximal plasma level (MPL) of abciximab in vivo. A SI/MPL-ratio < 1 characterizes an in vitro effect that can be achieved after systemic administration of an agent in vivo, a ratio > 1 indicates a mere local high dose option.
+
+Methods
+Cell culture
+Endothelial cells from human umbilical veins (HUVEC) were isolated after vaginal delivery by enzymatic disaggregation with collagenase/dispase as described previously [17]. Endothelial cells from human coronary arteries (HCAEC) were purchased at Cambrex Bio- products (Vervier, B). Cells were cultured in Endothelium Growth Medium (Cambrex Bioproducts) and identified by the typical "cobble stone" growth pattern and positive reaction against von Willebrand factor (Dakopatts, Hamburg, D). Smooth muscle cells from the human coronary media (HCMSMC) were purchased at Cambrex Bioproducts. HCMSMC were grown in Smooth Muscle Cell Growth Medium (Cambrex Bioproducts). For identification of HCMSMC antibodies against smooth muscle α-actin (Sigma, Taufkirchen, D) were used.
+
+Abciximab
+Abciximab: Reopro®, Lilly, Bad Homburg, D, 0.0002 – 20 μg/mL, dilution: aqua ad inject., MPL: 0.175 μg/mL [18].
+
+Flow cytometry
+For flow cytometry analysis of the expression of ICAM-1 in HUVEC, HCAEC, and HCMSMC, 5 × 104 cells were seeded into 6-well dishes. Abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) was added to the cultures for a period of 18 h. During the last 6 h of abciximab incubation, the expression of adhesion molecules was stimulated by adding of TNF-α (20 ng/ml).
+
+After abciximab/TNF-α treatment, cells were washed twice with phosphate-buffered saline (pH 7.2) containing 1% fetal calf serum at 4°C. Cells were resuspended in 100 μl of a FITC-conjugated monoclonal antibody directed against ICAM-1 (clone 84H10, Dianova Immunotech; final concentration 10 μg/ml) and incubated for 20 min at 4°C. A total of 1 × 104 cells (100% gated) were analyzed immediately with a flowcytometer (BDFACsCalibur, Becton Dickinson, Heidelberg, D). Controls were carried out with IgG-FITC and actinomycin.
+
+Migration studies
+Migration of HCMSMC was measured by a 24 well colorimetric assay (Chemicon, Hampshire, UK), based on the Boyden Chamber principle. HCMSMC were incubated with SmBM medium supplemented with 1% fetal calf serum (fcs) for a period of 48 h. Thereafter HCMSMC were seeded on the upper side of the polycarbonate membrane (pore size 8 μm) of the Boyden Chamber. Migration of HCMSMC was stimulated by filling the lower chamber of the kit with SmBM medium supplemented with 10% fcs. Abciximab was added to the medium of the lower chamber in concentrations of 0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/mL. After 24 h of incubation HCMSMC were removed from the upper side of the membrane. Thereafter the membranes were stained for 20', airdryed, and incubated with extraction buffer for 15'. The opitical density of 100 μl of this solution was measured at 560 nm, SmBM medium supplemented with 10% fcs was used as control (100%).
+
+Proliferation studies
+HUVEC, HCAEC, and HCMSMC in passages 3–5 were seeded in a density of 3 – 5 × 103 cells × cm-2 in 6-well dishes. 24 h after seeding the corresponding culture medium was renewed and the number of adherent cells was analyzed in a cell counter (CASY TTC, Schärfe System, Reutlingen, D). Subsequently abciximab was added in concentrations of 0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/mL for another five days. Culture medium and abciximab were renewed at day three after seeding. Cell number after incubation with abciximab was calculated as relative cell number in comparison to untreated controls with the concerning solvent. Taking into account that not all cells could be successfully cultured, cell numbers of untreated controls were calculated as:
+
+Total cell number at day 6 – cell number attached at day 1 after seeding = 100%.
+
+Vitality of cells
+In a luminescent cell viability assay (CellTiter-GloTM, Promega, Mannheim, D) the effects of abciximab in concentrations of 0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml (HUVEC, HCAEC, and HCMSMC) were analyzed for a period of five days in 96 well dishes (Nunc, Roskilde, DK). Luminescence of luciferase reaction as a marker of cell viability was measured in a CentroLB960 (Berthold, Technologies, Bad Wildbad, D).
+
+SI/MPL-Ratio
+As recently reported by our group [16] a SI/MPL-ratio was calculated in order to characterize the clinical impact of positive in vitro data:
+
+Concentration with a significant inhibition in vitro (SI)
+
+Maximal systemic plasma level (MPL)
+
+Statistical analysis
+Data of migration and proliferation studies are presented as mean ± S.D. Statistical significance of differences between controls and drug-treated cells was determined by paired Student's t-test. Statistical significance was accepted for P < 0.05.
+
+Results
+Identification of cells
+Monocultures of HUVEC and HCAEC were identified by positive reaction with antibodies directed against von Willebrand factor and by the typical "cobblestone" growth pattern in culture. Monocultures of HCMSMC exhibited the "hill and valley" growth pattern and reacted positively with antibodies against smooth muscle α-actin.
+
+Effects of abciximab on expression of ICAM-1
+The effects of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on the TNF-α induced expression of ICAM-1 are demonstrated in Figure 1. In HUVEC, HCAEC, and HCMSMC no significant effects of abciximab were detected.
+
+Figure 1 Expression of ICAM-1. The effects of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on TNF-α induced expression of intercellular adhesion molecule 1 (ICAM-1) in HUVEC, HCAEC and HCMSMC after 18 h (cytoflow data): Controls (thin grey line), non stimulated basic expression of ICAM-1 (grey line), expression of ICAM-1 after stimulation with TNF-α (thick grey line), expression of ICAM-1 after stimulation with TNF-α plus abciximab (black line).
+
+Effects of abciximab on cell migration
+The effects of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on migration of HCMSMC are shown in Figure 2 and Table 1. After a migration period of 24 h a stimulatory effect was detected after incubation of HCMSMC with abciximab in concentration of 0.0002 μg/ml – 2 μg/ml, no effect was found after incubation with the maximal concentration of 20 μg/ml.
+
+Figure 2 Migration. Effects of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on migration of HCMSMC (48 h) in comparison to untreated controls. C = controls, bar 100 μm. (p < 0.05 = *; p < 0.01 = **; p < 0.001 = ***; paired Student's t-test).
+
+Table 1 Migration. Effects of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on migration of HCMSMC (48 h) in comparison to untreated controls, C = controls
+
+Migration (%)	HCMSMC	
+C	100	
+0,0002 μg/ml Abciximab	136,29 ± 8,66	
+0,002 μg/ml Abciximab	136,68 ± 2,97	
+0,02 μg/ml Abciximab	132,43 ± 10,01	
+0,2 μg/ml Abciximab	120,37 ± 6,01	
+2 μg/ml Abciximab	110,81 ± 10,0	
+20 μg/ml Abciximab	98,17 ± 13,23	
+After incubation of HCMSMC with abciximab in concentrations of 0.0002, 0.002, and 0.02 μg/ml cell migration was increased by 36.29% (p < 0.05), 36.68% (p < 0.001), and 32.43% (n.s.). The stimulatory effect decreased after incubation with 0.2 and 2 μg/ml of abciximab, cell migration was increased by 20.37% (p < 0.05) and 10.81% (n.s.), respectively. After incubation of HCMSMC with the maximal concentration of 20 μg/ml of abciximab no effect on cell migration was detected.
+
+Effects of abciximab on cell proliferation
+The effects of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on proliferation of HUVEC, HCAEC, and HCMSMC are demonstrated in Figure 3 and Table 2. After incubation with high concentrations of abciximab small but significant inhibitory effects were detected.
+
+Figure 3 Proliferation. Effects of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on proliferation of HUVEC (A), HCAEC (B), and HCMSMC (C) in comparison to untreated controls at day six after seeding, C = control, (p < 0.05 = *; p < 0.01 = **; p < 0.001 = ***; paired Student's t-test).
+
+Table 2 Proliferation. Effects of abciximab (0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml) on proliferation of HUVEC, HCAEC, and HCMSMC in comparison to untreated controls at day six after seeding, C = control, (p < 0.05 = *; p < 0.01 = **; p < 0.001 = ***; paired Student's t-test)
+
+Proliferation (%)	HUVEC	HCAEC	HCMSMC	
+C	100 ± 0	100 ± 0	100 ± 0	
+0,0002 μg/ml Abciximab	96,41 ± 6,16	88,5 ± 7,2	100,18 ± 17,10	
+0,002 μg/ml Abciximab	93,77 ± 3,88	87,17 ± 9,02	91,86 ± 15,64	
+0,02 μg/ml Abciximab	90,19 ± 1,77	88,35 ± 3,04	90,85 ± 11,33	
+0,2 μg/ml Abciximab	90,37 ± 7,38	85,09 ± 8,27	86,90 ± 8,43	
+2 μg/ml Abciximab	83,47 ± 2,51	91,87 ± 3,25	85,79 ± 8,56	
+20 μg/ ml Abciximab	79,34 ± 9,16	87,70 ± 6,01	81,09 ± 7,59	
+In HUVEC small but significant inhibitory effects were detected after incubation with abciximax in concentrations of 0.02 μg/ml and 2 μg/ml, cell proliferation was decreased to 90.19% (p = 0.01; SI/MPL-ratio: 0.11) and 83.47% (p < 0.01; SI/MPL-ratio: 11.4), respectively. No significant inhibitory effects were found after incubation of HUVEC with abciximab in concentrations of 0.0002 μg/ml, 0.002 μg/ml, 0.2 μg/ml, and 20 μg/ml, cell proliferation was decreased to 96.41%, 93.77%, 90.37%, and 79.34%.
+
+In HCAEC no significant inhibitory effects were detected after incubation with abciximab in concentrations of 0.002 μg/ml, 0.002 μg/ml, 0.02 μg/ml, and 0.2 μg/ml, cell proliferation was decreased to 88.50%, 87.17%, 88.35%, and 85.09%. Small but significant inhibitory effects were found after incubation of HCAEC with abciximab in concentrations of 2 μg/ml and 20 μg/ml, cell proliferation was decreased to 91.87% (p < 0.05; SI/MPL-ratio: 11.4) and 87.70% (p < 0.01; SI/MPL-ratio: 114).
+
+After incubation of HCMSMC with abciximab in concentrations of 0.002 μg/ml, 0.002 μg/ml, 0.02 μg/ml, and 0.2 μg/ml no significant inhibitory effects were detected in comparison to untreated controls, cell proliferation was 100.18%, 91.86%, 90.85%, and 86.90%. Small but significant inhibitory effects were found after incubation of HCMSMC with abciximab in concentrations of 2 μg/ml and 20 μg/ml, cell proliferation was decreased to 85.79% (p < 0.05; SI/MPL-ratio: 11.4) and 81.09% (p < 0.05; SI/MPL-ratio: 114).
+
+Effects of abciximab on cell vitality
+Cell vitality of HUVEC, HCAEC, and HCMSMC was analyzed after incubation with abciximab in concentrations of 0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml. Cell vitality was slightly increased in HUVEC and HCAEC and slightly decreased in HCMSMC. Statistical significance of the differences in comparison to untreated controls was not achieved.
+
+In HUVEC cell vitality was slightly increased after incubation with abciximab in concentrations of 0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml. Cell vitality in comparison to untreated controls was 106.83%, 117.57%, 112.30%, 108.43%, 111.31%, and 111.36%.
+
+In HCAEC a similar result was detected, cell vitality was slightly increased. In comparison to untreated controls cell vitality was 113.38%, 117.24%, 105.99%, 112.68%, 109.15%, and 106.70%.
+
+In HCMSMC a slight decrease of cell vitality was detected after incubation with abciximab in concentrations of 0.0002, 0.002, 0.02, 0.2, 2.0, and 20.0 μg/ml. Cell vitality in comparison to untreated controls was 86.94%, 86.51%, 96.64%, 82.50%, 97.49%, and 89.82%.
+
+Discussion
+The present in vitro study investigated the effects of abciximab on key pattern of human coronary restenosis. Three basic conclusions were determined. First, abciximab (0.0002 μg/ml – 20 μg/ml) had no effect on expression of ICAM-1 in HUVEC, HCAEC, and HCMSMC. Second, abciximab (0.0002 μg/ml – 2 μg/ml) stimulated migration of HCMSMC. Third, high concentrations of abciximab had a small but significant antiproliferative effect in HUVEC, HCAEC, and HCMSMC, SI/MPL-ratio's > 1 indicate that these effects can't be achieved after systemic infusion.
+
+During the last decade, intensive efforts have been made to evaluate the role of the platelet glycoprotein (GP) IIb/IIIa complex in platelet-mediated thrombus formation. Acitivation of the GP IIb/IIIa platelet-surface integrin by endogenous agonists (e.g. thrombin, adenosine diphosphate or ADP, and collagen) results in binding of adhesive proteins such as fibrinogen and von Willebrand factor, thus mediating platelet aggregation [20]. Significant efforts have been made to design potent antagonists of this "final common pathway" of platelet aggregation to be used as novel therapeutic strategies to treat acute coronary syndromes. Antagonists directed against the GP IIb/IIIa receptor represent a family of antiplatelet drugs that are used clinically for the prevention of pathological thromboses [21]. Abciximab, a monoclonal antibody Fab fragment, was the first approved agent in this class of drugs [22]. Although a decade ago abciximab has been shown to prevent acute ischemic complications from percutaneous transluminal coronary angioplasty (PTCA) and atherectomy [23], recent data of Kastrati et al. [24] in the ISAR-REACT-study did not find any clinically measurably benefits during the first 30 days in low to intermediate percutaneous coronary interventions after pretreatment with a high loading dose of clopidogrel and abciximab in comparison to clopidogrel alone.
+
+Charo et al. [25] were the first to demonstrate that platelet GP IIb/IIIa-like proteins mediate the adherence of HUVEC to specific adhesive proteins. Yasukawa et al. [26] demonstrated that ICAM-1 is expressed early and intensely in rat carotid arteries after balloon injury and that monoclonal antibodies to ICAM-1 significantly suppress restenosis. ICAM-1 is a highly glycosylated cell surface protein of 95 kD that is expressed on variable levels on endothelial cells, smooth muscle cells, and circulating leukocytes [27]. In cultured human coronary endothelial and smooth muscle cells expression of ICAM-1 is highly upregulated by TNF-α [28]. Inoue et al. [29] demonstrated that serum levels of ICAM-1 and P-selectin were significantly increased immediately after angioplasty in human coronary sinus blood samples. Therefore inhibition of ICAM-1 has been targeted as a strategy to inhibit restenosis [30].
+
+The current study demonstrates that abciximab in concentrations ranging from 0.0002 μg/ml – 20 μg/ml has no effect on expression of ICAM-1 in HUVEC, HCAEC, and HCMSMC. The data are in accordance with a recent report of Massberg et al. [31] that abciximab infusion did not significantly affect platelet-induced endothelial cell expression of ICAM-1 in 20 patients undergoing coronary stenting. On the other hand Schwarz et al. [32] reported that abciximab inhibited significantly adhesion of a monocytic cell line to immobilized ICAM-1 in vitro.
+
+Migration [11] and proliferation [12] of human coronary smooth muscle cells is significantly increased in specimens derived from restenosing lesions. Systemic treatment with αvβ3 antagonists such as abciximab reduce neointima formation after injury of rat carotid [33], rabbit carotid [34], hamster carotid [35], pig coronary [36], pig carotid and femoral [37] and rabbit iliac [38,39] arteries. The mechanisms that caused the anti-restenotic effect in these studies are difficult to identify. It has been reported by Stouffer et al. [40] that vascular cell β3 integrin expression is increased after injury and that abciximab binds to cultured SMC with high affinity. Moreover, the group of Stouffer et al. [40] demonstrated that β3 activation is important for alpha-thrombin induced cell proliferation.
+
+In the present study a stimulatory effect on cell migration was detected after incubation of HCMSMC with abciximab in concentrations of 0.0002 – 2 μg/mL, statistical significance was achieved after incubation with abciximab in concentrations of 0.0002 μg/ml, 0.002 μg/ml, and 0.2 μg/ml. Neither stimulatory nor inhibitory effects on cell migration were detected after incubation of HCMSMC with abciximab in a concentration of 20 μg/ml. In the applied migration model merely direct effects on cell migration can be studied. Indirect effects that block thrombin-induced migration cannot be considered due to the fact that thrombin is not present in the system [41]. Due to the fact that a concentration of abciximab of 0,175 μg/mL is considered as maximal plasma level (MPL) after systemic infusion [18], the present data demonstrate that direct anti-migratory effects of abciximab may not contribute to the anti-restenotic effects described in experimental [33-39] and clinical [1,2,5-7] studies. These data are in contrast to a report of Blindt et al. [42,43] describing a significant anti-migratory effect after administration of abciximab in a concentration of 33 μg/mL. Cell specific differences can be excluded because the group of Blindt et al. used human coronary smooth muscle cells as well. The contrasting results may be partially explained by the fact that Blindt et al. administered abciximab 24 h before and during migration. In the current study, as in patients, abciximab was administered merely during and not before and during the migration process.
+
+In the present study a small but significant antiproliferative effect was detected after adding abciximab in concentrations of 2 μg/mL and 20 μg/mL, resulting in SI/MPL-ratio's beyond 1. The effect of abciximab on cell proliferation in human coronary vascular cells has already been studied by the group of Blindt et al. [42,43]. Both modest antiproliferative effects [42] and no antiproliferative effect have been reported [43]. The small but significant antiproliferative in vitro effect of abciximab in the current study was achieved with SI/MPL-ratio's of 11.4 and 114, indicating that the corresponding drug concentrations were 11.4- and 114-times, respectively, beyond the MPL of 0,175 μg/mL. Equally as described for direct anti-migratory effects, a contribution of direct antiproliferative effects of abciximab for the experimental [33-39] and clinical [1,2,5-7] anti-restenotic effects can be excluded. The small but significant antiproliferative effect of abciximab however might be used in local high dose application systems such as coated stents [44].
+
+Limitations of the study
+The present study investigates direct effects of abciximab on ICAM-1 expression, migration and proliferation. The primary target for abciximab, however, is the platelet GPIIb/IIIa receptor, which is blocked by the antibody thereby preventing complex formation between the platelet and fibrinogen. Inhibition of platelet aggregation results in the release of multiple platelet derived growth factors capable of affecting smooth muscle proliferation and expression of adhesion molecules. Thus, the absence of platelets in the in vitro system, as well as the absence of other cellular components and immunological reactions initiated by increased platelet activity are not replicated in the present experimental protocol.
+
+Conclusion
+Although an effect of abciximab on expression of ICAM-1 in HUVEC, HCAEC and HCMSMC was excluded in the present study, an effect of abciximab on monocytes is possible and should be confirmed in further studies. One of the possible models for the evaluation of these mechanisms might be the 3DLA-model reported earlier by our group (13).
+
+Equally as described for direct anti-migratory effects, a contribution of direct antiproliferative effects of abciximab for the experimental and clinical anti-restenotic effects can be excluded. The small but significant antiproliferative effect of abciximab (SI/MPL-ratio > 1) indicates a local high dose option that might be of clinical use in coated stents (44).
+
+Competing interests
+The author(s) declare that they have no competing interests.
+
+Authors' contributions
+All authors read and approved the final manuscript. RV, RB, and VH designed the study, RV wrote the manuscript. LvM carried out the cytoflow studies, cell migration studies and cell proliferation studies were done bei MA and RB.
+
+Pre-publication history
+The pre-publication history for this paper can be accessed here:
+
+
+
+Acknowledgements
+The author's declare that there are no further acknowledgements.
+==== Refs
+Mehilli J Kastrati A Schuhlen H Dibra A Dotzer F von Beckerath N Bollwein H Pache J Dirschinger J Berger PP Schömig A  Intracoronary stenting and antithrombotic regimen: Is abciximab a superior way to eliminate elevated thrombotic risk in diabetes (ISAR-SWEET) study Investigators Circulation 2004 14 3627 3635 15531766 10.1161/01.CIR.0000148956.93631.4D 
+Lincoff AM Califf RM Anderson KM Weisman HF Aguirre FV Kleimann NS Harrington RA Topol EJ  Evidence for prevention of death and myocardial infarction with platelet membrane glycoprotein IIb/IIIa receptor blockade by abciximab (c7E3 Fab) among patients with unstable angina undergoing percutaneous coronary revascularization. EPIC Investigators. Evaluation of 7E3 in preventing ischemic complications J Am Coll Cardiol 1997 30 149 156 9207636 10.1016/S0735-1097(97)00110-1 
+Kleiman NS Lincoff AM Kereiakes DJ Miller DP Aguirre FV Anderson KM Weisman HF Califf RM Topol EJ  Diabetes mellitus, glycoprotein Iib/IIIa blockade, and heparin: evidence for a complex interaction in a multicenter trial. EPILOG investigators Circulation 1998 97 1912 1920 9609084 
+Marso SP Lincoff AM Ellis SG Bhatt DL Tanguay JF Kleiman NS Hammoud T Booth JE Sapp SK Topol EJ  Optimizing the percutaneous interventional outcomes for patients with diabetes mellitus: results of the EPISTENT (Evaluation of platelet IIb/IIIa inhibitor for stenting trial) diabetes substudy Circulation 1999 100 2477 2484 10604884 
+Lincoff AM Califf RM Moliterno DJ Ellis SG Ducas J Kramer JH Kleiman NS Cohen EA Booth JE Sapp SK Cabot CF Topol EJ  Complementary clinical benefits of coronary-artery stenting and blockade of platelet glycoprotein IIb/IIIa receptors. Evaluation of platelet IIb/IIIa inhibition in stenting investigators N Engl J Med 1999 341 319 327 10423466 10.1056/NEJM199907293410503 
+Montalescot G Barragan P Wittenberg O Ecollan P Elhadad S Villain P Boulenc JM Morice MC Maillard L Pansieri M Coussat R Pinton P  ADMIRAL investigators. Abciximab before direct angioplasty and stenting in myocardial infarction regarding acute and long-term follow-up. Platelet glycoprotein IIb/IIIa inhibition with coronary stenting for acute myocardial infarction N Engl J Med 2001 344 1895 1903 11419426 10.1056/NEJM200106213442503 
+Hausleiter J Kastrati A Mehilli J Schuhlen H Pache J Dotzer F Glatthor C Siebert S Dirschinger J Schömig A  ISAR-SMART-2 Investigators. A randomized trial comparing phosphorylcholine-coated stenting with balloon angioplasty as well as abciximab with placebo for restenosis reduction in small coronary arteries J Intern Med 2004 256 388 397 15485474 10.1111/j.1365-2796.2004.01398.x 
+Stuckey TD Stone GW Cox DA Tcheng JE Garcia E Carroll J Guagliumi G Rutherford BD Griffin JJ Turco M Lansky AJ Mehran R Fahy M Brodie BR Grines CL  CADILLAC investigators. Impact of stenting and abciximab in patients with diabetes mellitus undergoing primary angioplasty in acute myocardial infarction (the CADILLAC trial) Am J Cardiol 2005 95 1 7 15619385 10.1016/j.amjcard.2004.08.054 
+Neumann FJ Zohlnhofer D Fakhoury L Ott I Gawaz M Schömig A  Effect of glycoprotein IIb/IIIa receptor blockade on platelet-leukocyte interaction and surface expression of the leukocyte integrin MAC-1 in acute myocardial infarction J Am Coll Cardiol 1999 34 1420 1426 10551687 10.1016/S0735-1097(99)00350-2 
+Tam SH Sassoli PM Jordan RE Nakada MT  Abciximab (ReoPro, chimeric 7E3 Fab) demonstrates equivalent affinity and functional blockade of glycoprotein IIb/IIIa and alpha(v)beta3 integrins Circulation 1998 98 1085 1091 9736595 
+Bauriedel G Windstetter U DeMaio SJ JrKandolf R Höfling B  Migratory activity of human smooth muscle cells cultivated from coronary and peripheral primary and restenotic lesions removed by percutaneous atherectomy Circulation 1992 85 554 564 1735151 
+Dartsch PC Voisard R Betz E  In vitro growth characteristics of human atherosclerotic plaque cells: comparison of cells from primary stenosing and restenosing lesions of peripheral and coronary arteries Res Exp Med 1990 190 77 87 
+Voisard R Voglic S Baur R Susa M Koenig W Hombach V  Leukocyte attack in a 3D human coronary in-vitro model Coron Artery Dis 2001 12 401 411 11491206 10.1097/00019501-200108000-00010 
+Lincoff AM Kereiakes DJ Mascelli MA Deckelbaum LI Barnathan ES Patel KK Frederick B Nakada MT Topol EJ  Abciximab surpresses the rise in levels of circulating inflammatory markers after percutaneous coronary revascularization Circulation 2001 104 163 167 11447080 
+Kereiakes DJ  Inflammation as a therapeutic target: a unique role for abciximab Am Heart J 2003 146 S1 S4 14564299 10.1016/j.ahj.2003.09.003 
+Voisard R Baur R Herter T Hombach V  Two decades of failing systemic restenosis trials: Impact of the SI/MPL-ratio to characterize the clinical relevance of positive in vitro data Perfusion 2004 17 186 197 
+Jaffe EA Nachman RL Becker CG Minick   Culture of human endothelial cells derived from umbilical veins. Identification by morphologic and immunologic criteria J Clin Invest 1973 71 2845 2856 
+Abernethy DR Pezzullo J Mascelli MA Frederick B Kleiman NS Freedman J  Pharmacodynamics of abciximab during angioplasty: comparison to healthy subjects Clin Pharmcol Ther 2002 71 186 195 10.1067/mcp.2002.121775 
+Bürk RR  A factor from a transformed cell line that affects cell migration Proc Natl Acad Sci USA 1973 70 369 372 4510281 10.1073/pnas.70.2.369 
+Philipps DR Charo IF Scarborough RM  GPIIb-IIIa: the responsive integrin Cell 1991 65 359 362 2018971 10.1016/0092-8674(91)90451-4 
+Majerus PW Tollefsen DM  Hardman JG, Limbird LE, Gilman AG  Anticoagulant, thrombolytic and antiplatelet drugs Goodman & Gilman's The Pharmacological Basis of Therapeutics McGraw-Hill Book Company, New York 1519 1538 
+Coller BS  Platelet GPIIb/IIIa antagonists: the first-integrin receptor therapeutics J Clin Investig 1997 100 S57 S60 9413403 
+EPIC Investigators. Use of a monoclonal antibody directed against the platelet glycoprotein IIb/IIIa receptor in high risc coronary angioplasty N Engl J Med 1994 330 956 961 8121459 10.1056/NEJM199404073301402 
+Kastrati A Mehilli J Schuhlen H Dirschinger J Dotzer F ten Berg JM Neumann FJ Bollwein H Volmer C Gawaz M Berger PB Schömig A  Intracoronary stenting and antithrombotic regimen-rapid early action for coronary treatment study investigators. A clinical trial of abciximab in elective percutaneous coronary intervention after pretreatment with clopidogrel N Engl J Med 2004 350 277 280 14724308 10.1056/NEJMoa031859 
+Charo IF Bekeart LS Philipps DR  Platelet glycoprotein IIb/IIIa-like proteins mediate endothelial cell attachment to adhesive proteins and the extracellular matrix J Biol Chem 1987 262 9935 9938 2440865 
+Yasukawa H Imaizumi T Matsuoka H Nakashima A Morimatsu M  Inhibition of intimal hyperplasia after balloon injury by antibodies to intercellular adhesion molecule-1 and lymphocyte function-associated antugen-1 Circulation 1997 95 1515 1522 9118520 
+Springer TA  Adhesion receptors of the immune system Nature 1990 346 425 434 1974032 10.1038/346425a0 
+Voisard R Oßwald M Baur R Jakob U Susa M Mattfeldt T Hemmer W Hannekum A Koenig W Hombach V  Expression of intercellular adhesion molecule-1 in human coronary endothelial and smooth muscle cells after stimulation with tumor necrosis factor-α Coron Artery Dis 1998 9 737 745 9919421 
+Inoue T Hoshis K Yaguchi I Iwasaki Y Takayanagi K Morooka S  Serum levels of circulating adhesion molecules after coronary angioplasty Cardiology 1999 91 236 242 10545679 10.1159/000006917 
+Plow EF D'Souza SE  A role for intercellular adhesion molecule-1 in restenosis Circulation 1997 95 1355 1356 9118497 
+Massberg S Mueller I Besta F Thomas P Gawaz M  Effects of 2 different antiplatelet regimes with abciximab or tirofiban on platelet function in patients undergoing coronary stenting Am Heart J 2003 146 E19 14597948 10.1016/S0002-8703(03)00368-5 
+Schwarz M Nordt T Bode C Peter K  The GP IIb/IIIa inhibitor abciximab (c7E3) inhibits the binding of various ligands to the leukocyte integrin Mac-1 (CD11b/CD18, alphaMbeta2) Thromb Res 2002 107 121 128 12431477 10.1016/S0049-3848(02)00207-4 
+Slepian MJ Massia SP Dehdashti B Fritz A Whitesell L  β3-Integrins rather than β1-integrins dominate integrin-matrix interactions involved in postinjury smooth muscle cell migration Circulation 1998 97 1818 1827 9603537 
+Choi ET Engel L Callow AD Sun S Trachtenberg J Santoro S Ryan US  Inhibition of of neointimal hyperplasia by blocking αvβ3 integrin with a small peptide antagonist GpenGRGDSPCA J Vasc Surg 1994 19 125 134 7508000 
+Matsuno H Stassen JM Vermylen J Deckmyn H  Inhibition of integrin function by a cyclic RGD-containing peptide prevents neointima formation Circulation 1994 90 2203 2206 7955174 
+Srivatsa SS Fitzpatrick LA Tsao PW Reilly TM Holmes DR JrSchwartz RS Mousa SA  Selective αvβ3 integrin blockade potently limits neointimal hyperplasia and lumen stenosis following deep coronary arterial stent injury: evidence for the functiuonal importance of integrin αvβ3 and osteopontin expression during neointimal formation Cardiovasc Res 1997 36 408 428 9534862 10.1016/S0008-6363(97)00184-3 
+Nichols TC du Laney T Zheng B bellinger DA Nickols GA Engleman W Clemmons DR  Reduction in atherosclerotic lesion size in pigs by αvβ3 inhibitors is associated with inhibition of insulin-like growth factor-1-mediated signaling Circ Res 1999 85 1040 1045 10571535 
+Van der Zee R Murohara T Passeri J Kearney M Cheresh DA Isner JM  Reduced intimal tickening following αvβ3 blockade is associated with smooth muscle cell apoptosis Cell Adhes Commun 1998 6 371 379 10223353 
+Coleman KR Braden GA Willingham MC Sane DC  Vitaxin, a humanized monoclonal antibody to the vitronectin receptor (αvβ3), reduces neointimal hyperplasia and total vessel area after balloon injury in hypercholesteremic rabbits Circ Res 1999 84 1268 1276 10364564 
+Stouffer GA Zhaoyong Hu Sajid M Husong Li Guifang J Nakada MT Hanson SR Runge MS  β3 Integrins are upregulated after vascular injury and modulate thrombospondin- and thrombin-induced proliferation of cultured smooth muscle cells Circulation 1998 97 907 915 9521340 
+Voisard R Stemberger A Baur R Herter T Hähnel I Resch A Seliger C Hemmer W Hannekum A Hombach V Alt E  Triple-coated stents (hirudin/iloprost/paclitaxel): an in vitro approach for characterizing the antiproliferative potential of each individual compound Int J Cardiol 2005 102 425 433 16004887 10.1016/j.ijcard.2004.05.059 
+Blindt R Bosserhoff AK Zeiffer U Krott N Hanrath P vom Dahl J  Abciximab inhibits the migration and invasion potential of human artery smooth muscle cells J Mol Cell Cardiol 2000 32 2195 2206 11112995 10.1006/jmcc.2000.1245 
+Blindt R Bosserhoff AK Krott N Vogt F Hanrath P Demircan L vom Dahl J  Decrease of vascular smooth muscle cell locomotion by abciximab, but not tirofiban: a possible role of diifferent affinity to alpha v beta 3 integrins Coron Artery Dis 2002 13 357 364 12488644 10.1097/00019501-200211000-00002 
+Hong YJ Jeong MH Kim W Lim SY Lee SH Hong SN Kim JH Ahn YK Cho JG Park JC Cho DL Kim H Kang JC  Effect of abciximab-coated stent on in-stent hyperplasia in human coronary arteries Am J Cardiol 2004 94 1050 1054 15476624 10.1016/j.amjcard.2004.06.066
