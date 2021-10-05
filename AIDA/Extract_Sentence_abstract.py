@@ -5,11 +5,10 @@ import nltk, re, csv, os
 
 nltk.data.path.append(r"/mnt/c/Users/lukac/PycharmProjects/knowledge-management/NLTK_data")
 
-
 from nltk.corpus import stopwords
 from collections import Counter
-import json
-import numpy as np
+# import json
+# import numpy as np
 from difflib import SequenceMatcher
 
 
@@ -40,13 +39,12 @@ non_core_words = ["sought", "addition", "well-replicated", "replicated", "sample
 
 def determine_lines_and_frequent_words(abstract, path):
     lines = sent_detector.tokenize(abstract)
-    text = open(path,encoding="utf8")
+    text = open(path, encoding="utf8")
     # body = "==== Body"
     # refs = "==== Refs"
-    #started = False
+    # started = False
     body_text = ''
     for line in text:
-
         # if refs in line:
         #     started = False
         # if body in line:
@@ -54,7 +52,6 @@ def determine_lines_and_frequent_words(abstract, path):
         # if started:
         body_text += line
     # body_text = body_text.decode('utf-8')
-
 
     base_words = nltk.tokenize.casual.casual_tokenize(body_text.lower())
     english_stopwords = stopwords.words('english')
@@ -110,7 +107,15 @@ def perform_extra_check(candidate_sentences, frequent_words):
 
 # When all the sentences have an assigned score, this function goes over all the sentences and picks the sentence(s) with the highest score
 
-def go_over_sentences(sentences):
+def extract_sentences_above_threshold(sentences, threshold):
+    candidate_sentences = []
+    for sentence, score in sentences.items():
+        if score >= threshold:
+            candidate_sentences.append(sentence)
+    return candidate_sentences
+
+
+def go_over_sentences(sentences, frequent_words):
     scores = sentences.values()
     highest_score = max(scores)
     core_sentence_counter = 0
@@ -134,46 +139,43 @@ def go_over_sentences(sentences):
     return core_sentence
 
 
-# Provide the directory here with all the articles that should be processed
+# directory: Provide the directory here with all the articles that should be processed
+def extract_sentences(directory=r'Conclusions', output_path='example_articles/results/results_conclusion.csv',
+                      threshold=None):
+    csv_file = open(output_path, 'w')
 
+    fieldnames = ['File', 'Sentence']
+    writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter='|')
+    writer.writeheader()
+    for file in os.listdir(directory):
+        path = os.path.join(directory, file)
 
-directory=r'Conclusions'
-csvfile = open('results/results_conclusion.csv', 'w')
+        text = open(path, encoding="utf8")
 
-fieldnames = ['File', 'Sentence']
-writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter='|')
-writer.writeheader()
+        # front = "==== Front"
+        # body = "==== Body"
+        # graphical_abstract = "Graphical Abstract"
+        # started = False
+        abstract = ''
 
-for file in os.listdir(directory):
-    path = os.path.join(directory,file)
+        for line in text:
+            # print(line)
+            # if body in line or graphical_abstract in line:
+            #     started = False
+            # if started:
+            abstract += line
+            # if front in line:
+            #     started = True
 
-    text = open(path,encoding="utf8")
+        # abstract = abstract.decode('utf-8')
 
-
-    # front = "==== Front"
-    # body = "==== Body"
-    # graphical_abstract = "Graphical Abstract"
-    #started = False
-    abstract = ''
-
-    for line in text:
-
-        #print(line)
-        # if body in line or graphical_abstract in line:
-        #     started = False
-        # if started:
-        abstract += line
-        # if front in line:
-        #     started = True
-
-    # abstract = abstract.decode('utf-8')
-
-    lines, frequent_words = determine_lines_and_frequent_words(abstract, path)
-    sentences = assign_sentences_score(lines, frequent_words)
-    core_sentence = go_over_sentences(sentences)
-    core_sentence = core_sentence.replace('\n', ' ').replace(';', ',')
-    core_sentence = core_sentence.encode('utf-8')
-
-    writer.writerow({'File': file, 'Sentence': core_sentence})
-
-# DO NOT FORGET TO DECODE EXTRACTED RESULTS BEFORE NEXT STEP!
+        lines, frequent_words = determine_lines_and_frequent_words(abstract, path)
+        sentences = assign_sentences_score(lines, frequent_words)
+        if threshold is not None:
+            core_sentences=extract_sentences_above_threshold(sentences, threshold)
+        else:
+            core_sentence = go_over_sentences(sentences, frequent_words)
+            core_sentences=[core_sentence]
+        core_sentences = map(lambda s: s.replace('\n', ' ').replace(';', ','), core_sentences)
+        # core_sentence = core_sentence.encode('utf-8')
+        for sentence in core_sentences: writer.writerow({'File': file, 'Sentence': sentence})
