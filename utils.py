@@ -16,21 +16,21 @@ from pdfminer.pdfparser import PDFParser
 
 
 # path is relative to dropbox root
-def get_pdf_from_dropbox(path, img_folder=None):
-    pdf_path = path
-
-    if img_folder is None:
-        img_folder = 'images/' + path[-14:-4]
-
-    def open_file(path):
-        JIP_test_API_key = 'obfuscated, set up github secrets'
-        dbx = dropbox.Dropbox(JIP_test_API_key)
-        _, res = dbx.files_download(path)
-        res.raise_for_status()
-        return io.BytesIO(res.content)
-
-    s_obj = open_file(pdf_path)
-    return s_obj
+# def get_pdf_from_dropbox(path, img_folder=None):
+#     pdf_path = path
+#
+#     if img_folder is None:
+#         img_folder = 'images/' + path[-14:-4]
+#
+#     def open_file(path):
+#         JIP_test_API_key = 'obfuscated, set up github secrets'
+#         dbx = dropbox.Dropbox(JIP_test_API_key)
+#         _, res = dbx.files_download(path)
+#         res.raise_for_status()
+#         return io.BytesIO(res.content)
+#
+#     s_obj = open_file(pdf_path)
+#     return s_obj
 
 
 def pdf2text(pdf_handle):
