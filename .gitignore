@@ -4,6 +4,9 @@
 AIDA/example_articles/Test Set Articles.zip
 AIDA/example_articles/Training Set Articles.zip
 
+#original articles
+/articles/10articels_about_wether_online_vocational_education/originals
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

@@ -18,8 +18,10 @@ not_atomic_list = ["and that", "and also", "but ", "so that", "while ", "however
                    "in addition to", "respectively", "as well as", "thereby", "though ", "thus ", " hence ",
                    "therefore", "yet ", " including ", "in contrast", "contrary to", " beside", "aside from",
                    "other than", "explaining", "which explains"]
-not_independent_list = ["this study ", "our study", "the extracted_conclusions ", "extracted_conclusions ", "the findings ", "the present study ",
-                        "these findings ", "these extracted_conclusions ", "this research ", "this data ", "the data ", "these data",
+not_independent_list = ["this study ", "our study", "the extracted_conclusions ", "extracted_conclusions ",
+                        "the findings ", "the present study ",
+                        "these findings ", "these extracted_conclusions ", "this research ", "this data ", "the data ",
+                        "these data",
                         "our data", "these observations", "this experiment ", "this publication ", "this analysis",
                         "these analyses", "evidence", "this paper ", "the paper ", "this report ", "the report ",
                         "this effect ", "we ", "compared with", "and other", "previous ", "previously",
@@ -178,8 +180,10 @@ def final_check(sentence):
         sentence)
     if searchObj != None:
         sentence = sentence.replace(searchObj.group(), "")
-    headings = ["\nDiscussion\n", "\nMain findings\n", "\noriginal3_Conclusions\n", "\nKey findings\n", "\nConclusion\n",
-                "\nResults\n", "Discussion\n", "Main findings\n", "original3_Conclusions\n", "Key findings\n", "Conclusion\n",
+    headings = ["\nDiscussion\n", "\nMain findings\n", "\noriginal3_Conclusions\n", "\nKey findings\n",
+                "\nConclusion\n",
+                "\nResults\n", "Discussion\n", "Main findings\n", "original3_Conclusions\n", "Key findings\n",
+                "Conclusion\n",
                 "Results\n"]
     for heading in headings:
         if heading in sentence:

@@ -1,4 +1,4 @@
-import dropbox
+# import dropbox
 
 import os
 import io
@@ -12,7 +12,7 @@ from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfparser import PDFParser
 
 # images:
-import fitz
+# import fitz
 
 
 # path is relative to dropbox root
