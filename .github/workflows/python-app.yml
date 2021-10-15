@@ -8,7 +8,7 @@ on:
     branches:
     - main
     #do tests
-    - vioSpark-ci-cd-dev
+    - vioSpark-patch-1
     #test code
   pull_request:
     branches: [ main ]
