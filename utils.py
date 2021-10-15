@@ -82,9 +82,9 @@ def save_pdf_images(pdf_handle, img_folder):
     return image_list
 
 
-article1 = get_pdf_from_dropbox(
-    '/test_sprint_1/from discretion to standardization_digitalization_of_the_police_organization.pdf')
-article2 = get_pdf_from_dropbox(
-    '/test_sprint_1/factors_influencing_womens_attitudes_towards_computers_in_a_computer_literacy_training_program.pdf')
+# article1 = get_pdf_from_dropbox(
+#     '/test_sprint_1/from discretion to standardization_digitalization_of_the_police_organization.pdf')
+# article2 = get_pdf_from_dropbox(
+#     '/test_sprint_1/factors_influencing_womens_attitudes_towards_computers_in_a_computer_literacy_training_program.pdf')
 # print(article1)
 # print(article2)
