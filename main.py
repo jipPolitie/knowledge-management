@@ -5,7 +5,7 @@ nltk.data.path.append(r"C:\Users\lukac\PycharmProjects\knowledge-management\NLTK
 
 from AIDA.Extract_Sentence_abstract import extract_sentences
 
-extract_sentences(directory='AIDA/original3_Conclusions', output_path='AIDA/extracted_conclusions/results_conclusion.csv', threshold=50)
+extract_sentences(directory='articles/10articels_about_wether_online_vocational_education', output_path='extracted_conclusions/10_vocational_conclusion.csv')
 
 # import utils
 #
