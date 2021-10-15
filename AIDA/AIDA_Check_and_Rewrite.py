@@ -18,8 +18,8 @@ not_atomic_list = ["and that", "and also", "but ", "so that", "while ", "however
                    "in addition to", "respectively", "as well as", "thereby", "though ", "thus ", " hence ",
                    "therefore", "yet ", " including ", "in contrast", "contrary to", " beside", "aside from",
                    "other than", "explaining", "which explains"]
-not_independent_list = ["this study ", "our study", "the results ", "results ", "the findings ", "the present study ",
-                        "these findings ", "these results ", "this research ", "this data ", "the data ", "these data",
+not_independent_list = ["this study ", "our study", "the extracted_conclusions ", "extracted_conclusions ", "the findings ", "the present study ",
+                        "these findings ", "these extracted_conclusions ", "this research ", "this data ", "the data ", "these data",
                         "our data", "these observations", "this experiment ", "this publication ", "this analysis",
                         "these analyses", "evidence", "this paper ", "the paper ", "this report ", "the report ",
                         "this effect ", "we ", "compared with", "and other", "previous ", "previously",
@@ -103,7 +103,7 @@ def make_declarative(sentence, tags):
 def check_if_absolute(sentence, sentence_lower, tags):
     absolute_check = re.compile("|".join(not_absolute_list))
     searchObj = re.search(
-        r'(the|these|this|the present)*(study|results|findings|research|report|data|observation|experiment|publication|analysis|data set|dataset|we|it is)+.*(highlight|constitute|suggest|indicate|demonstrate|show|reveal|provide|illustrate|describe|conclude|support|establish|propose|advocate|determine|confirm|argue|impl|display|offer|underline|allow)+',
+        r'(the|these|this|the present)*(study|extracted_conclusions|findings|research|report|data|observation|experiment|publication|analysis|data set|dataset|we|it is)+.*(highlight|constitute|suggest|indicate|demonstrate|show|reveal|provide|illustrate|describe|conclude|support|establish|propose|advocate|determine|confirm|argue|impl|display|offer|underline|allow)+',
         sentence_lower, re.I)
     if searchObj != None:
         return False
@@ -121,7 +121,7 @@ def make_absolute(sentence, tokenized, tagged):
     # sentence = sentence.decode('utf-8')
     predictions = ["is predicted to", "is foreseen to", "is envisioned to"]
     searchObj = re.search(
-        r'(overall|in sum|therefore|thus|together|in conclusion|taken together|collectively|altogether|taken collectively|to conclude|conclusively|all together|all things considered|everything considered|as a result|consequently|conclusion)*.*(the|these|this|the present)*(study|results|findings|research|report|data|observation|experiment|publication|analysis|data set|dataset|we|it is)+.*(hypothesis|highlight|constitute|suggest|indicate|demonstrate|show|reveal|provide|illustrate|describe|conclude|support|establish|propose|advocate|determine|confirm|argue|impl|display|offer|underline|allow|provide increased support for|found)+((.){0,10}(that))+',
+        r'(overall|in sum|therefore|thus|together|in conclusion|taken together|collectively|altogether|taken collectively|to conclude|conclusively|all together|all things considered|everything considered|as a result|consequently|conclusion)*.*(the|these|this|the present)*(study|extracted_conclusions|findings|research|report|data|observation|experiment|publication|analysis|data set|dataset|we|it is)+.*(hypothesis|highlight|constitute|suggest|indicate|demonstrate|show|reveal|provide|illustrate|describe|conclude|support|establish|propose|advocate|determine|confirm|argue|impl|display|offer|underline|allow|provide increased support for|found)+((.){0,10}(that))+',
         sentence, re.I)
     if searchObj != None:
         sentence = sentence.replace((searchObj.group() + " "), "")
@@ -174,12 +174,12 @@ def make_absolute(sentence, tokenized, tagged):
 
 def final_check(sentence):
     searchObj = re.search(
-        r'(\d)*(\.)*( )*(Results:|Conclusions:|Conclusion:|Discussion:|Discussion|Results|Conclusions|Conclusion|Findings)+',
+        r'(\d)*(\.)*( )*(Results:|original3_Conclusions:|Conclusion:|Discussion:|Discussion|Results|original3_Conclusions|Conclusion|Findings)+',
         sentence)
     if searchObj != None:
         sentence = sentence.replace(searchObj.group(), "")
-    headings = ["\nDiscussion\n", "\nMain findings\n", "\nConclusions\n", "\nKey findings\n", "\nConclusion\n",
-                "\nResults\n", "Discussion\n", "Main findings\n", "Conclusions\n", "Key findings\n", "Conclusion\n",
+    headings = ["\nDiscussion\n", "\nMain findings\n", "\noriginal3_Conclusions\n", "\nKey findings\n", "\nConclusion\n",
+                "\nResults\n", "Discussion\n", "Main findings\n", "original3_Conclusions\n", "Key findings\n", "Conclusion\n",
                 "Results\n"]
     for heading in headings:
         if heading in sentence:
@@ -196,15 +196,15 @@ def final_check(sentence):
     return sentence
 
 
-csv_file = open('example_articles/results/AIDA_checked.csv', 'w')
+csv_file = open('AIDA_example_articles/AIDA_examples/AIDA_checked.csv', 'w')
 fieldnames = ['Sentence', 'Atomic', 'Independent', 'Declarative', 'Absolute', 'AIDA', 'Rewritten_Sentence']
 writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter='|')
 writer.writeheader()
 
-# After processing, provide the path of the file where the results are stored. 
+# After processing, provide the path of the file where the extracted_conclusions are stored.
 
 sentences = []
-extracted_sentences = open('example_articles/results/results_abstract_small.csv')
+extracted_sentences = open('AIDA_example_articles/AIDA_examples/results_abstract_small.csv')
 extracted_reader = csv.DictReader(extracted_sentences, delimiter='|')
 for row in extracted_reader:
     sentences.append(row['Sentence'])
