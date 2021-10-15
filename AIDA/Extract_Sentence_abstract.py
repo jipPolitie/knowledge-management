@@ -27,7 +27,7 @@ core_words = ["highlight", "constitute", "suggest", "indicate", "demonstrate", "
               "establishes", "proposes", "advocates", "determines", "confirms", "argues", "implies", "displays",
               "offers", "underlines", "underline", "underlined", "overall", "sum", "therefore", "thus", "together",
               "conclusion", "collectively", "altogether", "conclude", "conclusively", "consequently", "study",
-              "results", "findings", "research", "report", "data", "paper", "observations", "experiment", "publication",
+              "extracted_conclusions", "findings", "research", "report", "data", "paper", "observations", "experiment", "publication",
               "analysis"]
 
 non_core_words = ["sought", "addition", "well-replicated", "replicated", "sample", "aimed", "aims", "questionnaire",
@@ -73,7 +73,7 @@ def assign_sentences_score(lines, frequent_words):
         words = nltk.tokenize.casual.casual_tokenize(line)
         words = [word for word in words if word != '[' or ']']
         searchObj = re.search(
-            r'(overall|in sum|therefore|thus|together|in conclusion|concluding|taken together|collectively|altogether|taken collectively|to conclude|conclusively|all together|all things considered|everything considered|as a result|consequently|conclusion|thus|as expressed)*.*(the|these|this|the present|our)*(study|results|findings|research|report|data|observation|experiment|publication|analysis|data set|we)+.*(highlight|constitute|suggest|indicate|demonstrate|show|reveal|provide|illustrate|describe|conclude|support|establish|propose|advocate|determine|confirm|argue|impl|display|offer|underline|allow|found|find)+',
+            r'(overall|in sum|therefore|thus|together|in conclusion|concluding|taken together|collectively|altogether|taken collectively|to conclude|conclusively|all together|all things considered|everything considered|as a result|consequently|conclusion|thus|as expressed)*.*(the|these|this|the present|our)*(study|extracted_conclusions|findings|research|report|data|observation|experiment|publication|analysis|data set|we)+.*(highlight|constitute|suggest|indicate|demonstrate|show|reveal|provide|illustrate|describe|conclude|support|establish|propose|advocate|determine|confirm|argue|impl|display|offer|underline|allow|found|find)+',
             line, re.I)
         if searchObj != None:
             score += 25
@@ -140,7 +140,7 @@ def go_over_sentences(sentences, frequent_words):
 
 
 # directory: Provide the directory here with all the articles that should be processed
-def extract_sentences(directory=r'Conclusions', output_path='example_articles/results/results_conclusion.csv',
+def extract_sentences(directory=r'original3_Conclusions', output_path='AIDA_example_articles/extracted_conclusions/results_conclusion.csv',
                       threshold=None):
     csv_file = open(output_path, 'w')
 
