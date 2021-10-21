@@ -3,9 +3,18 @@ import os
 import nltk
 nltk.data.path.append(r"C:\Users\lukac\PycharmProjects\knowledge-management\NLTK_data")
 
+import timeit
+
+start = timeit.default_timer()
+
 from AIDA.Extract_Sentence_abstract import extract_sentences
 
 extract_sentences(directory='articles/10articels_about_wether_online_vocational_education', output_path='extracted_conclusions/10_vocational_conclusion.csv')
+
+stop = timeit.default_timer()
+
+print('Time: ', stop - start)
+
 
 # import utils
 #
