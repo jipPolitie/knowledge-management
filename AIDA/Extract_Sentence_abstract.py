@@ -8,9 +8,12 @@
 # -*- coding: utf-8 -*-
 # Import the required libraries
 
-import nltk, re, csv, os
+import nltk, re, csv, os, sys
+import logging as log
+log.basicConfig(stream=sys.stderr, level=log.DEBUG)
+log.warning(os.getcwd())
 
-nltk.data.path.append(r"knowledge-management/NLTK_data")
+nltk.data.path.append(r"./NLTK_data")
 
 from nltk.corpus import stopwords
 from collections import Counter
