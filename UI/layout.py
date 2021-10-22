@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import datetime as dt
+from AIDA.Extract_Sentence_abstract import extract_sentences
+
 
 st.title('How many hours should you train an officer for?')
 
@@ -37,22 +39,25 @@ def make_clickable(link):
 
 # link is the column with hyperlinks
 
-
+# very old:
 # df = pd.DataFrame(np.array([['30', 'Main Arguments1', 350, 'Pamela Richards, Debbie Roberts, Mark Britton', 'URL1', 'Enhance Learning, Police training', '06-1-2019'],
 #                             ['24', 'Main Arguments2', 600, 'Erik Borglund, Urban Nulden', 'URL2', 'Personas, Scenarios', '28-11-2020'],
 #                             ['43', 'Main Arguments3', 50, 'R Yalcinkaya', 'URL3', 'Theory of Planned Behaviour, Technology Acceptance', '15-6-2023'],
 #                             ['20', 'Main Arguments4', 200, 'MM Brown, JL Budney', 'URL4', 'Proactive approach,', '26-7-2021']]),
 #                   columns=['Answer', 'Main Arguments', '# Citations', 'Author', 'URL', 'Keywords', 'Date Published'])
 
-df = pd.DataFrame(np.array([['30', 'Main Arguments1', 350, 'Pamela Richards, Debbie Roberts, Mark Britton', 'https://www.taylorfrancis.com/chapters/edit/10.4324/9780429265365-14/decision-making-pamela-richards-debbie-roberts-mark-britton', 'Enhance Learning, Police training', '06-1-2019'],
+#build dataframe
+# extract_sentences(directory='articles/10articels_about_wether_online_vocational_education', output_path='extracted_conclusions/10_vocational_conclusion.csv')
+path='../extracted_conclusions/10_vocational_conclusion.csv'
+df=pd.read_csv(path, sep='|')
+
+old_df = pd.DataFrame(np.array([['30', 'Main Arguments1', 350, 'Pamela Richards, Debbie Roberts, Mark Britton', 'https://www.taylorfrancis.com/chapters/edit/10.4324/9780429265365-14/decision-making-pamela-richards-debbie-roberts-mark-britton', 'Enhance Learning, Police training', '06-1-2019'],
                             ['24', 'Main Arguments2', 600, 'Erik Borglund, Urban Nulden', 'https://core.ac.uk/download/pdf/301355808.pdf', 'Personas, Scenarios', '28-11-2020'],
                             ['43', 'Main Arguments3', 50, 'R Yalcinkaya', 'https://search.proquest.com/openview/e8c5731b0b0b1dabc8f1eaaa447ef874/1?pq-origsite=gscholar&cbl=18750', 'Theory of Planned Behaviour, Technology Acceptance', '15-6-2023'],
                             ['20', 'Main Arguments4', 200, 'MM Brown, JL Budney', 'https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-6210.00262', 'Proactive approach,', '26-7-2021']]),
                   columns=['Answer', 'Main Arguments', '# Citations', 'Author', 'URL', 'Keywords', 'Date Published'])
 
-
-
-
+df.assign('Date Published')
 df['Date Published'] = pd.to_datetime(df['Date Published']).dt.date
 
 df['# Citations'] = pd.to_numeric(df['# Citations'])
