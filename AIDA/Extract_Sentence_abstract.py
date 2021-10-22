@@ -1,14 +1,19 @@
+# This program processes text from a scientific paper and identifies and extracts the core claims from the paper.
+# The core and non-core word lists can be manually adjusted as well as the score values.
+# The program requires a text file or a directory of text files containing the text from research papers as input. Therafter, the results for each file is stored in a .csv file 
+# The code is written in Python 3.9 so ahaving a similar version or atleast Python3 is recommended.
+
+# Assumptions
+# The scores assigned to sentences are based on research conducted by authors and we assume them to be accurately represented
 # -*- coding: utf-8 -*-
 # Import the required libraries
 
 import nltk, re, csv, os
 
-nltk.data.path.append(r"/mnt/c/Users/lukac/PycharmProjects/knowledge-management/NLTK_data")
+nltk.data.path.append(r"/knowledge-management/NLTK_data")
 
 from nltk.corpus import stopwords
 from collections import Counter
-# import json
-# import numpy as np
 from difflib import SequenceMatcher
 
 
@@ -36,22 +41,19 @@ non_core_words = ["sought", "addition", "well-replicated", "replicated", "sample
 
 
 # Function that seperates all the lines and creates a list of the most frequent words in the provided text
+# # Parameter - utf8 encoding, English stop words
+# Input - Text and path of text
+# Output - Tokenised sentences and list of frequent words
+# Dependencies on functions - Output is used by assign_sentences_score(). Nested call in extract_sentences().
 
-def determine_lines_and_frequent_words(abstract, path):
-    lines = sent_detector.tokenize(abstract)
+
+def determine_lines_and_frequent_words(conclusions, path):
+    lines = sent_detector.tokenize(conclusions)
     text = open(path, encoding="utf8")
-    # body = "==== Body"
-    # refs = "==== Refs"
-    # started = False
+    
     body_text = ''
     for line in text:
-        # if refs in line:
-        #     started = False
-        # if body in line:
-        #     started = True
-        # if started:
         body_text += line
-    # body_text = body_text.decode('utf-8')
 
     base_words = nltk.tokenize.casual.casual_tokenize(body_text.lower())
     english_stopwords = stopwords.words('english')
@@ -64,8 +66,11 @@ def determine_lines_and_frequent_words(abstract, path):
     return lines, frequent_words
 
 
-# This function assigns every sentence with a score based on some parameters
-
+# This function assigns every sentence with a score based on some criteria - key phrases, core words, frequent words, non-core words, and sentence length
+# Parameters -  Score for key phrases, core words, frequent words, non-core words, and sentence length
+# Input - List of tokenized sentences, list of frequent words
+# Output -  Dictionary of sentences with assigned scores
+# Dependencies on functions - Input received by calling determine_lines_and_frequent_words(). Output is used by extract_sentences_above_threshold() or go_over_sentences(). Nested call in extract_sentences().
 def assign_sentences_score(lines, frequent_words):
     sentences = {}
     for line in lines:
@@ -90,8 +95,11 @@ def assign_sentences_score(lines, frequent_words):
     return sentences
 
 
-# In some cases, two sentences end up with the same score, in such a case an extra check is performed to make sure only one sentence is chosen in the end
-
+# In some cases, two sentences end up with the same score, in such a case an extra check is performed to make sure only one sentence is chosen in the end by adding a score for sentences that have less frequent words
+# Parameter - Size of the list with less frequent words
+# Input - Sentences that have the same score and list of frequent words
+# Output - Candidate sentences that are updated with new scores
+# Dependencies on functions - Conditionally called by go_over_sentences(). Indirectly called in extract_sentences().
 def perform_extra_check(candidate_sentences, frequent_words):
     less_frequent_words = frequent_words[:5]
     sentences = {}
@@ -106,7 +114,10 @@ def perform_extra_check(candidate_sentences, frequent_words):
 
 
 # When all the sentences have an assigned score, this function goes over all the sentences and picks the sentence(s) with the highest score
-
+# Input - Dictionary of sentences with scores assigned, threshold value to pick sentences that have a score above it
+# Output -  Core sentences
+# Parameter - threshold
+# Dependencies on functions - Input received by calling assign_sentences_score(). Nested call in extract_sentences().
 def extract_sentences_above_threshold(sentences, threshold):
     candidate_sentences = []
     for sentence, score in sentences.items():
@@ -114,7 +125,11 @@ def extract_sentences_above_threshold(sentences, threshold):
             candidate_sentences.append(sentence)
     return candidate_sentences
 
-
+#If a threshold is not decided, the function iterates over all sentences and identifies sentences with highest scores. If the candidate sentences have the same score, an extra check is performed to narrow down to one sentence.
+# Input - Dictionary of sentences with scores assigned, threshold value to pick sentences that have a score above it
+# Output -  Core sentence
+# Parameter - Size of the list with less frequent words
+# Dependencies on functions - Input received by calling assign_sentences_score(). Conditionally calls perform_extra_check(). Nested call in extract_sentences().
 def go_over_sentences(sentences, frequent_words):
     scores = sentences.values()
     highest_score = max(scores)
@@ -138,8 +153,13 @@ def go_over_sentences(sentences, frequent_words):
                 core_sentence = sentence
     return core_sentence
 
-
+# Opens the directory with all the files with conclusions and calls all functions required to score and extract sentences.
+# The results are written and saved in a .csv file
 # directory: Provide the directory here with all the articles that should be processed
+# Parameter - utf8 encoding
+# Input - Directory, output path, and threshold value
+# Output - CSV file with extracted sentences for each file
+# Dependencies on functions - Calls the following functions - determine_lines_and_frequent_words, assign_sentences_score, extract_sentences_above_threshold, go_over_sentences. Indirectly may call perform_extra_check.
 def extract_sentences(directory=r'original3_Conclusions', output_path='AIDA_example_articles/extracted_conclusions/results_conclusion.csv',
                       threshold=None):
     csv_file = open(output_path, 'w')
@@ -151,25 +171,14 @@ def extract_sentences(directory=r'original3_Conclusions', output_path='AIDA_exam
         path = os.path.join(directory, file)
 
         text = open(path, encoding="utf8")
+  
+        conclusions = ''
 
-        # front = "==== Front"
-        # body = "==== Body"
-        # graphical_abstract = "Graphical Abstract"
-        # started = False
-        abstract = ''
+        for line in text:    
+            conclusions += line
+            
 
-        for line in text:
-            # print(line)
-            # if body in line or graphical_abstract in line:
-            #     started = False
-            # if started:
-            abstract += line
-            # if front in line:
-            #     started = True
-
-        # abstract = abstract.decode('utf-8')
-
-        lines, frequent_words = determine_lines_and_frequent_words(abstract, path)
+        lines, frequent_words = determine_lines_and_frequent_words(conclusions, path)
         sentences = assign_sentences_score(lines, frequent_words)
         if threshold is not None:
             core_sentences=extract_sentences_above_threshold(sentences, threshold)
@@ -177,5 +186,5 @@ def extract_sentences(directory=r'original3_Conclusions', output_path='AIDA_exam
             core_sentence = go_over_sentences(sentences, frequent_words)
             core_sentences=[core_sentence]
         core_sentences = map(lambda s: s.replace('\n', ' ').replace(';', ','), core_sentences)
-        # core_sentence = core_sentence.encode('utf-8')
+        
         for sentence in core_sentences: writer.writerow({'File': file, 'Sentence': sentence})
