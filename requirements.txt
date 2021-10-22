@@ -1,9 +1,6 @@
-
-# commented out to not to waste CI/CD resources...
-# streamlit
-# nltk
-
-# ci/cd
-pytest
-pytest-cov
-pytest-github-actions-annotate-failures
+nltk~=3.6.3
+pdfminer~=20191125
+# streamlit~=1.0.0
+pandas~=1.3.3
+numpy~=1.21.2
+six~=1.16.0

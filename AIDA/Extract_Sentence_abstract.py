@@ -8,9 +8,12 @@
 # -*- coding: utf-8 -*-
 # Import the required libraries
 
-import nltk, re, csv, os
+import nltk, re, csv, os, sys
+import logging as log
+log.basicConfig(stream=sys.stderr, level=log.DEBUG)
+log.warning(os.getcwd())
 
-nltk.data.path.append(r"/knowledge-management/NLTK_data")
+nltk.data.path.append(r"./NLTK_data")
 
 from nltk.corpus import stopwords
 from collections import Counter
@@ -21,7 +24,9 @@ def check_similarity(a, b):
     return SequenceMatcher(None, a, b).ratio()
 
 
-sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
+dirname = os.path.dirname(__file__)
+sent_path = os.path.join(dirname, '../nltk_data/tokenizers/punkt/english.pickle')
+sent_detector = nltk.data.load(sent_path)
 
 # Define core and non-core words
 
