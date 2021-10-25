@@ -18,15 +18,16 @@ nltk.data.path.append(r"./NLTK_data")
 from nltk.corpus import stopwords
 from collections import Counter
 from difflib import SequenceMatcher
-
+import pandas as pd
+from nltk.tokenize import sent_tokenize
 
 def check_similarity(a, b):
     return SequenceMatcher(None, a, b).ratio()
 
 
 dirname = os.path.dirname(__file__)
-sent_path = os.path.join(dirname, '../nltk_data/tokenizers/punkt/english.pickle')
-sent_detector = nltk.data.load(sent_path)
+sent_path = os.path.join(dirname, r'..\nltk_data\tokenizers\punkt\english.pickle')
+sent_detector = nltk.data.load("file://"+sent_path)
 
 # Define core and non-core words
 
@@ -45,7 +46,7 @@ non_core_words = ["sought", "addition", "well-replicated", "replicated", "sample
                   "interview", "participant", "cc by 3.0", "previously"]
 
 
-# Function that seperates all the lines and creates a list of the most frequent words in the provided text
+# Function that separates all the lines and creates a list of the most frequent words in the provided text
 # # Parameter - utf8 encoding, English stop words
 # Input - Text and path of text
 # Output - Tokenised sentences and list of frequent words
@@ -53,7 +54,8 @@ non_core_words = ["sought", "addition", "well-replicated", "replicated", "sample
 
 
 def determine_lines_and_frequent_words(conclusions, path):
-    lines = sent_detector.tokenize(conclusions)
+    #lines = sent_detector.tokenize(conclusions)
+    lines = sent_tokenize(conclusions)
     text = open(path, encoding="utf8")
     
     body_text = ''
@@ -167,29 +169,57 @@ def go_over_sentences(sentences, frequent_words):
 # Dependencies on functions - Calls the following functions - determine_lines_and_frequent_words, assign_sentences_score, extract_sentences_above_threshold, go_over_sentences. Indirectly may call perform_extra_check.
 def extract_sentences(directory=r'original3_Conclusions', output_path='AIDA_example_articles/extracted_conclusions/results_conclusion.csv',
                       threshold=None):
-    csv_file = open(output_path, 'w')
 
-    fieldnames = ['File', 'Sentence']
-    writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter='|')
-    writer.writeheader()
+    list_of_values = []
+    file_names = os.listdir(directory)
+    year_published = [2020,2019,2005,2019,2017,2018,2018,2015,2010,2017]
+    citations = [15,52,300,252,71,36,257,11,179,50]
+
+    file_year = {}
+    file_citations ={}
+
+    for i in range(len(file_names)):
+        file_year[file_names[i]] = year_published[i]
+        file_citations[file_names[i]] = citations[i]
+
+
     for file in os.listdir(directory):
+        print(file)
         path = os.path.join(directory, file)
 
         text = open(path, encoding="utf8")
+        #text = open(path)
   
         conclusions = ''
 
         for line in text:    
             conclusions += line
-            
 
         lines, frequent_words = determine_lines_and_frequent_words(conclusions, path)
         sentences = assign_sentences_score(lines, frequent_words)
         if threshold is not None:
             core_sentences=extract_sentences_above_threshold(sentences, threshold)
+            scores = []
+            for i in core_sentences:
+                scores = scores.append(sentences[i])
         else:
             core_sentence = go_over_sentences(sentences, frequent_words)
+            score = sentences[core_sentence]
+            scores = [score]
             core_sentences=[core_sentence]
-        core_sentences = map(lambda s: s.replace('\n', ' ').replace(';', ','), core_sentences)
-        
-        for sentence in core_sentences: writer.writerow({'File': file, 'Sentence': sentence})
+
+        core_sentences = list(map(lambda s: s.replace('\n', ' ').replace(';', ','), core_sentences))
+        temp_list = []
+        for i in range(len(core_sentences)):
+
+            core_sentences[i] = core_sentences[i][0].upper()+core_sentences[i][1:]
+            temp_list.extend([file,core_sentences[i],scores[i],file_year[file],file_citations[file]])
+
+        list_of_values.append((temp_list))
+    print(list_of_values)
+
+    df = pd.DataFrame(list_of_values, columns=['File', 'Conclusion', 'Score','Year Published', 'Citations'])
+    print(df)
+    print(df.columns)
+    df.to_csv(output_path,index=False)
+
