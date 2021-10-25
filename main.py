@@ -7,7 +7,7 @@ from AIDA.Extract_Sentence_abstract import extract_sentences
 
 start = timeit.default_timer()
 
-extract_sentences(directory='articles/10articels_about_wether_online_vocational_education', output_path='extracted_conclusions/10_vocational_conclusion.csv')
+extract_sentences(directory=r'articles\10articels_about_wether_online_vocational_education', output_path=r'extracted_conclusions\10_vocational_conclusion.csv')
 
 stop = timeit.default_timer()
 print('Extraction Time: ', stop - start)
